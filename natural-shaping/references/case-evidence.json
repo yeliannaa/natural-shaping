@@ -77,11 +77,10 @@
       ],
       "imageLimit": "8-bit different head/shoulder crops, visual reference only",
       "latestOutcome": {
-        "version": "v12",
-        "image": "assets/examples/rem-v12.jpg",
-        "status": "User accepted the final v12; early stage checks above do not certify the final.",
-        "record": "assets/evidence/rem-v12-final-qa.json",
-        "usage": "Read the accepted v12 first for appearance; historical crops only explain previous failures."
+        "version": "v20",
+        "image": "assets/examples/rem-v20.jpg",
+        "status": "User confirmed v20 as the current example.",
+        "usage": "Current appearance reference; historical crops only explain previous failures."
       }
     }
   ],

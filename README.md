@@ -69,8 +69,8 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 
 | 想解决的问题 | 处理方式与案例入口 | 已知结果 |
 |---|---|---|
-| 磨皮之后，五官、身形和整体质感仍不够精致 | [dora 与蕾姆：肤质、五官、身形及光色分别收尾](natural-shaping/references/personal-cases.md#ns08两次最终成片达到预期2026-10-06) | dora v4、蕾姆 v12 达到案例提供者预期；不作为拉腿效果证明 |
-| 彩光调色后出现粉边、颗粒和假发切面 | [蕾姆：按光源和材料校正彩光、接回发缘](natural-shaping/references/personal-cases.md#ns04蕾姆-v12-当前效果与历史粉光问题) | 旧 v11 被否定，后续 v12 获认可 |
+| 磨皮之后，五官、身形和整体质感仍不够精致 | [dora 与蕾姆成片示例](natural-shaping/assets/examples/README.md) | dora v4、蕾姆 v20 已获案例提供者确认；不作为拉腿效果证明 |
+| 彩光调色后出现粉边、颗粒和假发切面 | [蕾姆：按光源和材料校正彩光、接回发缘](natural-shaping/references/personal-cases.md#ns04蕾姆当前效果与历史粉光问题) | 当前示例：蕾姆 v20 |
 | 收腰、拉腿和球拍补全怎样保持坐姿可信 | [狩司司：整体比例、握持与球拍透视一起复核](natural-shaping/references/personal-cases.md#ns10狩司司三张已保存示例与球拍返修) | 110 v4 已返修保存；未记录用户最终认可 |
 | 手、衣带与衣缘补完仍不自然 | [宫本樱：多视角定位，再锁定结构做材质收尾](natural-shaping/references/personal-cases.md#ns09宫本樱-v8-结构认可--v9-材质收尾与指定目录交付2026-10-06) | v8 整体与位置获认可，v9 获保存指示 |
 | 鼻旁阴影显硬，是否需要直接瘦鼻 | [鼻旁局部：先柔化光影，再判断鼻形](natural-shaping/references/personal-cases.md#ns03鼻旁先柔光不默认改变鼻形) | 柔光效果获局部认可；该次未新增鼻形几何修改 |

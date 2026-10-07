@@ -1650,13 +1650,13 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2474,
-      "sha256": "d2f41cd508b50f84054d9ef34622245bee667b6a7ba653fe61d23b3fa6cec0db"
+      "bytes": 2453,
+      "sha256": "6f518288eb8d36c45da24b20acae52f16d4665f0b23ceaf7fe3146bd0bcd7cda"
     },
     {
-      "file": "assets/examples/rem-v12.jpg",
-      "bytes": 5585690,
-      "sha256": "39ce44bf045d1144017d534bb78f8e4dfe052b85bfd9b5f9a5e2b8487e793a7c"
+      "file": "assets/examples/rem-v20.jpg",
+      "bytes": 5589417,
+      "sha256": "708715fefaae11d92f3ca0be8c3891682731786e89533df8dc6059628694fdbd"
     },
     {
       "file": "assets/examples/robin-v8.jpg",
@@ -1685,13 +1685,13 @@
     },
     {
       "file": "references/case-evidence.json",
-      "bytes": 4706,
-      "sha256": "351984a2159a9e119415ff8da29bed93c0e5def58422dac4d16e8d21bf3026fc"
+      "bytes": 4595,
+      "sha256": "fcb5bbb1c6f123df9e2db37955f77a8b50b3d3bd164a2af33d4039a484dea7e9"
     },
     {
       "file": "references/case-files.json",
       "bytes": 24001,
-      "sha256": "0cf08ad811bfc96e7ab4631e42fa8894787560d862c027e40c82bf413c8d8a2f"
+      "sha256": "b77561a5123fcc610a0a8ad7dd3cda559be5629c2e145b01b8efea15192ded82"
     },
     {
       "file": "references/cases/history/ns04-rem-head-before.png",
@@ -1736,7 +1736,7 @@
     {
       "file": "references/cases/README.md",
       "bytes": 1440,
-      "sha256": "3a0815e961af490fa28dec40fa3382238f9792f6dde06bbe9b3dc40b48c425bf"
+      "sha256": "d03df700fe7b4f14c264d7d44178287dd8b2fdf5ad4d013c14dcc279f446ecfb"
     },
     {
       "file": "references/composition-and-capture.md",
@@ -1755,8 +1755,8 @@
     },
     {
       "file": "references/engine-experiment-history.md",
-      "bytes": 5639,
-      "sha256": "851da6839eb6a4215dd94a1e80cade4bf48dd4d505f6a1c15f9b5aa54c2d6b82"
+      "bytes": 5644,
+      "sha256": "389cba20c614e59fd46f6312d696cfb2cff696395fb1071c9c0e7ce52ee35c3f"
     },
     {
       "file": "references/external-examples.md",
@@ -1775,8 +1775,8 @@
     },
     {
       "file": "references/personal-cases.md",
-      "bytes": 16761,
-      "sha256": "ac278c585d9cd717e94afadfbe4e14343caa1eb84d5877f42a32de0807404a83"
+      "bytes": 16684,
+      "sha256": "e55992b6795969846e4408e67845f2787e7d2680c10a078857f67318878edca2"
     },
     {
       "file": "references/pixcake-cos-cases.md",
