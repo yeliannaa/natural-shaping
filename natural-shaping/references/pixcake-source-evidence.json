@@ -1,0 +1,1536 @@
+{
+  "schema_version": 2,
+  "checked_on": "2026-10-04",
+  "viewing_status_definitions": {
+    "partially_inspected": "Actual noted still frames read; no continuous full-video or native-photo acceptance.",
+    "pending_review": "No qualifying actual still review note yet."
+  },
+  "count_definitions": {
+    "video_source_links": "Canonical source URLs; mirrors remain separate links.",
+    "unique_video_works": "Works after visually verified V04/V12 mirror grouping; not file-hash identity.",
+    "actual_frame_reviewed_sources": "Sources with at least one actual reviewed local frame; not complete workflows.",
+    "current_main_operation_notes_ready_sources": "Sources with current structured still-review notes; completeness is not assumed.",
+    "continuous_full_videos": "Verified complete continuous watching; currently zero.",
+    "native_photo_100_percent_qa_cases": "Actual original-photo/export full-size acceptance; video HD is insufficient.",
+    "user_accepted_video_cases": "This user's acceptance of these external edited cases; currently zero."
+  },
+  "video_policy": "Actual viewing of operation frames is required before video-derived editing rules; description, transcript and platform summary alone are insufficient.",
+  "ps_adaptation": "Implementation inferences are listed separately; not PixCake algorithm equivalence or copied defaults.",
+  "counts": {
+    "first_person_articles": 2,
+    "official_guide_pages": 14,
+    "video_source_links": 12,
+    "unique_video_works": 11,
+    "actual_frame_reviewed_sources": 12,
+    "actual_frame_reviewed_unique_works": 11,
+    "current_main_operation_notes_ready_sources": 12,
+    "reviewed_frame_assets": 138,
+    "specific_fact_anchors": 430,
+    "ps_transfer_inference_candidates": 23,
+    "continuous_full_videos": 0,
+    "native_photo_100_percent_qa_cases": 0,
+    "user_accepted_video_cases": 0,
+    "adopted_default_rules_from_videos": 0
+  },
+  "articles": [
+    {
+      "id": "A01",
+      "author": "食肉库玛老师傅",
+      "title": "iPad+像素蛋糕，人像摄影不返废片指南",
+      "url": "https://sspai.com/post/95251",
+      "page_date": "2024-12-30",
+      "body_read": true,
+      "visual_comparison_inspected": false,
+      "evidence": "first_person_article",
+      "limits": [
+        "historical_device_specific_experience",
+        "not_retested_locally",
+        "not_full_resolution_edit_verification"
+      ]
+    },
+    {
+      "id": "A02",
+      "author": "Baokker",
+      "title": "原神fes漫展人像拍摄心得",
+      "url": "https://baokker-blog.top/2026/01/15/%E5%8E%9F%E7%A5%9Efes%E6%BC%AB%E5%B1%95%E4%BA%BA%E5%83%8F%E6%8B%8D%E6%91%84%E5%BF%83%E5%BE%97/",
+      "page_date": "2026-01-15",
+      "body_read": true,
+      "visual_comparison_inspected": false,
+      "evidence": "first_person_article",
+      "limits": [
+        "beginner_field_experience",
+        "not_parameter_tutorial",
+        "not_shaping_success_or_speed_test"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "id": "V01",
+      "author": "猫头摄影师",
+      "title": "杂乱场照",
+      "url": "https://www.douyin.com/video/7623007112989494582",
+      "text_evidence_url": "https://www.douyin.com/shipin/7629181998364002310",
+      "text_evidence": "platform_ai_transcript",
+      "published_on": null,
+      "date_basis": "original_date_not_verified",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V01:sequence01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V01:sequence02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V01:sequence03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V01:sequence04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V01:sequence05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V01:sequence06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V01:sequence07",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": true,
+      "source_link_id": "V01",
+      "unique_work_id": "W01",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 37,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V02",
+      "author": "叫我小生！",
+      "title": "白棚 Cos",
+      "url": "https://www.douyin.com/video/7603271299054944241",
+      "text_evidence_url": "https://www.douyin.com/shipin/7299432451112945705",
+      "text_evidence": "platform_ai_transcript",
+      "published_on": null,
+      "date_basis": "original_date_not_verified",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V02:initial",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V02:sequence-01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V02:sequence-02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V02:sequence-03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V02:sequence-04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V02:sequence-05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V02:sequence-06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V02:sequence-07",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": true,
+      "source_link_id": "V02",
+      "unique_work_id": "W02",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 30,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V03",
+      "author": "轰炸云浣熊",
+      "title": "蒙版基础",
+      "url": "https://www.douyin.com/video/7620017770863922451",
+      "text_evidence_url": "https://www.douyin.com/shipin/7375778041684854838",
+      "text_evidence": "platform_ai_transcript",
+      "published_on": null,
+      "date_basis": "original_date_not_verified",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V03:sequence01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V03:sequence02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V03:sequence03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V03:sequence04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V03:sequence05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V03:sequence06",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": true,
+      "source_link_id": "V03",
+      "unique_work_id": "W03",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 20,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V04",
+      "author": "里衣子",
+      "title": "亮调场照",
+      "url": "https://www.douyin.com/video/7641854511274839359",
+      "text_evidence_url": "https://www.douyin.com/shipin/7316110456467474467",
+      "text_evidence": "platform_ai_transcript",
+      "published_on": "2026-05-20",
+      "date_basis": "original_page_metadata_reported_in_review_note",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V04:sequence01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V04:sequence02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V04:sequence03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V04:sequence04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V04:sequence05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V04:sequence06",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": true,
+      "source_link_id": "V04",
+      "unique_work_id": "W04",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 19,
+      "fully_watched": false,
+      "user_accepted": false,
+      "publication_metadata_note": {
+        "path": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+        "relative_path": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+        "bytes": 7711,
+        "sha256": "2bb7164a44c103ebb241d97adde6f44e508bf3aeefdb2b4765db44e3697caca6"
+      },
+      "mirror_relation": {
+        "relationship": "same_work_cross_platform_mirror",
+        "source_link_ids": [
+          "V04",
+          "V12"
+        ],
+        "unique_work_id": "W04",
+        "relationship_verified_by_visual_correspondence": true,
+        "byte_identical_original_video_verified": false,
+        "identical_time_frames_verified": false,
+        "evidence_note": {
+          "path": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+          "relative_path": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+          "bytes": 7711,
+          "sha256": "2bb7164a44c103ebb241d97adde6f44e508bf3aeefdb2b4765db44e3697caca6"
+        },
+        "json_pointer": "/crossPlatformVisualReview",
+        "correspondences": [
+          {
+            "v04UiTimeSeconds": 16,
+            "v12UiTimeSeconds": [
+              11,
+              24
+            ],
+            "evidence": "Same person, side-kneeling pose, wig/flower, clothing, buckled shoes, hall and equipment layout"
+          },
+          {
+            "v04UiTimeSeconds": [
+              32,
+              48
+            ],
+            "v12UiTimeSeconds": [
+              35,
+              46
+            ],
+            "evidence": "Same mask-list workflow and current 背景-全部背景 selection"
+          },
+          {
+            "v04UiTimeSeconds": 64,
+            "v12UiTimeSeconds": 67,
+            "evidence": "Same creative/toolbox stage with one-sentence-image-edit entrance"
+          },
+          {
+            "v04UiTimeSeconds": 80,
+            "v12UiTimeSeconds": 78,
+            "evidence": "Same white-daisy prompt and five-candidate generation panel; current selected tile differs at these nearby times"
+          }
+        ]
+      }
+    },
+    {
+      "id": "V05",
+      "author": "老婆饼修图课程",
+      "title": "AI 追色参考",
+      "url": "https://www.bilibili.com/video/BV12Ptxe5EoJ/",
+      "text_evidence_url": null,
+      "text_evidence": "indexed_author_description",
+      "published_on": "2024-09-16",
+      "date_basis": "original_work_metadata_or_author_index",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V05:sequence01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence07",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence08",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence09",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V05:sequence10",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": false,
+      "source_link_id": "V05",
+      "unique_work_id": "W05",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 23,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V06",
+      "author": "-TimHsu-",
+      "title": "2025 人像全流程",
+      "url": "https://www.bilibili.com/video/BV1RRNkzVESP/",
+      "text_evidence_url": null,
+      "text_evidence": "indexed_author_description",
+      "published_on": "2025-06-21",
+      "date_basis": "original_work_metadata_or_author_index",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V06:lr01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:lr02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:lr03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:lr04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:lr05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:pixcake01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:pixcake02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:pixcake03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:pixcake04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:pixcake05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:pixcake06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps07",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps08",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps09",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps10",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps11",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps12",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps13",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps14",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V06:ps15",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": false,
+      "source_link_id": "V06",
+      "unique_work_id": "W06",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 94,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V07",
+      "author": "像素蛋糕AI修图",
+      "title": "漫展场照全流程",
+      "url": "https://www.bilibili.com/video/BV1pgJNzSEXy/",
+      "text_evidence_url": null,
+      "text_evidence": "indexed_title_author_description",
+      "published_on": "2025-05-17",
+      "date_basis": "original_work_metadata_or_author_index",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V07:sequence01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V07:sequence02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V07:sequence03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V07:sequence04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V07:sequence05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V07:sequence06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V07:sequence07",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V07:v07-initial-61",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V07:v07-replay-a",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": true,
+      "source_link_id": "V07",
+      "unique_work_id": "W07",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 18,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V08",
+      "author": "线圈ing",
+      "title": "快速场照",
+      "url": "https://www.bilibili.com/video/BV1JoyKYNEAV/",
+      "text_evidence_url": null,
+      "text_evidence": "indexed_title_author",
+      "published_on": "2024-10-17",
+      "date_basis": "original_work_metadata_or_author_index",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V08:initial",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V08:sequence01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V08:sequence02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V08:sequence03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V08:sequence04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V08:sequence05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V08:sequence06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V08:sequence07",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": false,
+      "source_link_id": "V08",
+      "unique_work_id": "W08",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 18,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V09",
+      "author": "三月March",
+      "title": "场照工作流",
+      "url": "https://www.bilibili.com/video/BV1pf421D79J/",
+      "text_evidence_url": "https://www.douyin.com/video/7366252699156876584",
+      "text_evidence": "indexed_author_description_and_platform_ai_summary",
+      "published_on": "2024-05-05",
+      "date_basis": "original_work_metadata_or_author_index",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V09:sequence01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence07",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence08",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence09",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence10",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence11",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence12",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence13",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence14",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence15",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V09:sequence16",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": false,
+      "source_link_id": "V09",
+      "unique_work_id": "W09",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 59,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V10",
+      "author": "KK",
+      "title": "Cos 全流程磨皮",
+      "url": "https://www.douyin.com/video/7520848746377235746",
+      "text_evidence_url": "https://jingxuan.douyin.com/m/video/7520848746377235746",
+      "text_evidence": "indexed_platform_ai_summary_and_metadata",
+      "published_on": "2025-06-28",
+      "date_basis": "original_work_metadata_or_author_index",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V10:hd-062s",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:paused-116s",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-07",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-08",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-09",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-10",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-11",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-12",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-13",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-14",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-15",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-16",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-17",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:sequence-18",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:tail-share",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V10:paused-228s",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": false,
+      "source_link_id": "V10",
+      "unique_work_id": "W10",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 56,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V11",
+      "author": "玩家（📷课报名中）",
+      "title": "场照半合成",
+      "url": "https://www.douyin.com/video/7628561102598688015",
+      "text_evidence_url": "https://www.douyin.com/shipin/7313902371833317414",
+      "text_evidence": "related_work_platform_ai_transcript",
+      "published_on": null,
+      "date_basis": "original_date_not_verified",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V11:sequence01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V11:sequence02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V11:sequence03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V11:sequence04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V11:sequence05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V11:mask-followup01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V11:mask-followup02",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": true,
+      "source_link_id": "V11",
+      "unique_work_id": "W11",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 28,
+      "fully_watched": false,
+      "user_accepted": false
+    },
+    {
+      "id": "V12",
+      "author": "里衣子",
+      "title": "参数大公开！像素蛋糕亮调后期焚绝，含预设",
+      "url": "https://www.bilibili.com/video/BV1VLLm6aExw/",
+      "text_evidence_url": "https://www.bilibili.com/video/BV1VLLm6aExw/",
+      "text_evidence": "browser_accessibility_page_metadata_and_isolated_actual_frame_samples",
+      "published_on": "2026-05-20",
+      "date_basis": "original_page_metadata_verified_in_browser_accessibility_tree",
+      "viewing_status": "partially_inspected",
+      "viewing_intervals": [],
+      "inspected_frames": [
+        {
+          "frame_id": "V12:sequence-01",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:sequence-02",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:sequence-03",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:sequence-04",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:sequence-05",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:sequence-06",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:sequence-07",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:sequence-08",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:sequence-09",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:v04-paused-61",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:v04-seek-early",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:v12-hd-native-paused",
+          "manifest": "references/pixcake-video-inspection.json"
+        },
+        {
+          "frame_id": "V12:v12-hd-frozen-early",
+          "manifest": "references/pixcake-video-inspection.json"
+        }
+      ],
+      "eligible_for_video_derived_rules": false,
+      "visual_output_verified": false,
+      "original_resolution_verified": false,
+      "attribution_checked": true,
+      "source_link_id": "V12",
+      "unique_work_id": "W04",
+      "actual_frame_reviewed": true,
+      "current_main_operation_notes_ready": true,
+      "specific_fact_anchor_count": 28,
+      "fully_watched": false,
+      "user_accepted": false,
+      "mirror_relation": {
+        "relationship": "same_work_cross_platform_mirror",
+        "source_link_ids": [
+          "V04",
+          "V12"
+        ],
+        "unique_work_id": "W04",
+        "relationship_verified_by_visual_correspondence": true,
+        "byte_identical_original_video_verified": false,
+        "identical_time_frames_verified": false,
+        "evidence_note": {
+          "path": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+          "relative_path": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+          "bytes": 7711,
+          "sha256": "2bb7164a44c103ebb241d97adde6f44e508bf3aeefdb2b4765db44e3697caca6"
+        },
+        "json_pointer": "/crossPlatformVisualReview",
+        "correspondences": [
+          {
+            "v04UiTimeSeconds": 16,
+            "v12UiTimeSeconds": [
+              11,
+              24
+            ],
+            "evidence": "Same person, side-kneeling pose, wig/flower, clothing, buckled shoes, hall and equipment layout"
+          },
+          {
+            "v04UiTimeSeconds": [
+              32,
+              48
+            ],
+            "v12UiTimeSeconds": [
+              35,
+              46
+            ],
+            "evidence": "Same mask-list workflow and current 背景-全部背景 selection"
+          },
+          {
+            "v04UiTimeSeconds": 64,
+            "v12UiTimeSeconds": 67,
+            "evidence": "Same creative/toolbox stage with one-sentence-image-edit entrance"
+          },
+          {
+            "v04UiTimeSeconds": 80,
+            "v12UiTimeSeconds": 78,
+            "evidence": "Same white-daisy prompt and five-candidate generation panel; current selected tile differs at these nearby times"
+          }
+        ]
+      }
+    }
+  ],
+  "official_guides": [
+    {
+      "id": "G01",
+      "title": "AI点修",
+      "url": "https://www.pixcakeai.com/guide/MlI1Jk6qm6",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-09-15",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G02",
+      "title": "面部重塑",
+      "url": "https://wiki.pixcakeai.com/guide/9405.html",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-05-18",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G03",
+      "title": "妆容调整",
+      "url": "https://www.pixcakeai.com/guide/32471",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-07-09",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G04",
+      "title": "头发调整",
+      "url": "https://www.pixcakeai.com/guide/32472",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-09-18",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G05",
+      "title": "衣物美化",
+      "url": "https://wiki.pixcakeai.com/guide/9416.html",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-05-18",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G06",
+      "title": "局部调色与蒙版",
+      "url": "https://wiki.pixcakeai.com/guide/9399.html",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-05-18",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G07",
+      "title": "AI色彩",
+      "url": "https://www.pixcakeai.com/guide/32452",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-09-17",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G08",
+      "title": "批量同步",
+      "url": "https://www.pixcakeai.com/guide/64507",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-05-23",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G09",
+      "title": "预设叠加规则",
+      "url": "https://wiki.pixcakeai.com/guide/9718.html",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-05-18",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G10",
+      "title": "AI工具箱",
+      "url": "https://www.pixcakeai.com/guide/230427",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-09-18",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G11",
+      "title": "AI补光",
+      "url": "https://www.pixcakeai.com/guide/230955",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-09-17",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G12",
+      "title": "AI祛路人",
+      "url": "https://www.pixcakeai.com/guide/158249",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-09-17",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G13",
+      "title": "预设与滤镜",
+      "url": "https://wiki.pixcakeai.com/guide/14723.html",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-06-17",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    },
+    {
+      "id": "G14",
+      "title": "可擦回复原的功能",
+      "url": "https://wiki.pixcakeai.com/guide/9682.html",
+      "evidence": "official_operation_guide_body",
+      "publisher": "PixCake",
+      "platform": "desktop_manual",
+      "page_date": "2026-05-18",
+      "body_read": true,
+      "visual_inspected": false,
+      "not_a_complete_cos_client_case": true,
+      "manufacturer_claims_independently_tested": false
+    }
+  ],
+  "unique_video_works": [
+    {
+      "unique_work_id": "W01",
+      "source_link_ids": [
+        "V01"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W02",
+      "source_link_ids": [
+        "V02"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W03",
+      "source_link_ids": [
+        "V03"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W04",
+      "source_link_ids": [
+        "V04",
+        "V12"
+      ],
+      "distinctness_basis": "cross_platform_visual_mirror_de_duplication"
+    },
+    {
+      "unique_work_id": "W05",
+      "source_link_ids": [
+        "V05"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W06",
+      "source_link_ids": [
+        "V06"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W07",
+      "source_link_ids": [
+        "V07"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W08",
+      "source_link_ids": [
+        "V08"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W09",
+      "source_link_ids": [
+        "V09"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W10",
+      "source_link_ids": [
+        "V10"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    },
+    {
+      "unique_work_id": "W11",
+      "source_link_ids": [
+        "V11"
+      ],
+      "distinctness_basis": "separate_indexed_work_no_other_duplicate_claimed"
+    }
+  ],
+  "mirror_relations": [
+    {
+      "relationship": "same_work_cross_platform_mirror",
+      "source_link_ids": [
+        "V04",
+        "V12"
+      ],
+      "unique_work_id": "W04",
+      "relationship_verified_by_visual_correspondence": true,
+      "byte_identical_original_video_verified": false,
+      "identical_time_frames_verified": false,
+      "evidence_note": {
+        "path": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+        "relative_path": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+        "bytes": 7711,
+        "sha256": "2bb7164a44c103ebb241d97adde6f44e508bf3aeefdb2b4765db44e3697caca6"
+      },
+      "json_pointer": "/crossPlatformVisualReview",
+      "correspondences": [
+        {
+          "v04UiTimeSeconds": 16,
+          "v12UiTimeSeconds": [
+            11,
+            24
+          ],
+          "evidence": "Same person, side-kneeling pose, wig/flower, clothing, buckled shoes, hall and equipment layout"
+        },
+        {
+          "v04UiTimeSeconds": [
+            32,
+            48
+          ],
+          "v12UiTimeSeconds": [
+            35,
+            46
+          ],
+          "evidence": "Same mask-list workflow and current 背景-全部背景 selection"
+        },
+        {
+          "v04UiTimeSeconds": 64,
+          "v12UiTimeSeconds": 67,
+          "evidence": "Same creative/toolbox stage with one-sentence-image-edit entrance"
+        },
+        {
+          "v04UiTimeSeconds": 80,
+          "v12UiTimeSeconds": 78,
+          "evidence": "Same white-daisy prompt and five-candidate generation panel; current selected tile differs at these nearby times"
+        }
+      ]
+    }
+  ],
+  "source_review_readiness": [
+    {
+      "video_id": "V01",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V02",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V03",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V04",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V05",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V06",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": [
+        "five requested color-stage samples and combined playback record inspected; no further local sample is pending for this subtask",
+        "fifteen PS/comparison-stage samples inspected; color navigation and PixCake phase are documented separately; no local sample is pending for this subtask"
+      ]
+    },
+    {
+      "video_id": "V07",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V08",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V09",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": [
+        "sixteen samples including stable end screen inspected; continuous watching and original/output QA remain incomplete"
+      ]
+    },
+    {
+      "video_id": "V10",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V11",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    },
+    {
+      "video_id": "V12",
+      "current_observation_notes_ready": true,
+      "unreviewed_capture_files": [],
+      "status": "current_notes_present_with_explicit_sampling_gaps",
+      "note_declared_phase_statuses": []
+    }
+  ],
+  "preserved_non_video_sections": {
+    "baseline": {
+      "path": "origin-not-bundled:legacy-source-evidence-v1.json",
+      "relative_path": "origin-not-bundled:reviewed-videos/legacy-source-evidence-v1.json",
+      "bytes": 17481,
+      "sha256": "82545af2cc8f59b798c6554d78980e09bf6efd4dab9ffd1f6d1f4c6696198548"
+    },
+    "articles_sha256": "d3233fd625928562fabc9b9cb678e24e2dd9a2df109509b5080b93461c46efd6",
+    "official_guides_sha256": "701a07c7b9c28a4f7c39ea8749dfa7a1b7096a6958ce69357cbb3ae692ee4470"
+  },
+  "previous_personal_assets": {
+    "manifest_path": "origin-not-bundled:deployment.json",
+    "manifest_sha256": "ec562dbc685b833245248fcfe13d936a8e3691b6df10600e24b773d3d719af5a",
+    "scope": "Prior personal workspace assets byte-checked; no installed-directory read/write by this builder",
+    "asset_records": [
+      {
+        "path": "origin-not-bundled:case-evidence.json",
+        "bytes": 3206,
+        "sha256": "54ed89086e6a707675f56cedb3fa19fc42725ed5d9a1fbd45778b2da18c3a444",
+        "original_manifest_sha256": "54ed89086e6a707675f56cedb3fa19fc42725ed5d9a1fbd45778b2da18c3a444"
+      },
+      {
+        "path": "origin-not-bundled:case-files.json",
+        "bytes": 25431,
+        "sha256": "6332a7800c949c7d261ecdce732b689f9f368a3728e01fc396b2fd45ebcc57fa",
+        "original_manifest_sha256": "6332a7800c949c7d261ecdce732b689f9f368a3728e01fc396b2fd45ebcc57fa"
+      },
+      {
+        "path": "origin-not-bundled:personal-cases.md",
+        "bytes": 6524,
+        "sha256": "72356e28a6170557dc903283b8d93aef48efe64352fef85705ec30b61c427f16",
+        "original_manifest_sha256": "72356e28a6170557dc903283b8d93aef48efe64352fef85705ec30b61c427f16"
+      },
+      {
+        "path": "origin-not-bundled:shape-and-pose.md",
+        "bytes": 3926,
+        "sha256": "948334004bf1a693d3e945e71e9fcf3b1eaec8f396c99315d5f3fbabba5ddc60",
+        "original_manifest_sha256": "948334004bf1a693d3e945e71e9fcf3b1eaec8f396c99315d5f3fbabba5ddc60"
+      },
+      {
+        "path": "origin-not-bundled:tone-and-edges.md",
+        "bytes": 5161,
+        "sha256": "e70293a739a8734bb59a8b636fcb21aafb5c3e6d94c1fda827259173c5e9ed3e",
+        "original_manifest_sha256": "e70293a739a8734bb59a8b636fcb21aafb5c3e6d94c1fda827259173c5e9ed3e"
+      },
+      {
+        "path": "origin-not-bundled:ns01-arm-corrected.png",
+        "bytes": 1628292,
+        "sha256": "c306430547435093dbb86a26b2f0bb4214df23e70fd31afe7f1ab45eae7dc31c",
+        "original_manifest_sha256": "c306430547435093dbb86a26b2f0bb4214df23e70fd31afe7f1ab45eae7dc31c"
+      },
+      {
+        "path": "origin-not-bundled:ns01-arm-rejected.png",
+        "bytes": 1479728,
+        "sha256": "a051cae2677ecd339dd6e06aab34a46066f099e9c071c9d8e6723948b080c060",
+        "original_manifest_sha256": "a051cae2677ecd339dd6e06aab34a46066f099e9c071c9d8e6723948b080c060"
+      },
+      {
+        "path": "origin-not-bundled:ns02-elbow-before.png",
+        "bytes": 2051673,
+        "sha256": "3e7f30d74a79af93c5a593a68ed044554da52be4413b0b3b42e4ff5ebddcdb9f",
+        "original_manifest_sha256": "3e7f30d74a79af93c5a593a68ed044554da52be4413b0b3b42e4ff5ebddcdb9f"
+      },
+      {
+        "path": "origin-not-bundled:ns02-elbow-brighter.png",
+        "bytes": 2076998,
+        "sha256": "3a8a1ace497989dfa573619539fdb94baaa9040a37dbe55fff29b11ee2801544",
+        "original_manifest_sha256": "3a8a1ace497989dfa573619539fdb94baaa9040a37dbe55fff29b11ee2801544"
+      },
+      {
+        "path": "origin-not-bundled:ns03-nose-accepted.png",
+        "bytes": 349879,
+        "sha256": "458c90459487e07d25f20057ee2d70e4a732ad00b673c2652e8d7a3ccdeb2e73",
+        "original_manifest_sha256": "458c90459487e07d25f20057ee2d70e4a732ad00b673c2652e8d7a3ccdeb2e73"
+      },
+      {
+        "path": "origin-not-bundled:ns03-nose-before.png",
+        "bytes": 349821,
+        "sha256": "ab316b0a1114fcb99671561ced5ffdb200452dbab901b6a44ba97fc13086ccbf",
+        "original_manifest_sha256": "ab316b0a1114fcb99671561ced5ffdb200452dbab901b6a44ba97fc13086ccbf"
+      },
+      {
+        "path": "origin-not-bundled:ns04-head-before.png",
+        "bytes": 1090839,
+        "sha256": "6eeb4cedc0de103d818cf8a21726f61788026dfd0849ae0131515c8243bc372c",
+        "original_manifest_sha256": "6eeb4cedc0de103d818cf8a21726f61788026dfd0849ae0131515c8243bc372c"
+      },
+      {
+        "path": "origin-not-bundled:ns04-head-corrected.png",
+        "bytes": 1114232,
+        "sha256": "e3c1345ca16bc7bd87c42abee438f42f2e139866d7c41d06cc31c2996b45106f",
+        "original_manifest_sha256": "e3c1345ca16bc7bd87c42abee438f42f2e139866d7c41d06cc31c2996b45106f"
+      }
+    ],
+    "installed_directory_written": false
+  },
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled resource paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "historical_metadata": "Existing sha256, bytes and similar source-evidence fields describe the historical files. Portable text adaptations change their bytes. They are not current-package integrity checks. Existing case-file packagedSha256 fields remain applicable only to the unchanged eight case images.",
+    "current_package_manifest": "package-manifest.json",
+    "current_verification": "Use the package manifest for current bundled-file hashes and sizes; its scope does not establish fresh source viewing, aesthetic acceptance or model performance.",
+    "historical_labels": "fact_id and candidate_id are stable evidence identifiers, not paths. Visible UI filenames and quoted observation text are historical labels, not bundled resources. Other explicit resource fields use the declared skill-root base or origin-not-bundled marker."
+  }
+}

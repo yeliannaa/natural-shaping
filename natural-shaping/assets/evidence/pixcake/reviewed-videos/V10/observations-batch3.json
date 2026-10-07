@@ -1,0 +1,270 @@
+{
+  "case_id": "V10",
+  "batch": 3,
+  "source_url": "https://www.douyin.com/video/7520848746377235746",
+  "inspection_scope": "independent visual inspection of six sequence screenshots plus one actual tail screenshot; not continuous video watching",
+  "subtitle_policy": "brief meaning summaries only; no transcript",
+  "screenshot_dimensions": [
+    2048,
+    1152
+  ],
+  "screenshot_format_verified": "JPEG",
+  "visible_player_quality": "高清1080P",
+  "visible_playback_rate": 0.75,
+  "root_batch_metadata_file_read": false,
+  "root_batch_end_state": null,
+  "end_state_limit": "Root reported that final pause failed after all six sequence captures and playback later looped. The end_state in sequence-batch3.json belongs to an intermediate failed-seek state and is not used for the sequence ending or tail screenshot time. Root owns correction of that record.",
+  "excluded_frames": [
+    {
+      "file": "origin:unbundled/codex-history/2026-10-02/new-chat/work/pixcake-cos-expansion-20261003/reviewed-videos/V10/tail-probe-unverified.jpg",
+      "reason": "Root identified this as an incorrectly located probe, not the actual tail; not inspected or referenced as tail evidence."
+    }
+  ],
+  "frames": [
+    {
+      "file": "sequence-13.jpg",
+      "bytes": 207860,
+      "sha256": "1c7c2e715ea64b1a87382b7aa1d9a443a97b5976dd63cf32a2e49804794c25e8",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "04:05 / 06:04",
+      "player_display_seconds": 245,
+      "preview_zoom_percent": 36,
+      "subtitle_meaning_summary": "Discusses processing a cute-looking subject.",
+      "visible_ui": [
+        "人像美化",
+        "女",
+        "皮肤质感"
+      ],
+      "parameters": {
+        "水润磨皮（脸部）": 19,
+        "水润磨皮（身体）": 31,
+        "锁骨增强": 75,
+        "光泽度": 0,
+        "纹理度": 77,
+        "清晰度": 0
+      },
+      "skin_texture_card_selection_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-14.jpg",
+      "bytes": 194639,
+      "sha256": "0c235144b0015a5f7d7d2336cfc4965feebb4ca0a96db358bf3cc9d80a05b46d",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "04:21 / 06:04",
+      "player_display_seconds": 261,
+      "preview_zoom_percent": 47,
+      "subtitle_meaning_summary": "Moves past detailed explanation of the skin controls.",
+      "visible_ui": [
+        "皮肤质感",
+        "皮肤颜色",
+        "肤色选择"
+      ],
+      "active_skin_color_selection": "无",
+      "parameters": {
+        "光泽度": 24,
+        "纹理度": 77,
+        "清晰度": 12,
+        "肤色透亮": 0,
+        "肤色美白": 0,
+        "皮肤红润": 0,
+        "AI多人肤色统一": 0,
+        "AI肤色统一（脸部）": 0,
+        "AI肤色统一（身体）": 0,
+        "肤色统一（身体）": 0
+      },
+      "observed_control_difference_from_frame13": {
+        "光泽度": [
+          0,
+          24
+        ],
+        "清晰度": [
+          0,
+          12
+        ]
+      },
+      "same_scale_before_after_verified": false,
+      "skin_pixel_quality_verified": false
+    },
+    {
+      "file": "sequence-15.jpg",
+      "bytes": 197376,
+      "sha256": "c472802773c5742565cca90d1233d61393b2fe37cfe8eeea03e40d2a9637d595",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "04:37 / 06:04",
+      "player_display_seconds": 277,
+      "preview_zoom_percent": 47,
+      "subtitle_meaning_summary": "Discusses enlarging the eyes.",
+      "visible_ui": [
+        "面部重塑",
+        "脸型预设",
+        "眼睛"
+      ],
+      "selected_face_preset": "幼态",
+      "active_face_subtab": "眼睛",
+      "parameters": {
+        "整体大小": {
+          "左": 85,
+          "右": 85
+        },
+        "眼高": {
+          "左": 16,
+          "右": 16
+        },
+        "眼宽": {
+          "左": -8,
+          "右": -8
+        },
+        "眼距": {
+          "左": 25,
+          "右": 25
+        }
+      },
+      "unmapped_visible_control": {
+        "label": null,
+        "left_value": 32,
+        "right_value": 32,
+        "label_verified": false
+      },
+      "configured_face_controls_verified": true,
+      "exact_slider_action_verified": false,
+      "actual_geometric_effect_verified": false,
+      "identity_preservation_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-16.jpg",
+      "bytes": 207684,
+      "sha256": "7ef4b4269dd416cca66fd8fdc180700648da8458e872d524a18d4b1e6e766e29",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "04:53 / 06:04",
+      "player_display_seconds": 293,
+      "preview_zoom_percent": 36,
+      "subtitle_meaning_summary": "Mentions additional makeup presets.",
+      "visible_ui": [
+        "腮红"
+      ],
+      "selected_blush_preset": "11",
+      "parameters": {
+        "程度": 21
+      },
+      "configured_blush_controls_verified": true,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-17.jpg",
+      "bytes": 178211,
+      "sha256": "f057cb9d8a4050b3cbc65a0474b48aa6e178cdbc5e805321af73eab0f7a83765",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "05:09 / 06:04",
+      "player_display_seconds": 309,
+      "preview_zoom_percent": 20,
+      "subtitle_meaning_summary": "Discusses the AI shaping control.",
+      "visible_ui": [
+        "全身美型"
+      ],
+      "parameters": {
+        "AI塑形": 48,
+        "身型流畅": 100,
+        "瘦身": 0,
+        "增高": 0,
+        "小头": 0,
+        "脖子长度": 0
+      },
+      "configured_global_body_controls_verified": true,
+      "manual_per_joint_adjustment_verified": false,
+      "protection_regions_verified": false,
+      "actual_geometric_effect_verified": false,
+      "joint_continuity_verified": false,
+      "costume_geometry_preservation_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-18.jpg",
+      "bytes": 174051,
+      "sha256": "54262505f87df5cb29ead29628ef6e9036af1619ff576a06f77971ae904ed633",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "05:25 / 06:04",
+      "player_display_seconds": 325,
+      "preview_zoom_percent": 20,
+      "subtitle_meaning_summary": "Moves to removing clothing wrinkles.",
+      "visible_ui": [
+        "衣物美化",
+        "衣服调整",
+        "所有"
+      ],
+      "parameters": {
+        "衣服祛褶皱": 65,
+        "祛细褶皱": 100,
+        "祛粗褶皱": 100,
+        "衣服边缘平整": 0
+      },
+      "configured_clothing_controls_verified": true,
+      "costume_detail_preservation_verified": false,
+      "protection_regions_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "tail-share.jpg",
+      "bytes": 169538,
+      "sha256": "9ff99f0da22b0ed6353ee512ce99b37f868fc5ff86e7aaeac4679ca315d8734f",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "05:56 / 06:04",
+      "player_display_seconds": 356,
+      "subtitle_meaning_summary": "Discusses the option of using a preset rather than making one oneself.",
+      "visible_ui": [
+        "保存预设",
+        "预设名称",
+        "分类",
+        "预设类型",
+        "筛选",
+        "保存"
+      ],
+      "preset_type": "组合",
+      "checked_preset_groups": [
+        "AI色彩调节",
+        "色彩调节",
+        "人像美化",
+        "图像美化",
+        "衣物美化"
+      ],
+      "unchecked_preset_groups": [
+        "裁剪"
+      ],
+      "visible_background_state_behind_dialog": {
+        "local_tab": "背景",
+        "mask": "背景-蒙版1"
+      },
+      "preset_save_dialog_verified": true,
+      "save_click_verified": false,
+      "save_success_verified": false,
+      "preset_export_verified": false,
+      "background_parameter_change_verified": false,
+      "before_after_verified": false
+    }
+  ],
+  "quality_limitations": [
+    "Controls and selected presets are verifiable states; still images do not establish all intervening actions.",
+    "Preview zoom differs across frames; enlarged previews do not establish changed photo framing or a controlled before/after.",
+    "Video previews cannot validate original-photo skin texture, exported quality, identity, joint continuity or costume detail preservation.",
+    "No percentage unit or mapping to Photoshop defaults is established by these sample-specific PixCake control numbers.",
+    "Global AI shaping is not evidence of manual correction at each joint."
+  ],
+  "verified_continuous_intervals": [],
+  "fully_watched": false,
+  "natural_shaping_acceptance_verified": false,
+  "derived_default_rules_eligible": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

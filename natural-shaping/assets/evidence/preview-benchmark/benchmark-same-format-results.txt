@@ -1,0 +1,7 @@
+历史证据移植副本（2026-10-07）。资源路径按本文位置改写；origin-not-bundled 仅为未携带来源名。原记录的检查结论不等于最新整图认可。
+
+PAIR 0 DIRECT_MS 1222 BATCH_MS 1284
+PAIR 1 DIRECT_MS 1248 BATCH_MS 1222
+PAIR 2 DIRECT_MS 1219 BATCH_MS 1485
+PASS_SOURCE_ACTIVE_LAYER true
+PASS_NO_TEMP_LEAK true

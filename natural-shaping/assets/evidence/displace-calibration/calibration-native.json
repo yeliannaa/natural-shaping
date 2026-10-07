@@ -1,0 +1,17 @@
+{
+  "status": "executed",
+  "photoshopVersion": "21.2.9",
+  "method": "ArtLayer.applyDisplace",
+  "horizontalScale": 16,
+  "verticalScale": 0,
+  "redPlateau": 192,
+  "nominalSourceOffsetPx": 8,
+  "mapNeutral": 128,
+  "awaitingMeasuredDirection": true,
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

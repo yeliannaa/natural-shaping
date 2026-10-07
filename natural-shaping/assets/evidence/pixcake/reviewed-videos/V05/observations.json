@@ -1,0 +1,332 @@
+{
+  "case_id": "V05",
+  "source_url": "https://www.bilibili.com/video/BV12Ptxe5EoJ/",
+  "recorded_on": "2026-10-04",
+  "inspection_scope": "independent visual inspection of ten actual local screenshots; not continuous full-video watching",
+  "subtitle_policy": "brief meaning summaries only, not a transcript",
+  "metadata_read": [
+    "sequence-record.json"
+  ],
+  "root_recorded_post_batch_state": {
+    "timestamp_seconds": 20.886737,
+    "duration_seconds": 249.756,
+    "paused": false,
+    "playback_rate": 1,
+    "decoded_width": 1920,
+    "decoded_height": 1080
+  },
+  "post_batch_state_limit": "This is the recorded post-batch state, not a screenshot timestamp or proof of coverage through the ending. It differs from the final captured player's 03:38 display; no reason for the difference is inferred.",
+  "screenshot_dimensions": [
+    1698,
+    1080
+  ],
+  "screenshot_encoding_verified": "JPEG",
+  "access_routes": {
+    "browser_playback_verified_by_root": true,
+    "earlier_web_fetch_http_status": 412,
+    "web_fetch_failure_is_not_browser_viewing_status": true
+  },
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "bytes": 179402,
+      "sha256": "c5e2e9ec3a79db90a520324b27486dda015d77a11d23cbdba8b475a27678d9a7",
+      "observations": [
+        "Warm orange portrait with flowers in hair and hand.",
+        "AI color panel My tab, reference thumbnail library and reference import entry are visible."
+      ],
+      "ui_labels": [
+        "AI色彩调节",
+        "我的",
+        "导入一张样片进行 AI追色",
+        "全图调色",
+        "滤镜 无",
+        "白平衡 原照设置"
+      ],
+      "parameters": {
+        "scope": "全图调色",
+        "色温": 0,
+        "色调": 0
+      },
+      "applied_style_verified": false,
+      "reference_import_action_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:21 / 04:10",
+      "player_display_seconds": 21,
+      "preview_zoom_percent": 13
+    },
+    {
+      "file": "sequence02.jpg",
+      "bytes": 163692,
+      "sha256": "b64125294509c7ddd1a5407677822564d74edf22fba9c83595500a14852b32ad",
+      "observations": [
+        "Software portrait on the left and enlarged image-viewer portrait on the right show similar flower/hand pose.",
+        "Both appear bright and pale compared with the warm software preview at 21 seconds."
+      ],
+      "comparison_type": "similar_capture_appearance_side_by_side; original/result roles not established",
+      "original_result_labels_visible": false,
+      "target_file_identity_verified": false,
+      "controlled_before_after_verified": false,
+      "face_geometry_operation_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:42 / 04:10",
+      "player_display_seconds": 42,
+      "preview_zoom_percent": 12
+    },
+    {
+      "file": "sequence03.jpg",
+      "bytes": 212093,
+      "sha256": "6e25cdf4cb3972b7ce4c3add9167f10fbf9e55d09a362cf014f32f3d91b36b87",
+      "observations": [
+        "Left software photo and right viewer reference both show a woman lying on grass with a straw hat.",
+        "Faces, hair, hat shape/position, framing and the watermelon on the right differ; these are not the same capture."
+      ],
+      "comparison_type": "different_target_and_reference_photos",
+      "same_photo_before_after_verified": false,
+      "reference_effect_quality_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:08 / 04:10",
+      "player_display_seconds": 68,
+      "preview_zoom_percent": 24
+    },
+    {
+      "file": "sequence04.jpg",
+      "bytes": 140170,
+      "sha256": "0019e59f44cd5151634aef2f4a4561e6eb0ea6bc278a98126d09b1b7e6f61838",
+      "observations": [
+        "Dark staged portrait with a large dragon prop, white costume and warm haze.",
+        "Blemish section is visible; face reshaping is folded."
+      ],
+      "caption_meaning_summary": "Describes some photos as difficult to match.",
+      "parameters": {
+        "祛法令纹": 0,
+        "祛双下巴": 0
+      },
+      "actual_algorithm_failure_verified": false,
+      "face_geometry_operation_verified": false,
+      "controlled_before_after_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:29 / 04:10",
+      "player_display_seconds": 89,
+      "preview_zoom_percent": 14
+    },
+    {
+      "file": "sequence05.jpg",
+      "bytes": 178744,
+      "sha256": "4b985b3249a6af8f675336fe4af3b4bb796ef32cd82580ca69fd4d34f6f86786",
+      "observations": [
+        "Another pose/capture with the dragon prop and white costume.",
+        "AI reference library, import entry, full-image color tab and no-filter state are visible."
+      ],
+      "ui_labels": [
+        "AI色彩调节",
+        "我的",
+        "导入一张样片进行 AI追色",
+        "全图调色",
+        "滤镜 无"
+      ],
+      "parameters": {
+        "scope": "全图调色",
+        "色温": 0,
+        "色调": 0
+      },
+      "comparison_type": "different_photo_from_sequence04",
+      "same_photo_before_after_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:50 / 04:10",
+      "player_display_seconds": 110,
+      "preview_zoom_percent": 14
+    },
+    {
+      "file": "sequence06.jpg",
+      "bytes": 181449,
+      "sha256": "0ead8a938cc216a65649b7b90b60ca2c2bf52ac65f43ecd40e3935b0d8197ff8",
+      "observations": [
+        "Outdoor pink-dress portrait with bright haze.",
+        "Reference N56A5417 is outlined; applied-style label and strength are visible.",
+        "The preview status still says processing."
+      ],
+      "visible_applied_style": "N56A5417",
+      "ui_labels": [
+        "全图调色",
+        "已应用: N56A5417",
+        "正在处理"
+      ],
+      "parameters": {
+        "scope": "全图调色",
+        "程度": 100,
+        "色温": 0,
+        "色调": 0
+      },
+      "applied_style_state_verified": true,
+      "processing_status_visible": true,
+      "completed_result_verified": false,
+      "controlled_before_after_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "02:12 / 04:10",
+      "player_display_seconds": 132,
+      "preview_zoom_percent": 19
+    },
+    {
+      "file": "sequence07.jpg",
+      "bytes": 154182,
+      "sha256": "8a58a0ea1d2821a0ed4f32e833407d8947cdecf370335062f0ff447734184d22",
+      "observations": [
+        "Another portrait in pink costume, holding a round fan.",
+        "Makeup panel is open; under-eye makeup subtab and preset 03 are selected."
+      ],
+      "ui_labels": [
+        "妆容调整",
+        "卧蚕"
+      ],
+      "parameters": {
+        "高光立体": 30,
+        "阴影立体": 30,
+        "卧蚕预设": "03",
+        "卧蚕程度": 28
+      },
+      "configured_makeup_controls_verified": true,
+      "face_geometry_operation_verified": false,
+      "makeup_before_after_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "02:33 / 04:10",
+      "player_display_seconds": 153,
+      "preview_zoom_percent": 19
+    },
+    {
+      "file": "sequence08.jpg",
+      "bytes": 236404,
+      "sha256": "64a8249db314d609c1e7c9f3e54fd53db6248988c3b0859d420ba53fedf20319",
+      "observations": [
+        "Left software target wears blue/white embroidered costume beside a carved wall and raises a round fan.",
+        "Right external reference is a different close-up portrait in warm yellow/green vintage color, with a label describing a desired look."
+      ],
+      "comparison_type": "different_target_and_style_reference",
+      "same_photo_before_after_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "02:55 / 04:10",
+      "player_display_seconds": 175,
+      "preview_zoom_percent": 76
+    },
+    {
+      "file": "sequence09.jpg",
+      "bytes": 205969,
+      "sha256": "f9331cde7ebd860399113c1ba16b33cbc5a22c066a52fccf05859d784f4f6199",
+      "observations": [
+        "The wall/fan/costume target scene and pose visually match the left target at 175 seconds.",
+        "Preview now has warm yellow/green vintage color across skin, costume and background.",
+        "Reference psc (10) is outlined and strength is 100."
+      ],
+      "selected_reference": "psc (10)",
+      "parameters": {
+        "程度": 100,
+        "色温": 0,
+        "色调": 0,
+        "曝光": 0,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": 0,
+        "阴影": -14,
+        "白色": 0,
+        "黑色": -5,
+        "清晰度": 0,
+        "鲜艳度": 0,
+        "饱和度": 0
+      },
+      "same_subject_scene_and_pose_visible_as_sequence08": true,
+      "target_file_identity_verified": false,
+      "preview_color_change_verified": true,
+      "controlled_before_after_verified": false,
+      "single_cause_color_change_verified": false,
+      "mask_scope_verified": false,
+      "costume_color_preservation_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "03:17 / 04:10",
+      "player_display_seconds": 197,
+      "preview_zoom_percent": 75
+    },
+    {
+      "file": "sequence10.jpg",
+      "bytes": 221790,
+      "sha256": "2e945572f07a3e7736cddb21b922f862bf229742d24823e93961d610792f6e8d",
+      "observations": [
+        "Left software target is a two-person outdoor portrait.",
+        "Right external reference is a one-person tree/foliage portrait; composition and subjects differ."
+      ],
+      "comparison_type": "different_target_and_style_reference",
+      "caption_meaning_summary": "Promotes a reduction from thirty minutes to three minutes.",
+      "same_photo_before_after_verified": false,
+      "local_speed_benchmark_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "03:38 / 04:10",
+      "player_display_seconds": 218,
+      "preview_zoom_percent": 25
+    }
+  ],
+  "preview_comparisons": [
+    {
+      "frame_pair": [
+        "sequence08.jpg",
+        "sequence09.jpg"
+      ],
+      "evidence": "Same subject/scene/pose is visually continuous, with a clear cool-to-warm vintage preview color change.",
+      "limit": "Target file identity, exact application step, single adjustment causality and original-resolution quality are not established.",
+      "controlled_before_after_verified": false
+    }
+  ],
+  "ps_transfer_inferences": [
+    {
+      "suggestion": "Use a reference to define a color direction, then inspect skin, costume and background separately before applying the direction to user photos.",
+      "basis_frames": [
+        "sequence08.jpg",
+        "sequence09.jpg"
+      ],
+      "inference": true,
+      "default_rule": false
+    },
+    {
+      "suggestion": "Treat makeup refinement as a separate module from reference color matching.",
+      "basis_frames": [
+        "sequence06.jpg",
+        "sequence07.jpg"
+      ],
+      "inference": true,
+      "default_rule": false
+    }
+  ],
+  "quality_limits": [
+    "Reference portraits and targets can be different photographs; side-by-side layout is not a same-image before/after.",
+    "Current applied labels or selected thumbnails do not establish an observed import/application sequence or completed quality.",
+    "Visible zero sliders do not prove no AI color transformation exists.",
+    "Frame09 changes costume/background color too; this does not establish protection of role-specific colors.",
+    "Video previews do not establish identity, joint continuity or original/exported image quality.",
+    "Promotional speed statements are not measured local task timings."
+  ],
+  "verified_continuous_intervals": [],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "controlled_same_photo_before_after_verified": false,
+  "original_photo_quality_verified": false,
+  "exported_output_quality_verified": false,
+  "identity_preservation_verified": false,
+  "joint_continuity_verified": false,
+  "local_speed_benchmark_verified": false,
+  "natural_shaping_acceptance_verified": false,
+  "derived_default_rules_eligible": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

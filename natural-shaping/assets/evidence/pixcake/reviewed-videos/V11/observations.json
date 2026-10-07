@@ -1,0 +1,262 @@
+{
+  "videoId": "V11",
+  "status": "all_seven_supplied_samples_inspected_inverse_mask_boundary_not_observed",
+  "sourceUrl": "https://www.douyin.com/video/7628561102598688015",
+  "authorVisibleInFrame": "玩家",
+  "notAttributedToRelatedAuthor": "柏柏雨",
+  "browserOperatedByThisAgent": false,
+  "samplingType": "seven discrete native screenshots, including replayed early frame and two targeted followup samples",
+  "sampleOrderUiSeconds": [
+    8,
+    23,
+    39,
+    55,
+    6
+  ],
+  "followupUiSeconds": [
+    11,
+    27
+  ],
+  "continuousWatchVerified": false,
+  "fullyWatched": false,
+  "originalPhoto100PercentInspected": false,
+  "exactFrameDomTimesAvailable": false,
+  "rootRecordFile": "sequence-record.json",
+  "startSeekFromRoot": "near_end_to_sample_early_section_after_native_replay",
+  "rootEndMediaState": {
+    "durationSeconds": 64.807007,
+    "decodedWidth": 2524,
+    "decodedHeight": 1440,
+    "paused": true,
+    "rate": 0.75,
+    "timeSeconds": 21.800165,
+    "assignedToAnyFrame": false,
+    "provesFullViewing": false
+  },
+  "tutorialSpeedEvidence": {
+    "editorRecordingClocksVisible": {
+      "sequence02.jpg": "12:14",
+      "sequence03.jpg": "21:44",
+      "sequence04.jpg": "27:16"
+    },
+    "theseArePlayerTimestamps": false,
+    "videoDurationProvesEditTime": false,
+    "recordingClockIsExactWholeImageEditTime": false,
+    "wholeImageEditTime27Minutes16SecondsEstablished": false,
+    "userSpeedGuaranteeEstablished": false
+  },
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "uiTimeSeconds": 8,
+      "uiTimeLabel": "00:08",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "幻象Cos工具箱",
+      "pointerToolReadableLabel": "一键夜景",
+      "useButtonVisible": true,
+      "captionSummary": "Author seeks more costume motion; menu presence is not evidence that a specific costume-motion tool was executed",
+      "costumeMotionGenerationVerified": false,
+      "nativeSubjectBoundaryVisible": false
+    },
+    {
+      "file": "sequence02.jpg",
+      "uiTimeSeconds": 23,
+      "uiTimeLabel": "00:23",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "素材浏览窗口覆盖主编辑区",
+      "visibleAssetType": "blue petal PNG",
+      "visibleAssetDimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "captionSummary": "Author describes adding butterfly/atmosphere assets and inverse mask; main mask/tool area covered by browser window",
+      "inverseMaskOperationDirectlyVisible": false,
+      "pixelMaskBoundaryVerified": false,
+      "retainedSubjectCostumeRegionVerified": false
+    },
+    {
+      "file": "sequence03.jpg",
+      "uiTimeSeconds": 39,
+      "uiTimeLabel": "00:39",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "智能造光",
+      "readableCurrentValues": {
+        "光影强度": 1.0,
+        "头发优化幅度": 0.3
+      },
+      "lightSourceMode": "有光源约束",
+      "previewAppearance": "Blue fantasy scene with star/cloud background, architecture, butterflies/particles; person's legs extend left and costume ribbons extend right",
+      "visiblePreviewDimensions": {
+        "width": 4000,
+        "height": 2284
+      },
+      "captionSummary": "Author claims unified light and less cutout appearance; final seamless integration not independently verified",
+      "wholeLightOperationContinuouslyObserved": false,
+      "perfectFusionVerified": false,
+      "poseCorrectionOperationVerified": false,
+      "nativeEdgeHighlightAndIdentityQaVerified": false
+    },
+    {
+      "file": "sequence04.jpg",
+      "uiTimeSeconds": 55,
+      "uiTimeLabel": "00:55",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "发光 / 图层",
+      "readableLayers": [
+        "发光01",
+        "镜头虚化01"
+      ],
+      "selectedLayer": "发光01",
+      "readableLayerTransform": {
+        "x": 0,
+        "y": 0,
+        "width": 4000,
+        "height": 2284,
+        "opacityPercent": 100,
+        "angle": 0.0
+      },
+      "captionSummary": "Author adds highlight glow; no matched on/off comparison or native texture acceptance",
+      "effectOnOffComparisonVerified": false,
+      "allVisibleLightingEntrancesExecuted": false,
+      "nativePhoto100PercentVerified": false
+    },
+    {
+      "file": "sequence05.jpg",
+      "uiTimeSeconds": 6,
+      "uiTimeLabel": "00:06",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, early playback frame captured after native replay",
+      "observedPanel": "导入原场馆照片 / 背景图层",
+      "visibleImportSummary": {
+        "importedImages": 1,
+        "originalImages": 1,
+        "retouchedImages": 0
+      },
+      "readableBackgroundTransform": {
+        "width": 4096,
+        "height": 2729,
+        "rotation": 0.0
+      },
+      "previewAppearance": "Original hall photo with barrier/equipment/people; light-blue-white wig and costume; legs extend right, blue ribbons extend left",
+      "captionSummary": "Author introduces one-sentence image-edit tool; no prompt/result/mask scope at this frame",
+      "exactPoseChangeOrFlipOperationVisible": false
+    },
+    {
+      "file": "mask-followup01.jpg",
+      "uiTimeSeconds": 11,
+      "uiTimeLabel": "00:11",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, targeted playback capture",
+      "observedPanel": "一句话P图 / 生成进度",
+      "generationProgressPercent": 69.7,
+      "generationActuallyInProgress": true,
+      "readableLayer": "一句话P图01",
+      "captionSummary": "Author describes obtaining flowing costume corners; software still shows generation in progress, not completion",
+      "generationCompletedInThisFrame": false,
+      "inverseMaskPanelVisible": false,
+      "pixelMaskBoundaryVerified": false
+    },
+    {
+      "file": "mask-followup02.jpg",
+      "uiTimeSeconds": 27,
+      "uiTimeLabel": "00:27",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, targeted playback capture",
+      "observedPanel": "图像图层 / butterfly transform box",
+      "actualButterflyLayerAndTransformBoxVisible": true,
+      "readableTransform": {
+        "x": 789,
+        "y": 1326,
+        "width": 225,
+        "height": 184,
+        "opacityPercent": 100,
+        "angle": 0.0
+      },
+      "captionSummary": "Author places butterfly to guide composition; viewer gaze outcome not verified",
+      "inverseMaskPanelVisible": false,
+      "inverseMaskBrushOperationVisible": false,
+      "pixelMaskBoundaryVerified": false
+    }
+  ],
+  "orientationComparison": {
+    "originalFrame": "sequence05.jpg",
+    "originalUiTimeSeconds": 6,
+    "originalLegsDirection": "right",
+    "compositeFrame": "sequence03.jpg",
+    "compositeUiTimeSeconds": 39,
+    "compositeLegsDirection": "left",
+    "costumeRibbonDirectionAlsoReversed": true,
+    "directionChangeActuallyVisible": true,
+    "specificHorizontalFlipOrPoseRedrawMechanismVerified": false,
+    "naturalPoseCorrectionDemonstrated": false
+  },
+  "rootFollowupRecordFile": "mask-followup-record.json",
+  "rootFollowupEndMediaState": {
+    "durationSeconds": 64.807007,
+    "decodedWidth": 2524,
+    "decodedHeight": 1440,
+    "paused": true,
+    "rate": 0.75,
+    "timeSeconds": 42.916239,
+    "assignedToAnyFrame": false,
+    "provesFullViewing": false
+  },
+  "maskEvidence": {
+    "inverseMaskMentionedByCaption": true,
+    "pixelBoundaryActuallyVisible": false,
+    "status": "not_observed_in_all_seven_supplied_frames",
+    "captionNotPromotedToRule": true
+  },
+  "dimensionEvidence": {
+    "earlyBackground": {
+      "width": 4096,
+      "height": 2729
+    },
+    "laterCompositeOrEffect": {
+      "width": 4000,
+      "height": 2284
+    },
+    "dimensionsDiffer": true,
+    "exactCropCompressionOrResamplingCauseVerified": false
+  },
+  "psTransferCandidates": [
+    {
+      "candidate": "Keep intended subject/costume and imported assets on independently reviewable layers",
+      "evidence": "Composite pipeline and actual butterfly image-layer transform; inverse-mask boundary not observed",
+      "requires": "Actual mask-range and native edge review"
+    },
+    {
+      "candidate": "Check scene source direction against subject highlights, shadows and color before glow",
+      "evidence": "Actual intelligent-light UI with constrained-source mode",
+      "requires": "Light geometry and identity review, not just a mode label"
+    },
+    {
+      "candidate": "Control glow and blur separately after lighting",
+      "evidence": "Separate glow and lens-blur layers visible",
+      "requires": "Matched on/off and native bright-detail inspection"
+    }
+  ],
+  "rulesAdded": [],
+  "limits": [
+    "Seven samples with replay/targeted followups are not full-video viewing",
+    "Inverse-mask caption does not establish actual mask boundary",
+    "Generation69.7percent is not a completed result despite caption phrasing",
+    "Butterfly transform box is not inverse-mask editing",
+    "Intelligent-light parameters are current author state, not user defaults",
+    "Direction reversal is not evidence of a specific pose-correction operation",
+    "Mode labels and glow layer do not establish perfect integration",
+    "Layer dimensions or opacity100 are not original-photo100-percent QA",
+    "Short edited tutorial duration is not actual retouch time",
+    "Recording-clock27minutes16seconds is not exact whole-image edit time"
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

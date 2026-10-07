@@ -1,0 +1,251 @@
+{
+  "videoId": "V04",
+  "status": "all_six_supplied_sequence_frames_inspected_with_visual_cross_platform_comparison",
+  "sourceUrl": "https://www.douyin.com/video/7641854511274839359",
+  "relatedSourceUrl": "https://www.bilibili.com/video/BV1VLLm6aExw/",
+  "relatedCaseId": "V12",
+  "browserOperatedByThisAgent": false,
+  "samplingType": "six discrete native screenshots",
+  "continuousWatchVerified": false,
+  "fullyWatched": false,
+  "originalPhoto100PercentInspected": false,
+  "uiTimeSeconds": [
+    16,
+    32,
+    48,
+    64,
+    80,
+    96
+  ],
+  "exactFrameDomTimesAvailable": false,
+  "playerLabels": {
+    "quality": "高清1080P",
+    "rate": "0.75x"
+  },
+  "rootRecordFile": "sequence-record.json",
+  "rootEndMediaState": {
+    "durationSeconds": 112.918005,
+    "decodedWidth": 1920,
+    "decodedHeight": 1080,
+    "paused": true,
+    "rate": 0.75,
+    "timeSeconds": 20.020296,
+    "assignedToAnyFrame": false,
+    "provesFullViewing": false
+  },
+  "rootPageMetadata": {
+    "author": "里衣子",
+    "publicationDate": "2026-05-20",
+    "sameTitleAsV12ReportedByRoot": true,
+    "provenance": "Root original-page reading, not inferred from screenshot filename"
+  },
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "uiTimeSeconds": 16,
+      "uiTimeLabel": "00:16",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "影调 / 色阶",
+      "readableCurrentValues": {
+        "高光": -26,
+        "阴影": 100,
+        "白色": -21,
+        "黑色": 46
+      },
+      "levelsWhitePointValue": "not confidently read",
+      "captionSummary": "Author discusses raising white point; complete slider operation not shown by this frame",
+      "previewAppearance": "Purple short wig with white flower, light sleeveless top, black skirt, black stockings and buckled shoes, side kneeling pose in hall",
+      "nativeLayersPreservedVerified": false
+    },
+    {
+      "file": "sequence02.jpg",
+      "uiTimeSeconds": 32,
+      "uiTimeLabel": "00:32",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "蒙版列表 / 背景",
+      "selectedMaskReadableLabel": "背景-全部背景",
+      "otherReadableMaskLabel": "所有人-全部人像",
+      "pixelMaskOverlayVisible": false,
+      "captionSummary": "Author describes choosing person mask to remove blue cast, but actual current highlight is all-background mask",
+      "personMaskOperationVerifiedFromCaption": false,
+      "exactMaskCoverageVerified": false
+    },
+    {
+      "file": "sequence03.jpg",
+      "uiTimeSeconds": 48,
+      "uiTimeLabel": "00:48",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "Same mask list and background scope",
+      "selectedMaskReadableLabel": "背景-全部背景",
+      "captionSummary": "Author discusses further refinements; no face-refinement control operation visible",
+      "faceRetouchActuallyDemonstrated": false,
+      "matchedSingleMaskEffectVerified": false
+    },
+    {
+      "file": "sequence04.jpg",
+      "uiTimeSeconds": 64,
+      "uiTimeLabel": "01:04",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "创意页面 / 幻象Cos",
+      "readableLayers": [
+        "一句话P图01",
+        "背景"
+      ],
+      "captionSummary": "Author enters creative module; tool entrance/layer presence is not full generation execution evidence",
+      "flowerGenerationControlsVisible": false,
+      "largeGroundDaisyResultVisible": false
+    },
+    {
+      "file": "sequence05.jpg",
+      "uiTimeSeconds": 80,
+      "uiTimeLabel": "01:20",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "一句话P图",
+      "promptSummary": "Generate white daisy flowers on the ground",
+      "visibleCandidateCount": 5,
+      "selectedCandidatePosition": "top-left",
+      "readableLayers": [
+        "一句话P图02"
+      ],
+      "whiteFlowersActuallyVisibleAroundLegsAndGround": true,
+      "applicationButtonVisible": true,
+      "captionSummary": "Author discusses trying different generations when dissatisfied",
+      "fullClickAndApplyProcessVerified": false,
+      "identityCostumeAndFlowerContactQaVerified": false
+    },
+    {
+      "file": "sequence06.jpg",
+      "uiTimeSeconds": 96,
+      "uiTimeLabel": "01:36",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "像素助手",
+      "taskSummary": "Import image, Fuji-NC-style/basic processing request",
+      "visibleTaskProgress": "0/4",
+      "captionSummary": "Author introduces internal-test assistant; full automation result not demonstrated by this frame",
+      "completedAutomationVerified": false,
+      "photoPreviewVisible": false,
+      "relightingPanelVisible": false
+    }
+  ],
+  "crossPlatformVisualReview": {
+    "relationship": "same_work_supported_by_actual_visual_evidence",
+    "countAsIndependentCase": false,
+    "caseCountForV04AndV12": 1,
+    "groupId": "V04_V12_same_work",
+    "sameAuthorTitleDateUsedOnlyAsSupport": true,
+    "fullFileOrFrameHashIdentityVerified": false,
+    "sameExactTimeMatchedFramesAvailable": false,
+    "v12FilesActuallyReadForThisComparison": [
+      "../V12/sequence-01.jpg",
+      "../V12/sequence-02.jpg",
+      "../V12/sequence-03.jpg",
+      "../V12/sequence-04.jpg",
+      "../V12/sequence-06.jpg",
+      "../V12/sequence-07.jpg",
+      "../V12/sequence-08.jpg",
+      "../V12/sequence-09.jpg"
+    ],
+    "v12UiTimeSeconds": [
+      11,
+      24,
+      35,
+      46,
+      67,
+      78,
+      89,
+      110
+    ],
+    "actualCorrespondences": [
+      {
+        "v04UiTimeSeconds": 16,
+        "v12UiTimeSeconds": [
+          11,
+          24
+        ],
+        "evidence": "Same person, side-kneeling pose, wig/flower, clothing, buckled shoes, hall and equipment layout"
+      },
+      {
+        "v04UiTimeSeconds": [
+          32,
+          48
+        ],
+        "v12UiTimeSeconds": [
+          35,
+          46
+        ],
+        "evidence": "Same mask-list workflow and current 背景-全部背景 selection"
+      },
+      {
+        "v04UiTimeSeconds": 64,
+        "v12UiTimeSeconds": 67,
+        "evidence": "Same creative/toolbox stage with one-sentence-image-edit entrance"
+      },
+      {
+        "v04UiTimeSeconds": 80,
+        "v12UiTimeSeconds": 78,
+        "evidence": "Same white-daisy prompt and five-candidate generation panel; current selected tile differs at these nearby times"
+      }
+    ],
+    "v12RelightingDirectEvidence": {
+      "file": "../V12/sequence-08.jpg",
+      "uiTimeSeconds": 89,
+      "observedPanel": "AI补光",
+      "readableCurrentValues": {
+        "补光强度": 37,
+        "色温": -23
+      },
+      "applicationButtonVisible": true
+    },
+    "v04RelightingMatchingFrameAvailable": false,
+    "v12AssistantMatchingFrameAvailableInInspectedSet": false,
+    "v12DurationSecondsFromRootRecord": 112.918865,
+    "durationDifferenceSecondsApprox": 0.00086,
+    "limits": [
+      "Nearby stage frames, not identical-time samples",
+      "Flower candidate selection differs between 78 and 80 seconds",
+      "V04 six frames miss relighting panel seen on V12 at 89 seconds",
+      "V12 inspected set misses assistant UI seen on V04 at 96 seconds"
+    ]
+  },
+  "psTransferCandidates": [
+    {
+      "candidate": "Separate subject, costume and background masks",
+      "evidence": "Actual multiple mask scopes visible",
+      "requires": "Confirm active scope and native pixel coverage"
+    },
+    {
+      "candidate": "Apply local color-cast and tone correction while retaining white costume/skin/black stocking layers",
+      "evidence": "Base tone panels and subject preview",
+      "requires": "Native before-after checks; not literal parameter copying"
+    }
+  ],
+  "generationAndAutomationRisks": {
+    "daisyContentGenerationActuallyVisible": true,
+    "generationIsRequiredForNaturalShaping": false,
+    "requiresShoeLegEdgeGroundPerspectiveReflectionQa": true,
+    "assistant0of4ProvesFullAutomation": false,
+    "v12RelightingValuesAreUserDefaults": false,
+    "geometryShapingActuallyObserved": false
+  },
+  "rulesAdded": [],
+  "limits": [
+    "Discrete samples do not establish full viewing",
+    "Selected background scope does not become person scope because caption mentions person",
+    "Tool entrances are not complete execution evidence",
+    "Generated flowers are optional content changes, not portrait geometry evidence",
+    "Same-work grouping is visual source attribution, not byte-identical video claim",
+    "Original native photo quality not inspected"
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "source": "https://www.douyin.com/video/7520848746377235746",
+  "first_stable_frame": {
+    "file": "paused-116s.jpg",
+    "timestamp_seconds": 116.53573
+  },
+  "ordered_frames": [
+    {
+      "file": "sequence-07.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-08.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-09.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-10.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-11.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-12.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    }
+  ],
+  "end_state": {
+    "duration": 363.95,
+    "height": 1080,
+    "paused": true,
+    "rate": 0.75,
+    "time": 228.935412,
+    "width": 1920
+  },
+  "fully_watched": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

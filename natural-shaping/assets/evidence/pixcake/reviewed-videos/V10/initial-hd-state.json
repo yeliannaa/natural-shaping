@@ -1,0 +1,47 @@
+{
+  "fullscreen": false,
+  "media": [
+    {
+      "duration": 363.95,
+      "height": 1080,
+      "paused": true,
+      "rate": 0.75,
+      "time": 62.000588,
+      "width": 1920
+    },
+    {
+      "duration": null,
+      "height": 0,
+      "paused": true,
+      "rate": 1,
+      "time": 0,
+      "width": 0
+    }
+  ],
+  "rails": [
+    {
+      "class": "xgplayer-progress",
+      "r": {
+        "h": 12,
+        "w": 2048,
+        "x": 0,
+        "y": 1091.800048828125
+      }
+    },
+    {
+      "class": "xgplayer-progress-outer",
+      "r": {
+        "h": 2,
+        "w": 2048,
+        "x": 0,
+        "y": 1096.800048828125
+      }
+    }
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

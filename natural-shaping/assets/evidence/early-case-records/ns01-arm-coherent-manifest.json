@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-10-03T03:34:34.565Z",
+  "script": "build-arm-coherent.js",
+  "file": "origin-not-bundled:arm-contour-coherent.bmp",
+  "noPhotoReadOrEdited": true,
+  "psNotConnectedOrOperated": true,
+  "width": 3072,
+  "height": 4080,
+  "bytes": 37601334,
+  "sha256": "8342f90f983e7e736570b0074ba7e11f144564916dc574a10da62b54d7c9249e",
+  "redRange": [
+    128,
+    211
+  ],
+  "peakCalibratedSourceOffsetPx": 19.92,
+  "contentDirection": "left / inward",
+  "nonNeutralPixels": 224963,
+  "nonNeutralBounds": [
+    1927,
+    1077,
+    2335,
+    1827
+  ],
+  "config": {
+    "yMin": 1070,
+    "yMax": 1840,
+    "contour": [
+      [
+        1070,
+        1940
+      ],
+      [
+        1120,
+        1980
+      ],
+      [
+        1210,
+        2060
+      ],
+      [
+        1280,
+        2098
+      ],
+      [
+        1410,
+        2100
+      ],
+      [
+        1530,
+        2090
+      ],
+      [
+        1610,
+        2085
+      ],
+      [
+        1700,
+        2150
+      ],
+      [
+        1840,
+        2210
+      ]
+    ],
+    "amplitude": [
+      [
+        1070,
+        0
+      ],
+      [
+        1120,
+        8
+      ],
+      [
+        1210,
+        16
+      ],
+      [
+        1280,
+        20
+      ],
+      [
+        1490,
+        20
+      ],
+      [
+        1580,
+        17
+      ],
+      [
+        1660,
+        14
+      ],
+      [
+        1740,
+        8
+      ],
+      [
+        1840,
+        0
+      ]
+    ],
+    "xMin": 1920,
+    "plateauInnerDistance": 70,
+    "plateauOuterDistance": 60,
+    "outerTaperDistance": 90,
+    "maskBox": [
+      1900,
+      1040,
+      2390,
+      1870
+    ]
+  },
+  "regionPolicy": "User requested whole-segment coherence. Shoulder arc and sleeve connection may move modestly rather than remaining rigid.",
+  "coherence": "Broad horizontal plateau centered on the original outer contour; broad y=1280..1490 20px plateau, shoulder-to-sleeve gradient instead of an isolated middle peak.",
+  "nativePS": {
+    "horizontalScale": 24,
+    "verticalScale": 0,
+    "conversion": "Open BMP and save flattened RGB8 PSD, unchanged size and raw RGB values",
+    "calibratedFormula": "sourceOffsetPx=(R-128)*24/100; content displacement has opposite sign",
+    "layer": "Replace the previous dent-producing arm layer. Use the same original geometry-before base; never stack the two.",
+    "maskBox": [
+      1900,
+      1040,
+      2390,
+      1870
+    ]
+  },
+  "notes": [
+    "Visible shoulder contour near y=1160 receives approximately 10-12px source displacement",
+    "Long central upper-arm region receives approximately 18-20px",
+    "Sleeve attachment near y=1590 receives approximately 17px; y=1660 receives approximately 14px",
+    "Black sleeve extension tapers through 8px at y=1740 to neutral at y=1840",
+    "All x<=1920 and all y outside1070..1840 are neutral: neck, hand and camera stay outside map support",
+    "Confirm no arm-middle concavity, skin/cuff step, dragged lace or bent box folds in the actual PS result"
+  ],
+  "checks": {
+    "readWriteIdentical": true,
+    "nonNeutralOutsideMask": 0,
+    "verticalChannelDeviation": 0
+  },
+  "visualQANotPerformed": true,
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

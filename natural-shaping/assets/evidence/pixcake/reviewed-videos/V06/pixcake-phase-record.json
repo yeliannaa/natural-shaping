@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV1RRNkzVESP/",
+  "frames": [
+    {
+      "file": "pixcake01.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "pixcake02.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "pixcake03.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "pixcake04.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "pixcake05.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "pixcake06.jpg",
+      "timestamp_seconds": null
+    }
+  ],
+  "selected_chapter": "步骤2:像素蛋糕中的人像批处理",
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "end_state": {
+    "currentTime": 863.589558,
+    "duration": 1754,
+    "height": 1080,
+    "paused": true,
+    "rate": 1,
+    "width": 1920
+  },
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

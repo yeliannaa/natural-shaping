@@ -1,0 +1,644 @@
+{
+  "method": "Read-only PNG chunk/CRC and PSD-header/ICC inspection plus exact native RGB16 comparison of 08 baseline full versus 09 full at identical raster coordinates. Every full-raster RGB16 pixel outside the allowed left-hair box [1260,610,1580,1280] must remain exactly unchanged. Eight original source06 subject core rectangles are placed at the established [180,340] offset and independently remain strict. The decoder declaration is extracted without executing the legacy audit. All pixel bounds are exclusive.",
+  "status": "passed",
+  "createdAtUtc": "2026-10-03T08:35:25.0206979Z",
+  "files": {
+    "baselinePng": "origin-not-bundled:cosplay-box-scene-08-shoes.png",
+    "baselinePsd": "origin-not-bundled:cosplay-box-scene-08-shoes.psd",
+    "fullPng": "origin-not-bundled:cosplay-box-scene-09-shoes.png",
+    "mediumPng": "origin-not-bundled:cosplay-box-scene-09-medium.png",
+    "fullPsd": "origin-not-bundled:cosplay-box-scene-09-shoes.psd",
+    "mediumPsd": "origin-not-bundled:cosplay-box-scene-09-medium.psd",
+    "originalJpg": "origin-not-bundled:微信图片_20261003001752_102_163.jpg"
+  },
+  "decoderSource": "origin-not-bundled:verify-pixels.ps1",
+  "expectedFormats": {
+    "baseline08": [
+      3800,
+      4750,
+      16
+    ],
+    "full09": [
+      3800,
+      4750,
+      16
+    ],
+    "medium09": [
+      2700,
+      3375,
+      16
+    ],
+    "rgbChannels": 3,
+    "baseline08ToFinal09Translation": [
+      0,
+      0
+    ],
+    "subjectPlacementFromSource06Translation": [
+      180,
+      340
+    ],
+    "mediumCropBoxExclusive": [
+      550,
+      100,
+      3250,
+      3475
+    ],
+    "allowedLeftHairBoxExclusive": [
+      1260,
+      610,
+      1580,
+      1280
+    ]
+  },
+  "visualAppearanceConsistency": {
+    "establishedByThisTechnicalAudit": false,
+    "reviewMethod": "Separate left-hair silhouette and overall visual review by an independent agent",
+    "visualReviewResultIncluded": false
+  },
+  "preservationScope": {
+    "scope": "Every full-raster RGB16 pixel outside [1260,610,1580,1280] is checked for exact 08-to-09 preservation, with the original eight subject core rectangles also checked independently",
+    "allowedLeftHairBoxExclusive": [
+      1260,
+      610,
+      1580,
+      1280
+    ],
+    "wholeSubjectPixelEqualityClaimed": false,
+    "allBlueHairPixelEqualityClaimed": false,
+    "leftHairMayChangeOnlyInsideAllowedBox": true,
+    "newArcAndFineHairRestrictedToAllowedBox": true,
+    "eyeBoxNote": "The visible-eye rectangle includes adjacent bangs at its upper-left edge and remains strict; it is entirely outside the allowed left-hair edit box."
+  },
+  "limits": [
+    "The full 08 and 09 native RGB16 rasters are compared at identical coordinates. Only the left-hair box [1260,610,1580,1280] may change; every pixel outside it is strict. All eight original core rectangles retain their exact ranges and are independently strict. No new difference tolerance or automatic ROI adjustment is used.",
+    "The allowed box may contain reconstructed curved hair edges and fine strands. Exact outside-box equality does not establish subjective hair quality or the retouch technique used within that box. This raster audit cannot independently establish whether any AI tool was used.",
+    "The original larger right-shoulder rectangle remains a nonblocking diagnostic, but all of its pixels are also outside the allowed hair box and therefore are covered by the strict whole-raster outside-box check. Any 08-to-09 difference there fails the whole-raster check.",
+    "PSD dimensions, depth, RGB mode, header/resources bounds and ICC bytes are checked directly. This audit does not render Photoshop, inspect all layers, or prove the PSD raster matches its PNG.",
+    "Technical verification does not prove visually coherent hair, lighting or subjective retouch quality. The left-hair silhouette and overall appearance are assessed separately by an independent visual agent.",
+    "The comparison is against 08; prior 06-to-07 and 07-to-08 changes are not reclassified as unchanged source pixels. No changed samples inside the allowed hair box are claimed unchanged."
+  ],
+  "metadata": {
+    "baselinePng": {
+      "width": 3800,
+      "height": 4750,
+      "depthBits": 16,
+      "colorType": 2,
+      "compressionMethod": 0,
+      "filterMethod": 0,
+      "interlace": 0,
+      "profileName": "sRGB EOTF with DCI-P3 Color Gamut",
+      "fileBytes": 108328037,
+      "completeChunkStream": true,
+      "allChunkCrcsValid": true,
+      "chunkCount": 109,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287",
+      "validIccHeader": true,
+      "iccColorSpace": "RGB ",
+      "channels": 3,
+      "hasAlphaChannel": false,
+      "nonopaquePixelCount": 0,
+      "fullyTransparentPixelCount": 0,
+      "minimum16BitAlpha": 65535,
+      "nonopaqueBoundsExclusive": null,
+      "allPixelsOpaque": true
+    },
+    "fullPng": {
+      "width": 3800,
+      "height": 4750,
+      "depthBits": 16,
+      "colorType": 2,
+      "compressionMethod": 0,
+      "filterMethod": 0,
+      "interlace": 0,
+      "profileName": "sRGB EOTF with DCI-P3 Color Gamut",
+      "fileBytes": 108328037,
+      "completeChunkStream": true,
+      "allChunkCrcsValid": true,
+      "chunkCount": 109,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287",
+      "validIccHeader": true,
+      "iccColorSpace": "RGB ",
+      "channels": 3,
+      "hasAlphaChannel": false,
+      "nonopaquePixelCount": 0,
+      "fullyTransparentPixelCount": 0,
+      "minimum16BitAlpha": 65535,
+      "nonopaqueBoundsExclusive": null,
+      "allPixelsOpaque": true
+    },
+    "mediumPng": {
+      "width": 2700,
+      "height": 3375,
+      "depthBits": 16,
+      "colorType": 2,
+      "compressionMethod": 0,
+      "filterMethod": 0,
+      "interlace": 0,
+      "profileName": "sRGB EOTF with DCI-P3 Color Gamut",
+      "fileBytes": 54692865,
+      "completeChunkStream": true,
+      "allChunkCrcsValid": true,
+      "chunkCount": 58,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287",
+      "validIccHeader": true,
+      "iccColorSpace": "RGB ",
+      "channels": 3,
+      "hasAlphaChannel": false,
+      "nonopaquePixelCount": 0,
+      "fullyTransparentPixelCount": 0,
+      "minimum16BitAlpha": 65535,
+      "nonopaqueBoundsExclusive": null,
+      "allPixelsOpaque": true
+    },
+    "baselinePsd": {
+      "version": 1,
+      "channels": 14,
+      "height": 4750,
+      "width": 3800,
+      "depthBits": 16,
+      "colorMode": 3,
+      "headerAndResourceBoundsValid": true,
+      "fileBytes": 767460336,
+      "resourceSectionBytes": 28620,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287",
+      "validIccHeader": true,
+      "iccColorSpace": "RGB "
+    },
+    "fullPsd": {
+      "version": 1,
+      "channels": 14,
+      "height": 4750,
+      "width": 3800,
+      "depthBits": 16,
+      "colorMode": 3,
+      "headerAndResourceBoundsValid": true,
+      "fileBytes": 809736688,
+      "resourceSectionBytes": 28628,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287",
+      "validIccHeader": true,
+      "iccColorSpace": "RGB "
+    },
+    "mediumPsd": {
+      "version": 1,
+      "channels": 14,
+      "height": 3375,
+      "width": 2700,
+      "depthBits": 16,
+      "colorMode": 3,
+      "headerAndResourceBoundsValid": true,
+      "fileBytes": 533353230,
+      "resourceSectionBytes": 28714,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287",
+      "validIccHeader": true,
+      "iccColorSpace": "RGB "
+    }
+  },
+  "allNativeFormatsValid": true,
+  "allEmbeddedIccProfilesMatchVerifiedSourceP3": true,
+  "expectedP3IccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287",
+  "comparison": {
+    "comparisonDepthBits": 16,
+    "comparedChannels": 3,
+    "baseline08ToFinal09Translation": [
+      0,
+      0
+    ],
+    "subjectPlacementFromSource06Translation": [
+      180,
+      340
+    ],
+    "baseline08ToFinal09Scale": 1.0,
+    "protectedCoreRegions": {
+      "visibleEye": {
+        "sourceBoundsExclusive": [
+          1930,
+          820,
+          2090,
+          1005
+        ],
+        "destinationBoundsExclusive": [
+          1930,
+          820,
+          2090,
+          1005
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 29600,
+        "comparedChannelSamples": 88800,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "source06ReferenceBoundsExclusive": [
+          1750,
+          480,
+          1910,
+          665
+        ]
+      },
+      "noseCore": {
+        "sourceBoundsExclusive": [
+          1800,
+          980,
+          1940,
+          1075
+        ],
+        "destinationBoundsExclusive": [
+          1800,
+          980,
+          1940,
+          1075
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 13300,
+        "comparedChannelSamples": 39900,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "source06ReferenceBoundsExclusive": [
+          1620,
+          640,
+          1760,
+          735
+        ]
+      },
+      "lipsCore": {
+        "sourceBoundsExclusive": [
+          1770,
+          1090,
+          1920,
+          1185
+        ],
+        "destinationBoundsExclusive": [
+          1770,
+          1090,
+          1920,
+          1185
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 14250,
+        "comparedChannelSamples": 42750,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "source06ReferenceBoundsExclusive": [
+          1590,
+          750,
+          1740,
+          845
+        ]
+      },
+      "cameraAndHandCore": {
+        "sourceBoundsExclusive": [
+          1330,
+          2180,
+          1790,
+          2470
+        ],
+        "destinationBoundsExclusive": [
+          1330,
+          2180,
+          1790,
+          2470
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 133400,
+        "comparedChannelSamples": 400200,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "source06ReferenceBoundsExclusive": [
+          1150,
+          1840,
+          1610,
+          2130
+        ]
+      },
+      "stockingCore": {
+        "sourceBoundsExclusive": [
+          1520,
+          2590,
+          1820,
+          3290
+        ],
+        "destinationBoundsExclusive": [
+          1520,
+          2590,
+          1820,
+          3290
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 210000,
+        "comparedChannelSamples": 630000,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "source06ReferenceBoundsExclusive": [
+          1340,
+          2250,
+          1640,
+          2950
+        ]
+      },
+      "rightShoulderSkin": {
+        "sourceBoundsExclusive": [
+          2120,
+          1600,
+          2240,
+          1850
+        ],
+        "destinationBoundsExclusive": [
+          2120,
+          1600,
+          2240,
+          1850
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 30000,
+        "comparedChannelSamples": 90000,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "source06ReferenceBoundsExclusive": [
+          1940,
+          1260,
+          2060,
+          1510
+        ]
+      },
+      "leftShoeCore": {
+        "sourceBoundsExclusive": [
+          1530,
+          3800,
+          1830,
+          4300
+        ],
+        "destinationBoundsExclusive": [
+          1530,
+          3800,
+          1830,
+          4300
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 150000,
+        "comparedChannelSamples": 450000,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "source06ReferenceBoundsExclusive": [
+          1350,
+          3460,
+          1650,
+          3960
+        ]
+      },
+      "rightShoeCore": {
+        "sourceBoundsExclusive": [
+          1980,
+          3790,
+          2250,
+          4330
+        ],
+        "destinationBoundsExclusive": [
+          1980,
+          3790,
+          2250,
+          4330
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 145800,
+        "comparedChannelSamples": 437400,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "source06ReferenceBoundsExclusive": [
+          1800,
+          3450,
+          2070,
+          3990
+        ]
+      }
+    },
+    "protectedCorePixelsCompared": 726350,
+    "allProtectedCoresByteIdentical": true,
+    "fullRasterAllowedEditComparison": {
+      "comparisonDepthBits": 16,
+      "comparedChannels": "RGB (first three channels only)",
+      "dimensions": [
+        3800,
+        4750
+      ],
+      "allowedLeftHairBoxExclusive": [
+        1260,
+        610,
+        1580,
+        1280
+      ],
+      "totalComparedPixels": 18050000,
+      "allowedBoxPixels": 214400,
+      "outsideAllowedBoxComparedPixels": 17835600,
+      "changedPixels": 61865,
+      "changedChannelSamples": 184777,
+      "changedPixelsInsideAllowedBox": 61865,
+      "changedPixelsOutsideAllowedBox": 0,
+      "changedChannelSamplesOutsideAllowedBox": 0,
+      "maximum16BitChannelDifference": 33609,
+      "maximum16BitChannelDifferenceOutsideAllowedBox": 0,
+      "meanAbsolute16BitChannelDifference": 11.175743656509695,
+      "meanAbsolute16BitChannelDifferenceOutsideAllowedBox": 0.0,
+      "changedBoundsExclusive": [
+        1314,
+        666,
+        1543,
+        1280
+      ],
+      "changedBoundsOutsideAllowedBoxExclusive": null,
+      "outsideMismatchExamples": [],
+      "byteIdenticalOutsideAllowedBox": true,
+      "entireFullByteIdentical": false
+    },
+    "nonblockingSilhouetteEdgeChecks": {
+      "rightShoulderOriginalLargerBox": {
+        "sourceBoundsExclusive": [
+          2120,
+          1600,
+          2250,
+          1850
+        ],
+        "destinationBoundsExclusive": [
+          2120,
+          1600,
+          2250,
+          1850
+        ],
+        "comparedChannels": "RGB (first three channels only)",
+        "totalPixels": 32500,
+        "comparedChannelSamples": 97500,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsolute16BitChannelDifference": 0.0,
+        "changedSourceBoundsExclusive": null,
+        "mismatchExamplesSourceAndDestination": [],
+        "blocking": false,
+        "role": "08-to-09 diagnostic of the original larger right-shoulder silhouette rectangle, at identical full-raster coordinates",
+        "source06ReferenceBoundsExclusive": [
+          1940,
+          1260,
+          2070,
+          1510
+        ],
+        "approvedProtectedSkinCoreBoundsExclusive": [
+          2120,
+          1600,
+          2240,
+          1850
+        ],
+        "originalRightmostThreeColumnsBoundsExclusive": [
+          2247,
+          1600,
+          2250,
+          1850
+        ],
+        "expectedByteIdenticalTo08": true,
+        "unexpectedEdgeChanges": false,
+        "changedPixelsConfinedToOriginalRightmostThreeColumns": false,
+        "preservationNote": "The entire original larger rectangle has zero RGB16 differences between 08 and 09. This does not claim that its silhouette pixels equal source 06."
+      }
+    },
+    "mediumCropComparison": {
+      "sourceBoundsExclusive": [
+        550,
+        100,
+        3250,
+        3475
+      ],
+      "destinationBoundsExclusive": [
+        0,
+        0,
+        2700,
+        3375
+      ],
+      "comparedChannels": "RGB (first three channels only)",
+      "totalPixels": 9112500,
+      "comparedChannelSamples": 27337500,
+      "changedPixels": 0,
+      "changedChannelSamples": 0,
+      "byteIdentical": true,
+      "maximum16BitChannelDifference": 0,
+      "meanAbsolute16BitChannelDifference": 0.0,
+      "changedSourceBoundsExclusive": null,
+      "mismatchExamplesSourceAndDestination": [],
+      "cropBoxExclusive": [
+        550,
+        100,
+        3250,
+        3475
+      ],
+      "dimensions": [
+        2700,
+        3375
+      ],
+      "byteIdenticalToFullRasterCrop": true
+    },
+    "rasterOpacity": {
+      "baselinePng": {
+        "channels": 3,
+        "hasAlphaChannel": false,
+        "nonopaquePixelCount": 0,
+        "fullyTransparentPixelCount": 0,
+        "minimum16BitAlpha": 65535,
+        "nonopaqueBoundsExclusive": null,
+        "allPixelsOpaque": true
+      },
+      "fullPng": {
+        "channels": 3,
+        "hasAlphaChannel": false,
+        "nonopaquePixelCount": 0,
+        "fullyTransparentPixelCount": 0,
+        "minimum16BitAlpha": 65535,
+        "nonopaqueBoundsExclusive": null,
+        "allPixelsOpaque": true
+      },
+      "mediumPng": {
+        "channels": 3,
+        "hasAlphaChannel": false,
+        "nonopaquePixelCount": 0,
+        "fullyTransparentPixelCount": 0,
+        "minimum16BitAlpha": 65535,
+        "nonopaqueBoundsExclusive": null,
+        "allPixelsOpaque": true
+      }
+    }
+  },
+  "sha256Before": {
+    "baselinePng": "1eeb4c403b520b9047af884a3dfa3df93c3d799a69b8a122db759a69db6258bf",
+    "baselinePsd": "2803ba7384f8d9e69adc015d35165fc2dc2bc6f6a8aaf660bfb70913cde25267",
+    "fullPng": "6d4338d507eaba55a48f49e5dd19ec20c011b2b239bf6e8772a0f0103fe5ff58",
+    "mediumPng": "bec9ed6eac7a65d8f659e6a334996c1596afab3fcf17cfd9c33962dbf96a25d2",
+    "fullPsd": "e06c4e152239a7f4adad515d23e809561d9e59489eabbccad543a7f2e02256fc",
+    "mediumPsd": "3589d5ae3135a3e8b7e8bff5eb49144b91e0fc65c9e970aa8fb2c542a356d322",
+    "originalJpg": "84c76c308932337a753e655c11b8a2d01930f3cbd5d2285fd0ca7e459f45607f"
+  },
+  "sha256After": {
+    "baselinePng": "1eeb4c403b520b9047af884a3dfa3df93c3d799a69b8a122db759a69db6258bf",
+    "baselinePsd": "2803ba7384f8d9e69adc015d35165fc2dc2bc6f6a8aaf660bfb70913cde25267",
+    "fullPng": "6d4338d507eaba55a48f49e5dd19ec20c011b2b239bf6e8772a0f0103fe5ff58",
+    "mediumPng": "bec9ed6eac7a65d8f659e6a334996c1596afab3fcf17cfd9c33962dbf96a25d2",
+    "fullPsd": "e06c4e152239a7f4adad515d23e809561d9e59489eabbccad543a7f2e02256fc",
+    "mediumPsd": "3589d5ae3135a3e8b7e8bff5eb49144b91e0fc65c9e970aa8fb2c542a356d322",
+    "originalJpg": "84c76c308932337a753e655c11b8a2d01930f3cbd5d2285fd0ca7e459f45607f"
+  },
+  "allInputsStableThroughoutAudit": true,
+  "original": {
+    "path": "origin-not-bundled:微信图片_20261003001752_102_163.jpg",
+    "expectedSha256": "84c76c308932337a753e655c11b8a2d01930f3cbd5d2285fd0ca7e459f45607f",
+    "actualSha256": "84c76c308932337a753e655c11b8a2d01930f3cbd5d2285fd0ca7e459f45607f",
+    "hashMatches": true
+  },
+  "completedAtUtc": "2026-10-03T08:35:36.1318658Z",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

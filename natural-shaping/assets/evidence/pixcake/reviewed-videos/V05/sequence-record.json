@@ -1,0 +1,61 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV12Ptxe5EoJ/",
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence02.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence03.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence04.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence05.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence06.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence07.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence08.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence09.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence10.jpg",
+      "timestamp_seconds": null
+    }
+  ],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "end_state": {
+    "currentTime": 20.886737,
+    "duration": 249.756,
+    "height": 1080,
+    "paused": false,
+    "rate": 1,
+    "width": 1920
+  },
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

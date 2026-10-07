@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-04",
+  "purpose": "Cos composition, pose, occlusion and capture for postproduction",
+  "evidence_method": "Native browser playback screenshots, read with assistant vision; DOM playback metadata recorded. No video download, transcript-only viewing or continuous full viewing.",
+  "continuous_full_videos_watched": 0,
+  "screenshot_files": 17,
+  "distinct_visible_states": 16,
+  "notes": [
+    "V05-002 and V05-002-full show the same paused state at different display sizes.",
+    "Decoded 1080p video does not mean the underlying original photograph was inspected at 100%.",
+    "Elapsed playback between screenshots is not counted as observed viewing coverage.",
+    "The requested paid chapter was not viewed and is not used as evidence.",
+    "Frame facts, author preferences and our transfer advice are separate."
+  ],
+  "videos": [
+    {
+      "id": "V01",
+      "url": "https://www.bilibili.com/video/BV1d2tZz5E5a/",
+      "title": "【cos场照教学】为什么你的暗调场照又脏又闷？可能是灯位错了！",
+      "author": "我心_摄影版",
+      "reported_duration_seconds": 1014,
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "used_in_decision_guide": false,
+      "frames": [
+        {
+          "file": "video-frames/V01-initial.png",
+          "exact_frame_time_seconds": null,
+          "nearby_metadata_time_seconds": 323.585,
+          "time_note": "Playback metadata was read after the moving screenshot; no exact time binding.",
+          "visible": "Split Blender views, seated gray mannequin, scene and light/camera objects.",
+          "limit": "Single frame; light or camera movement not observed as a sequence."
+        }
+      ]
+    },
+    {
+      "id": "V02",
+      "url": "https://www.bilibili.com/video/BV1Qfwue3E7c/",
+      "title": "如何在户外拍一组超帅的COS场照? 【摄影教学03】",
+      "author": "羊阿闹",
+      "reported_duration_seconds": 180,
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "used_in_decision_guide": false,
+      "limits": "Observed frames mainly show location, camera handling and lighting discussion. No clear final-photo comparison was verified; no composition rules or lens recommendations derived from these frames.",
+      "frames": [
+        {
+          "file": "video-frames/V02-initial.png",
+          "exact_frame_time_seconds": null,
+          "visible": "Camera held in the building; subtitle mentions a second light for hair. Actual light placement not confirmed."
+        },
+        {
+          "file": "video-frames/V02-paused.png",
+          "time_seconds": 114.066249,
+          "paused": true,
+          "visible": "Camera at an upper-level viewpoint, subject below; subtitle poses a top-down-lighting question."
+        },
+        {
+          "file": "video-frames/V02-001.png",
+          "ui_time_seconds_rounded": 67,
+          "paused": false,
+          "visible": "Handheld camera and stairs/feet; moving screenshot UI reads 01:07. Earlier metadata is not its exact timestamp."
+        },
+        {
+          "file": "video-frames/V02-002.png",
+          "time_seconds": 21.613407,
+          "paused": true,
+          "visible": "Cos subject, building openings, window light and equipment in the surrounding location."
+        },
+        {
+          "file": "video-frames/V02-003.png",
+          "time_seconds": 55.86426,
+          "paused": true,
+          "visible": "Subject on stairs, camera held in the foreground; architectural depth visible."
+        },
+        {
+          "file": "video-frames/V02-004.png",
+          "time_seconds": 159.972559,
+          "paused": true,
+          "visible": "Camera/lens and a phone; gear discussion, not a final composition result."
+        },
+        {
+          "file": "video-frames/V02-005.png",
+          "time_seconds": 134.557306,
+          "paused": true,
+          "visible": "Building across the gallery and camera/arm foreground; no legible final-photo comparison."
+        }
+      ]
+    },
+    {
+      "id": "V03",
+      "url": "https://www.bilibili.com/video/BV1xC4y157YS/",
+      "title": "我拍摄常用的构图 简简单单的构图也够用了",
+      "author": "只是一只老羊",
+      "reported_duration_seconds": 451,
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "used_in_decision_guide": true,
+      "frames": [
+        {
+          "file": "video-frames/V03-001.png",
+          "time_seconds": 47.871568,
+          "paused": true,
+          "visible": "PS example places the subject toward one side with background graphic/space on the other; subtitle discusses negative space.",
+          "transfer": "Judge frame balance and intent before moving an off-center face."
+        },
+        {
+          "file": "video-frames/V03-002.png",
+          "time_seconds": 149.290684,
+          "paused": true,
+          "visible": "Foreground structures surround an opening containing the character; face and raised hand remain readable.",
+          "transfer": "Keep a useful foreground frame; determine the opening and silhouette before deleting an occluder. Does not demonstrate restoration of hidden anatomy."
+        },
+        {
+          "file": "video-frames/V03-003.png",
+          "time_seconds": 298.064553,
+          "paused": true,
+          "visible": "Low-angle armored character, prominent near-camera prop and sweeping red cape.",
+          "transfer": "Exaggerated perspective can serve character action. Do not automatically shrink every prominent prop, hand or shoe."
+        }
+      ],
+      "limits": "Three discrete paused states, not continuous 07:31 viewing. Some shown photographs may be other creators' work; do not attribute every photo to the lecturer. No numeric crop, focal-length or reshaping preset adopted."
+    },
+    {
+      "id": "V04",
+      "url": "https://www.bilibili.com/video/BV1qH4U6iETd/?p=1&t=1907",
+      "title": "B站最系统的Cosplay动作引导指南！摄影如何引导最佳拍摄动作？如何防止肢体遮挡？打光动作相结合的思路分享",
+      "author": "乐色Lesir",
+      "public_index": {
+        "total_seconds": 6438,
+        "part_1_seconds": 4716,
+        "part_2_seconds": 1722,
+        "part_1_chapters_metadata_only": [
+          {
+            "seconds": 0,
+            "title": "肢体遮挡原则"
+          },
+          {
+            "seconds": 1907,
+            "title": "正侧面原则"
+          },
+          {
+            "seconds": 4258,
+            "title": "动作与打光匹配原则"
+          }
+        ]
+      },
+      "actual_playback_duration_seconds": 1060.1,
+      "decoded_dimensions": [
+        1280,
+        720
+      ],
+      "access": "Paid subscriber preview; page visibly asks for an 18-yuan tier. No purchase or restricted-content access performed.",
+      "requested_chapter_viewed": false,
+      "used_in_decision_guide": false,
+      "frames": [
+        {
+          "file": "video-frames/V04-001.png",
+          "time_seconds": 40.955202,
+          "paused": true,
+          "visible": "Intro slide and paid preview notice. Requested 31:47 chapter did not play."
+        }
+      ]
+    },
+    {
+      "id": "V05",
+      "url": "https://www.bilibili.com/video/BV1PhrZBkEU2/",
+      "title": "场照动作调整焚决和案例分享",
+      "author": "乐色Lesir",
+      "reported_duration_seconds": 511,
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "access": "A separate directly playable public work, not a mirror or workaround for V04's paid chapter.",
+      "used_in_decision_guide": true,
+      "frames": [
+        {
+          "file": "video-frames/V05-001.png",
+          "time_seconds": 41.920713,
+          "paused": true,
+          "visible": "Desktop, PS loading screen, armored figure reference and broadcast overlays. No completed edit inferred."
+        },
+        {
+          "files": [
+            "video-frames/V05-002.png",
+            "video-frames/V05-002-full.png"
+          ],
+          "time_seconds": 179.477072,
+          "paused": true,
+          "visible": "Front/side and multi-plane diagrams; enlarged screenshot makes the preference for multiple visible lit planes readable.",
+          "author_preference": "The lecturer favors visible front-and-side planes for depth and tonal separation.",
+          "transfer": "Judge head, shoulders, torso and light together; take a slight body/camera-turn alternative when useful. Do not turn the lecturer's preference into a prohibition of frontal or profile portraits."
+        },
+        {
+          "file": "video-frames/V05-003.png",
+          "time_seconds": 365.125419,
+          "paused": true,
+          "visible": "PS photo of a character holding a prop, selection around forearms/prop, patch-tool options and 21.21-percent display scale.",
+          "limit": "A paused selection state does not prove a completed geometry change or its method."
+        },
+        {
+          "file": "video-frames/V05-004.png",
+          "time_seconds": 386.548786,
+          "paused": true,
+          "visible": "Same character and prop, different selection/display state at 23.33-percent scale; subtitle discusses limb amplitude.",
+          "limit": "Seek did not reach the intended later time. Use actual metadata only. Different display scales and incomplete operation coverage prevent an asserted before/after pose measurement."
+        }
+      ],
+      "limits": "Four distinct paused states plus one enlarged duplicate; no continuous full viewing, original-photo QA or user acceptance. Body/pose edit details not established."
+    }
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

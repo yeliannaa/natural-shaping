@@ -1,0 +1,332 @@
+{
+  "videoId": "V02",
+  "status": "all_supplied_initial_and_seven_sequence_frames_inspected",
+  "sourceUrl": "https://www.douyin.com/video/7603271299054944241",
+  "browserOperatedByThisAgent": false,
+  "continuousWatchVerified": false,
+  "fullyWatched": false,
+  "frames": [
+    {
+      "file": "initial.jpg",
+      "uiTimeSeconds": 29,
+      "uiTimeLabel": "00:29",
+      "domTimeSeconds": 28.920072,
+      "domTimeBasis": "initial-state.json media[0].time",
+      "pausedFromRootDom": true,
+      "pauseControlsVerified": true,
+      "photoPreviewZoomPercent": 7,
+      "observedPanel": "色彩调节 / 主体",
+      "readableScopeTabs": [
+        "主体",
+        "背景",
+        "自定义"
+      ],
+      "allPersonsLabel": "所有人",
+      "allPersonsYellowOutlineVisible": true,
+      "recognitionThumbnailsObserved": [
+        "green-haired Cos person face",
+        "second green-haired Cos person face",
+        "black-clad off-scene assistant"
+      ],
+      "recognitionNumberSuffixes": "Not confidently read; not guessed",
+      "selectedMaskReadableLabel": "蒙版3",
+      "additionalMaskButtons": "蒙版4 and another ending in 5 visible",
+      "clothingMaskLabelDirectlyVisible": false,
+      "pixelMaskOverlayVisible": false,
+      "readableCurrentValues": {
+        "曝光": 0,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": 0,
+        "阴影": -42,
+        "白色": 33,
+        "黑色": 0
+      },
+      "processingIndicatorVisible": true,
+      "processingProgressPercent": 35,
+      "processingToolName": "Not confidently read",
+      "captionSummary": "Author prompts creation of a clothing mask; creation menu and mask coverage not verified by this frame",
+      "previewAppearance": "Two green-haired Cos people in dark-blue costumes against white studio; off-scene black-clad assistant, lighting modifier and stand still visible",
+      "assistantActuallyBrightenedVerified": false,
+      "assistantExcludedFromMaskVerified": false,
+      "clothingSkinLayerRetentionVerified": false,
+      "verifiedContinuousSliderDrag": false,
+      "verifiedMatchedBeforeAfter": false
+    },
+    {
+      "file": "sequence-01.jpg",
+      "uiTimeSeconds": 16,
+      "uiTimeLabel": "00:16",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "photoPreviewZoomPercent": 7,
+      "observedPanel": "全图调色 / 白平衡 / 影调",
+      "whiteBalanceMode": "自定义",
+      "readableCurrentValues": {
+        "色温": 4660,
+        "色调": 10,
+        "曝光": 0.25,
+        "对比度": -5,
+        "亮度": 0,
+        "高光": -32,
+        "阴影": 46,
+        "白色": 8,
+        "黑色": 0
+      },
+      "captionSummary": "Author discusses white-balance calibration; a complete eyedropper or slider operation is not shown by this frame",
+      "previewAppearance": "Gray-white studio, original green hair, assistant and lighting equipment still visible",
+      "verifiedContinuousSliderDrag": false,
+      "singleParameterCausalEffectVerified": false
+    },
+    {
+      "file": "sequence-02.jpg",
+      "uiTimeSeconds": 32,
+      "uiTimeLabel": "00:32",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "photoPreviewZoomPercent": 7,
+      "observedPanel": "主体色彩调节 / 蒙版4",
+      "selectedMaskReadableLabel": "蒙版4",
+      "readableCurrentValues": {
+        "曝光": 0,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": 0,
+        "阴影": 0,
+        "白色": 21,
+        "黑色": 0
+      },
+      "pixelMaskOverlayVisible": false,
+      "exactMaterialCoverageVerified": false,
+      "captionSummary": "Author raises whites; the visible state belongs to mask 4, not initial mask 3",
+      "comparableWithInitialAsSameSlider": false,
+      "verifiedContinuousSliderDrag": false,
+      "singleParameterCausalEffectVerified": false
+    },
+    {
+      "file": "sequence-03.jpg",
+      "uiTimeSeconds": 48,
+      "uiTimeLabel": "00:48",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "photoPreviewZoomPercent": 5,
+      "observedPanel": "蒙版编辑 / 所有人-蒙版8",
+      "selectedMaskReadableLabel": "所有人-蒙版8",
+      "readableMaskChildItems": [
+        "全部人物",
+        "线性渐变1"
+      ],
+      "pixelMaskOverlayVisible": true,
+      "overlayAppearance": "Red mainly over lower floor, fading upward; legs do not have equally strong red coverage",
+      "maskCombinationOperationVerified": false,
+      "assistantIncludedOrExcludedByMaskVerified": false,
+      "readableCurrentValues": {
+        "色温": 0,
+        "色调": 0,
+        "曝光": 0,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": 0,
+        "阴影": 0,
+        "白色": 0,
+        "黑色": 0
+      },
+      "captionSummary": "Author discusses lowering brightness and whites in selected areas; displayed values do not establish that reduction has been applied",
+      "nonzeroBrightnessWhitesReductionVisible": false,
+      "verifiedContinuousSliderDrag": false,
+      "singleParameterCausalEffectVerified": false
+    },
+    {
+      "file": "sequence-04.jpg",
+      "uiTimeSeconds": 64,
+      "uiTimeLabel": "01:04",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "photoPreviewZoomPercent": 6,
+      "observedPanel": "图像美化 / 背景调整",
+      "graySwitchesObserved": [
+        "纯色背景祛字符",
+        "纯色背景祛瑕疵",
+        "纯色背景光影均匀",
+        "纯色背景祛色彩断层"
+      ],
+      "readableCurrentValues": {
+        "背景增强": 0
+      },
+      "visibleToolButtons": [
+        "AI布景",
+        "AI换天气·冬日雪景",
+        "AI祛路人",
+        "AI补草地",
+        "智能道具修复"
+      ],
+      "captionSummary": "Author presents image-beautification functions; menu presence is not execution evidence",
+      "assistantAndLightStandStillVisible": true,
+      "listedToolsExecutedVerified": false
+    },
+    {
+      "file": "sequence-05.jpg",
+      "uiTimeSeconds": 85,
+      "uiTimeLabel": "01:25",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "photoPreviewZoomPercent": null,
+      "observedPanel": "软件主页 / 像素蛋糕破次元计划卡片",
+      "captionSummary": "Author prompts entering the virtual-generation plan; no generation choices or prompt are visible",
+      "entryVisible": true,
+      "entryClickContinuouslyObserved": false,
+      "generationParametersVerified": false
+    },
+    {
+      "file": "sequence-06.jpg",
+      "uiTimeSeconds": 101,
+      "uiTimeLabel": "01:41",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "photoPreviewZoomPercent": 13,
+      "comparisonLabels": {
+        "left": "参考图",
+        "right": "全效果"
+      },
+      "leftReferenceAppearance": "Original bundled green hair, black-clad assistant, lighting modifier and stand, gray-white studio",
+      "rightResultAppearance": "Much longer horizontally flying green hair on both people, whiter background, assistant and lighting equipment no longer visible",
+      "loadedFileEvidence": "JPG filename containing 破次元计划, distinct from earlier DSCF6223.RAF",
+      "observedPanel": "人像美化 / 女 / 祛除瑕疵",
+      "captionSummary": "Author says detailed values need not all be memorized; identity or joint preservation is not verified by this claim",
+      "actualVisualComparisonVerified": true,
+      "comparisonIsSingleEarlierToneControl": false,
+      "generationPromptVerified": false,
+      "originalIdentityAndCostumeFullyPreservedVerified": false,
+      "whiteStockingContrastObservation": "Right stockings contrast less with the white background; native clipping or full layer retention not established"
+    },
+    {
+      "file": "sequence-07.jpg",
+      "uiTimeSeconds": 117,
+      "uiTimeLabel": "01:57",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "photoPreviewZoomPercent": 13,
+      "comparisonLabels": {
+        "left": "参考图",
+        "right": "全效果"
+      },
+      "rightResultAppearance": "Same generated-style longer flying green hair and clean white studio result as sequence-06",
+      "assistantAndLightEquipmentRemovedFromRightPreview": true,
+      "captionSummary": "Author emphasizes knowing the editing direction; no quality or detail-retention guarantee inferred",
+      "actualVisualComparisonVerified": true,
+      "comparisonIsSingleEarlierToneControl": false,
+      "originalIdentityAndCostumeFullyPreservedVerified": false,
+      "nativeDetailInspected": false
+    }
+  ],
+  "rootInitialMediaState": {
+    "durationSeconds": 129.938005,
+    "decodedWidth": 2560,
+    "decodedHeight": 1440,
+    "paused": true,
+    "rate": 0.75,
+    "timeSeconds": 28.920072
+  },
+  "rootSequenceRecord": "sequence-record.json",
+  "sequenceSampling": {
+    "count": 7,
+    "type": "discrete native screenshots",
+    "uiTimeSeconds": [
+      16,
+      32,
+      48,
+      64,
+      85,
+      101,
+      117
+    ],
+    "exactFrameDomTimesAvailable": false,
+    "continuousCoverageVerified": false
+  },
+  "rootEndMediaState": {
+    "durationSeconds": 129.938005,
+    "decodedWidth": 2560,
+    "decodedHeight": 1440,
+    "paused": true,
+    "rate": 0.75,
+    "timeSeconds": 3.284965,
+    "automaticallyReplayedPerRoot": true,
+    "assignedToAnySequenceFrame": false,
+    "provesFullViewing": false
+  },
+  "maskStateSeparation": {
+    "initial": {
+      "mask": "蒙版3",
+      "阴影": -42,
+      "白色": 33
+    },
+    "sequence02": {
+      "mask": "蒙版4",
+      "阴影": 0,
+      "白色": 21
+    },
+    "sameControlTransitionVerified": false
+  },
+  "psTransferCandidates": [
+    {
+      "candidate": "Review global white balance and tone before local adjustments",
+      "evidence": "sequence-01 actual panel",
+      "inferenceScope": "Workflow candidate, not numeric defaults"
+    },
+    {
+      "candidate": "Explicitly select intended Cos people and exclude assistant; separate costume, skin and background masks",
+      "evidence": "Multiple recognized people including assistant; several masks visible",
+      "inferenceScope": "Audit recommendation, actual assistant exclusion not verified"
+    },
+    {
+      "candidate": "Use a local floor/background gradient while checking legs and white stockings",
+      "evidence": "sequence-03 actual lower red linear-gradient overlay",
+      "inferenceScope": "Candidate mask approach; actual nonzero reduction not verified"
+    },
+    {
+      "candidate": "Check white garments and skin against background at native size and with highlight/channel inspection",
+      "evidence": "Right-result white stockings have reduced contrast against white background",
+      "inferenceScope": "Quality check recommendation, clipping not established"
+    }
+  ],
+  "generationRiskEvidence": {
+    "generationEntryVisible": true,
+    "generatedContentChangeActuallyVisible": true,
+    "changes": [
+      "much longer flying hair",
+      "assistant removal",
+      "lighting-equipment removal",
+      "cleaner whiter studio"
+    ],
+    "earlyToneControlsExplainAllChanges": false,
+    "promptAndGenerationOptionsVerified": false,
+    "occludedTrueAnatomyRecoveryVerified": false,
+    "requiresIndependentEdgeIdentityCostumeAndLightingQA": true
+  },
+  "remainingEvidence": [
+    "actual clothing-mask creation and precise coverage",
+    "scope of all-person adjustment including or excluding assistant",
+    "matched single-adjustment before-after",
+    "finished native clothing and skin tonal layers",
+    "exact DOM times of seven sequence frames",
+    "generation choices and preservation of identity/costume details"
+  ],
+  "rulesAdded": [],
+  "limits": [
+    "Caption is not a demonstrated mask creation operation",
+    "Recognition thumbnail is not evidence of adjustment applied to that person",
+    "Small photo preview cannot verify native skin or fabric detail",
+    "Initial processing progress prevents final-effect acceptance from initial frame",
+    "Different mask values are not a same-slider transition",
+    "Tool list presence is not execution",
+    "Final reference-versus-full-effect comparison includes content generation, not just earlier tone controls",
+    "Automatic replay does not prove continuous full viewing",
+    "Author parameter values and marketing title are not defaults or guarantees"
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

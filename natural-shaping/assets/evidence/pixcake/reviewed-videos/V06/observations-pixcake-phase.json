@@ -1,0 +1,272 @@
+{
+  "case_id": "V06",
+  "phase": "pixcake",
+  "recorded_on": "2026-10-04",
+  "source_url": "https://www.bilibili.com/video/BV1RRNkzVESP/",
+  "inspection_scope": "six actual isolated frames from the selected portrait batch-processing chapter; not the full 29-minute video",
+  "metadata_read": [
+    "pixcake-phase-record.json"
+  ],
+  "selected_chapter": "步骤2:像素蛋糕中的人像批处理",
+  "root_post_batch_state": {
+    "timestamp_seconds": 863.589558,
+    "duration_seconds": 1754,
+    "paused": true,
+    "playback_rate": 1,
+    "decoded_width": 1920,
+    "decoded_height": 1080
+  },
+  "root_state_is_not_frame_timestamp": true,
+  "screenshot_dimensions": [
+    1698,
+    1080
+  ],
+  "screenshot_encoding_verified": "JPEG",
+  "subtitle_policy": "brief meaning summaries, not a transcript",
+  "visible_selected_photo_count": 1,
+  "visible_total_photo_count": 24,
+  "frames": [
+    {
+      "file": "pixcake01.jpg",
+      "bytes": 186329,
+      "sha256": "d6bfbeca4d3c1b2fefafe5d23dbce8b28916ec87d0ebc7064891b3df2ed5992c",
+      "section": "瑕疵/面部祛纹",
+      "parameters": {
+        "祛黑眼圈": 57,
+        "祛眼袋": 47,
+        "唇纹修整": 0,
+        "祛双下巴": 0,
+        "祛胡须": 0,
+        "祛抬头纹": 22,
+        "祛川字纹": 0,
+        "祛眼周纹": 21,
+        "祛法令纹": 80,
+        "祛木偶纹": 0,
+        "身体祛瑕疵": 71,
+        "祛颈纹": 24
+      },
+      "caption_meaning_summary": "Discusses forehead, nasolabial and eye-area wrinkles.",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "12:10 / 29:14",
+      "player_display_seconds": 730,
+      "preview_zoom_percent": 67,
+      "visible_target_filename": "DSC07568.jpg",
+      "before_after_verified": false
+    },
+    {
+      "file": "pixcake02.jpg",
+      "bytes": 186750,
+      "sha256": "749ab41741d54cb780118a4c3c166eba4c02ad0f47827fd830e98eb77e3b31d0",
+      "section": "皮肤调整",
+      "parameters": {
+        "中性灰平整": 11,
+        "中性灰立体": 0,
+        "质感磨皮": 0,
+        "高低频磨皮（脸部）": 0,
+        "高低频磨皮（身体）": 2,
+        "水润磨皮（脸部）": 0,
+        "水润磨皮（身体）": 0,
+        "锁骨增强": 0
+      },
+      "skin_texture_quality_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "12:31 / 29:14",
+      "player_display_seconds": 751,
+      "preview_zoom_percent": 67,
+      "visible_target_filename": "DSC07568.jpg",
+      "before_after_verified": false
+    },
+    {
+      "file": "pixcake03.jpg",
+      "bytes": 186325,
+      "sha256": "f6fd1e1614e5489572dc85da72eed029afcb6348b5eccb0e764d23e3568c842b",
+      "section": "皮肤颜色",
+      "parameters": {
+        "纹理度": 0,
+        "清晰度": 0,
+        "肤色透亮": 0,
+        "肤色美白": 0,
+        "皮肤红润": 0,
+        "AI多人肤色统一": 0,
+        "AI肤色统一（脸部）": 4,
+        "AI肤色统一（身体）": 4,
+        "肤色统一（身体）": 0,
+        "肤色色温": 0,
+        "肤色色调": 0
+      },
+      "face_body_color_uniformity_effect_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "12:53 / 29:14",
+      "player_display_seconds": 773,
+      "preview_zoom_percent": 67,
+      "visible_target_filename": "DSC07568.jpg",
+      "before_after_verified": false
+    },
+    {
+      "file": "pixcake04.jpg",
+      "bytes": 187329,
+      "sha256": "97be808386fe439912402d9619d5117832ed7c08c2c49a49a60ea0f511ae83f0",
+      "section": "面部重塑/脸型",
+      "parameters": {
+        "瘦脸": {
+          "左": 0,
+          "右": 0
+        },
+        "太阳穴": {
+          "左": 0,
+          "右": 0
+        },
+        "颧骨": {
+          "左": 0,
+          "右": 0
+        },
+        "下颌": {
+          "左": 0,
+          "右": 0
+        },
+        "AI面部流畅": 54,
+        "小脸": 0,
+        "V脸": {
+          "左": 0,
+          "右": 0
+        },
+        "短脸": 0,
+        "脸宽": {
+          "左": 0,
+          "右": 0
+        },
+        "发际线": -27
+      },
+      "observations": [
+        "Face-shape subtab is selected.",
+        "An undo notification names face-type AI contour flow; its numeric text/action sequence is not used."
+      ],
+      "configured_face_geometry_control_verified": true,
+      "exact_geometry_action_verified": false,
+      "actual_geometry_effect_verified": false,
+      "manual_per_joint_adjustment_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "13:14 / 29:14",
+      "player_display_seconds": 794,
+      "preview_zoom_percent": 67,
+      "visible_target_filename": "DSC07568.jpg",
+      "before_after_verified": false
+    },
+    {
+      "file": "pixcake05.jpg",
+      "bytes": 186825,
+      "sha256": "b083120de4286e8eeaaa6d0abf45f41322f91424b9996061497fa93aad13f46d",
+      "section": "表情/牙齿美化/眼睛增强",
+      "parameters": {
+        "微笑嘴角": 0,
+        "牙齿美白": 34,
+        "祛红血丝": 76,
+        "亮眼": {
+          "左": 0,
+          "右": 0
+        }
+      },
+      "selected_expression_preset": "无",
+      "observations": [
+        "The mouth is closed.",
+        "Tooth-whitening value 34 appears in a greyed control, not a visible tooth result."
+      ],
+      "tooth_whitening_effect_verified": false,
+      "eye_redness_effect_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "13:34 / 29:14",
+      "player_display_seconds": 814,
+      "preview_zoom_percent": 67,
+      "visible_target_filename": "DSC07568.jpg",
+      "before_after_verified": false
+    },
+    {
+      "file": "pixcake06.jpg",
+      "bytes": 191572,
+      "sha256": "e597c06caa9db8f176328f221e79ffb7c66907cf0c2b36fbbf7efb600e25e315",
+      "section": "头发调整",
+      "parameters": {
+        "发缝填充": 41,
+        "颅顶调整": 0,
+        "发量调整": {
+          "左": 36,
+          "右": 36
+        },
+        "发际线": -48,
+        "祛碎发": 0,
+        "头发柔顺": 0
+      },
+      "observations": [
+        "Makeup preset cards are above the hair section, but an applied preset is not established.",
+        "Hairline and volume controls are displayed for this real-hair portrait."
+      ],
+      "hair_contour_effect_verified": false,
+      "wig_or_character_accessory_preservation_verified": false,
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "14:02 / 29:14",
+      "player_display_seconds": 842,
+      "preview_zoom_percent": 60,
+      "visible_target_filename": "DSC07568.jpg",
+      "before_after_verified": false
+    }
+  ],
+  "same_target_filename_visible_across_frames": true,
+  "hairline_control_cross_module_linkage_verified": false,
+  "control_scope_limit": "The face-shape hairline value -27 and hair-section hairline value -48 are recorded in their respective module/frame. No shared algorithm or linked-control trend is inferred.",
+  "ps_transfer_inferences": [
+    {
+      "suggestion": "Keep skin texture, face/body color uniformity, face contours, expressions/eyes and hair contours as separately reviewed modules.",
+      "basis_frames": [
+        "pixcake02.jpg",
+        "pixcake03.jpg",
+        "pixcake04.jpg",
+        "pixcake05.jpg",
+        "pixcake06.jpg"
+      ],
+      "inference": true,
+      "default_rule": false
+    },
+    {
+      "suggestion": "For user cosplay photos, compare contour and hairline edits with the unedited identity and costume/headpiece edges; do not reuse these real-hair portrait numbers.",
+      "basis_frames": [
+        "pixcake04.jpg",
+        "pixcake06.jpg"
+      ],
+      "inference": true,
+      "default_rule": false
+    }
+  ],
+  "quality_limits": [
+    "Visible numerical configurations do not establish exact slider gestures or complete before/after.",
+    "Even the same target filename and repeated 67% preview are not a verified original/effect toggle.",
+    "Skin-color uniformity controls are separate from skin texture and facial geometry.",
+    "A greyed tooth-whitening value with a closed mouth does not establish a visible whitening result.",
+    "The selected batch-processing chapter and 24-photo strip do not establish that all photos were successfully processed or reviewed.",
+    "This is a real-hair portrait sample, not a cosplay-wig default or natural-shaping acceptance case."
+  ],
+  "verified_continuous_intervals": [],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "controlled_before_after_verified": false,
+  "batch_application_success_verified": false,
+  "per_photo_quality_acceptance_verified": false,
+  "original_photo_quality_verified": false,
+  "exported_output_quality_verified": false,
+  "identity_preservation_verified": false,
+  "joint_continuity_verified": false,
+  "natural_shaping_acceptance_verified": false,
+  "local_speed_benchmark_verified": false,
+  "derived_default_rules_eligible": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

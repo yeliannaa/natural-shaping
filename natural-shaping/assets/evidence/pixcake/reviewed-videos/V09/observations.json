@@ -1,0 +1,710 @@
+{
+  "case_id": "V09",
+  "recorded_on": "2026-10-04",
+  "source_url": "https://www.bilibili.com/video/BV1pf421D79J/",
+  "source_metadata_reported_by_parent": {
+    "author": "-三月March",
+    "publication_date": "2024-05-05",
+    "initial_duration_seconds": 359.823
+  },
+  "scope": "Sixteen actual discrete screenshots spanning sample presentation, Lightroom global/inverted-subject-mask configuration, PixCake skin controls, Photoshop Oniric entry panel and a stable player end screen; not continuous full watching.",
+  "metadata_read": [
+    "sequence-batch1.json",
+    "sequence-batch2.json",
+    "tail-stable-record.json"
+  ],
+  "root_batch_states": [
+    {
+      "record": "sequence-batch1.json",
+      "end_state": {
+        "timestamp_seconds": 170.825928,
+        "duration_seconds": 359.89,
+        "paused": true,
+        "playback_rate": 1,
+        "decoded_width": 1920,
+        "decoded_height": 1080
+      },
+      "is_frame_timestamp": false
+    },
+    {
+      "record": "sequence-batch2.json",
+      "end_state": {
+        "timestamp_seconds": 359.823,
+        "duration_seconds": 359.823,
+        "paused": true,
+        "playback_rate": 1,
+        "decoded_width": 1920,
+        "decoded_height": 1080
+      },
+      "is_frame_timestamp": false
+    },
+    {
+      "record": "tail-stable-record.json",
+      "before": {
+        "timestamp_seconds": 359.823,
+        "duration_seconds": 359.823,
+        "paused": true,
+        "decoded_width": 1920,
+        "decoded_height": 1080
+      },
+      "after": {
+        "timestamp_seconds": 359.823,
+        "duration_seconds": 359.823,
+        "paused": true,
+        "decoded_width": 1920,
+        "decoded_height": 1080
+      },
+      "exact_frame_association_verified": true
+    }
+  ],
+  "subtitle_policy": "Short meaning summaries only; no transcript.",
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "bytes": 214090,
+      "sha256": "05e645b96930e00eec1a891717682d1b019fff04a1406fbc96038b8dca5f7fa2",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:21 / 06:00",
+      "player_display_seconds": 21,
+      "visible_application": "Photoshop",
+      "visible_content": "Three different cosplay photographs arranged side by side in a white-bordered presentation canvas.",
+      "preview_zoom_percent": 24.13,
+      "observations": [
+        "The left and right photographs show a blue-green wig in different poses; the middle photograph is a different silver-blue costume image.",
+        "The arrangement is a sample presentation, not a same-photo original/result comparison.",
+        "Photoshop layers and smart-object properties are visible; no grading or mask edit is established in this sample."
+      ],
+      "retouch_operation_verified": false,
+      "same_photo_before_after_verified": false
+    },
+    {
+      "file": "sequence02.jpg",
+      "bytes": 241704,
+      "sha256": "ff67fc1d2722008e08b7d6894610d10719aa928be2d3cef3e075cee8eded44c6",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:43 / 06:00",
+      "player_display_seconds": 43,
+      "visible_application": "Photoshop",
+      "visible_content": "Three different cosplay photographs arranged side by side in a white-bordered presentation canvas.",
+      "preview_zoom_percent": 24.13,
+      "observations": [
+        "The left and right photographs show a blue-green wig in different poses; the middle photograph is a different silver-blue costume image.",
+        "The arrangement is a sample presentation, not a same-photo original/result comparison.",
+        "Photoshop layers and smart-object properties are visible; no grading or mask edit is established in this sample."
+      ],
+      "retouch_operation_verified": false,
+      "same_photo_before_after_verified": false,
+      "caption_meaning_summary": "The author describes front light, two rear rim lights, and a zoom lens used during shooting. This is an explanation, not a demonstrated lighting setup or a postprocessing operation."
+    },
+    {
+      "file": "sequence03.jpg",
+      "bytes": 242720,
+      "sha256": "8134256d98a34a52e60293637e5b1765926d506e8e423cbfbb839a9062f9b575",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:04 / 06:00",
+      "player_display_seconds": 64,
+      "visible_application": "Photoshop",
+      "visible_content": "Three different cosplay photographs arranged side by side in a white-bordered presentation canvas.",
+      "preview_zoom_percent": 24.13,
+      "observations": [
+        "The left and right photographs show a blue-green wig in different poses; the middle photograph is a different silver-blue costume image.",
+        "The arrangement is a sample presentation, not a same-photo original/result comparison.",
+        "Photoshop layers and smart-object properties are visible; no grading or mask edit is established in this sample."
+      ],
+      "retouch_operation_verified": false,
+      "same_photo_before_after_verified": false,
+      "caption_meaning_summary": "The author describes front light, two rear rim lights, and a zoom lens used during shooting. This is an explanation, not a demonstrated lighting setup or a postprocessing operation."
+    },
+    {
+      "file": "sequence04.jpg",
+      "bytes": 214997,
+      "sha256": "7e266bd878db6f2aedc817013bb9c52f1d480c8347d60b2f30d4723967e1acd1",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:26 / 06:00",
+      "player_display_seconds": 86,
+      "visible_application": "Photoshop",
+      "visible_content": "Three different cosplay photographs arranged side by side in a white-bordered presentation canvas.",
+      "preview_zoom_percent": 24.13,
+      "observations": [
+        "The left and right photographs show a blue-green wig in different poses; the middle photograph is a different silver-blue costume image.",
+        "The arrangement is a sample presentation, not a same-photo original/result comparison.",
+        "Photoshop layers and smart-object properties are visible; no grading or mask edit is established in this sample."
+      ],
+      "retouch_operation_verified": false,
+      "same_photo_before_after_verified": false
+    },
+    {
+      "file": "sequence05.jpg",
+      "bytes": 190217,
+      "sha256": "600087bfbd49bfd3d57231cd280f289de7f256fb18110ab7352d319be55106c6",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:47 / 06:00",
+      "player_display_seconds": 107,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC01967.ARW",
+      "visible_ui": [
+        "修改照片",
+        "基本",
+        "彩色",
+        "Adobe 颜色",
+        "原照设置"
+      ],
+      "parameters": {
+        "色温": 4350,
+        "色调": 10,
+        "曝光": 0,
+        "对比度": 0,
+        "高光": 0,
+        "阴影": 0,
+        "白色色阶": 0,
+        "黑色色阶": 0,
+        "纹理": 0,
+        "清晰度": 0,
+        "去朦胧": 0,
+        "鲜艳度": 0,
+        "饱和度": 0
+      },
+      "observations": [
+        "The right-hand sample pose is now shown individually with the standard Basic panel.",
+        "The face is locally blurred in the recording; on-screen explanation attributes this to the model's original image not being shown publicly. It is not treated as retouch deformation."
+      ],
+      "recording_face_blur_not_quality_evidence": true,
+      "mask_operation_verified": false,
+      "same_photo_before_after_verified": false
+    },
+    {
+      "file": "sequence06.jpg",
+      "bytes": 222545,
+      "sha256": "4f3851aec1a9142b8e0e33112ad7f7c27a0a5fd40764160fa5c2403aa47652c9",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "02:08 / 06:00",
+      "player_display_seconds": 128,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC01967.ARW",
+      "visible_ui": [
+        "修改照片",
+        "基本",
+        "彩色",
+        "Adobe 颜色",
+        "原照设置"
+      ],
+      "parameters": {
+        "色温": 4350,
+        "色调": 10,
+        "曝光": 0,
+        "对比度": -100,
+        "高光": 0,
+        "阴影": 0,
+        "白色色阶": -100,
+        "黑色色阶": 100,
+        "纹理": 0,
+        "清晰度": 100,
+        "去朦胧": 0,
+        "鲜艳度": 0,
+        "饱和度": 0
+      },
+      "observations": [
+        "The same identifiable pose/canvas is lighter and more grey in preview than sequence05.",
+        "Color processing is still selected; this is not evidence of switching to black-and-white mode.",
+        "The current panel is global Basic controls. No mask list, selected subject/background mask or painted coverage is visible."
+      ],
+      "caption_meaning_summary": "The author proposes lowering contrast, adjusting black/white levels and clarity, then treating subject highlights and background color separately, with lower texture for background softness. The written plan does not prove those mask steps have happened.",
+      "basic_parameter_difference_verified": true,
+      "preview_tonal_difference_verified": true,
+      "mask_operation_verified": false,
+      "mask_coverage_verified": false,
+      "controlled_before_after_verified": false,
+      "actual_identity_geometry_quality_verified": false,
+      "recording_face_blur_not_quality_evidence": true
+    },
+    {
+      "file": "sequence07.jpg",
+      "bytes": 222276,
+      "sha256": "0686d763696f3c061775d31db19586d69814acb9656666ef97fffb7da2d3c1ca",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "02:30 / 06:00",
+      "player_display_seconds": 150,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC01967.ARW",
+      "visible_ui": [
+        "修改照片",
+        "基本",
+        "彩色",
+        "Adobe 颜色",
+        "原照设置"
+      ],
+      "parameters": {
+        "色温": 4350,
+        "色调": 10,
+        "曝光": 0,
+        "对比度": -100,
+        "高光": 0,
+        "阴影": 0,
+        "白色色阶": -100,
+        "黑色色阶": 100,
+        "纹理": 0,
+        "清晰度": 100,
+        "去朦胧": 0,
+        "鲜艳度": 0,
+        "饱和度": 0
+      },
+      "observations": [
+        "The same identifiable pose/canvas is lighter and more grey in preview than sequence05.",
+        "Color processing is still selected; this is not evidence of switching to black-and-white mode.",
+        "The current panel is global Basic controls. No mask list, selected subject/background mask or painted coverage is visible."
+      ],
+      "caption_meaning_summary": "The author proposes lowering contrast, adjusting black/white levels and clarity, then treating subject highlights and background color separately, with lower texture for background softness. The written plan does not prove those mask steps have happened.",
+      "basic_parameter_difference_verified": true,
+      "preview_tonal_difference_verified": true,
+      "mask_operation_verified": false,
+      "mask_coverage_verified": false,
+      "controlled_before_after_verified": false,
+      "actual_identity_geometry_quality_verified": false,
+      "recording_face_blur_not_quality_evidence": true
+    },
+    {
+      "file": "sequence08.jpg",
+      "bytes": 221759,
+      "sha256": "b9cddfd1b003d4617fa6809abbb991fa2165ae15c0a505198d75635e5d31bfb9",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "03:13 / 06:00",
+      "player_display_seconds": 193,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC01967.ARW",
+      "visible_ui": [
+        "蒙版",
+        "创建新蒙版",
+        "蒙版1",
+        "选择主体",
+        "反相",
+        "蒙版1已反转",
+        "自动重置滑块"
+      ],
+      "parameters": {
+        "反相": true,
+        "数量": 100,
+        "曝光": 0,
+        "对比度": 0,
+        "高光": 0,
+        "阴影": 0
+      },
+      "observations": [
+        "A mask thumbnail with a person silhouette and an inversion setting are visible.",
+        "The overlay setting is checked, but a red on-image overlay establishing fine coverage is not visible.",
+        "These are current mask configuration facts, not a demonstrated brush-refinement action."
+      ],
+      "mask_workspace_observed": true,
+      "mask_configuration_verified": true,
+      "mask_creation_gesture_verified": false,
+      "precise_mask_coverage_verified": false,
+      "subject_highlight_increase_verified": false,
+      "controlled_before_after_verified": false
+    },
+    {
+      "file": "sequence09.jpg",
+      "bytes": 225699,
+      "sha256": "812ffe102bf68fd63256b23f7dfc7ff733363a797f586620ba752030ab5d1f56",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "03:34 / 06:00",
+      "player_display_seconds": 214,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC01967.ARW",
+      "visible_ui": [
+        "蒙版1已反转",
+        "主体1",
+        "添加",
+        "减去",
+        "蒙版1"
+      ],
+      "selected_mask_label": "蒙版1已反转",
+      "selected_component_label": "主体1",
+      "parameters": {
+        "色温": -24,
+        "色调": 0,
+        "色相": 0,
+        "饱和度": -24,
+        "白色色阶": 0,
+        "黑色色阶": 0
+      },
+      "observations": [
+        "The selected inverted subject-mask configuration exposes local color controls.",
+        "Its thumbnail broadly suggests a complementary/background region, but this is not exact pixel coverage evidence.",
+        "A second original mask is listed below."
+      ],
+      "mask_workspace_observed": true,
+      "mask_configuration_verified": true,
+      "local_color_configuration_verified": true,
+      "precise_mask_coverage_verified": false,
+      "manual_mask_refinement_verified": false,
+      "controlled_before_after_verified": false
+    },
+    {
+      "file": "sequence10.jpg",
+      "bytes": 225199,
+      "sha256": "5c588314ed05cbde1819adde4eae6c17768a8821593f4bd10ee2d53114a28ee3",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "03:56 / 06:00",
+      "player_display_seconds": 236,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC01967.ARW",
+      "visible_ui": [
+        "蒙版1已反转",
+        "主体1",
+        "效果"
+      ],
+      "selected_mask_label": "蒙版1已反转",
+      "selected_component_label": "主体1",
+      "parameters": {
+        "纹理": -100,
+        "清晰度": 0,
+        "去朦胧": 0
+      },
+      "observations": [
+        "The same inverted-mask/component selection is visible with the local Effects panel.",
+        "Negative texture is a visible local configuration, not evidence of optical depth-of-field replacement or precise person-edge protection."
+      ],
+      "mask_workspace_observed": true,
+      "mask_configuration_verified": true,
+      "local_texture_configuration_verified": true,
+      "precise_mask_coverage_verified": false,
+      "background_edge_quality_verified": false,
+      "controlled_before_after_verified": false
+    },
+    {
+      "file": "sequence11.jpg",
+      "bytes": 150611,
+      "sha256": "84ea4b715ad32a3be8a72b325364edb30a10e141ed05097f0cef46623229a489",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "04:17 / 06:00",
+      "player_display_seconds": 257,
+      "visible_application": "PixCake",
+      "visible_target_filename": "DSC01967.jpg",
+      "preview_zoom_percent": 11,
+      "visible_ui": [
+        "精修",
+        "皮肤调整",
+        "面部调整",
+        "表情管理",
+        "牙齿美化",
+        "眼睛增强",
+        "妆容调整",
+        "头发调整",
+        "全身美型"
+      ],
+      "parameters": {
+        "祛法令纹": 100,
+        "磨皮数量": 0,
+        "祛颈纹": 100,
+        "祛双下巴": 98,
+        "祛泪纹": 0,
+        "祛副乳": 0,
+        "纹理保护": true
+      },
+      "observations": [
+        "The same identifiable pose is shown as JPG in PixCake without the earlier recording's face blur.",
+        "The displayed values are current example settings; no matched original/result toggle or local parameter-change gesture is visible.",
+        "Face and body-shape panels are collapsed; their mere presence does not establish reshaping."
+      ],
+      "caption_meaning_summary": "Skin-color adjustment should suit the surroundings and preserve visual consistency.",
+      "skin_retouch_configuration_verified": true,
+      "parameter_change_gesture_verified": false,
+      "controlled_before_after_verified": false,
+      "identity_preservation_verified": false,
+      "body_reshaping_operation_verified": false
+    },
+    {
+      "file": "sequence12.jpg",
+      "bytes": 150597,
+      "sha256": "74f9ad01aaea56cdf35205e2f566a119d2349f311539bc8abbaf7d0c50a99f1f",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "04:38 / 06:00",
+      "player_display_seconds": 278,
+      "visible_application": "PixCake",
+      "visible_target_filename": "DSC01967.jpg",
+      "preview_zoom_percent": 11,
+      "visible_ui": [
+        "精修",
+        "皮肤调整",
+        "面部调整",
+        "表情管理",
+        "牙齿美化",
+        "眼睛增强",
+        "妆容调整",
+        "头发调整",
+        "全身美型"
+      ],
+      "parameters": {
+        "祛法令纹": 100,
+        "磨皮数量": 0,
+        "祛颈纹": 100,
+        "祛双下巴": 98,
+        "祛泪纹": 0,
+        "祛副乳": 0,
+        "纹理保护": true
+      },
+      "observations": [
+        "The same identifiable pose is shown as JPG in PixCake without the earlier recording's face blur.",
+        "The displayed values are current example settings; no matched original/result toggle or local parameter-change gesture is visible.",
+        "Face and body-shape panels are collapsed; their mere presence does not establish reshaping."
+      ],
+      "caption_meaning_summary": "Skin-color adjustment should suit the surroundings and preserve visual consistency.",
+      "skin_retouch_configuration_verified": true,
+      "parameter_change_gesture_verified": false,
+      "controlled_before_after_verified": false,
+      "identity_preservation_verified": false,
+      "body_reshaping_operation_verified": false
+    },
+    {
+      "file": "sequence13.jpg",
+      "bytes": 221018,
+      "sha256": "4bfec49c81d4da49203ff07c201affe33ea46a0e9c072ee7d7512ad41b44a625",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "05:00 / 06:00",
+      "player_display_seconds": 300,
+      "visible_application": "Photoshop with Oniric panel",
+      "preview_zoom_percent": 24.13,
+      "visible_ui": [
+        "Oniric",
+        "1.3.0",
+        "生成",
+        "编辑元素"
+      ],
+      "observations": [
+        "The canvas again presents three different sample photographs.",
+        "Only the Oniric entry panel is shown; glow-strength/threshold controls, a generation action, result layers or an effect toggle are not visible.",
+        "The same-photo original/result and output quality are not established."
+      ],
+      "oniric_panel_observed": true,
+      "glow_parameters_verified": false,
+      "glow_generation_operation_verified": false,
+      "controlled_before_after_verified": false
+    },
+    {
+      "file": "sequence14.jpg",
+      "bytes": 247558,
+      "sha256": "2bcbfdce5d2dbe2a26a16b5437252f6d256ecf544674779afbc8d633fad86420",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "05:21 / 06:00",
+      "player_display_seconds": 321,
+      "visible_application": "Photoshop with Oniric panel",
+      "preview_zoom_percent": 24.13,
+      "visible_ui": [
+        "Oniric",
+        "1.3.0",
+        "生成",
+        "编辑元素"
+      ],
+      "observations": [
+        "The canvas again presents three different sample photographs.",
+        "Only the Oniric entry panel is shown; glow-strength/threshold controls, a generation action, result layers or an effect toggle are not visible.",
+        "The same-photo original/result and output quality are not established."
+      ],
+      "oniric_panel_observed": true,
+      "glow_parameters_verified": false,
+      "glow_generation_operation_verified": false,
+      "controlled_before_after_verified": false,
+      "caption_meaning_summary": "The author describes softening/reinforcing highlights with glow and choosing strength/threshold carefully; the shown panel does not verify those operations or values."
+    },
+    {
+      "file": "sequence15.jpg",
+      "bytes": 247055,
+      "sha256": "5544ff63e49cc5ab1970b4aeadba21752e3d68b925ee86a9cea3b1193bf64553",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "05:42 / 06:00",
+      "player_display_seconds": 342,
+      "visible_application": "Photoshop with Oniric panel",
+      "preview_zoom_percent": 24.13,
+      "visible_ui": [
+        "Oniric",
+        "1.3.0",
+        "生成",
+        "编辑元素"
+      ],
+      "observations": [
+        "The canvas again presents three different sample photographs.",
+        "Only the Oniric entry panel is shown; glow-strength/threshold controls, a generation action, result layers or an effect toggle are not visible.",
+        "The same-photo original/result and output quality are not established."
+      ],
+      "oniric_panel_observed": true,
+      "glow_parameters_verified": false,
+      "glow_generation_operation_verified": false,
+      "controlled_before_after_verified": false,
+      "caption_meaning_summary": "The author describes softening/reinforcing highlights with glow and choosing strength/threshold carefully; the shown panel does not verify those operations or values."
+    },
+    {
+      "file": "sequence16.jpg",
+      "bytes": 148966,
+      "sha256": "4759420bca8f6d34f1be0a5ffa4617bd4ab7793f43b2c93bacf84c1e185baf29",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": 359.823,
+      "stable_paused": true,
+      "player_display_time": "06:00 / 06:00",
+      "player_display_seconds": 360,
+      "timestamp_evidence_record": "tail-stable-record.json",
+      "visible_application": "Bilibili player end screen",
+      "observations": [
+        "Replay/recommendation end screen, not a retouching workspace.",
+        "Pre/post screenshot DOM states are both paused at359.823, supporting the exact screenshot association.",
+        "Recommendation thumbnails do not verify any new workflow or before/after."
+      ],
+      "retouch_operation_verified": false,
+      "glow_generation_operation_verified": false,
+      "controlled_before_after_verified": false
+    }
+  ],
+  "phase_state": "sixteen samples including stable end screen inspected; continuous watching and original/output QA remain incomplete",
+  "visible_basic_parameter_change_verified": true,
+  "preview_tonal_difference_verified": true,
+  "mask_operation_verified": false,
+  "controlled_same_photo_before_after_verified": false,
+  "verified_continuous_intervals": [],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "original_photo_quality_verified": false,
+  "exported_output_quality_verified": false,
+  "identity_preservation_verified": false,
+  "joint_continuity_verified": false,
+  "natural_shaping_acceptance_verified": false,
+  "user_acceptance_verified": false,
+  "derived_default_rules_eligible": false,
+  "transfer_candidates": [
+    {
+      "idea": "Separate global tonal preparation from local color/texture adjustment using an inverted subject mask.",
+      "basis": "Global tonal control changes in05/06; actual inverted-mask labels plus local temperature/saturation in09 and texture in10.",
+      "is_inference": true,
+      "coverage_limit": "Fine hair/person edge coverage and the mask-creation gesture remain unverified."
+    },
+    {
+      "idea": "Retain costume/wig color and inspect local skin transitions when pursuing a grey background.",
+      "basis": "Cosplay sample previews provide the visual goal only; original-image quality and preservation are not validated.",
+      "is_inference": true
+    },
+    {
+      "idea": "Treat skin color relative to the environment, and verify facial/body transitions separately.",
+      "basis": "The author's brief explanation and current PixCake skin controls; no controlled face/body before-after.",
+      "is_inference": true
+    }
+  ],
+  "limits": [
+    "Playing-frame exact timestamps remain null; only screenshot player UI whole seconds are transcribed.",
+    "Initial duration and batch-end duration differ slightly; the batch record is preserved and neither value identifies a screenshot.",
+    "Three displayed samples are different photographs and cannot serve as original/result pairs.",
+    "Face blur in the recording cannot support any facial geometry or identity QA.",
+    "Extreme example slider values are source-picture configuration, not defaults for PS or other cosplay photographs.",
+    "The software version, plugin compatibility and PS2020 replication are not established by these frames.",
+    "Actual inverted-subject-mask configuration is now observed; a mask label/thumbnail does not prove precise hair/person-edge coverage or manual refinements.",
+    "The PixCake JPG and Lightroom ARW share an identifiable pose, but file conversion, face blur, scales and software rendering preclude a controlled A/B quality conclusion.",
+    "Visible Oniric entry controls and explanatory captions do not prove glow generation, amount or threshold."
+  ],
+  "mask_workspace_observed": true,
+  "mask_configuration_verified": true,
+  "local_inverted_subject_mask_color_configuration_verified": true,
+  "local_inverted_subject_mask_texture_configuration_verified": true,
+  "precise_mask_coverage_verified": false,
+  "mask_creation_gesture_verified": false,
+  "manual_mask_refinement_verified": false,
+  "subject_highlight_increase_verified": false,
+  "pixcake_skin_configuration_verified": true,
+  "glow_generation_operation_verified": false,
+  "final_player_end_screen_observed": true,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

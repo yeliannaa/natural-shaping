@@ -1,0 +1,313 @@
+{
+  "case_id": "V06",
+  "phase": "lightroom-and-pixcake-color-navigation",
+  "recorded_on": "2026-10-04",
+  "source_url": "https://www.bilibili.com/video/BV1RRNkzVESP/",
+  "source_genre": "general portrait hybrid workflow; not a directly inspected cosplay case",
+  "inspection_scope": "Five actual discrete color-stage navigation samples covering Lightroom profile/Basic/HSL views and PixCake profile/eye pages; not continuous full watching.",
+  "metadata_read": [
+    "lr-phase-record.json"
+  ],
+  "parent_reported_source_decode": {
+    "width": 1920,
+    "height": 1080
+  },
+  "first_capture_batch_final_state_record_available": false,
+  "unrecorded_capture_batch_endpoint": null,
+  "subtitle_policy": "Short meaning summaries only; no transcript.",
+  "frames": [
+    {
+      "file": "lr01.jpg",
+      "bytes": 167573,
+      "sha256": "96da4c8875f9d056db44412ee137202a151995df7eeebf49f2fba2edeb2723e4",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:41 / 29:14",
+      "player_display_seconds": 101,
+      "requested_navigation_seconds": 80,
+      "navigation_request_is_frame_timestamp": false,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC08832.ARW",
+      "visible_ui": [
+        "修改照片",
+        "配置文件浏览器",
+        "相机 FL",
+        "FL",
+        "IN",
+        "NOSTALGIC Neg",
+        "NT",
+        "PT",
+        "SH",
+        "ST",
+        "Teal and Orange"
+      ],
+      "parameters": {
+        "profile_amount": 100
+      },
+      "observations": [
+        "The target is a seated woman reading on a swing, wearing a pale patterned dress.",
+        "Camera profile browsing is shown with 相机 FL as the current profile label and a FL tile outlined.",
+        "A profile list and preview are not a verified click or controlled profile before/after."
+      ],
+      "caption_meaning_summary": "The author discusses camera-related profiles.",
+      "profile_browser_observed": true,
+      "profile_selection_gesture_verified": false,
+      "profile_before_after_verified": false
+    },
+    {
+      "file": "lr02.jpg",
+      "bytes": 162823,
+      "sha256": "3472b284a526d1484384697d733687d97f17aa30f0aa0787415d1165e1640ed3",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "04:01 / 29:14",
+      "player_display_seconds": 241,
+      "requested_navigation_seconds": 220,
+      "navigation_request_is_frame_timestamp": false,
+      "visible_application": "PixCake",
+      "visible_target_filename": "DSC02252.ARW",
+      "preview_zoom_percent": 22,
+      "visible_ui": [
+        "色彩调节",
+        "全图调色",
+        "配置文件",
+        "滤镜",
+        "无",
+        "白平衡",
+        "原照设置"
+      ],
+      "parameters": {
+        "profile": "Provia 400X +",
+        "profile_amount": 56,
+        "selected_filter": "无"
+      },
+      "observations": [
+        "This frame is PixCake, despite the LR phase/filename prefix.",
+        "A different outdoor portrait in a blue gingham sleeveless dress is shown.",
+        "The subtitle suggests reducing a strong effect toward50, but the actually visible amount is56;50 is not recorded as an executed value.",
+        "The AI-color introduction/experience entry is visible but AI-color application is not established."
+      ],
+      "profile_configuration_verified": true,
+      "profile_parameter_change_verified": false,
+      "ai_color_application_verified": false,
+      "controlled_before_after_verified": false
+    },
+    {
+      "file": "lr03.jpg",
+      "bytes": 140969,
+      "sha256": "a0cdb7935d15d5b14caa65c1326308c7e70df7adbad9d33e899cc73bc2c39196",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "07:01 / 29:14",
+      "player_display_seconds": 421,
+      "requested_navigation_seconds": 400,
+      "navigation_request_is_frame_timestamp": false,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC01653.ARW",
+      "visible_ui": [
+        "修改照片",
+        "白平衡 自定",
+        "色调曲线"
+      ],
+      "parameters": {
+        "色温": 5309,
+        "色调": 11,
+        "曝光": 0.3,
+        "对比度": -25,
+        "高光": -50,
+        "阴影": 54,
+        "白色色阶": 0,
+        "黑色色阶": 0,
+        "纹理": 0,
+        "清晰度": 0,
+        "去朦胧": 0,
+        "鲜艳度": 0,
+        "饱和度": 5
+      },
+      "observations": [
+        "A third portrait shows a seated woman in black against a red wall and a chair.",
+        "Readable global Basic controls are recorded as current configuration; no specific slider input gesture is shown.",
+        "A diagonal tone-curve line is visible; no added curve point or curve-change action is established."
+      ],
+      "global_color_configuration_verified": true,
+      "parameter_change_gesture_verified": false,
+      "curve_change_verified": false,
+      "controlled_before_after_verified": false
+    },
+    {
+      "file": "lr04.jpg",
+      "bytes": 156396,
+      "sha256": "f7d27bfc49560d7e0bb62bd67cac304368e8b4e757dc13131559d32745492ab0",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "09:41 / 29:14",
+      "player_display_seconds": 581,
+      "requested_navigation_seconds": 560,
+      "navigation_request_is_frame_timestamp": false,
+      "visible_application": "Adobe Photoshop Lightroom Classic",
+      "visible_target_filename": "DSC02252.ARW",
+      "visible_ui": [
+        "修改照片",
+        "混色器",
+        "HSL",
+        "全部",
+        "色相",
+        "饱和度",
+        "明亮度"
+      ],
+      "parameters": {
+        "色相": {
+          "红色": 0,
+          "橙色": -7,
+          "黄色": 0,
+          "绿色": -23,
+          "浅绿色": 0,
+          "蓝色": 0,
+          "紫色": 0,
+          "洋红": 0
+        },
+        "饱和度": {
+          "红色": 65,
+          "橙色": -6,
+          "黄色": 0,
+          "绿色": 0,
+          "浅绿色": 0,
+          "蓝色": 0,
+          "紫色": 0,
+          "洋红": 0
+        },
+        "明亮度_仅可见值": {
+          "红色": 0,
+          "橙色": 0,
+          "黄色": 0,
+          "绿色": 0,
+          "浅绿色": 0,
+          "蓝色": 0
+        }
+      },
+      "observations": [
+        "The HSL mixer shows a different current configuration for the same identifiable DSC02252 pose previously sampled in PixCake lr02.",
+        "The preview is brighter than the earlier PixCake view, but different application rendering, unseen intervening controls and lack of an original/result toggle prevent a controlled comparison.",
+        "Lower luminance rows are outside the visible panel and omitted.",
+        "The caption discusses shifting green toward yellow; the actual current hue controls are recorded separately."
+      ],
+      "caption_meaning_summary": "The author discusses a warmer/yellower direction for the greens.",
+      "hsl_configuration_verified": true,
+      "parameter_change_gesture_verified": false,
+      "controlled_before_after_verified": false,
+      "software_quality_comparison_verified": false
+    },
+    {
+      "file": "lr05.jpg",
+      "bytes": 188752,
+      "sha256": "31b6cb55784549514ba2a4a0901ac5ae90e9526f36ae432684643f8653a8320a",
+      "dimensions": [
+        1698,
+        1080
+      ],
+      "encoding": "JPEG",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "11:41 / 29:14",
+      "player_display_seconds": 701,
+      "requested_navigation_seconds": 680,
+      "navigation_request_is_frame_timestamp": false,
+      "visible_application": "PixCake",
+      "visible_target_filename": "DSC07568.jpg",
+      "preview_zoom_percent": 67,
+      "visible_ui": [
+        "人像美化",
+        "眼睛增强",
+        "牙齿美化",
+        "双眼皮",
+        "无"
+      ],
+      "parameters": {
+        "微笑嘴角": 0,
+        "亮眼": {
+          "左": 0,
+          "右": 0
+        },
+        "祛红血丝": 76,
+        "祛双眼皮贴": {
+          "左": 0,
+          "右": 0
+        },
+        "眼镜祛反光": 0,
+        "双眼皮预设": "无"
+      },
+      "observations": [
+        "A different indoor portrait is displayed close-up with the eye-enhancement page.",
+        "The caption refers to an earlier state, but no original/result toggle is visible in this still.",
+        "The readable settings are current state only; they do not establish retouch quality or identity preservation.",
+        "The same DSC07568 target appears in the separately documented PixCake phase; this frame does not independently confirm every earlier skin setting."
+      ],
+      "eye_configuration_verified": true,
+      "eye_parameter_change_gesture_verified": false,
+      "controlled_before_after_verified": false,
+      "original_image_status_verified": false,
+      "identity_preservation_verified": false
+    }
+  ],
+  "phase_state": "five requested color-stage samples and combined playback record inspected; no further local sample is pending for this subtask",
+  "verified_continuous_intervals": [],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "controlled_before_after_verified": false,
+  "original_photo_quality_verified": false,
+  "exported_output_quality_verified": false,
+  "identity_preservation_verified": false,
+  "joint_continuity_verified": false,
+  "natural_shaping_acceptance_verified": false,
+  "user_acceptance_verified": false,
+  "derived_default_rules_eligible": false,
+  "limits": [
+    "All exact frame times are null; UI whole-second readings and requested navigation values are separate.",
+    "The first capture batch timed out without a final recording; no endpoint is inferred.",
+    "Filename lrXX and chapter wording do not identify actual application; lr02 is PixCake.",
+    "Different portraits/poses/filenames cannot be assembled into an original/result comparison.",
+    "Current profile and Basic values are example settings, not universal cosplay or PS defaults.",
+    "Source decode quality and video application zoom do not verify original-image pixel quality.",
+    "No costume, wig, identity or joint-continuity QA is established by this ordinary-portrait segment.",
+    "lr04 shares DSC02252.ARW and pose with lr02, but cross-software rendering and unseen intervening changes do not establish a controlled before/after or software-quality comparison.",
+    "A subtitle referring to an earlier state is insufficient to classify lr05 as an original image.",
+    "The743.931337 second-batch endpoint is not a screenshot timestamp and does not repair the missing first-batch final state."
+  ],
+  "root_second_capture_batch_end_state": {
+    "timestamp_seconds": 743.931337,
+    "duration_seconds": 1754,
+    "paused": true,
+    "playback_rate": 1,
+    "decoded_width": 1920,
+    "decoded_height": 1080,
+    "scope": "second_capture_batch_end_only",
+    "is_frame_timestamp": false
+  },
+  "first_batch_record_not_finalized": true,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

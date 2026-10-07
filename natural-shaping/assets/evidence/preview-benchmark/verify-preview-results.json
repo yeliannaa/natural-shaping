@@ -1,0 +1,52 @@
+{
+  "previews": [
+    {
+      "name": "overall",
+      "size": [
+        800,
+        600
+      ],
+      "profile": "sRGB IEC61966-2.1",
+      "direct_jpeg_pixels_identical": true,
+      "legacy_png_to_jpeg_mae": 0.4212076388888889,
+      "legacy_png_to_jpeg_max_error": 6
+    },
+    {
+      "name": "detail",
+      "size": [
+        400,
+        300
+      ],
+      "profile": "sRGB IEC61966-2.1",
+      "direct_jpeg_pixels_identical": true,
+      "legacy_png_to_jpeg_mae": 0.5163305555555555,
+      "legacy_png_to_jpeg_max_error": 3
+    },
+    {
+      "name": "small",
+      "size": [
+        40,
+        50
+      ],
+      "profile": "sRGB IEC61966-2.1",
+      "direct_jpeg_pixels_identical": true,
+      "legacy_png_to_jpeg_mae": 0.15533333333333332,
+      "legacy_png_to_jpeg_max_error": 1
+    }
+  ],
+  "edited_version_mean_absolute_difference": 33.738960416666664,
+  "timings": {
+    "legacy": 3883,
+    "batch": 2626,
+    "freshness": 4518
+  },
+  "rgb8_legacy_to_batch_mae": 0.5543133583021224,
+  "timing_caveat": "Legacy PNG and batch JPEG timings are not a same-format speed comparison.",
+  "failure_test_note": "Global JPEGSaveOptions replacement did not intercept the native constructor; that initial injection attempt was inconclusive. The subsequent actual overlong-filename native save failure verified cleanup successfully.",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

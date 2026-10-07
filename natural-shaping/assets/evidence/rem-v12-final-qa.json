@@ -1,0 +1,39 @@
+{
+  "psdBytes": 1612210420,
+  "psdLayerRecordsIncludingGroups": 140,
+  "dimensions": [
+    3800,
+    4750
+  ],
+  "depth": 16,
+  "mainExportVisuallyReviewed": true,
+  "rootReviewed": [
+    "whole",
+    "head and ears",
+    "hand and camera",
+    "shoulders",
+    "sleeves",
+    "skirt",
+    "legs and shoes",
+    "removed box residue"
+  ],
+  "independentReview": "actual final JPG reviewed; no obvious seam requiring another repair in reviewed regions; fine warm wrist edge remains",
+  "userAccepted": true,
+  "acceptanceFeedback": {
+    "date": "2026-10-06",
+    "timezone": "Asia/Shanghai",
+    "feedback": "目前这两次最终已经能达到我的预期了",
+    "scope": [
+      "dora final reference v4",
+      "Rem complete v12"
+    ],
+    "excludes": "Earlier rejected or intermediate versions; other portraits",
+    "source": "Current chat explicit user feedback"
+  },
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

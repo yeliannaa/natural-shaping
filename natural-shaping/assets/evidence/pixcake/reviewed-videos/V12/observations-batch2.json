@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-03",
+  "video_id": "V12",
+  "source_url": "https://www.bilibili.com/video/BV1VLLm6aExw/",
+  "scope": "independent visual inspection of root-captured actual screenshots; not an independent full-video watch",
+  "subtitle_policy": "short necessary excerpts and meaning summaries, not a transcript",
+  "batch_frame_review_complete": true,
+  "root_playback_records_read": [
+    "sequence-batch1.json",
+    "sequence-batch2.json"
+  ],
+  "root_reported_end_state": {
+    "record": "sequence-batch2.json",
+    "time": 109.588936,
+    "duration": 112.918865,
+    "paused": true,
+    "ended": false,
+    "rate": 0.5,
+    "decoded_width": 1920,
+    "decoded_height": 1080,
+    "fully_watched": false
+  },
+  "frames": [
+    {
+      "frame_id": "V12-SEQ05",
+      "asset_path": "sequence-05.jpg",
+      "bytes": 124855,
+      "sha256": "ec6fac37cbf80f266b0eb199f789d2d7d6a4b4f231b5a2f0cc3e8a6166f103f6",
+      "width": 1698,
+      "height": 1080,
+      "actual_image_format": "JPEG",
+      "timestamp_seconds": 55.993229,
+      "timestamp_basis": "root verified stable paused time; corroborated by sequence-batch1 end state and sequence-batch2 frame record",
+      "player_display_time": "00:56 / 01:53",
+      "playback_state_at_capture": "paused",
+      "inspected_with": "view_image(detail=original)",
+      "visible_subtitle": null,
+      "subtitle_meaning_summary": "作者说明此处是在影调与人物调整后进一步处理。",
+      "visible_observations": [
+        "完整右栏显示衣物美化面板和多个滑杆，程度一项显示47。",
+        "下方四个滑杆的100值可见，但完整标签未达到可靠逐字核对，暂不对应到具体功能。",
+        "一个蓝色开启状态开关可见，但其完整标签与实际保护效果未核实。"
+      ],
+      "verified_numeric_parameters": [
+        {
+          "panel": "衣物美化",
+          "label": "程度",
+          "value": 47,
+          "scope": "current sample only"
+        }
+      ],
+      "unassigned_visible_slider_values": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "protection_parameter_label_verified": false,
+      "protection_effect_verified": false,
+      "actual_adjustment_action_verified": false,
+      "matched_before_after_verified": false
+    },
+    {
+      "frame_id": "V12-SEQ06",
+      "asset_path": "sequence-06.jpg",
+      "bytes": 136599,
+      "sha256": "976c80d1f1f6065aaf7d5570d6aa905b83c27672bd2a09027e69c4fd9dad3965",
+      "width": 1698,
+      "height": 1080,
+      "actual_image_format": "JPEG",
+      "timestamp_seconds": null,
+      "player_display_time": "01:07 / 01:53",
+      "timestamp_basis": "only whole-second player UI time is visible; exact frame time not established",
+      "playback_state_at_capture": "playing",
+      "inspected_with": "view_image(detail=original)",
+      "visible_subtitle": "一句话P图",
+      "subtitle_is_excerpt": true,
+      "subtitle_meaning_summary": "作者介绍AI工具箱内的幻象Cos和一句话P图功能。",
+      "visible_observations": [
+        "AI工具箱对话框可见，展示多个效果卡片，其中一句话P图卡片带使用按钮。"
+      ],
+      "verified_numeric_parameters": [],
+      "actual_selection_click_verified": false,
+      "matched_before_after_verified": false
+    },
+    {
+      "frame_id": "V12-SEQ07",
+      "asset_path": "sequence-07.jpg",
+      "bytes": 136896,
+      "sha256": "9e0b03a867a31b62fbd210a05d9ab92c0a014a060efb99cd58708dac2c2e9aa8",
+      "width": 1698,
+      "height": 1080,
+      "actual_image_format": "JPEG",
+      "timestamp_seconds": null,
+      "player_display_time": "01:18 / 01:53",
+      "timestamp_basis": "only whole-second player UI time is visible; exact frame time not established",
+      "playback_state_at_capture": "playing",
+      "inspected_with": "view_image(detail=original)",
+      "visible_subtitle": null,
+      "subtitle_meaning_summary": "作者评价生成结果的创意效果。",
+      "visible_observations": [
+        "一句话P图面板显示提示词输入区、多张结果缩略图和应用按钮。",
+        "人物周围的地面预览新增白色花朵，与前面无地面花朵的预览不同。"
+      ],
+      "exact_prompt_text_verified": false,
+      "verified_numeric_parameters": [],
+      "generation_candidate_preview_verified": true,
+      "application_or_export_verified": false,
+      "true_occluded_anatomy_reconstruction_verified": false,
+      "identity_preservation_verified": false,
+      "matched_original_resolution_before_after_verified": false
+    },
+    {
+      "frame_id": "V12-SEQ08",
+      "asset_path": "sequence-08.jpg",
+      "bytes": 127624,
+      "sha256": "62934f7839fe2b4c2e962b5620a62c9feae3653ab29c7f89db83881f2ca8ad5a",
+      "width": 1698,
+      "height": 1080,
+      "actual_image_format": "JPEG",
+      "timestamp_seconds": null,
+      "player_display_time": "01:29 / 01:53",
+      "timestamp_basis": "only whole-second player UI time is visible; exact frame time not established",
+      "playback_state_at_capture": "playing",
+      "inspected_with": "view_image(detail=original)",
+      "visible_subtitle": "AI补光",
+      "subtitle_is_excerpt": true,
+      "subtitle_meaning_summary": "作者提到AI补光与发光效果。",
+      "visible_observations": [
+        "AI补光面板显示补光强度37、色温-23，已由root与独立核读者双核。",
+        "人物和地面花朵预览可见，花朵分布与上一帧不同；不能将内容变化单独归因于补光。"
+      ],
+      "verified_numeric_parameters": [
+        {
+          "panel": "AI补光",
+          "label": "补光强度",
+          "value": 37,
+          "scope": "current tutorial sample only",
+          "double_checked": true
+        },
+        {
+          "panel": "AI补光",
+          "label": "色温",
+          "value": -23,
+          "scope": "current tutorial sample only",
+          "double_checked": true
+        }
+      ],
+      "glow_operation_verified": false,
+      "controlled_relight_before_after_verified": false,
+      "identity_preservation_verified": false,
+      "original_photo_output_quality_verified": false
+    },
+    {
+      "frame_id": "V12-SEQ09",
+      "asset_path": "sequence-09.jpg",
+      "bytes": 86026,
+      "sha256": "3870bee6ff6b79a6b7520d37db5e5ee63ccd15a559ba448b9a626e6acb61b89f",
+      "width": 1698,
+      "height": 1080,
+      "actual_image_format": "JPEG",
+      "timestamp_seconds": 109.588936,
+      "timestamp_basis": "root reported a stable paused end-state with no intervening playback action before capture; matches sequence-batch2 end state",
+      "player_display_time": "01:50 / 01:53",
+      "playback_state_at_capture": "paused",
+      "inspected_with": "view_image(detail=original)",
+      "visible_subtitle": null,
+      "visible_observations": [
+        "尾段显示同一人物较暗的照片预览，地面未见前两帧添加的白花。",
+        "没有原图或效果图标签，也未显示修图参数面板。"
+      ],
+      "verified_numeric_parameters": [],
+      "author_designated_original_verified": false,
+      "matched_original_resolution_before_after_verified": false
+    }
+  ],
+  "limits": [
+    "Readable sample values are not Photoshop equivalents, universal Cos parameters or natural-shaping defaults.",
+    "Creative flower generation is not evidence of reconstructing genuine anatomy hidden by a box or other obstruction.",
+    "Candidate previews and application buttons do not verify final application, export, identity preservation or original-photo detail quality.",
+    "Different flower distributions across sequence-07 and sequence-08 prevent treating them as a controlled relighting comparison.",
+    "The final dark image lacks a before/original label; its role is not inferred from the filename or appearance.",
+    "Root playback end-state and isolated screenshot review do not establish an independently verified continuous watch interval."
+  ],
+  "continuous_viewing_intervals_verified_by_this_reviewer": [],
+  "fully_watched_by_this_reviewer": false,
+  "complete_operation_sequence_verified": false,
+  "natural_shaping_verified": false,
+  "eligible_for_derived_default_rules": false,
+  "derived_default_rules_added": [],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

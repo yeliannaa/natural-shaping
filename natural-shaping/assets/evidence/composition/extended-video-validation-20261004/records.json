@@ -1,0 +1,412 @@
+{
+  "date": "2026-10-04",
+  "counts": {
+    "captured_screenshots": 22,
+    "distinct_image_states": 21,
+    "distinct_paused_states": 20,
+    "moving_single_frames": 1,
+    "duplicate_enlargements": 1,
+    "continuous_full_video_viewings": 0,
+    "videos_with_actual_frame_review": 3,
+    "new_primary_text_only_composite_cases": 2
+  },
+  "scope": "Actual public video images reviewed, not continuous full videos; duplicate maps and introductory frames are not distinct pose cases. Composite articles checked as text/captions only. No Photoshop connection or photo edits in this research round.",
+  "frames": [
+    {
+      "id": "V09-E01",
+      "file": "frames/V09-E01.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "C7E6D49EAB5941E6FEA9961C3FE1F848EE27D6008D8F0A55D95226A453F6D6C4",
+      "paused": true,
+      "observed_dom_time_seconds": 42.03022,
+      "exact_bound_frame_time_seconds": 42.03022,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": null,
+      "playback_rate_at_capture": null,
+      "metadata_note": "initial journal records only timestamp/state; full source decoding was checked in browser"
+    },
+    {
+      "id": "V09-E02",
+      "file": "frames/V09-E02.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "546FDC6984E3A171C1B55ECC6A0251C7DB7AD313D0BFBAEA37A19C7F4F63F5EC",
+      "paused": true,
+      "observed_dom_time_seconds": 21.365971,
+      "exact_bound_frame_time_seconds": 21.365971,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": null,
+      "playback_rate_at_capture": null,
+      "metadata_note": "initial journal records only timestamp/state; full source decoding was checked in browser"
+    },
+    {
+      "id": "V09-E03",
+      "file": "frames/V09-E03.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "5A08C8B70769B958E7DDB58BFC188C2067CB9F344226EFEEDFFD96B665905754",
+      "paused": false,
+      "observed_dom_time_seconds": 45.1152,
+      "exact_bound_frame_time_seconds": null,
+      "time_binding": "moving capture; exact image time not established",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": null,
+      "playback_rate_at_capture": null,
+      "metadata_note": "initial journal records only timestamp/state; full source decoding was checked in browser"
+    },
+    {
+      "id": "V09-E04",
+      "file": "frames/V09-E04.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "B6EC16E0AD51EFB7B9E61EA0853F1BE6D7D3B424A6829943D87036D5BA149223",
+      "paused": true,
+      "observed_dom_time_seconds": 107.376196,
+      "exact_bound_frame_time_seconds": 107.376196,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": null,
+      "playback_rate_at_capture": null,
+      "metadata_note": "initial journal records only timestamp/state; full source decoding was checked in browser"
+    },
+    {
+      "id": "V09-E05",
+      "file": "frames/V09-E05.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "F3EED4DE9BE765157B202E302C0374C79065AA17C8A6B23D62E97EF34753612E",
+      "paused": true,
+      "observed_dom_time_seconds": 115.972283,
+      "exact_bound_frame_time_seconds": 115.972283,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": null,
+      "playback_rate_at_capture": null,
+      "metadata_note": "initial journal records only timestamp/state; full source decoding was checked in browser"
+    },
+    {
+      "id": "V09-E06",
+      "file": "frames/V09-E06.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "D7234F912D0AE7B6BE09756159BED1E027D07C22B77A7208260F66E801CC6695",
+      "paused": true,
+      "observed_dom_time_seconds": 131.599225,
+      "exact_bound_frame_time_seconds": 131.599225,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 0.5,
+      "metadata_note": null
+    },
+    {
+      "id": "V09-E07",
+      "file": "frames/V09-E07.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "CE6352BCFC2E35D807DCC3E584182F39605D653B8FE726FF2B14D720D98DBDB7",
+      "paused": true,
+      "observed_dom_time_seconds": 147.234362,
+      "exact_bound_frame_time_seconds": 147.234362,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 0.5,
+      "metadata_note": null
+    },
+    {
+      "id": "V09-E08",
+      "file": "frames/V09-E08.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "7718F6FF677F7B3826DC3D2C87A6487A08BD6DF4B178F7929C4423A98EB13409",
+      "paused": true,
+      "observed_dom_time_seconds": 162.857875,
+      "exact_bound_frame_time_seconds": 162.857875,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 0.5,
+      "metadata_note": null
+    },
+    {
+      "id": "V09-E09",
+      "file": "frames/V09-E09.png",
+      "url": "https://www.bilibili.com/video/BV1XxJGzQEEa/",
+      "sha256": "39D9FF51EF62FD7118AD4CF116D15219D4792C103719CEDC4F6988C9DC34ACE3",
+      "paused": true,
+      "observed_dom_time_seconds": 178.477302,
+      "exact_bound_frame_time_seconds": 178.477302,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 0.5,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E01",
+      "file": "frames/V10-E01.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "56BE08E1F622D56981AD6E1B5EDF378F705E3623628295CAB8B52FE0A662BC31",
+      "paused": true,
+      "observed_dom_time_seconds": 21.445044,
+      "exact_bound_frame_time_seconds": 21.445044,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E02",
+      "file": "frames/V10-E02.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "AB46856BE499F9DF795535D449E5C7B0E56E298908E75FAE72B2F48830EA8C27",
+      "paused": true,
+      "observed_dom_time_seconds": 47.694926,
+      "exact_bound_frame_time_seconds": 47.694926,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E02-full",
+      "file": "frames/V10-E02-full.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "7F4030D34602A0599213CC62521CC8319ED1473D33E73095FDA38E0213B586EE",
+      "paused": true,
+      "observed_dom_time_seconds": 47.694926,
+      "exact_bound_frame_time_seconds": 47.694926,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": "V10-E02",
+      "counts_as_new_image_state": false,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E03",
+      "file": "frames/V10-E03.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "175BEB8B248470ABB8B55C829A0249AFA9240C9804977DF8C5596CF8D5115901",
+      "paused": true,
+      "observed_dom_time_seconds": 73.941058,
+      "exact_bound_frame_time_seconds": 73.941058,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E04",
+      "file": "frames/V10-E04.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "C78878811032CA2E6DF6EEABADD3BB387094787A29B7EF981E227D175CAD0210",
+      "paused": true,
+      "observed_dom_time_seconds": 100.176227,
+      "exact_bound_frame_time_seconds": 100.176227,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E05",
+      "file": "frames/V10-E05.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "5E2335EDA95017D3980DEF7919620E80A5A9697AD8A436400F790F48DBAE49AB",
+      "paused": true,
+      "observed_dom_time_seconds": 126.453364,
+      "exact_bound_frame_time_seconds": 126.453364,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E06",
+      "file": "frames/V10-E06.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "FE4D2E076902A77D413319D990B5CD82DB145989EA84C2B75199505D8131C772",
+      "paused": true,
+      "observed_dom_time_seconds": 152.714242,
+      "exact_bound_frame_time_seconds": 152.714242,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E07",
+      "file": "frames/V10-E07.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "046FD27546145B452EAAACD8078EDCAD1C825E08632E81A0EDFAA62CAA57BF30",
+      "paused": true,
+      "observed_dom_time_seconds": 178.959421,
+      "exact_bound_frame_time_seconds": 178.959421,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V10-E08",
+      "file": "frames/V10-E08.png",
+      "url": "https://www.bilibili.com/video/BV1d7xneGEDk/",
+      "sha256": "4D59413DB31ED3F7568EEAAFF5DC6075108CE8BB4D4CC7B1D7678E1F8CD03DA2",
+      "paused": true,
+      "observed_dom_time_seconds": 205.187849,
+      "exact_bound_frame_time_seconds": 205.187849,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V08-E01",
+      "file": "frames/V08-E01.png",
+      "url": "https://www.bilibili.com/video/BV1jB9MYtE4o/",
+      "sha256": "4E8A6A1F22F9BA7808304E54E9DFB9AA4F18F0DD4AD94360DFAE351DDF5BDDE6",
+      "paused": true,
+      "observed_dom_time_seconds": 106.267783,
+      "exact_bound_frame_time_seconds": 106.267783,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V08-E02",
+      "file": "frames/V08-E02.png",
+      "url": "https://www.bilibili.com/video/BV1jB9MYtE4o/",
+      "sha256": "39B3B0F68CF4FB7313CC906B6E8DF18AA9828B8D0401EF25104A739CD4E35939",
+      "paused": true,
+      "observed_dom_time_seconds": 132.562705,
+      "exact_bound_frame_time_seconds": 132.562705,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V08-E03",
+      "file": "frames/V08-E03.png",
+      "url": "https://www.bilibili.com/video/BV1jB9MYtE4o/",
+      "sha256": "B14A5869D45EFB8892089E6A69C0B5F056C7E727EC138D5A68417FF802C95B37",
+      "paused": true,
+      "observed_dom_time_seconds": 158.884029,
+      "exact_bound_frame_time_seconds": 158.884029,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    },
+    {
+      "id": "V08-E04",
+      "file": "frames/V08-E04.png",
+      "url": "https://www.bilibili.com/video/BV1jB9MYtE4o/",
+      "sha256": "C479DF250346E79DA874001325C3C91E4F32A6179FAC45A045290B05D9BE9B86",
+      "paused": true,
+      "observed_dom_time_seconds": 185.155277,
+      "exact_bound_frame_time_seconds": 185.155277,
+      "time_binding": "paused player during image and DOM reads",
+      "duplicate_of": null,
+      "counts_as_new_image_state": true,
+      "decoded_video_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "playback_rate_at_capture": 1,
+      "metadata_note": null
+    }
+  ],
+  "source_reviews": [
+    "v09-frame-review.md",
+    "v10-frame-review.md",
+    "v08-frame-review.md",
+    "occlusion-reference-cases.md",
+    "three-photo-independent-diagnosis.md"
+  ],
+  "paid_sources": "Excluded by user request; no paid preview or mirror used.",
+  "stop_reason": "Framing already tested; the new cases provide enough practical choices for whole head-neck-shoulder poses, hand tasks and contact, seated shoes and camera placement, and occlusion materials. Further generic viewing will not provide missing same-person pixels or replace result QA.",
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

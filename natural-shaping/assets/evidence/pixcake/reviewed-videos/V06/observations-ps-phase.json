@@ -1,0 +1,605 @@
+{
+  "case_id": "V06",
+  "phase": "photoshop-and-pixcake-comparison",
+  "recorded_on": "2026-10-04",
+  "source_url": "https://www.bilibili.com/video/BV1RRNkzVESP/",
+  "inspection_scope": "fifteen actual isolated frames spanning chapter boundaries, Photoshop transform/Liquify, quick mask/local smoothing/skin-tone plugin history, and PixCake comparison views; not continuous full watching",
+  "metadata_read": [
+    "ps-phase-record.json"
+  ],
+  "navigation_intent_only": {
+    "requested_ui_seek_seconds": 1200,
+    "is_frame_timestamp": false
+  },
+  "root_state_is_not_frame_timestamp": true,
+  "screenshot_dimensions": [
+    1698,
+    1080
+  ],
+  "screenshot_encoding_verified": "JPEG",
+  "subtitle_policy": "brief meaning summaries only; no transcript",
+  "frames": [
+    {
+      "file": "ps01.jpg",
+      "bytes": 142905,
+      "sha256": "90adc9f5937344977e3095cbb48c1e7fb9f828663a6689905c56a8d294b58676",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "20:21 / 29:14",
+      "player_display_seconds": 1221,
+      "visible_application": "PixCake",
+      "visible_target_filename": "DSC00335.jpg",
+      "preview_zoom_percent": 22,
+      "visible_ui": [
+        "色彩调节",
+        "白平衡 原照设置",
+        "单视图"
+      ],
+      "parameters": {
+        "色温": 0,
+        "色调": 0,
+        "曝光": 0,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": 0,
+        "阴影": 0,
+        "白色": 0,
+        "黑色": 0,
+        "清晰度": 0
+      },
+      "observations": [
+        "Single photo of a woman holding a cup and seated against a counter; the regular color panel is visible."
+      ],
+      "photoshop_operation_verified": false,
+      "parameter_change_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps02.jpg",
+      "bytes": 189630,
+      "sha256": "414468fb374f156defbfbf6df71d3a3aec138890bf8b52b8a436b63717f36bf5",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "20:42 / 29:14",
+      "player_display_seconds": 1242,
+      "visible_application": "PixCake",
+      "visible_ui": [
+        "图片名称",
+        "图片尺寸",
+        "图片大小",
+        "元数据"
+      ],
+      "ui_reported_file_metadata": {
+        "filename": "DSC00335.jpg",
+        "image_dimensions": [
+          4603,
+          6905
+        ],
+        "image_size_mb": 15.36,
+        "color_space": "sRGB IEC61966-2.1"
+      },
+      "actual_local_photo_metadata_verified": false,
+      "observations": [
+        "Multi-photo library grid and metadata panel; no Photoshop editing canvas."
+      ],
+      "photoshop_operation_verified": false,
+      "batch_output_quality_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps03.jpg",
+      "bytes": 189330,
+      "sha256": "aa2b8292174891da87f55e573b8f524700898c1eb493942ce0020aa21b37766f",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "21:04 / 29:14",
+      "player_display_seconds": 1264,
+      "visible_application": "Photoshop home/learning screen plus Finder window",
+      "visible_ui": [
+        "学习",
+        "新文件",
+        "打开"
+      ],
+      "visible_chapter_overlay": "步骤三 PS液化及润色",
+      "observations": [
+        "Finder shows a folder of image thumbnails and JPG filenames over Photoshop's learning/home interface.",
+        "No image editing canvas, Liquify dialog, distortion brush, layers or retouch result is visible."
+      ],
+      "caption_meaning_summary": "Describes exporting the pictures before the Photoshop stage.",
+      "image_export_success_verified": false,
+      "liquify_operation_verified": false,
+      "photoshop_operation_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps04.jpg",
+      "bytes": 184307,
+      "sha256": "a0088fbe5626cd58303c9c8ee061c77adc5aa271f30b763be9c36d0222779010",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "21:48 / 29:14",
+      "player_display_seconds": 1308,
+      "visible_application": "Photoshop",
+      "visible_target_filename": "DSC00335.jpg",
+      "preview_zoom_percent": 25,
+      "visible_ui": [
+        "自由变换",
+        "图层 0"
+      ],
+      "parameters": {
+        "transform_width_percent": 100,
+        "transform_height_percent": 100,
+        "rotation_degrees": 10
+      },
+      "observations": [
+        "Transform handles and transparent checkerboard triangles surround the rotated photograph.",
+        "A third-party retouch panel is visible; no action of that panel is established."
+      ],
+      "transform_configuration_verified": true,
+      "transform_commit_verified": false,
+      "pose_geometry_edit_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps05.jpg",
+      "bytes": 171169,
+      "sha256": "da8fb9ded40e01e55b2642cf0731c4a177c501c9065941cc979cbb93b09198f0",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "22:09 / 29:14",
+      "player_display_seconds": 1329,
+      "visible_application": "Photoshop Liquify",
+      "preview_zoom_percent": 50,
+      "visible_ui": [
+        "画笔工具选项",
+        "人脸识别液化",
+        "脸部 #1",
+        "预览",
+        "取消",
+        "确定"
+      ],
+      "parameters": {
+        "brush_pressure": 30,
+        "眼睛大小": {
+          "左": 0,
+          "右": 0
+        },
+        "眼睛高度": {
+          "左": 0,
+          "右": 0
+        },
+        "眼睛宽度": {
+          "左": 0,
+          "右": 0
+        },
+        "眼睛斜度": {
+          "左": 0,
+          "右": 0
+        },
+        "眼睛距离": 0,
+        "鼻子高度": 0,
+        "鼻子宽度": 0,
+        "微笑": 0,
+        "上嘴唇": 0,
+        "下嘴唇": 0,
+        "嘴唇宽度": 0,
+        "嘴唇高度": 0,
+        "前额": 0,
+        "下巴高度": 0,
+        "下颌": 0
+      },
+      "liquify_workspace_observed": true,
+      "preview_checked": true,
+      "painted_protection_region_verified": false,
+      "manual_stroke_verified": false,
+      "actual_geometry_effect_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps06.jpg",
+      "bytes": 134256,
+      "sha256": "3f2843edf2902f39aafcaca001996c47ae56f9d736dd4612bae9a3a3cea38e71",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "22:30 / 29:14",
+      "player_display_seconds": 1350,
+      "visible_application": "Photoshop Liquify",
+      "preview_zoom_percent": 26.6,
+      "parameters": {
+        "brush_pressure": 30,
+        "眼睛距离": 0,
+        "下颌": -3
+      },
+      "observed_parameter_difference_from_ps05": {
+        "下颌": [
+          0,
+          -3
+        ]
+      },
+      "parameter_difference_verified": true,
+      "caption_meaning_summary": "Discusses eye distance while the visible eye-distance control remains zero.",
+      "eye_distance_change_verified": false,
+      "exact_input_gesture_verified": false,
+      "geometry_commit_verified": false,
+      "manual_stroke_verified": false,
+      "actual_geometry_effect_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps07.jpg",
+      "bytes": 134085,
+      "sha256": "a60c06489be8bfdaa8b18f4fd45591a3495430351a60fd759078c2391a396f70",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "22:52 / 29:14",
+      "player_display_seconds": 1372,
+      "visible_application": "PixCake Liquify",
+      "visible_target_filename": "DSC00335.jpg",
+      "preview_zoom_percent": 22,
+      "visible_ui": [
+        "向前变形",
+        "固定边缘",
+        "显示蒙版",
+        "取消",
+        "确定"
+      ],
+      "parameters": {
+        "密度": 25,
+        "压力": 25,
+        "速率": 1,
+        "固定边缘": true,
+        "显示蒙版": true
+      },
+      "observations": [
+        "The workflow has switched back to PixCake's deformation interface.",
+        "No painted mask region or actual forward-warp stroke is visible."
+      ],
+      "photoshop_operation_verified": false,
+      "manual_stroke_verified": false,
+      "painted_protection_region_verified": false,
+      "actual_geometry_effect_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps08.jpg",
+      "bytes": 147383,
+      "sha256": "079074383412121e25356aa0acd2fe7300b1025e134c7ce6d7dbfc57677d743b",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "23:13 / 29:14",
+      "player_display_seconds": 1393,
+      "visible_application": "PixCake",
+      "visible_target_filename": "DSC00335.jpg",
+      "preview_zoom_percent": 22,
+      "visible_ui": [
+        "人像美化",
+        "妆容调整",
+        "主题妆容"
+      ],
+      "parameters": {
+        "高光立体": 0,
+        "阴影立体": 0,
+        "眉毛增强": {
+          "左": 0,
+          "右": 0
+        },
+        "眼妆增强": {
+          "左": 0,
+          "右": 0
+        },
+        "唇妆增强": 0
+      },
+      "selected_theme_makeup": "无",
+      "caption_meaning_summary": "Discusses rotation, but no rotation parameter is visible in this frame.",
+      "rotation_operation_verified": false,
+      "photoshop_operation_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps09.jpg",
+      "bytes": 182493,
+      "sha256": "5a1ffb4dc0f7d395aafd092e7c8dbcf51f7a3b702b1cc82e80e8245b45399e70",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "23:34 / 29:14",
+      "player_display_seconds": 1414,
+      "visible_application": "Photoshop",
+      "visible_target_filename": "DSC00335.jpg",
+      "preview_zoom_percent": 25,
+      "visible_ui": [
+        "背景",
+        "RGB/8"
+      ],
+      "observations": [
+        "Normal Photoshop document view with locked background layer and a third-party retouch panel.",
+        "No same-scale original/result toggle or matched software comparison is shown."
+      ],
+      "caption_meaning_summary": "Compares the two programs.",
+      "third_party_panel_action_verified": false,
+      "comparable_software_quality_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps10.jpg",
+      "bytes": 233703,
+      "sha256": "c0ed623a1cf3cfeaa4e6bbdafb1c282fb0b78cd495952ede91bfb161b24f9c55",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "24:18 / 29:14",
+      "player_display_seconds": 1458,
+      "visible_application": "Photoshop",
+      "visible_target_filename": "DSC02322.jpg",
+      "preview_zoom_percent": 66.7,
+      "visible_ui": [
+        "快速蒙版/8",
+        "画笔",
+        "模式 正常",
+        "DR5 third-party retouch panel"
+      ],
+      "parameters": {
+        "brush_opacity_percent": 85,
+        "brush_flow_percent": 100,
+        "brush_smoothing_percent": 0
+      },
+      "observations": [
+        "A different outdoor portrait is being edited, with a round brush cursor over the nose bridge/eye center.",
+        "Quick-mask context is visible. A painted mask overlay on the shoulder/neck is not established.",
+        "The brush-related angle field is not a whole-photo rotation angle."
+      ],
+      "quick_mask_workspace_observed": true,
+      "manual_stroke_verified": false,
+      "painted_protection_region_verified": false,
+      "shoulder_neck_local_painting_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps11.jpg",
+      "bytes": 241973,
+      "sha256": "2cad0acc5b386d0daf552942983f5535a61c7bbb11a6f160ec79e329bdfaa8bd",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "24:37 / 29:14",
+      "player_display_seconds": 1477,
+      "visible_application": "Photoshop",
+      "visible_target_filename": "DSC02322.jpg",
+      "preview_zoom_percent": 66.7,
+      "visible_ui": [
+        "局部平滑",
+        "背景"
+      ],
+      "parameters": {
+        "brush_opacity_percent": 85,
+        "brush_flow_percent": 100,
+        "brush_smoothing_percent": 0
+      },
+      "observations": [
+        "An elongated marching-ants selection around the nose bridge down to the nose tip is visible.",
+        "A layer named 局部平滑 appears above the locked background layer.",
+        "The layer name and selected region do not identify the smoothing radius, algorithm, or accepted skin-transition result."
+      ],
+      "local_selection_verified": true,
+      "local_smoothing_layer_observed": true,
+      "smoothing_amount_verified": false,
+      "manual_stroke_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps12.jpg",
+      "bytes": 251801,
+      "sha256": "f3cc92daa96f1ad84be39b9048eb9bbfc7b24ab7193715235d603ddf9cb96619",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "25:00 / 29:14",
+      "player_display_seconds": 1500,
+      "visible_application": "Photoshop",
+      "visible_target_filename": "DSC02322.jpg",
+      "preview_zoom_percent": 50,
+      "visible_ui": [
+        "矩形选框",
+        "样式 正常",
+        "选择并遮住...",
+        "背景"
+      ],
+      "parameters": {
+        "selection_feather_pixels": 0
+      },
+      "observations": [
+        "A rectangular selection encloses the face and adjacent hair/neck/upper-chest area.",
+        "Only the locked background layer is visible here; why the prior 局部平滑 layer is absent is not established.",
+        "No local color-adjustment slider, shoulder/neck painting stroke, or exclusion-mask gesture is shown."
+      ],
+      "rectangular_selection_verified": true,
+      "selection_is_not_protection_coverage": true,
+      "shoulder_neck_local_painting_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps13.jpg",
+      "bytes": 164425,
+      "sha256": "73e98702d239b26c6e0bbacc3fe808fbef87a5053a20a7b2a85d4ff530bef837",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "25:20 / 29:14",
+      "player_display_seconds": 1520,
+      "visible_application": "Retouch4me Skin Tone dialog over Photoshop",
+      "visible_ui": [
+        "Retouch4me Skin Tone v.1.010",
+        "Original",
+        "Preview",
+        "Blend",
+        "Soft Light Layer",
+        "Auto",
+        "Apply",
+        "Cancel"
+      ],
+      "parameters": {
+        "Blend": 101
+      },
+      "observations": [
+        "The selected face region appears with a red/magenta overlay and a white mouth/lip area.",
+        "The display is a cropped face region; it does not establish a full-person or shoulder treatment.",
+        "The meaning of the colored overlay and the exact painting or exclusion gesture are not established by this still.",
+        "Apply is visible; a click is not visible in this frame."
+      ],
+      "skin_tone_plugin_workspace_observed": true,
+      "overlay_interpretation_verified": false,
+      "skin_tone_apply_gesture_verified": false,
+      "painted_protection_region_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps14.jpg",
+      "bytes": 214058,
+      "sha256": "6f968eb08339224752194055b8f3151662605bd1caa5bcaac55e5c7d6c85fabc",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "25:42 / 29:14",
+      "player_display_seconds": 1542,
+      "visible_application": "Photoshop",
+      "visible_target_filename": "DSC02322.jpg",
+      "preview_zoom_percent": 100,
+      "visible_ui": [
+        "RGB/8",
+        "历史记录"
+      ],
+      "visible_history_labels": [
+        "图层可见性",
+        "进入快速蒙版",
+        "画笔工具",
+        "退出快速蒙版",
+        "DR4 Local Smoother",
+        "填充不透明度更改",
+        "拼合图像",
+        "矩形选框",
+        "Retouch4me Skin Tone",
+        "取消选择"
+      ],
+      "observations": [
+        "The history panel logs quick-mask entry/exit, brush use, local-smoothing, flattening, rectangular selection and a skin-tone plugin operation.",
+        "These history labels are stronger operation evidence than merely opening a panel, but do not reveal the complete strokes, coverage, algorithm parameters or controlled output quality.",
+        "DR4 Local Smoother is the readable history name; the visible third-party panel in other frames is DR5. They are not conflated.",
+        "100% is the application's zoom shown within a video preview, not independent original-photo pixel quality verification."
+      ],
+      "history_logged_quick_mask_and_brush_verified": true,
+      "history_logged_local_smoothing_verified": true,
+      "history_logged_skin_tone_operation_verified": true,
+      "manual_stroke_direction_verified": false,
+      "shoulder_neck_local_painting_verified": false,
+      "original_photo_quality_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "ps15.jpg",
+      "bytes": 201237,
+      "sha256": "2427f9a29efb9a79aac37c2bfeb72cb55079e71346d236452d600f10f4a882a0",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "26:03 / 29:14",
+      "player_display_seconds": 1563,
+      "visible_application": "PixCake",
+      "visible_target_filename": "DSC02322.jpg",
+      "preview_zoom_percent": 57,
+      "visible_ui": [
+        "人像美化",
+        "面部重塑",
+        "脸型",
+        "无",
+        "经典",
+        "幼态",
+        "英气"
+      ],
+      "parameters": {
+        "肤色色温": 0,
+        "肤色色调": 0,
+        "瘦脸": {
+          "左": 0,
+          "右": 0
+        },
+        "太阳穴": {
+          "左": 0,
+          "右": 0
+        },
+        "颧骨": {
+          "左": 0,
+          "右": 0
+        }
+      },
+      "observations": [
+        "The workflow has returned to PixCake's face-reshaping page for DSC02322.jpg.",
+        "The face-shape tab is selected; a reliably selected preset is not established.",
+        "Lower jaw values are clipped and not transcribed.",
+        "Different application rendering and zoom prevent treating ps14/ps15 as a controlled original/result pair."
+      ],
+      "face_reshape_workspace_observed": true,
+      "face_preset_application_verified": false,
+      "actual_geometry_effect_verified": false,
+      "comparable_software_quality_verified": false,
+      "before_after_verified": false
+    }
+  ],
+  "phase_state": "fifteen PS/comparison-stage samples inspected; color navigation and PixCake phase are documented separately; no local sample is pending for this subtask",
+  "verified_continuous_intervals": [],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "liquify_operation_verified": true,
+  "photoshop_retouch_operation_verified": true,
+  "parameter_change_verified": true,
+  "actual_geometry_effect_verified": false,
+  "controlled_before_after_verified": false,
+  "original_photo_quality_verified": false,
+  "exported_output_quality_verified": false,
+  "identity_preservation_verified": false,
+  "joint_continuity_verified": false,
+  "natural_shaping_acceptance_verified": false,
+  "derived_default_rules_eligible": false,
+  "limits": [
+    "Requested navigation time and post-batch DOM time do not identify screenshots.",
+    "Filename psXX is not application evidence: frames07/08 are PixCake, not Photoshop.",
+    "A Liquify control difference is verified separately from stroke direction, commit, geometric effect and identity/joint quality.",
+    "Visible mask/fixed-edge settings do not establish actual painted protection coverage.",
+    "Different preview zooms and software canvases are not controlled quality comparisons.",
+    "The Photoshop version and applicability to the user's PS2020 are not established by these frames.",
+    "This is a general portrait workflow; cosplay costume/wig preservation requires separate evidence.",
+    "The target changes from DSC00335.jpg to DSC02322.jpg at ps10; those photos are not before/after pairs.",
+    "Visible history can verify logged operations without establishing exact brush strokes, shoulder/neck coverage, plugin parameters or successful identity-safe output.",
+    "Third-party plugin presence or use in this video does not establish availability or compatibility in the user's PS2020."
+  ],
+  "source_genre": "general portrait hybrid workflow; not a directly inspected cosplay case",
+  "photoshop_liquify_workspace_observed": true,
+  "pixcake_liquify_workspace_observed": true,
+  "liquify_operation_evidence_scope": "Photoshop Liquify workspace and a visible jaw-width configuration difference from 0 to -3; no manual stroke, successful commit or accepted geometric effect is established.",
+  "manual_liquify_stroke_verified": false,
+  "photoshop_geometry_commit_verified": false,
+  "painted_protection_region_verified": false,
+  "comparable_software_quality_verified": false,
+  "root_initial_boundary_post_batch_state": {
+    "timestamp_seconds": 1285.601615,
+    "duration_seconds": 1754,
+    "paused": true,
+    "playback_rate": 1,
+    "decoded_width": 1920,
+    "decoded_height": 1080
+  },
+  "root_continuation_end_state_reported_by_parent": {
+    "timestamp_seconds": 1586.220382,
+    "paused": true,
+    "source": "parent message, not a newly read local recording",
+    "is_frame_timestamp": false
+  },
+  "history_logged_quick_mask_and_brush_verified": true,
+  "history_logged_local_smoothing_verified": true,
+  "history_logged_skin_tone_operation_verified": true,
+  "shoulder_neck_local_painting_verified": false,
+  "related_observation_files": [
+    "observations-lr-phase.json",
+    "observations-lr-phase.md",
+    "observations-pixcake-phase.json",
+    "observations-pixcake-phase.md"
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

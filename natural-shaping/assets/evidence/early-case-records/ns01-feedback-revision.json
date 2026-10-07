@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "document": "Cosplay_纸箱场景_精修04_颈侧与上臂协调修正",
+  "userFeedback": [
+    "neck patch visible",
+    "upper arm midsection dent"
+  ],
+  "armRevision": {
+    "oldLayerHidden": true,
+    "peak": 19.92,
+    "shoulderBelow": 10,
+    "sleeve": 14,
+    "continuousPlateau": true,
+    "mask": [
+      1900,
+      1040,
+      2390,
+      1870
+    ]
+  },
+  "neckRevision": {
+    "localizedAiRepair": true,
+    "maskPolygon": [
+      [
+        1370,
+        885
+      ],
+      [
+        1450,
+        955
+      ],
+      [
+        1555,
+        1005
+      ],
+      [
+        1680,
+        1008
+      ],
+      [
+        1740,
+        980
+      ],
+      [
+        1740,
+        1050
+      ],
+      [
+        1700,
+        1135
+      ],
+      [
+        1625,
+        1190
+      ],
+      [
+        1520,
+        1215
+      ],
+      [
+        1435,
+        1160
+      ],
+      [
+        1370,
+        1050
+      ]
+    ],
+    "feather": 28,
+    "existingEyeNoseMouthExcluded": true,
+    "generatedProofWholeImageAdopted": false
+  },
+  "originalAndPriorVersionsRetained": true,
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

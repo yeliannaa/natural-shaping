@@ -1,0 +1,150 @@
+{
+  "method": "Read-only native RGB 16-bit raster comparison; no quantization, image modification, or resampling; exclusive bounds",
+  "stage": "Isolated coherent continuous upper-arm displacement",
+  "status": "passed",
+  "comparison": {
+    "comparisonDepthBits": 16,
+    "dimensions": [
+      3072,
+      4080
+    ],
+    "channels": 3,
+    "comparedPixels": 12533760,
+    "changedPixels": 383663,
+    "changedChannelSamples": 867078,
+    "maximum16BitChannelDifference": 48537,
+    "byteIdentical": false,
+    "changedBoundsExclusive": [
+      1900,
+      1040,
+      2390,
+      1870
+    ],
+    "allowedEditBoxExclusive": [
+      1900,
+      1040,
+      2390,
+      1870
+    ],
+    "changedPixelsOutsideAllowedBox": 0,
+    "outsideBoxSamples": [],
+    "outsideAllowedBoxByteIdentical": true,
+    "regions": {
+      "visibleEye": {
+        "boundsExclusive": [
+          1740,
+          460,
+          1930,
+          680
+        ],
+        "totalPixels": 41800,
+        "changedPixels": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0
+      },
+      "nose": {
+        "boundsExclusive": [
+          1590,
+          600,
+          1780,
+          760
+        ],
+        "totalPixels": 30400,
+        "changedPixels": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0
+      },
+      "mouth": {
+        "boundsExclusive": [
+          1530,
+          715,
+          1840,
+          890
+        ],
+        "totalPixels": 54250,
+        "changedPixels": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0
+      },
+      "cameraHand": {
+        "boundsExclusive": [
+          1020,
+          1740,
+          1640,
+          2200
+        ],
+        "totalPixels": 285200,
+        "changedPixels": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0
+      },
+      "shoes": {
+        "boundsExclusive": [
+          1120,
+          3290,
+          2310,
+          4080
+        ],
+        "totalPixels": 940100,
+        "changedPixels": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0
+      },
+      "shoulderCap": {
+        "boundsExclusive": [
+          1950,
+          1040,
+          2210,
+          1170
+        ],
+        "totalPixels": 33800,
+        "changedPixels": 33800,
+        "byteIdentical": false,
+        "maximum16BitChannelDifference": 26028,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 633.181942800789
+      },
+      "knee": {
+        "boundsExclusive": [
+          1250,
+          2090,
+          1710,
+          2230
+        ],
+        "totalPixels": 64400,
+        "changedPixels": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0
+      },
+      "ankle": {
+        "boundsExclusive": [
+          1180,
+          3000,
+          2050,
+          3280
+        ],
+        "totalPixels": 243600,
+        "changedPixels": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0
+      }
+    }
+  },
+  "limits": [
+    "Exact equality checks isolate only this upper-arm geometry stage.",
+    "Shoulder lower region and sleeve join are allowed to move in this stage.",
+    "Pixel difference magnitude does not quantify displacement or classify its visual naturalness."
+  ],
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

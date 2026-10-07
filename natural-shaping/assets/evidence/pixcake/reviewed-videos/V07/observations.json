@@ -1,0 +1,256 @@
+{
+  "case_id": "V07",
+  "source_url": "https://www.bilibili.com/video/BV1pgJNzSEXy/",
+  "recorded_on": "2026-10-04",
+  "inspection_scope": "Actual independent visual review of all seven local operation screenshots; not continuous video viewing or complete operation acceptance.",
+  "subtitle_policy": "Only visible caption meaning is summarized; captions do not fill missing operations.",
+  "metadata_read": [
+    "sequence-record.json"
+  ],
+  "root_recorded_post_batch_state": {
+    "timestamp_seconds": 153.566,
+    "duration_seconds": 153.566,
+    "paused": true,
+    "playback_rate": 1,
+    "decoded_width": 1920,
+    "decoded_height": 1080
+  },
+  "post_batch_state_limit": "End-state 153.566 is not the timestamp of the final screenshot; UI frame07 is 02:28. It does not verify continuous full viewing.",
+  "screenshot_dimensions": {
+    "width": 1280,
+    "height": 720,
+    "format": "JPEG"
+  },
+  "screenshot_encoding_verified": true,
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "timestamp_seconds": null,
+      "player_display_time": "00:21 / 02:34",
+      "player_display_seconds": 21,
+      "stage": "color_style_configuration",
+      "actual_frame_reviewed": true,
+      "playback_state_from_visible_control": "playing_pause_button_visible",
+      "asset": {
+        "format": "JPEG",
+        "width": 1280,
+        "height": 720,
+        "bytes": 128838,
+        "sha256": "e7bb08220d201cd4d8dd50201bf2b26516c6f23c0a49f5a0b0b284fd9e669d7a"
+      },
+      "visible_observations": [
+        "Natural Lingdong03 style row has strength 100 and a slider; editing UI and style library are visible.",
+        "Blue wig, white costume, visible left flash, tall right light stand and background people remain in the preview."
+      ],
+      "limits": [
+        "No observed application click or matched effect toggle; strength 100 is only this sample configuration.",
+        "No local mask coverage or exposure-slider action is shown."
+      ],
+      "continuous_action_verified": false,
+      "matched_before_after_verified": false,
+      "configured_color_style": {
+        "name": "自然灵动03",
+        "strength": 100,
+        "unit_or_ps_equivalence_verified": false,
+        "application_click_verified": false
+      }
+    },
+    {
+      "file": "sequence02.jpg",
+      "timestamp_seconds": null,
+      "player_display_time": "00:43 / 02:34",
+      "player_display_seconds": 43,
+      "stage": "large_photo_preview",
+      "actual_frame_reviewed": true,
+      "playback_state_from_visible_control": "playing_pause_button_visible",
+      "asset": {
+        "format": "JPEG",
+        "width": 1280,
+        "height": 720,
+        "bytes": 104757,
+        "sha256": "334cd8203471d78a5c44d14c9ef7ec79d3a41dfec8ca382c66f5ece3ec1d155b"
+      },
+      "visible_observations": [
+        "A larger preview shows the same pose, costume, convention environment and equipment without parameter controls."
+      ],
+      "limits": [
+        "No original/effect label; preview size differs from frame01, so it is not a controlled single-adjustment comparison."
+      ],
+      "continuous_action_verified": false,
+      "matched_before_after_verified": false
+    },
+    {
+      "file": "sequence03.jpg",
+      "timestamp_seconds": null,
+      "player_display_time": "01:04 / 02:34",
+      "player_display_seconds": 64,
+      "stage": "closer_photo_preview",
+      "actual_frame_reviewed": true,
+      "playback_state_from_visible_control": "playing_pause_button_visible",
+      "asset": {
+        "format": "JPEG",
+        "width": 1280,
+        "height": 720,
+        "bytes": 96214,
+        "sha256": "96806a2455009eab3561f7961ccb558134b9521443c92f02f110ccaee7052a8d"
+      },
+      "visible_observations": [
+        "A closer preview shows face, shoulders, costume and convention background; caption describes the color stage ending."
+      ],
+      "limits": [
+        "No specific mask, slider or face/body edit action; preview enlargement is not file cropping or geometry proof."
+      ],
+      "continuous_action_verified": false,
+      "matched_before_after_verified": false
+    },
+    {
+      "file": "sequence04.jpg",
+      "timestamp_seconds": null,
+      "player_display_time": "01:25 / 02:34",
+      "player_display_seconds": 85,
+      "stage": "combined_preset_dialog_and_person_controls",
+      "actual_frame_reviewed": true,
+      "playback_state_from_visible_control": "playing_pause_button_visible",
+      "asset": {
+        "format": "JPEG",
+        "width": 1280,
+        "height": 720,
+        "bytes": 77164,
+        "sha256": "699bd738a8a612adb275635696bd1501134709cdd063dad4aab1f03e50b2f1e0"
+      },
+      "visible_observations": [
+        "Combined-preset save dialog has AI color, color, portrait, image and clothing categories checked; crop is unchecked.",
+        "Paired eye-related person controls and nonzero configuration are visible behind the modal; small labels are not exhaustively transcribed."
+      ],
+      "limits": [
+        "Dialog inclusion does not establish each module was executed or save succeeded.",
+        "Configured controls do not prove a drag, face reshaping benefit, identity preservation or complete readable labels."
+      ],
+      "continuous_action_verified": false,
+      "matched_before_after_verified": false,
+      "preset_contains": {
+        "AI_color": true,
+        "color": true,
+        "portrait": true,
+        "image": true,
+        "clothing": true,
+        "crop": false,
+        "save_success_verified": false
+      }
+    },
+    {
+      "file": "sequence05.jpg",
+      "timestamp_seconds": null,
+      "player_display_time": "01:46 / 02:34",
+      "player_display_seconds": 106,
+      "stage": "bystander_detection_error",
+      "actual_frame_reviewed": true,
+      "playback_state_from_visible_control": "playing_pause_button_visible",
+      "asset": {
+        "format": "JPEG",
+        "width": 1280,
+        "height": 720,
+        "bytes": 66456,
+        "sha256": "04c4b3f9b305151e936861ac5ebacbd2accb9f15373138c5f3a906787cf9471d"
+      },
+      "visible_observations": [
+        "Actual UI error says no bystander region was detected and asks for manual selection.",
+        "AI bystander-removal window and related layers are visible; no manual canvas selection is displayed."
+      ],
+      "limits": [
+        "Automatic detection was unsuccessful at this time; no complete manual selection, mask coverage or confirmed generation is observed.",
+        "Existing layers do not prove this detection succeeded."
+      ],
+      "continuous_action_verified": false,
+      "matched_before_after_verified": false,
+      "detection_error": {
+        "text": "未识别到路人区域，请手动选区",
+        "actual_error_visible": true,
+        "manual_selection_completed_verified": false
+      }
+    },
+    {
+      "file": "sequence06.jpg",
+      "timestamp_seconds": null,
+      "player_display_time": "02:07 / 02:34",
+      "player_display_seconds": 127,
+      "stage": "cleanup_layers_and_effect_asset_editing",
+      "actual_frame_reviewed": true,
+      "playback_state_from_visible_control": "playing_pause_button_visible",
+      "asset": {
+        "format": "JPEG",
+        "width": 1280,
+        "height": 720,
+        "bytes": 99215,
+        "sha256": "7dd667d68e779a30bf15f3f4af5a5f5b5221554318010eb74ec3634cd683e55f"
+      },
+      "visible_observations": [
+        "Effect/composite stage shows bystander-removal layers and an independent asset/effect layer.",
+        "The preview has fewer convention distractions; blue mist/reflection-like material under the feet still has a local rectangular extent."
+      ],
+      "limits": [
+        "No matched per-layer toggle or native-photo edge/ground/white-fabric inspection.",
+        "Rectangular material and current layer state are not final light-integration acceptance."
+      ],
+      "continuous_action_verified": false,
+      "matched_before_after_verified": false
+    },
+    {
+      "file": "sequence07.jpg",
+      "timestamp_seconds": null,
+      "player_display_time": "02:28 / 02:34",
+      "player_display_seconds": 148,
+      "stage": "unlabeled_static_photo",
+      "actual_frame_reviewed": true,
+      "playback_state_from_visible_control": "playing_pause_button_visible",
+      "asset": {
+        "format": "JPEG",
+        "width": 1280,
+        "height": 720,
+        "bytes": 99134,
+        "sha256": "b31be74f23977891a6884847892f4c0385c5f83afd2befabf2cd12d397ba6191"
+      },
+      "visible_observations": [
+        "A static photo again shows convention people, visible flash and tall right light stand; no original/effect label or editing controls are shown."
+      ],
+      "limits": [
+        "Cannot label this original by its clutter or infer cleanup was undone/failed.",
+        "Different presentation from frame06 is not a controlled before/after pair."
+      ],
+      "continuous_action_verified": false,
+      "matched_before_after_verified": false
+    }
+  ],
+  "quality_limits": [
+    "Seven discrete screenshots are not continuous coverage or completion of all major operations.",
+    "Whole-second player UI, batch-end DOM time, screenshot dimensions, source decoder dimensions and native photo dimensions are different evidence.",
+    "The old low-resolution two-frame scope must not describe this new seven-frame batch.",
+    "Style/person configurations and save dialog do not establish application actions, successful batch work or geometry quality.",
+    "Actual bystander-detection failure is seen; manual mask boundaries remain unverified.",
+    "Cleanup/effect preview and unlabeled static ending are not a controlled before/after pair.",
+    "Generated removal/effect assets are distinct from traditional PS local tone/skin work and do not recover true hidden anatomy.",
+    "Native-photo/output quality, identity, joints, user acceptance and local speed were not validated."
+  ],
+  "verified_continuous_intervals": [],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "complete_major_operation_stages_verified": false,
+  "matched_before_after_verified": false,
+  "face_geometry_operation_verified": false,
+  "body_geometry_operation_verified": false,
+  "manual_mask_operation_verified": false,
+  "background_detection_error_verified": true,
+  "original_photo_quality_verified": false,
+  "exported_output_quality_verified": false,
+  "identity_preservation_verified": false,
+  "joint_continuity_verified": false,
+  "natural_shaping_acceptance_verified": false,
+  "local_speed_benchmark_verified": false,
+  "derived_default_rules_eligible": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

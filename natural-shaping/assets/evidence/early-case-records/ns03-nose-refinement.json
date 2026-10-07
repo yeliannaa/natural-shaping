@@ -1,0 +1,44 @@
+{
+  "status": "candidate",
+  "leftCurves": [
+    [
+      0,
+      0
+    ],
+    [
+      32,
+      32
+    ],
+    [
+      60,
+      65
+    ],
+    [
+      96,
+      120
+    ],
+    [
+      144,
+      160
+    ],
+    [
+      192,
+      198
+    ],
+    [
+      255,
+      255
+    ]
+  ],
+  "leftOpacity": 60,
+  "leftMaskUnchanged": true,
+  "rightMaskAndCurveUnchanged": true,
+  "geometryChanged": false,
+  "makeupUnchanged": true,
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

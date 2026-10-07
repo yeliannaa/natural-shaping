@@ -1,0 +1,24 @@
+{
+  "version": "v8",
+  "scope": "Right straps, grip-adjacent background remnants, adjacent waistband and whole-image context",
+  "independentReview": "Original and three real references reviewed before candidate; requirements/v7 supplied only for second pass; refined grip rechecked",
+  "candidateFindings": "Right strap position improved; old grip corner and faint filament removed; no new discontinuity or prominent black blot at waistband",
+  "actualExportsReviewedByPrimary": [
+    "origin-not-bundled:actual-export-overall.jpg",
+    "origin-not-bundled:actual-export-waist.png",
+    "origin-not-bundled:actual-export-grip.png"
+  ],
+  "technicalVerification": "See technical-export-check.json; dimensions/profile/bit-depth and 8-bit-decoded full-image difference scope verified",
+  "inheritedOutsideCurrentScope": [
+    "Previously reconstructed waistband/fabric differs from newly supplied real garment texture",
+    "Prior slight softness at far-left waistband edge"
+  ],
+  "uncertainty": "Exact hidden anchors and pulled path cannot be proven by these differently posed references",
+  "status": "Local revision exported and reviewed; awaiting user aesthetic judgment; not a claim of whole-image perfection",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

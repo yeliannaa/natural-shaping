@@ -1,0 +1,4 @@
+interface:
+  display_name: "自然美型"
+  short_description: "先拆解构图并展示草图，等你确认后精修肤质、五官与身形，保留本人感和妆造"
+  default_prompt: "使用 $natural-shaping，先拆解这张照片的构图并展示示例草图，等我确认方案后，再按自然美型标准精修。"

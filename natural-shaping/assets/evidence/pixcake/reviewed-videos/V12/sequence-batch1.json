@@ -1,0 +1,44 @@
+{
+  "source": "https://www.bilibili.com/video/BV1VLLm6aExw/",
+  "frames": [
+    {
+      "path": "sequence-01.jpg",
+      "order": 1,
+      "timestamp_seconds": null,
+      "timing_basis": "ordered live screenshots; no exact timestamp established"
+    },
+    {
+      "path": "sequence-02.jpg",
+      "order": 2,
+      "timestamp_seconds": null,
+      "timing_basis": "ordered live screenshots; no exact timestamp established"
+    },
+    {
+      "path": "sequence-03.jpg",
+      "order": 3,
+      "timestamp_seconds": null,
+      "timing_basis": "ordered live screenshots; no exact timestamp established"
+    },
+    {
+      "path": "sequence-04.jpg",
+      "order": 4,
+      "timestamp_seconds": null,
+      "timing_basis": "ordered live screenshots; no exact timestamp established"
+    }
+  ],
+  "paused_end_state": {
+    "duration": 112.918865,
+    "height": 1080,
+    "paused": true,
+    "rate": 0.5,
+    "time": 55.993229,
+    "width": 1920
+  },
+  "fully_watched": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

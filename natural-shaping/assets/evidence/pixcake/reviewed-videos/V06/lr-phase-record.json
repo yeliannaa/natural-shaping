@@ -1,0 +1,48 @@
+{
+  "frames": [
+    {
+      "file": "lr01.jpg",
+      "timestamp_seconds": null,
+      "requested_ui_seek_seconds": 80
+    },
+    {
+      "file": "lr02.jpg",
+      "timestamp_seconds": null,
+      "requested_ui_seek_seconds": 220
+    },
+    {
+      "file": "lr03.jpg",
+      "timestamp_seconds": null,
+      "requested_ui_seek_seconds": 400
+    },
+    {
+      "file": "lr04.jpg",
+      "timestamp_seconds": null,
+      "requested_ui_seek_seconds": 560
+    },
+    {
+      "file": "lr05.jpg",
+      "timestamp_seconds": null,
+      "requested_ui_seek_seconds": 680
+    }
+  ],
+  "end_state": {
+    "currentTime": 743.931337,
+    "duration": 1754,
+    "height": 1080,
+    "paused": true,
+    "rate": 1,
+    "width": 1920
+  },
+  "end_state_scope": "second_capture_batch_end_only",
+  "first_batch_end_state": null,
+  "first_batch_record_not_finalized": true,
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

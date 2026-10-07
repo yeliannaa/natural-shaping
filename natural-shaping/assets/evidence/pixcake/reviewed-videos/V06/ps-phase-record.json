@@ -1,0 +1,81 @@
+{
+  "frames": [
+    {
+      "file": "ps01.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps02.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps03.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps04.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps05.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps06.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps07.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps08.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps09.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps10.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps11.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps12.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps13.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps14.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "ps15.jpg",
+      "timestamp_seconds": null
+    }
+  ],
+  "requested_ui_seek_seconds": 1200,
+  "end_state": {
+    "currentTime": 1586.220382,
+    "duration": 1754,
+    "height": 1080,
+    "paused": true,
+    "rate": 1,
+    "width": 1920
+  },
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

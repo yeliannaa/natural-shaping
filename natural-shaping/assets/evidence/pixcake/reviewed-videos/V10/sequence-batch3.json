@@ -1,0 +1,85 @@
+{
+  "source": "https://www.douyin.com/video/7520848746377235746",
+  "first_stable_frame": {
+    "file": "paused-228s.jpg",
+    "timestamp_seconds": 228.935412
+  },
+  "ordered_frames": [
+    {
+      "file": "sequence-13.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-14.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-15.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-16.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-17.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    },
+    {
+      "file": "sequence-18.jpg",
+      "timestamp_seconds": null,
+      "stable_paused": false
+    }
+  ],
+  "tail_frame": {
+    "file": "tail-share.jpg",
+    "timestamp_seconds": null,
+    "player_ui_seconds": 356,
+    "verified_by_actual_frame": true,
+    "timestamp_basis": "Actual screenshot player UI shows 05:56 / 06:04; this is not a precise DOM timestamp or the hover-preview time.",
+    "verification_scope": "visible_tail_frame_and_displayed_player_time_only"
+  },
+  "end_state": {
+    "duration": 363.95,
+    "ended": false,
+    "height": 1080,
+    "loop": false,
+    "paused": false,
+    "rate": 0.75,
+    "time": 184.156749,
+    "width": 1920
+  },
+  "pause_retry_required": true,
+  "fully_watched": false,
+  "continuous_coverage_verified": false,
+  "end_state_scope": "failed_tail_seek_probe_not_main_sequence_end",
+  "main_sequence_end_state": null,
+  "continuous_full_watch": false,
+  "pause_retry_scope": "failed_tail_seek_probe_only",
+  "excluded_frames": [
+    {
+      "file": "origin:unbundled/codex-history/2026-10-02/new-chat/work/pixcake-cos-expansion-20261003/reviewed-videos/V10/tail-probe-unverified.jpg",
+      "excluded": true,
+      "status": "excluded_failed_tail_seek_probe",
+      "player_ui_seconds": 168,
+      "timestamp_seconds": null,
+      "exclusion_reason": "Actual screenshot shows 02:48 / 06:04 in the skin stage, not the intended tail-sharing stage.",
+      "excluded_from": [
+        "tail_operation_evidence",
+        "main_sequence_end_state",
+        "continuous_watch_coverage"
+      ]
+    }
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

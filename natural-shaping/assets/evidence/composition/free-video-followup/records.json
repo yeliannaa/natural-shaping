@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-04",
+  "user_constraint": "Exclude paid videos and paid previews; use independent public works, not mirrors of the excluded paid course.",
+  "excluded": [
+    {
+      "url": "https://www.bilibili.com/video/BV1qH4U6iETd/",
+      "reason": "User explicitly declined paid content; target chapter was not viewed."
+    }
+  ],
+  "observation_method": "Actual browser playback, paused screenshots read with vision; currentTime/duration/paused and decoded dimensions read from the video DOM. No video download and no continuous full viewing.",
+  "continuous_full_videos_watched": 0,
+  "actual_playback_verified_videos": 3,
+  "paused_frame_states": 9,
+  "capture_dimensions_note": "All three decoded at 1920x1080. Saved page screenshots include a smaller displayed player; this is not 100-percent original-photo QA.",
+  "notes": [
+    "Navigation target times and chapter metadata are not viewing timestamps. Actual paused currentTime values below are authoritative.",
+    "Observed examples are distinct photographs/poses, not a controlled before-after experiment.",
+    "Source facts and our transfer advice are recorded separately.",
+    "The candidate catalogs retain their original not-watched screening state; this file records subsequent actual playback. Unselected candidates were not watched."
+  ],
+  "videos": [
+    {
+      "id": "V06",
+      "url": "https://www.bilibili.com/video/BV1fJ4m177dt/",
+      "title": "【漫展摄影入门第三期】万用的漫展构图 九宫格构图",
+      "author": "只是一只老羊",
+      "indexed_duration_seconds": 304,
+      "actual_duration_seconds": 302.76599999999996,
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "access_observed": "Actual video frames play; no paid-preview notice in the inspected page/frame.",
+      "frames": [
+        {
+          "file": "frames/V06-001.png",
+          "time_seconds": 95.904108,
+          "paused": true,
+          "visible": "Vertical Cos portrait with centered subject and chest-level hand gesture; subtitle says place subject in the middle. No crop operation or grid visible in this frame."
+        },
+        {
+          "file": "frames/V06-002.png",
+          "time_seconds": 172.893514,
+          "paused": true,
+          "visible": "A different Cos photograph with grid divisions, face near the upper-right region, subject to the right and large background graphics on the left."
+        }
+      ],
+      "transfer": "Center and off-center examples both exist; assess whole subject, gesture and background before moving the head.",
+      "limits": "Two distinct photographs; no measured head movement or original-photo detail verification. Lecturer examples do not establish a compulsory grid rule."
+    },
+    {
+      "id": "V07",
+      "url": "https://www.bilibili.com/video/BV1q4xAzQEYe/",
+      "title": "实战怎么引导模特？5分钟讲透3个摆姿的底层逻辑！丨「如何上手拍写真·第22期」",
+      "author": "肆周飞行",
+      "duration_seconds": 320,
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "metadata_screening": "Page/player public metadata showed upower_exclusive=false and ugc_pay=arc_pay=0; details in candidates.json.",
+      "access_observed": "Actual frames play, including the later hand-pose section; no paid-preview notice in the inspected page/frame.",
+      "frames": [
+        {
+          "file": "frames/V07-001.png",
+          "time_seconds": 106.289812,
+          "paused": true,
+          "visible": "Photographer and standing model by a sofa; crossed leg positions, lowered arms and head turned downward/sideward. Subtitle discusses body center and overall framework."
+        },
+        {
+          "file": "frames/V07-002.png",
+          "time_seconds": 189.140127,
+          "paused": true,
+          "visible": "Displayed seated portrait with elbow/forearm on sofa armrest, hips on seat, legs and shoes directed toward the lower right."
+        },
+        {
+          "file": "frames/V07-003.png",
+          "time_seconds": 262.427889,
+          "paused": true,
+          "visible": "Behind-the-scenes low floor pose with bent knees and photographer; subtitle discusses using the body as support for hands."
+        }
+      ],
+      "transfer": "Establish comfortable overall posture and support before local head/shoulder/hand refinements. A body or prop can provide a concrete hand resting point when compatible with character action.",
+      "limits": "Behind-the-scenes viewpoint is not the captured photograph's camera viewpoint. No focal length, exact camera distance, weight-bearing foot or continuous movement inferred. Chapter names alone do not establish a viewed operation."
+    },
+    {
+      "id": "V08",
+      "url": "https://www.bilibili.com/video/BV1jB9MYtE4o/",
+      "title": "真正适合普通人的拍照坐姿，好看又自然！",
+      "author": "李肥星",
+      "indexed_duration_seconds": 287,
+      "observed_duration_seconds": [
+        287,
+        286.12
+      ],
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "metadata_screening": "Page/player public metadata showed upower_exclusive=false and ugc_pay=arc_pay=0; details in candidates.json.",
+      "access_observed": "Actual frames play at initial, middle and closing portions; no paid-preview notice in the inspected page/frame.",
+      "frames": [
+        {
+          "file": "frames/V08-001.png",
+          "time_seconds": 41.390376,
+          "paused": true,
+          "visible": "Presenter demonstrates frontal sitting on a bench, arms along backrest, knees/feet together, whole shoes visible. Subtitle introduces frontal sitting."
+        },
+        {
+          "file": "frames/V08-002.png",
+          "time_seconds": 166.56635,
+          "paused": true,
+          "visible": "Presenter seated on grass with legs extended forward; both shoes and hand positions visible. Image viewpoint looks downward more than the later sample."
+        },
+        {
+          "file": "frames/V08-004.png",
+          "time_seconds": 211.91566,
+          "paused": true,
+          "visible": "Another grass sitting view with bent knees and hands near collar/upper torso; shoe profile, ground shadow and surrounding scene visible. Body-type commentary is not adopted as a retouch preset."
+        },
+        {
+          "file": "frames/V08-003.png",
+          "time_seconds": 261.902752,
+          "paused": true,
+          "visible": "Presenter at a table giving closing commentary; no new pose or measured edit established."
+        }
+      ],
+      "transfer": "For shoe-preserving frames compare foot direction, knee lines, hand position and camera placement; inspect source silhouette and ground contact before postproduction shaping.",
+      "limits": "Different camera viewpoints and poses; no quantitative leg-length or slimming effect claimed. The video was not continuously watched, and no camera height or focal length was inferred from screenshots."
+    }
+  ],
+  "independent_checks": [
+    "offline-frame-notes.md",
+    "frame-transfer-notes.md"
+  ],
+  "candidate_catalogs": [
+    "origin:unbundled/codex-history/2026-10-02/new-chat/work/cos-composition-research-20261004/free-video-followup/candidates.json",
+    "origin:unbundled/codex-history/2026-10-02/new-chat/work/cos-composition-research-20261004/free-video-followup/cos-candidates.json"
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sources": [
+    "origin-not-bundled:reference-arms-folded.jpg",
+    "origin-not-bundled:reference-similar-pose.jpg"
+  ],
+  "scope": "Read-only original-resolution waist crops, with independent visual review",
+  "findings": [
+    "The longitudinal abdominal depression is more confidently identifiable as the navel region because a local dark hollow is visible in the folded-arms image and its shape recurs in the similar-pose image. Exact center remains approximate.",
+    "Real references already show unequal projected left/right distances from the navel: image-right straps are near the outer contour and foreshortened while image-left spans are longer. Do not enforce mirror symmetry or equal pixel distances.",
+    "Folded-arms reference exposes the image-right pair near the abdominal edge; similar-pose reference exposes only a short right segment next to the hand. Neither supplies the full right pulled path or hidden attachment in the target pose.",
+    "The added evidence favors testing an outward/image-right waistband entry and a steeper right descending span, constrained by the original short strap direction. It does not validate a precise anchor or prove crossing impossible under tension."
+  ],
+  "status": "Useful constraints obtained; no photo edits; exact hidden anchors unresolved",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  },
+  "bundled_reference_crops": [
+    "assets/evidence/sakura-references/reference-arms-folded-waist.png",
+    "assets/evidence/sakura-references/reference-similar-pose-waist.png"
+  ]
+}

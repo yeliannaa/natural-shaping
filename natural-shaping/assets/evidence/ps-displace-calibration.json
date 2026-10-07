@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "photoshopVersion": "21.2.9",
+  "method": "native ArtLayer.applyDisplace",
+  "calibrationRed": 192,
+  "calibrationScale": 16,
+  "beforeLineX": 64,
+  "afterLineWeightedCenterX": 53.76470588235294,
+  "measuredContentMovePx": -10.235294117647058,
+  "positiveRedMovesContent": "image-left",
+  "nativeFormula": "(R-128)*horizontalScale/100 source sampling offset",
+  "expectedSourceOffsetPx": 10.24,
+  "neutralOutsideLineX": 64,
+  "armActualHorizontalScale": 8,
+  "armRedPeak": 224,
+  "armPeakNominalDisplacementPx": 7.68,
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "v9",
+  "sourceAcceptance": "User explicitly liked v8 overall and requested only more realistic right straps; this does not pre-accept v9",
+  "scope": "Right strap color, small local tonal variation, edge softness, fine monochrome grain and lower contact shadow",
+  "protected": [
+    "composition",
+    "pose",
+    "hand anatomy",
+    "strap center paths and endpoints",
+    "left straps",
+    "face and body"
+  ],
+  "independentReview": "Actual v9 candidate right and waist crops compared with actual v8 crops and photographic references. Reduced brown drawn-line appearance; no new visible halo, jagged edge, granularity blot, break or anchor displacement. Further texture/blur judged unnecessary.",
+  "primaryActualExportReview": [
+    "origin-not-bundled:actual-export-overall.jpg",
+    "origin-not-bundled:actual-export-right.png"
+  ],
+  "technical": "See technical-export-check.json; actual raster decode and full-image 8-bit-decoded difference scope verified",
+  "limits": "Material refinement does not establish hidden attachment truth; no geometry reconstruction undertaken this turn",
+  "userSaveDecision": "2026-10-06 Asia/Shanghai: user requested saving the displayed v9; retain it as the current saved final version",
+  "status": "Exported, locally reviewed and retained at user request; JPG, 16-bit PNG and layered PSD present",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

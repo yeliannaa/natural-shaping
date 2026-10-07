@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "recorded_at": "2026-10-03T16:06:56.249010+00:00",
+  "record": "../reviewed-videos/V10/sequence-batch3.json",
+  "before_sha256": "ee3aa5edc8c7ddc04bc7d85f470044c3c1576426d8d72e0f983f6c19bc8f5618",
+  "after_sha256": "13fba18f746b19dded5fe37aad7d03ac10f910b6b603980cee8642ada1abfa18",
+  "reason": "The old end_state belongs to a failed tail-seek probe and cannot be used as the main sequence ending or timestamp for the valid 05:56 tail screenshot. No final paused time was established.",
+  "original_end_state_preserved": {
+    "duration": 363.95,
+    "ended": false,
+    "height": 1080,
+    "loop": false,
+    "paused": false,
+    "rate": 0.75,
+    "time": 184.156749,
+    "width": 1920
+  },
+  "end_state_scope": "failed_tail_seek_probe_not_main_sequence_end",
+  "main_sequence_end_state": null,
+  "image_observations": [
+    {
+      "file": "../reviewed-videos/V10/tail-share.jpg",
+      "sha256": "9ff99f0da22b0ed6353ee512ce99b37f868fc5ff86e7aaeac4679ca315d8734f",
+      "player_ui_seconds": 356,
+      "inspection": "direct actual image inspection",
+      "observer": "pixcake_independent_workflows"
+    },
+    {
+      "file": "origin:unbundled/codex-history/2026-10-02/new-chat/work/pixcake-cos-expansion-20261003/reviewed-videos/V10/tail-probe-unverified.jpg",
+      "sha256": "6a2cb54a7106d78118c5282eefabd3afa2258221b839ffadae6e05f62c7711b9",
+      "player_ui_seconds": 168,
+      "inspection": "direct actual image inspection",
+      "observer": "pixcake_independent_workflows"
+    }
+  ],
+  "checks": {
+    "original_probe_values_preserved": true,
+    "main_sequence_end_unknown": true,
+    "original_main_frames_preserved": true,
+    "tail_exact_timestamp_unknown": true,
+    "tail_ui_seconds_356": true,
+    "wrong_tail_frame_explicitly_excluded": true,
+    "no_continuous_or_full_watch_claim": true
+  },
+  "scope": "Only sequence-batch3.json corrected; this QA receipt records hashes and evidence bounds. No observation notes or installed skill modified.",
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

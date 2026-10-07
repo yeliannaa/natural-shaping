@@ -1,0 +1,24 @@
+{
+  "source": "origin-not-bundled:real-reference-unpulled.jpg",
+  "kind": "User-provided real photograph, different pose and view, straps not pulled by hands",
+  "confirmed_visible": [
+    "Clear navel opening",
+    "Two visible black strap segments on each side; the segments rise toward the lateral waist and descend separately behind the front waistband",
+    "Front visible entries flank the lower abdominal center with a gap between them; no crossing is visible in this unpulled pose"
+  ],
+  "limits": [
+    "Does not show hidden sewn attachments",
+    "Does not establish whether crossing occurs when one strap is pulled by a hand",
+    "Pose and camera differ; raw pixel coordinates and equal projected distances cannot be transferred"
+  ],
+  "correction_to_previous_review": "The long depression/shadow in the target original is not a confirmed navel identification. Do not use it as a fixed anatomical center or equate it to this reference's clear navel without further evidence.",
+  "next_use": "Constrain the garment topology and body-relative anchor region, then compare against target pose and original short right strap direction. Do not shift anatomy to justify existing synthetic lines.",
+  "status": "Reference analyzed and preserved; no retouch performed",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  },
+  "bundled_reference_crop": "assets/evidence/sakura-references/new-reference-waist.png"
+}

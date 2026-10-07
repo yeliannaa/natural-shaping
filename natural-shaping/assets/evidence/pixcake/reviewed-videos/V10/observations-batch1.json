@@ -1,0 +1,236 @@
+{
+  "case_id": "V10",
+  "source_url": "https://www.douyin.com/video/7520848746377235746",
+  "inspection_scope": "independent visual inspection of seven actual local screenshots; not continuous video watching",
+  "subtitle_policy": "meaning summaries only; no accumulated transcript",
+  "root_metadata_read": [
+    "initial-hd-state.json",
+    "sequence-batch1.json"
+  ],
+  "root_batch_end_state": {
+    "timestamp_seconds": 116.53573,
+    "paused": true,
+    "duration_seconds": 363.95,
+    "playback_rate": 0.75,
+    "decoded_width": 1920,
+    "decoded_height": 1080,
+    "fully_watched": false
+  },
+  "screenshot_format_verified": "JPEG",
+  "screenshot_dimensions": [
+    2048,
+    1152
+  ],
+  "frames": [
+    {
+      "file": "hd-062s.jpg",
+      "bytes": 191703,
+      "sha256": "f755ebc7e9e76230e8a8d16da30f1adf767cda2c5060b1e8967b58ac3652a27e",
+      "timestamp_seconds": null,
+      "player_display_time": "01:02 / 06:04",
+      "associated_initial_dom_state": {
+        "timestamp_seconds": 62.000588,
+        "paused": true
+      },
+      "exact_capture_time_verified": false,
+      "visible_ui": [
+        "AI色彩调节",
+        "AI追色",
+        "导入样片 AI追色",
+        "创建为样片",
+        "全图调色",
+        "配置文件 标准",
+        "滤镜 无",
+        "白平衡 原照设置"
+      ],
+      "parameters": {
+        "scope": "全图调色",
+        "色温": 3778,
+        "色调": 9
+      },
+      "chase_color_application_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-01.jpg",
+      "bytes": 159334,
+      "sha256": "ccff331a633c5ba71210b8f78967d48744082283567af8b9215aca85b62aeae3",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:17 / 06:04",
+      "player_display_seconds": 17,
+      "visible_ui": [
+        "人像美化",
+        "女",
+        "皮肤调整",
+        "面部重塑",
+        "表情管理",
+        "妆容调整",
+        "头发调整",
+        "手部美化",
+        "全身美型",
+        "我的"
+      ],
+      "parameters": null,
+      "observation": "Beauty categories are collapsed; preset names are visible. No adjustment value or application is shown.",
+      "reshape_operation_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-02.jpg",
+      "bytes": 181216,
+      "sha256": "b4fcbb88625727bb897e60f0f30d8ce2343599a90cbf6b82a333a3d3ea2d4fe0",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:33 / 06:04",
+      "player_display_seconds": 33,
+      "subtitle_meaning_summary": "Discusses understanding what controls do.",
+      "visible_ui": [
+        "AI追色",
+        "全图调色",
+        "滤镜 无"
+      ],
+      "parameters": {
+        "scope": "全图调色",
+        "色温": 3778,
+        "色调": 9
+      },
+      "observation": "Reference cards show placeholder images in this frame; the cause is not established.",
+      "chase_color_application_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-03.jpg",
+      "bytes": 221431,
+      "sha256": "df840ac168ce44a1d9f3460fa4322122641fdd98a1cc5656f251f745b533ab06",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:49 / 06:04",
+      "player_display_seconds": 49,
+      "parameters": {
+        "scope": "全图调色",
+        "色温": 3778,
+        "色调": 9
+      },
+      "observation": "A large preview of the same subject overlays the smaller preview. This is not a verified before/after comparison.",
+      "reshape_operation_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-04.jpg",
+      "bytes": 194871,
+      "sha256": "2b6a3413b2d808be02fbfed712f497168cb0f4cf5ab58cb0f251eea0bf788c4b",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:05 / 06:04",
+      "player_display_seconds": 65,
+      "subtitle_meaning_summary": "Mentions a preset.",
+      "visible_ui": [
+        "导入样片 AI追色",
+        "创建为样片",
+        "全图调色"
+      ],
+      "parameters": {
+        "scope": "全图调色",
+        "色温": 3778,
+        "色调": 9
+      },
+      "preset_application_verified": false,
+      "preset_export_verified": false,
+      "chase_color_application_verified": false
+    },
+    {
+      "file": "sequence-05.jpg",
+      "bytes": 228060,
+      "sha256": "1e9c1ecc349b7ce2cb7bb4d05f3a174e66ff88c486ff15c480c07d4bfbf5d2b6",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:21 / 06:04",
+      "player_display_seconds": 81,
+      "preview_zoom_percent": 25,
+      "subtitle_meaning_summary": "Discusses using AI color matching for the sample.",
+      "visible_ui": [
+        "AI追色",
+        "导入样片 AI追色",
+        "创建为样片",
+        "全图调色"
+      ],
+      "parameters": {
+        "scope": "全图调色",
+        "色调": 9,
+        "曝光": 0.0,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": 0,
+        "阴影": 0,
+        "白色": 0,
+        "黑色": 0,
+        "清晰度": 0,
+        "鲜艳度": 0,
+        "饱和度": 0
+      },
+      "observation": "A pointer is near a reference card, but selection, import and application are not verified. Preview zoom does not establish a changed photo crop.",
+      "chase_color_application_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence-06.jpg",
+      "bytes": 212029,
+      "sha256": "5a75f2a5f206f5c128a7c385fd80645ef398a4a6a43de21192bfe21f0ef7e881",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:40 / 06:04",
+      "player_display_seconds": 100,
+      "preview_zoom_percent": 15,
+      "subtitle_meaning_summary": "Discusses the background, while the visible active selection remains a person mask.",
+      "visible_ui": [
+        "局部调色",
+        "主体",
+        "背景",
+        "自定义",
+        "蒙版列表",
+        "所有人-蒙版1",
+        "全部人像",
+        "全图",
+        "编辑蒙版"
+      ],
+      "active_local_tab": "主体",
+      "active_mask": "所有人-蒙版1",
+      "parameters": {
+        "scope": "局部调色/主体/所有人-蒙版1",
+        "色温": 0,
+        "色调": 0,
+        "曝光": 0.0,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": 0,
+        "阴影": 0,
+        "白色": 0,
+        "黑色": 0
+      },
+      "background_selection_verified": false,
+      "background_adjustment_executed_verified": false,
+      "mask_coverage_verified": false,
+      "before_after_verified": false
+    }
+  ],
+  "quality_limitations": [
+    "Decoded video resolution and screenshot dimensions are different records.",
+    "Video previews do not establish original-photo or exported-output pixel quality.",
+    "Still samples do not establish continuous viewing, an intervening action or a controlled before/after.",
+    "Visible control values are specific to this sample and scope; they are not Photoshop defaults.",
+    "Tool categories, presets and AI chase-color entrances do not prove applied changes."
+  ],
+  "verified_continuous_intervals": [],
+  "fully_watched": false,
+  "natural_shaping_operation_verified": false,
+  "natural_shaping_acceptance_verified": false,
+  "identity_preservation_verified": false,
+  "derived_default_rules_eligible": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

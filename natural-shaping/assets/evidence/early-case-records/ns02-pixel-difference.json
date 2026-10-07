@@ -1,0 +1,37 @@
+{
+  "comparisonDepthBits": 16,
+  "dimensions": [
+    2456,
+    3070
+  ],
+  "changedPixels": 143050,
+  "totalPixels": 7539920,
+  "changedFraction": 0.018972349839255588,
+  "changeBoundsExclusive": [
+    1111,
+    2057,
+    1613,
+    2529
+  ],
+  "allowedEditBoxes": [
+    [
+      1100,
+      2050,
+      1630,
+      2540
+    ]
+  ],
+  "changedPixelsPerBox": [
+    143050
+  ],
+  "changedPixelsOutsideEditBoxes": 0,
+  "outsideBoxSamples": [],
+  "maximum16BitChannelDifference": 4336,
+  "outsideEditBoxesByteIdentical": true,
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

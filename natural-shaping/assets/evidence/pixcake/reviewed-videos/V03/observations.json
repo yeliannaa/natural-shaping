@@ -1,0 +1,201 @@
+{
+  "videoId": "V03",
+  "status": "all_six_supplied_sequence_frames_inspected",
+  "sourceUrl": "https://www.douyin.com/video/7620017770863922451",
+  "browserOperatedByThisAgent": false,
+  "samplingType": "six discrete native screenshots",
+  "continuousWatchVerified": false,
+  "fullyWatched": false,
+  "originalPhoto100PercentInspected": false,
+  "uiTimeSeconds": [
+    16,
+    32,
+    47,
+    63,
+    79,
+    98
+  ],
+  "exactFrameDomTimesAvailable": false,
+  "playerRateVisible": 0.75,
+  "rootRecordFile": "sequence-record.json",
+  "rootEndMediaState": {
+    "durationSeconds": 103.839002,
+    "decodedWidth": 2560,
+    "decodedHeight": 1440,
+    "paused": true,
+    "rate": 0.75,
+    "timeSeconds": 10.694446,
+    "automaticallyReplayedPerRoot": true,
+    "assignedToAnyFrame": false,
+    "provesFullViewing": false
+  },
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "uiTimeSeconds": 16,
+      "uiTimeLabel": "00:16",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "白平衡",
+      "whiteBalanceMode": "原照设置",
+      "readableCurrentValues": {
+        "色温": 5058,
+        "色调": 10
+      },
+      "captionSummary": "Author opens color-adjustment options; no complete white-balance slider change verified",
+      "previewAppearance": "Partial architectural scene with pillar, curved concrete structure, graffiti wall and ground; absence of person from this viewport does not establish removal",
+      "verifiedContinuousSliderDrag": false,
+      "matchedBeforeAfterVerified": false
+    },
+    {
+      "file": "sequence02.jpg",
+      "uiTimeSeconds": 32,
+      "uiTimeLabel": "00:32",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": null,
+      "previewAppearance": "Cool gray-blue dark style; black-haired Cos person carrying long prop under concrete arch, with buildings, clouded sky and graffiti wall",
+      "captionSummary": "Author presents a dark-tone intention",
+      "singleParameterOperationVisible": false,
+      "matchedBeforeAfterVerified": false
+    },
+    {
+      "file": "sequence03.jpg",
+      "uiTimeSeconds": 47,
+      "uiTimeLabel": "00:47",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "背景蒙版编辑",
+      "selectedMaskReadableLabel": "背景-蒙版1",
+      "selectedRegionButton": "背景",
+      "skyRedOverlayActuallyVisible": true,
+      "overlayRangeObservation": "Red over sky, mostly excluding subject/prop, buildings, concrete columns and roof arch",
+      "fineBoundaryAccuracyVerified": false,
+      "groundOverlayActuallyVisible": false,
+      "specificOneClickSkyToolVerified": false,
+      "readableCurrentValues": {
+        "色温": 0,
+        "色调": 0,
+        "曝光": 0,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": 0,
+        "阴影": 0,
+        "白色": 0,
+        "黑色": 0
+      },
+      "captionSummary": "Author suggests separate sky and ground masks; only sky overlay actually observed in supplied frames",
+      "twoMasksBothDemonstrated": false,
+      "completeMaskCreationProcessVerified": false
+    },
+    {
+      "file": "sequence04.jpg",
+      "uiTimeSeconds": 63,
+      "uiTimeLabel": "01:03",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "影调",
+      "selectedMaskReadableLabel": null,
+      "parameterScope": null,
+      "scopeStatus": "unknown_pending; mask/scope title cropped off at top",
+      "readableCurrentValues": {
+        "色温": 0,
+        "色调": 0,
+        "曝光": -0.6,
+        "对比度": 0,
+        "亮度": 0,
+        "高光": -50,
+        "阴影": -32,
+        "白色": 100,
+        "黑色": 38
+      },
+      "scopeInheritedFromEarlierFrame": false,
+      "captionSummary": "Author continues adjustment discussion; does not supply reliable active-mask identity",
+      "verifiedContinuousSliderDrag": false,
+      "matchedBeforeAfterVerified": false,
+      "defaultsForUser": false
+    },
+    {
+      "file": "sequence05.jpg",
+      "uiTimeSeconds": 79,
+      "uiTimeLabel": "01:19",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": null,
+      "previewAppearance": "Cool/dark full-scene preview, clouds, buildings, ground and dark-costumed person still recognizable",
+      "captionSummary": "Author says adjustment helps exposure balance; quality claim not substituted for native-size acceptance",
+      "groundOverlayActuallyVisible": false,
+      "completeFinalMaskListVisible": false,
+      "singleParameterCausalEffectVerified": false,
+      "nativeTonalLayerRetentionVerified": false
+    },
+    {
+      "file": "sequence06.jpg",
+      "uiTimeSeconds": 98,
+      "uiTimeLabel": "01:38",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "larger photo viewport and bottom project thumbnails",
+      "previewAppearance": "Larger view of same cool/dark scene; parts of upper/side image outside current viewport",
+      "captionSummary": "Author concludes mask approach for the photo; unseen ground mask not assumed",
+      "groundOverlayActuallyVisible": false,
+      "actualFileCropVerified": false,
+      "nativePhoto100PercentVerified": false
+    }
+  ],
+  "maskEvidenceSummary": {
+    "skyOverlayVerified": true,
+    "skyMaskLabel": "背景-蒙版1",
+    "groundOverlayVerified": false,
+    "captionMentionsSkyAndGroundMasks": true,
+    "bothMasksActuallyReviewed": false,
+    "frame63ActiveScope": null
+  },
+  "psTransferCandidates": [
+    {
+      "candidate": "Separate sky/background tone from intended subject with local masks",
+      "evidence": "sequence03 actual red sky overlay",
+      "requires": "Fine hair, prop and horizon boundary review"
+    },
+    {
+      "candidate": "Consider a separate ground mask for independent light needs",
+      "evidence": "Author caption only; not actual ground-overlay demonstration",
+      "status": "pending_visual_verification"
+    },
+    {
+      "candidate": "Record each numeric adjustment together with active scope; do not reuse unknown-scope values",
+      "evidence": "sequence04 readable values with cropped active-scope title",
+      "requires": "Scope verification before reuse"
+    },
+    {
+      "candidate": "For dark grading, separately inspect face, costume and joint readability",
+      "evidence": "Dark final preview and parent's user-specific QA needs",
+      "requires": "Native-size tone continuity; not natural-shaping geometry evidence"
+    }
+  ],
+  "notDemonstratedInSuppliedFrames": [
+    "ground mask pixel coverage",
+    "face or body geometry shaping",
+    "pose change",
+    "occlusion reconstruction",
+    "sky generation tool execution",
+    "native photo detail acceptance"
+  ],
+  "rulesAdded": [],
+  "limits": [
+    "Six samples are not continuous full-video watching",
+    "UI seconds are not exact DOM capture times",
+    "Caption about two masks does not establish both masks were seen",
+    "Unknown frame63 scope is not inherited from frame47",
+    "Viewport enlargement is not evidence of a file crop",
+    "Cloud appearance is not proof of sky generation",
+    "Author numeric values are not defaults for user photos",
+    "Automatic replay is not evidence of full viewing"
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

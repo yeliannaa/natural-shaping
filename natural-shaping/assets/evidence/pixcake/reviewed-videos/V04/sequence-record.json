@@ -1,0 +1,45 @@
+{
+  "source_url": "https://www.douyin.com/video/7641854511274839359",
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence02.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence03.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence04.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence05.jpg",
+      "timestamp_seconds": null
+    },
+    {
+      "file": "sequence06.jpg",
+      "timestamp_seconds": null
+    }
+  ],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "end_state": {
+    "currentTime": 20.020296,
+    "duration": 112.918005,
+    "height": 1080,
+    "paused": true,
+    "rate": 0.75,
+    "width": 1920
+  },
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "videoId": "V01",
+  "status": "all_seven_supplied_sequence_frames_inspected",
+  "sourceUrl": "https://www.douyin.com/video/7623007112989494582",
+  "browserOperatedByThisAgent": false,
+  "samplingType": "seven discrete native screenshots",
+  "continuousWatchVerified": false,
+  "fullyWatched": false,
+  "originalPhoto100PercentInspected": false,
+  "uiTimeSeconds": [
+    16,
+    32,
+    48,
+    64,
+    80,
+    96,
+    112
+  ],
+  "exactFrameDomTimesAvailable": false,
+  "playerLabels": {
+    "quality": "超清2K",
+    "rate": "0.75x"
+  },
+  "rootRecordFile": "sequence-record.json",
+  "rootEndMediaState": {
+    "durationSeconds": 148.142993,
+    "decodedWidth": 1440,
+    "decodedHeight": 1928,
+    "paused": true,
+    "rate": 0.75,
+    "timeSeconds": 127.989863,
+    "assignedToAnySequenceFrame": false
+  },
+  "dateEvidence": {
+    "visibleShootDate": "2026-03-30",
+    "visibleShootPlace": "湖南长沙",
+    "verifiedPublicationDate": null,
+    "basis": "On-screen shoot declaration; not publication metadata"
+  },
+  "frames": [
+    {
+      "file": "sequence01.jpg",
+      "uiTimeSeconds": 16,
+      "uiTimeLabel": "00:16",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "AI挑图 / AI完美表情 / 分组",
+      "visibleToolEntrances": [
+        "开始AI挑图",
+        "AI完美表情"
+      ],
+      "captionSummary": "Author discusses quick batch output; no complete batch execution or speed verification",
+      "entrancePresenceIsExecution": false,
+      "previewAppearance": "Green-haired Cos person on a high stool in red-white-black costume with long ribbons, hall lights and equipment"
+    },
+    {
+      "file": "sequence02.jpg",
+      "uiTimeSeconds": 32,
+      "uiTimeLabel": "00:32",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "创意 / 场景",
+      "visibleToolEntrances": [
+        "AI追色2.0（风格迁移）",
+        "AI布景",
+        "夏日晴空",
+        "秋天落叶",
+        "冬日雪景"
+      ],
+      "readableLayers": [
+        "背景"
+      ],
+      "captionSummary": "Author enters creative module; list presence does not establish execution of all tools",
+      "entrancePresenceIsExecution": false
+    },
+    {
+      "file": "sequence03.jpg",
+      "uiTimeSeconds": 48,
+      "uiTimeLabel": "00:48",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "创意 / 场景 / 图层",
+      "readableLayers": [
+        "AI追色2.0（风格迁移）01",
+        "背景"
+      ],
+      "previewAppearance": "Cooler/brighter preview than sequence02, background equipment still visible",
+      "captionSummary": "Author refers to using color-transfer function; settings and exact pixel changes not verified",
+      "colorTransferStrength48Visible": false,
+      "time48IsParameter": false,
+      "matchedSingleEffectComparisonVerified": false,
+      "identityFullyPreservedVerified": false
+    },
+    {
+      "file": "sequence04.jpg",
+      "uiTimeSeconds": 64,
+      "uiTimeLabel": "01:04",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "生成式消除 / 编辑范围",
+      "selectedRemovalMode": "生成式消除 +AI",
+      "quickRemovalSelected": false,
+      "autoRemoveAfterEachStrokeSwitch": "gray_off",
+      "subjectProtectionSwitch": "blue_on",
+      "protectionScope": "仅主体",
+      "outerEdgeOptimizationSwitch": "blue_on",
+      "readableCurrentValues": {
+        "大小": 250,
+        "硬度": 90
+      },
+      "redRemovalOverlayActuallyVisible": true,
+      "overlayRangeObservation": "Large lower-left and right background equipment/clutter regions; subject and costume/ribbons have white boundary outline",
+      "everyHairAndRibbonProtectedVerified": false,
+      "captionSummary": "Author describes clearing background light stands; this frame shows configured removal range, not completed generation",
+      "completeClickAndFinishedResultAtThisFrameVerified": false,
+      "nativeEdgeQualityVerified": false
+    },
+    {
+      "file": "sequence05.jpg",
+      "uiTimeSeconds": 80,
+      "uiTimeLabel": "01:20",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "AI面部重绘对话框",
+      "faceRedrawDegree": 2,
+      "multiPersonRedrawSwitch": "gray_off",
+      "selectedRedrawMode": "极速",
+      "tierHintVisible": true,
+      "tierHintSummary": "Grades move from blemish removal toward skin/facial feature refinement, clearer reshaping and reconstruction",
+      "visibleGenerateButton": true,
+      "readableLayers": [
+        "AI面部重绘01",
+        "背景"
+      ],
+      "captionSummary": "Author urges attention to choices; no assumption that low grade has zero content redraw",
+      "degree2GenerationCompletionVerified": false,
+      "exactFaceMaskCoverageVerified": false,
+      "identityAndMakeupPreservationVerified": false,
+      "traditionalPsDodgingBurningDemonstrated": false
+    },
+    {
+      "file": "sequence06.jpg",
+      "uiTimeSeconds": 96,
+      "uiTimeLabel": "01:36",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "创意 / 修复 / 图层",
+      "readableLayers": [
+        "AI超清01",
+        "AI面部重绘01",
+        "AI追色2.0（风格迁移）01"
+      ],
+      "aiUpscaleLayerAppearance": "gray row; activation/quality not inferred",
+      "previewAppearance": "Fewer background devices and clutter in previously marked regions; hall architecture and ceiling lights remain",
+      "visibleToolEntrances": [
+        "AI补草地",
+        "AI老照片修复",
+        "AI超清",
+        "AI衣服精修",
+        "智能道具修复"
+      ],
+      "captionSummary": "Author discusses choosing functions by circumstances; entrance list does not verify all applied",
+      "backgroundReductionVisuallyObserved": true,
+      "singleToolCausalAttributionVerified": false,
+      "upscaleOriginalDetailGainVerified": false,
+      "traditionalPsDodgingBurningDemonstrated": false
+    },
+    {
+      "file": "sequence07.jpg",
+      "uiTimeSeconds": 112,
+      "uiTimeLabel": "01:52",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause button visible, playback capture",
+      "observedPanel": "创意 / 光影 / 图层",
+      "readableLayers": [
+        "AI补光01",
+        "发光01",
+        "AI超清01"
+      ],
+      "selectedLayer": "发光01",
+      "visibleToolEntrances": [
+        "AI补光",
+        "柔化阴影",
+        "夕阳光",
+        "发光",
+        "镜头虚化"
+      ],
+      "previewAppearance": "Cleaner hall result persists; face and upper chest appear brighter in the preview",
+      "captionSummary": "Author presents completion of creative-module stage; does not establish full quality acceptance",
+      "singleLightLayerEffectMatchedComparisonVerified": false,
+      "traditionalPsDodgingBurningDemonstrated": false,
+      "nativeEdgeIdentityCostumeAndLightingQaVerified": false
+    }
+  ],
+  "psTransferCandidates": [
+    {
+      "candidate": "Protect intended subject and costume boundaries before marking true background clutter",
+      "evidence": "sequence04 actual overlay and active protection switches",
+      "requires": "Native hair, ribbon, prop and joint-boundary review"
+    },
+    {
+      "candidate": "Separate cleanup, color, face and light stages/layers for independent review",
+      "evidence": "Visible separate generated/effect layers across frames",
+      "requires": "Individual on/off checks; do not assign total result to a single stage"
+    },
+    {
+      "candidate": "For user's nose-side, neck/shoulder and elbow tone mismatch, try local masked curves or D&B first",
+      "evidence": "Parent user history and audit judgement; not demonstrated in this video",
+      "requires": "Tone continuity and unchanged intended facial geometry"
+    }
+  ],
+  "generationRiskEvidence": {
+    "contentRedrawInPipelineVisible": true,
+    "faceTier2IsNoRedraw": false,
+    "allFacePixelsSelectedVerified": false,
+    "trueOccludedAnatomyRecoveryVerified": false,
+    "nativeDetailLosslessVerified": false,
+    "traditionalPsLocalDodgingBurningEquivalent": false
+  },
+  "rulesAdded": [],
+  "limits": [
+    "Seven samples are not continuous full-video watching",
+    "UI seconds are not exact frame DOM times",
+    "Protection switches do not prove every fine boundary is protected",
+    "A tool entrance is not execution",
+    "Face degree2 config plus a layer does not prove completion of that specific generation",
+    "Generated cleanup and redraw are not traditional local PS D&B",
+    "No native original-photo 100-percent quality acceptance",
+    "Current author parameters are not user defaults"
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

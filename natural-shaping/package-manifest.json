@@ -1,0 +1,1822 @@
+{
+  "package": "natural-shaping",
+  "version": "2026-10-07-portable",
+  "path_base": "skill-root",
+  "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
+  "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
+  "runtime_validation": {
+    "status": "passed_with_disclosed_native_export_limit",
+    "scope": "Moved script copies under a path containing Chinese characters and spaces; synthetic document only",
+    "scripts": [
+      {
+        "file": "ps_retouch_runtime.jsx",
+        "identical_to_original": true,
+        "sha256": "175e8297002c694389967791bccb5ad4c4131d612fac94fba4723338f3cefe0e"
+      },
+      {
+        "file": "verify_native_png.ps1",
+        "identical_to_original": true,
+        "sha256": "64c25c12baa83e631b2847f4ba7897a9a58926d73fc541b0129540c03bb09ba8"
+      },
+      {
+        "file": "recompress_png.py",
+        "identical_to_original": true,
+        "sha256": "ef147fb303c8266fa7bc4445229ce56cda3f57e1f2514d00358f7ee175069746"
+      },
+      {
+        "file": "build_subject_mask.py",
+        "identical_to_original": true,
+        "sha256": "eed8c995670cc2db89965ca1e3c57393e785a0d05db770f38d0756c466cd2640"
+      }
+    ],
+    "photoshop": "21.2.9",
+    "runtime": "1.0.6",
+    "native_smoke_operations": [
+      "group",
+      "curve",
+      "color",
+      "group",
+      "importMask",
+      "checks",
+      "preview",
+      "preview",
+      "checkPreview",
+      "export"
+    ],
+    "source_preserved": true,
+    "created_documents_cleaned": true,
+    "allowlist_and_parent_traversal_rejected": true,
+    "native_png_dimensions": [
+      128,
+      128
+    ],
+    "native_png_depth": 16,
+    "crop_pixels_exact": true,
+    "compressed_pixels_identical": true,
+    "native_png_icc": "Missing in actual Photoshop sRGB export; strict check rejected as intended. Exception only used for pixel comparison, not a color-profile pass.",
+    "mask_helper": "CLI help and Python parse checked after relocation. Dependencies not reinstalled, weights not downloaded, inference not retested.",
+    "not_tested": [
+      "new platform or PS version",
+      "mask environment clean reinstall",
+      "all runtime operations",
+      "portrait aesthetics"
+    ]
+  },
+  "files": [
+    {
+      "file": "agents/openai.yaml",
+      "bytes": 329,
+      "sha256": "9af8b095e357914fcdf45df5a3577d57cb7084aa544df8ff0de266115ec63f4c"
+    },
+    {
+      "file": "assets/evidence/accepted-finals-20261006.json",
+      "bytes": 839,
+      "sha256": "23b5254b9c32aab38fc2ca637df599815a85ed9c286b503b1da6e52a792bc3b1"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/adequacy-review.md",
+      "bytes": 8330,
+      "sha256": "c30e44ad9d82bff275273684c215df659ae49a849f64f9fed88e348c6cbb5a3d"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/evidence-gaps.md",
+      "bytes": 8314,
+      "sha256": "306dfaec06ef5929caaede9bf168f2941d975ee013457f9e8f5fd7a0f7b489e7"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/findings.md",
+      "bytes": 5210,
+      "sha256": "0b177833b5bbc63b7eb4429b34fda6fe6ed8905d3223ba768da3ca7c9ddf0b89"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V08-E01.png",
+      "bytes": 342044,
+      "sha256": "4e8a6a1f22f9ba7808304e54e9dfb9aa4f18f0dd4ad94360dfae351ddf5bdde6"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V08-E02.png",
+      "bytes": 495075,
+      "sha256": "39b3b0f68cf4fb7313cc906b6e8df18aa9828b8d0401ef25104a739cd4e35939"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V08-E03.png",
+      "bytes": 475004,
+      "sha256": "b14a5869d45efb8892089e6a69c0b5f056c7e727ec138d5a68417ff802c95b37"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V08-E04.png",
+      "bytes": 447469,
+      "sha256": "c479df250346e79da874001325c3c91e4f32a6179fac45a045290b05d9be9b86"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E01.png",
+      "bytes": 147896,
+      "sha256": "c7e6d49eab5941e6fea9961c3fe1f848ee27d6008d8f0a55d95226a453f6d6c4"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E02.png",
+      "bytes": 145385,
+      "sha256": "546fdc6984e3a171c1b55ecc6a0251c7db7ad313d0bfbaea37a19c7f4f63f5ec"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E03.png",
+      "bytes": 229187,
+      "sha256": "5a08c8b70769b958e7ddb58bfc188c2067cb9f344226efeedffd96b665905754"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E04.png",
+      "bytes": 187657,
+      "sha256": "b6ec16e0ad51efb7b9e61ea0853f1be6d7d3b424a6829943d87036d5ba149223"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E05.png",
+      "bytes": 219749,
+      "sha256": "f3eed4de9be765157b202e302c0374c79065aa17c8a6b23d62e97ef34753612e"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E06.png",
+      "bytes": 293379,
+      "sha256": "d7234f912d0ae7b6be09756159bed1e027d07c22b77a7208260f66e801cc6695"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E07.png",
+      "bytes": 251292,
+      "sha256": "ce6352bcfc2e35d807dcc3e584182f39605d653b8fe726ff2b14d720d98dbdb7"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E08.png",
+      "bytes": 186159,
+      "sha256": "7718f6ff677f7b3826dc3d2c87a6487a08bd6df4b178f7929c4423a98eb13409"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V09-E09.png",
+      "bytes": 163843,
+      "sha256": "39d9ff51ef62fd7118ad4cf116d15219d4792c103719cedc4f6988c9dc34ace3"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E01.png",
+      "bytes": 100924,
+      "sha256": "56be08e1f622d56981ad6e1b5edf378f705e3623628295cab8b52fe0a662bc31"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E02-full.png",
+      "bytes": 194980,
+      "sha256": "7f4030d34602a0599213cc62521cc8319ed1473d33e73095fda38e0213b586ee"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E02.png",
+      "bytes": 129794,
+      "sha256": "ab46856be499f9df795535d449e5c7b0e56e298908e75fae72b2f48830ea8c27"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E03.png",
+      "bytes": 190735,
+      "sha256": "175beb8b248470abb8b55c829a0249afa9240c9804977df8c5596cf8d5115901"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E04.png",
+      "bytes": 230377,
+      "sha256": "c78878811032ca2e6df6eeabadd3bb387094787a29b7ef981e227d175cad0210"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E05.png",
+      "bytes": 147318,
+      "sha256": "5e2335eda95017d3980def7919620e80a5a9697ad8a436400f790f48dbae49ab"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E06.png",
+      "bytes": 153713,
+      "sha256": "fe4d2e076902a77d413319d990b5cd82db145989ea84c2b75199505d8131c772"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E07.png",
+      "bytes": 93869,
+      "sha256": "046fd27546145b452eaaacd8078edcad1c825e08632e81a0edfaa62caa57bf30"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/frames/V10-E08.png",
+      "bytes": 145980,
+      "sha256": "4d59413db31ed3f7568eeaaff5dc6075108ce8bb4d4cc7b1d7678e1f8cd03da2"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/occlusion-reference-cases.md",
+      "bytes": 5132,
+      "sha256": "d795cd43531debca3edb3f99b0cc64228a3a11cc54116c43bc8cc3e44dea3e5b"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/records.json",
+      "bytes": 15677,
+      "sha256": "c54057627e375320df3eaa6244e8749ef0c77a4937adf9f13aea8978f7fd0b3a"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/three-photo-independent-diagnosis.md",
+      "bytes": 13037,
+      "sha256": "426474305d77fba218bf3207a16e8f8c28cbd1640747681cdc50675e08256808"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/v08-frame-review.md",
+      "bytes": 9470,
+      "sha256": "24cc9c7b5f1c225ec7831d1fcb8e291ee95c49a3b7deb8cb53fe87a7dd010fc5"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/v09-frame-review.md",
+      "bytes": 10678,
+      "sha256": "964a8d647633087a9440d3f4b478d01f6e9900c1b425908a9b0c37bd468e4bc5"
+    },
+    {
+      "file": "assets/evidence/composition/extended-video-validation-20261004/v10-frame-review.md",
+      "bytes": 10594,
+      "sha256": "0c66458e073cd1b463a2586a7182632b5b98f763302ad1fa494fcb29a5994f54"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frame-transfer-notes.md",
+      "bytes": 4863,
+      "sha256": "d4d3ad0da3c1c04536e581b727670b09b659d22cb06f890381a7a91671cfa3a6"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V06-001.png",
+      "bytes": 112318,
+      "sha256": "b66b9d51e28f3a7e17a77d531fcd60480356be48be4b79cb7d12d42cf8c1ed4b"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V06-002.png",
+      "bytes": 115601,
+      "sha256": "9eb638c6dcb5109ba664805b3fa32f67e7f419e1592228bc40eacd8d47ad3bab"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V07-001.png",
+      "bytes": 124123,
+      "sha256": "a9ddbfa95dd0db7a38811d7db51e8cd5483884136815b99dc088ae20f0bdb33a"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V07-002.png",
+      "bytes": 109972,
+      "sha256": "fe4186ec0b37e9a1a963bfd592f9e7a9c025f9c2bd2a382accfa058ecb1c31b4"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V07-003.png",
+      "bytes": 123676,
+      "sha256": "35bc4114b0ae5f02fadd7a8b807fdbee6893e3ef0bc0fb3768dd9fc064b9597e"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V08-001.png",
+      "bytes": 174975,
+      "sha256": "14994948a0b800af40bded365b0b4c1e198be3c092293b3008d41e0d0c4fa7e4"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V08-002.png",
+      "bytes": 141069,
+      "sha256": "af90af46c70b05ef9a93982006b6c13acceb364da9cc653d224172979969381b"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V08-003.png",
+      "bytes": 111866,
+      "sha256": "3fb7cb3e4a836c6b86ecdabc401f1518f6f1ad14eb0e6ff864745d8aade634af"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/frames/V08-004.png",
+      "bytes": 158814,
+      "sha256": "29fde034e385172c166396e080c81e539cf3bfa034ae8ce79308825bebf0355d"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/offline-frame-notes.md",
+      "bytes": 7500,
+      "sha256": "d79806afb4529f6c1e5f95a2581fed7ee532bf135b1d389ad110b61bf140c6eb"
+    },
+    {
+      "file": "assets/evidence/composition/free-video-followup/records.json",
+      "bytes": 7845,
+      "sha256": "300cace99e9717353218c05c68c282334b023641b9935eb21000ee80a4c9df1e"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/crop-independent-review.md",
+      "bytes": 6493,
+      "sha256": "e84f86ddddbdabc288cae47463988eea30053003933d65dc40433881467a184a"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/findings.md",
+      "bytes": 4220,
+      "sha256": "2ad1d3830816426b329b39ff0b51dc91914f816774574391ef0f373bc33f2fdd"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/frames/V07-T01.png",
+      "bytes": 116350,
+      "sha256": "ba87b2f94042cf4759d9f5aedccd0f7def6a41e6b9ce3c50f78c5a91c4238a66"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/frames/V07-T02.png",
+      "bytes": 133244,
+      "sha256": "5df3a636f2cd9cd68d04c9714c084a86519b996e5f031c3478048c49b91258a3"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/frames/V07-T03.png",
+      "bytes": 114413,
+      "sha256": "ea1087b5400e090269d811f9a19c493f00fc1dcafac7d72ef511008cc71350e6"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/frames/V07-T04.png",
+      "bytes": 134565,
+      "sha256": "306a92143513264f624dc7c5827afd0da4bab3da317d8a0ab795d065ead94102"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/frames/V07-T05.png",
+      "bytes": 114917,
+      "sha256": "f8f582663ca73b99259e889043397d8dc4b66e48a0258a016985733e517d292e"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/frames/V07-T06.png",
+      "bytes": 133339,
+      "sha256": "afc77c072fd63bb95ef5e71e0fbaf1092abeb986849701bb2c12df3ec9e08b0a"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/preview-render-report.md",
+      "bytes": 6313,
+      "sha256": "f4b5917d2220f3a49ac908a67b0bb9645e4d74cf05dc583345997ec4006cc5b2"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/previews/rem_composition_comparison.jpg",
+      "bytes": 891956,
+      "sha256": "f607a8774efd0731d0f6187f77e2cbbfd4352d4f373744aed2245fc44564fb98"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/previews/robin_composition_comparison.jpg",
+      "bytes": 884524,
+      "sha256": "a66ba96773240da0dad2500698d836b092c12ff79c791ce5be6dcff9df517c1c"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/records.json",
+      "bytes": 3354,
+      "sha256": "ce546330aeb5cda2bcddc2524c3337d12495c34d7d7ec3f7b92d4133cfefa238"
+    },
+    {
+      "file": "assets/evidence/composition/targeted-validation-20261004/scoped-frame-review.md",
+      "bytes": 4681,
+      "sha256": "8d1c55e917d824cc3fc7882afa94ca1750e3876029a92e9d3a09160cd57caafb"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V01-initial.png",
+      "bytes": 117703,
+      "sha256": "e6fafb76fe0781504327994641f3e6d3af18168bf9483f9d582eeba6ea05194d"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V02-001.png",
+      "bytes": 121416,
+      "sha256": "c5a06d5ee37217ae3ae98465ac00f6430eba28ca9bc82503d958b2a9b8ed475d"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V02-002.png",
+      "bytes": 136516,
+      "sha256": "72878602131f2a4e72bf1ee7a19b3e8d2706e38f17c1c50575b1bf41b7fb41a6"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V02-003.png",
+      "bytes": 124667,
+      "sha256": "18d8d7048c2b13eb687cd740c40edadc8e560a23b7a9e5d4082e336b81b71348"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V02-004.png",
+      "bytes": 128633,
+      "sha256": "d6744ec90ecf1b29b37c5626ef9e90602a7a8373903a8f777eb39fa5620b1da4"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V02-005.png",
+      "bytes": 115929,
+      "sha256": "f13a62690f01d295e0374dea112c1137cfbdcf4593c76bc6c4ce5ea664d8241f"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V02-initial.png",
+      "bytes": 119671,
+      "sha256": "18a014a99e1fc630fb95314095f3173bac747a07eb6df5e6f3f92512233f1f9b"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V02-paused.png",
+      "bytes": 133458,
+      "sha256": "97f02f503788f6545442bee55b310c9762024647da57f5f9178f181fbed506dd"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V03-001.png",
+      "bytes": 113850,
+      "sha256": "cee2b6d60b9bd8b9e36d49547942aae619337b3323f131dd624adf54b42b042b"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V03-002.png",
+      "bytes": 115694,
+      "sha256": "0bfa781bf2c3d8f003ffae5df0aeb9d5b227dc16f1d256285d979abb14638bd0"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V03-003.png",
+      "bytes": 121540,
+      "sha256": "f74e89c6045280bca8e03377ca96b360b3a540fae9554936237629e47ddf6ec3"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V04-001.png",
+      "bytes": 121924,
+      "sha256": "4b68689cb352862c9b298b20e5a5273ff0163d976815ee461e00d20e3382f216"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V05-001.png",
+      "bytes": 154083,
+      "sha256": "4541e26c902359704ebd9a971057dea850fb0100cf458aab71fb1857167a641f"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V05-002-full.png",
+      "bytes": 224049,
+      "sha256": "15e0dc7e789772a852406d9ae09145ba17d59fde4866990de030a4bdf5d5dfa8"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V05-002.png",
+      "bytes": 129738,
+      "sha256": "ca64b2b7bd419c8d0f2e9614e52536bfb449e6334cc69599a59df9d772ec79af"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V05-003.png",
+      "bytes": 184266,
+      "sha256": "9b409ac7f5d77d97aed309528545aedd61241348ab63f8627f0ec7207f6f1af1"
+    },
+    {
+      "file": "assets/evidence/composition/video-frames/V05-004.png",
+      "bytes": 188973,
+      "sha256": "c4b2b8643dd64bc0ac8345f57f1453e2831bdffa488f217accb3373cd2055d68"
+    },
+    {
+      "file": "assets/evidence/composition/video-records.json",
+      "bytes": 10069,
+      "sha256": "a3d82bb22d76b8b00ba2da0de5a2e23065cc5912da21e91a366e0b10dee805ce"
+    },
+    {
+      "file": "assets/evidence/displace-calibration/calibration-after.png",
+      "bytes": 51012,
+      "sha256": "c3ef1e038373debca55452c31debc8f53177351c028cb40b51f640363d382bf5"
+    },
+    {
+      "file": "assets/evidence/displace-calibration/calibration-before.png",
+      "bytes": 51012,
+      "sha256": "a3108825f4eabef350415410be7fdebd8416c4359b68fa03a0a51937a4fc6378"
+    },
+    {
+      "file": "assets/evidence/displace-calibration/calibration-native.json",
+      "bytes": 766,
+      "sha256": "dab59c4824add2f18282a610c10fda1fa4aa43812e7c10433bbc7f52c0568527"
+    },
+    {
+      "file": "assets/evidence/dora-v2-edit-record.json",
+      "bytes": 2463,
+      "sha256": "e768845541a3a99b792e83ca88d3df8b4fe0fdad5f7ab357097c7b571054bbf3"
+    },
+    {
+      "file": "assets/evidence/dora-v4-edit-record.json",
+      "bytes": 4075,
+      "sha256": "368abe1b2ad1a69d5616bcfeaa967a62a80eee7146bbb077774d90385db20ba3"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns01-arm-coherent-manifest.json",
+      "bytes": 3773,
+      "sha256": "0552d292d85d45092e00b9de917949ae356427e81795b37b4a3fdcd396c31187"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns01-coherent-qa.json",
+      "bytes": 4375,
+      "sha256": "e290ef1cb8d0d64d966157f14ab137a1b52920cb3ec2c2b9bb9d0c5c483b276f"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns01-feedback-revision.json",
+      "bytes": 1685,
+      "sha256": "1e260c72db49b70b2070e834c50da4b47b1161cea83fc2b112f052783fdd7725"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns02-native-delivery.json",
+      "bytes": 1035,
+      "sha256": "6103e843eb92b02c1af9a5ad4f6ee769b1a2804ebb362b589d4926aa7f97ba92"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns02-pixel-difference.json",
+      "bytes": 1054,
+      "sha256": "ef364dee95e6d4d2415f0b6be43dddb89ef6bff0896a370ed662e6e44ee118c5"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns03-native-pixels-qa.json",
+      "bytes": 9568,
+      "sha256": "bdf8b0106f96a7cbcbf856ef7d74aa3fa36768d3663b4f31e7ed6c196979b010"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns03-nose-refinement.json",
+      "bytes": 962,
+      "sha256": "c9c758d363b8e363aa883a46c9cd7d88d3b721da8483c89e0f05b29f6419591e"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns04-cosplay-box-scene-09-verification.json",
+      "bytes": 21918,
+      "sha256": "05e3c63e7dabc25e4a15d8f368219a5804a82c63f47c0241bdd040bf293ab53b"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns04-visual-acceptance-light.md",
+      "bytes": 1516,
+      "sha256": "52edfbba3ee09bc79bfb73941dcac9b5fdc97d9f436e376c0ab6f2042631b00a"
+    },
+    {
+      "file": "assets/evidence/early-case-records/ns04-visual-acceptance.md",
+      "bytes": 1557,
+      "sha256": "275cf83bdb0265984c3403f4a8cb89888107b1daa7f39d4c191b37cfaf5a34d8"
+    },
+    {
+      "file": "assets/evidence/group-111-v2-edit-record.json",
+      "bytes": 5184,
+      "sha256": "7d5252c1347a0242ae28902b4fe1a2624d343c6b1777265c71a3f9255ef57803"
+    },
+    {
+      "file": "assets/evidence/pixcake/frames/v04-paused-61.png",
+      "bytes": 57564,
+      "sha256": "e90c76fd04a6319cfa819d9b38c2baa5a097c6dac11666b42c75ab836f0054f9"
+    },
+    {
+      "file": "assets/evidence/pixcake/frames/v04-seek-early.png",
+      "bytes": 66145,
+      "sha256": "026e841eb3bf699a11575446ff57abaaf37ad63999d58481d79d2b2d64a241e9"
+    },
+    {
+      "file": "assets/evidence/pixcake/frames/v07-initial-61.png",
+      "bytes": 130036,
+      "sha256": "e23a3656981d17352e00e5427325a6ded32d9bf847c855b18f53ade111d9ecdd"
+    },
+    {
+      "file": "assets/evidence/pixcake/frames/v07-replay-a.png",
+      "bytes": 95287,
+      "sha256": "671d26a404029d2462cab5218db7ba5d7d2fbd434e46ee2e05b23406808bb9a6"
+    },
+    {
+      "file": "assets/evidence/pixcake/frames/v12-hd-frozen-early.png",
+      "bytes": 123078,
+      "sha256": "badd0964400d9c640b4f19dde355af5359b3ab75e0aef2f381693fe33a2fc3d6"
+    },
+    {
+      "file": "assets/evidence/pixcake/frames/v12-hd-native-paused.png",
+      "bytes": 116147,
+      "sha256": "4b1a96e05fe9de6ff97309a4b87c13e5d168647ed9fde1d3959f58fd4b33b111"
+    },
+    {
+      "file": "assets/evidence/pixcake/qa/hd-playback-check.json",
+      "bytes": 4009,
+      "sha256": "c667a08ebfd5fe244c46707a6ff3a3f93518bda43f2f0101e8006a99eccf0cc8"
+    },
+    {
+      "file": "assets/evidence/pixcake/qa/v10-batch3-scope-correction.json",
+      "bytes": 2445,
+      "sha256": "373caacadde156a44574dc673d2e9832af1f0729e5eaab859888fb84eed8a15b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/observations.json",
+      "bytes": 9414,
+      "sha256": "32d7c5a651120e06aafcc301895123ccd0ad207194dc286c11ab558042d8966b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/observations.md",
+      "bytes": 7302,
+      "sha256": "7076b8cb21ce1eeda6f294835b32a51bd5e165cb9f4aac899a26f669f16ebdd9"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/sequence-record.json",
+      "bytes": 1295,
+      "sha256": "b883cc6c8edf13fd8d1dbe4b6862c1dd820e22e04b1027a0809730734f73a478"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/sequence01.jpg",
+      "bytes": 171953,
+      "sha256": "d5a8b66c89d224666f6eccdf333879265425a87d6d82c9110b4e748997d64ffd"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/sequence02.jpg",
+      "bytes": 162191,
+      "sha256": "30016c7400cee00c3aa6f7cbcbb59c5c463c781879fcc1b7b3097f63fcebbcdd"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/sequence03.jpg",
+      "bytes": 170287,
+      "sha256": "864c294bc79b3ea1af6a1379543691dbd91bf6ded394333add89557c41a4bcec"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/sequence04.jpg",
+      "bytes": 170761,
+      "sha256": "b631c6a590de4e28b5d693ae3da917fbfff74031cf12910d96366399a4e1b6bc"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/sequence05.jpg",
+      "bytes": 174745,
+      "sha256": "cf96a13474163ddb413ecca1d36c396c6b01ac633a77c0ad306c5565a5cd3da9"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/sequence06.jpg",
+      "bytes": 160678,
+      "sha256": "be331c629e1e7ae293d0742820756f84663015c34d0bb778b545baac1fac1bdc"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V01/sequence07.jpg",
+      "bytes": 169463,
+      "sha256": "c2eed1ecc0471b78ec75acdacbc5e03a4f8a8620f5109e67e349c90b1bef8d66"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/initial-state.json",
+      "bytes": 5012,
+      "sha256": "daa0cbd8052f87663f06656b47507c2607d730d2890bea292f9798724e2bd242"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/initial.jpg",
+      "bytes": 143470,
+      "sha256": "59c90cb7d16d4099bc28b7b0a09407adbab5cb7955b1f99abd0cda17996b0fb3"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/observations.json",
+      "bytes": 13066,
+      "sha256": "cac347adb1e9d2bff92fb0dc59402eab337206acda270cdf13f8e12f2e1f2660"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/observations.md",
+      "bytes": 10067,
+      "sha256": "5ed823cd044eaa8f24a292972d9d67dd7c4e8d7fc17ce055d6b24a51f965752f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/sequence-01.jpg",
+      "bytes": 141897,
+      "sha256": "56c975614e2fd95adbaa90f3806dce2784c4fa451093c9c8e0f43d424512238f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/sequence-02.jpg",
+      "bytes": 141555,
+      "sha256": "5582e7b905c5a170f55da375d1cb232dc9f4e6b14d1c8d6c5880bd65023fc298"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/sequence-03.jpg",
+      "bytes": 146644,
+      "sha256": "c9e34b7e1bf51a2a5cfb4538650b72b49b5831578ec39f08a05811e6aaab285f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/sequence-04.jpg",
+      "bytes": 140973,
+      "sha256": "9924cb4827d98aadf355ad50eb9720e928ba846c1112741c2ed70cb76c6204e3"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/sequence-05.jpg",
+      "bytes": 303655,
+      "sha256": "7b19f2645c5f0998944b8b3f9778a7a8e8e6cc52443139eda75831ea347faf2a"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/sequence-06.jpg",
+      "bytes": 179204,
+      "sha256": "fdb513866a62b5410f495ff4fbcc5dc639493b9092c9ac619aadfa7439ba933a"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/sequence-07.jpg",
+      "bytes": 176462,
+      "sha256": "80c52d751ce5e70af33ad762a71691024f648c1122982b8b5f9683885abea122"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/sequence-record.json",
+      "bytes": 1263,
+      "sha256": "70001e31b9c23d6dc98a527cbe89ebf6a8bfd659ec5ca4aada31dc714d3ec327"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V02/transfer-review.md",
+      "bytes": 2976,
+      "sha256": "a858ea862150e7fd43e5bd7b284cfcaf919377ea38c6fcc418014fcf6862afc1"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/observations.json",
+      "bytes": 7936,
+      "sha256": "d89b569f985cad5f207d4b3ffde3ad5f3778cd521ccc8caaf83569ce4c83be31"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/observations.md",
+      "bytes": 6329,
+      "sha256": "fb1759e23e02376f940afff0df43a550455cdf6cce60e4b3a321364d81e6dff5"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/sequence-record.json",
+      "bytes": 1217,
+      "sha256": "ac01c4ef7b68e6358280b712009a69a5011ebc61f5c27e84c2f6c16fd5ed08ba"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/sequence01.jpg",
+      "bytes": 140129,
+      "sha256": "b62811e5d6af24a0ea0c693cc2527cc0f82e3fb86d489e729611ab33cfb02993"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/sequence02.jpg",
+      "bytes": 211378,
+      "sha256": "f9b2cba6a480d0f323772e77210a483c15aeb778df07c18b21588eee9005cc91"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/sequence03.jpg",
+      "bytes": 205166,
+      "sha256": "5827a0689eda4a1f3e5cf33af850f7659ce3773146cae13a6ff417e388c338ce"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/sequence04.jpg",
+      "bytes": 138581,
+      "sha256": "a8197c8eaaf66bafb8b8ff9b763474addc8ef7191caafb5e4b82a21e6f3913bb"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/sequence05.jpg",
+      "bytes": 183574,
+      "sha256": "53d4c6c07026c69d3df82ab2ff0f1f8a3cbde35d0235fa3d4299bd66e520f6ae"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V03/sequence06.jpg",
+      "bytes": 242636,
+      "sha256": "cdb990676b455766af3918e7f590406a30f54c6ea2cfdf3f20e9b66263ca4d1b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/observations.json",
+      "bytes": 9270,
+      "sha256": "c0bb72e8cdd77034faf05b51e2cd279c58f43e72c2c0e3a87760bb6436e22506"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/observations.md",
+      "bytes": 6296,
+      "sha256": "2669f566ecfdad6a3b587ef5dadd32645a06ffa1b073064d0f234ac05c7e9cd9"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/sequence-record.json",
+      "bytes": 1217,
+      "sha256": "6cd877f716a0fff1be21238d3daf0ac71d98b0616bec9de1a31899567cf843cd"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/sequence01.jpg",
+      "bytes": 148606,
+      "sha256": "ad8ad8bb3370dd91b5bb85f26e3b8482ca969f579ec21a3740326139eb3281ea"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/sequence02.jpg",
+      "bytes": 164079,
+      "sha256": "0558934bf9970973956ef357bd9f063a680aef9467ba98d64db74ac24b22983f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/sequence03.jpg",
+      "bytes": 155091,
+      "sha256": "fa11a472926b979181caf37c3dcc56a16b2b2c2099fd6342f9b53e0005936274"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/sequence04.jpg",
+      "bytes": 145383,
+      "sha256": "7551f055cacb7debfc77f374f765edb1c46ec02fcf4efdcbc7bd42a8a44e7aec"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/sequence05.jpg",
+      "bytes": 173764,
+      "sha256": "6b639acecb873f5acf111e977e632fc7ba4c53d6b976c5e077554a6becbf47fe"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V04/sequence06.jpg",
+      "bytes": 92667,
+      "sha256": "5414a65769c1b8df9d487fbc3a6cad4632635b266eebbc484f7bffd9fcbeb81c"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/observations.json",
+      "bytes": 12741,
+      "sha256": "9cac53a1957940350d5b0a27eecf39f834c2e2b9750e7225afa46a02d20a1cc4"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/observations.md",
+      "bytes": 3761,
+      "sha256": "0c2d3dc7e03792e10d3b0c741eb07fe19a05d4e2499675c124915e656a0b03d0"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence-record.json",
+      "bytes": 1516,
+      "sha256": "240d7fe854b8652f24a16a03bec04adc4ff280f5fbf8a962fbdbb6ffd75997f2"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence01.jpg",
+      "bytes": 179402,
+      "sha256": "c5e2e9ec3a79db90a520324b27486dda015d77a11d23cbdba8b475a27678d9a7"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence02.jpg",
+      "bytes": 163692,
+      "sha256": "b64125294509c7ddd1a5407677822564d74edf22fba9c83595500a14852b32ad"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence03.jpg",
+      "bytes": 212093,
+      "sha256": "6e25cdf4cb3972b7ce4c3add9167f10fbf9e55d09a362cf014f32f3d91b36b87"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence04.jpg",
+      "bytes": 140170,
+      "sha256": "0019e59f44cd5151634aef2f4a4561e6eb0ea6bc278a98126d09b1b7e6f61838"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence05.jpg",
+      "bytes": 178744,
+      "sha256": "4b985b3249a6af8f675336fe4af3b4bb796ef32cd82580ca69fd4d34f6f86786"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence06.jpg",
+      "bytes": 181449,
+      "sha256": "0ead8a938cc216a65649b7b90b60ca2c2bf52ac65f43ecd40e3935b0d8197ff8"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence07.jpg",
+      "bytes": 154182,
+      "sha256": "8a58a0ea1d2821a0ed4f32e833407d8947cdecf370335062f0ff447734184d22"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence08.jpg",
+      "bytes": 236404,
+      "sha256": "64a8249db314d609c1e7c9f3e54fd53db6248988c3b0859d420ba53fedf20319"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence09.jpg",
+      "bytes": 205969,
+      "sha256": "f9331cde7ebd860399113c1ba16b33cbc5a22c066a52fccf05859d784f4f6199"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V05/sequence10.jpg",
+      "bytes": 221790,
+      "sha256": "2e945572f07a3e7736cddb21b922f862bf229742d24823e93961d610792f6e8d"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/lr-phase-record.json",
+      "bytes": 1364,
+      "sha256": "2c34eb652e138518b80d37362bd694f9e74f2fae58d3269bdc86a21d0d64af9c"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/lr01.jpg",
+      "bytes": 167573,
+      "sha256": "96da4c8875f9d056db44412ee137202a151995df7eeebf49f2fba2edeb2723e4"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/lr02.jpg",
+      "bytes": 162823,
+      "sha256": "3472b284a526d1484384697d733687d97f17aa30f0aa0787415d1165e1640ed3"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/lr03.jpg",
+      "bytes": 140969,
+      "sha256": "a0cdb7935d15d5b14caa65c1326308c7e70df7adbad9d33e899cc73bc2c39196"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/lr04.jpg",
+      "bytes": 156396,
+      "sha256": "f7d27bfc49560d7e0bb62bd67cac304368e8b4e757dc13131559d32745492ab0"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/lr05.jpg",
+      "bytes": 188752,
+      "sha256": "31b6cb55784549514ba2a4a0901ac5ae90e9526f36ae432684643f8653a8320a"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/observations-lr-phase.json",
+      "bytes": 11909,
+      "sha256": "5b7b683cb9c05789f7af9e771574b163778e4cc17041d6680b6a31de55ff98a3"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/observations-lr-phase.md",
+      "bytes": 3576,
+      "sha256": "17f9ca55a7fc5b92ef01dfb9f017197208e66d0d1bffd8958d8ec4c9c3d1c04a"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/observations-pixcake-phase.json",
+      "bytes": 9562,
+      "sha256": "879985385053d12108b5400564e070e5c4ad5bf249386d50e2c30325047bbe5c"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/observations-pixcake-phase.md",
+      "bytes": 3619,
+      "sha256": "0a7d8809cd8c16f190dde42bfdbde6982f8a81aa5c690cf6841f08c1fbcf871d"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/observations-ps-phase.json",
+      "bytes": 22367,
+      "sha256": "ab4b84246f1e5cba9fd2e195392f40012ff59a2fd6e5fa218288dd5703abc0ed"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/observations-ps-phase.md",
+      "bytes": 7478,
+      "sha256": "71d5d2543e1ff4a437af902c6cc46853a88663effdf5c8d10ea87e1b5a28a830"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/pixcake-phase-record.json",
+      "bytes": 1266,
+      "sha256": "0419d494a5199ca8d073f96a84aff38e1d84434ec69270c354e0b5d99ecf231c"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/pixcake01.jpg",
+      "bytes": 186329,
+      "sha256": "d6bfbeca4d3c1b2fefafe5d23dbce8b28916ec87d0ebc7064891b3df2ed5992c"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/pixcake02.jpg",
+      "bytes": 186750,
+      "sha256": "749ab41741d54cb780118a4c3c166eba4c02ad0f47827fd830e98eb77e3b31d0"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/pixcake03.jpg",
+      "bytes": 186325,
+      "sha256": "f6fd1e1614e5489572dc85da72eed029afcb6348b5eccb0e764d23e3568c842b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/pixcake04.jpg",
+      "bytes": 187329,
+      "sha256": "97be808386fe439912402d9619d5117832ed7c08c2c49a49a60ea0f511ae83f0"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/pixcake05.jpg",
+      "bytes": 186825,
+      "sha256": "b083120de4286e8eeaaa6d0abf45f41322f91424b9996061497fa93aad13f46d"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/pixcake06.jpg",
+      "bytes": 191572,
+      "sha256": "e597c06caa9db8f176328f221e79ffb7c66907cf0c2b36fbbf7efb600e25e315"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps-phase-record.json",
+      "bytes": 1782,
+      "sha256": "bb5767c7c56a6da418dcb7d6d04edd14183ebd6347ea0305bf0f8f8cbb945574"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps01.jpg",
+      "bytes": 142905,
+      "sha256": "90adc9f5937344977e3095cbb48c1e7fb9f828663a6689905c56a8d294b58676"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps02.jpg",
+      "bytes": 189630,
+      "sha256": "414468fb374f156defbfbf6df71d3a3aec138890bf8b52b8a436b63717f36bf5"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps03.jpg",
+      "bytes": 189330,
+      "sha256": "aa2b8292174891da87f55e573b8f524700898c1eb493942ce0020aa21b37766f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps04.jpg",
+      "bytes": 184307,
+      "sha256": "a0088fbe5626cd58303c9c8ee061c77adc5aa271f30b763be9c36d0222779010"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps05.jpg",
+      "bytes": 171169,
+      "sha256": "da8fb9ded40e01e55b2642cf0731c4a177c501c9065941cc979cbb93b09198f0"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps06.jpg",
+      "bytes": 134256,
+      "sha256": "3f2843edf2902f39aafcaca001996c47ae56f9d736dd4612bae9a3a3cea38e71"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps07.jpg",
+      "bytes": 134085,
+      "sha256": "a60c06489be8bfdaa8b18f4fd45591a3495430351a60fd759078c2391a396f70"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps08.jpg",
+      "bytes": 147383,
+      "sha256": "079074383412121e25356aa0acd2fe7300b1025e134c7ce6d7dbfc57677d743b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps09.jpg",
+      "bytes": 182493,
+      "sha256": "5a1ffb4dc0f7d395aafd092e7c8dbcf51f7a3b702b1cc82e80e8245b45399e70"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps10.jpg",
+      "bytes": 233703,
+      "sha256": "c0ed623a1cf3cfeaa4e6bbdafb1c282fb0b78cd495952ede91bfb161b24f9c55"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps11.jpg",
+      "bytes": 241973,
+      "sha256": "2cad0acc5b386d0daf552942983f5535a61c7bbb11a6f160ec79e329bdfaa8bd"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps12.jpg",
+      "bytes": 251801,
+      "sha256": "f3cc92daa96f1ad84be39b9048eb9bbfc7b24ab7193715235d603ddf9cb96619"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps13.jpg",
+      "bytes": 164425,
+      "sha256": "73e98702d239b26c6e0bbacc3fe808fbef87a5053a20a7b2a85d4ff530bef837"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps14.jpg",
+      "bytes": 214058,
+      "sha256": "6f968eb08339224752194055b8f3151662605bd1caa5bcaac55e5c7d6c85fabc"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V06/ps15.jpg",
+      "bytes": 201237,
+      "sha256": "2427f9a29efb9a79aac37c2bfeb72cb55079e71346d236452d600f10f4a882a0"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/observations.json",
+      "bytes": 11012,
+      "sha256": "9f26010093ba7197ee2c0250854d56775934bb25914f02c5047e21cd97413f99"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/observations.md",
+      "bytes": 5231,
+      "sha256": "96081577a5cb2f27c96457791d8716e60e0eb5ca4786dfdd12aa9442f6f7e5ef"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/sequence-record.json",
+      "bytes": 1248,
+      "sha256": "9c4ed965543fd71448e5253f784a527d101d60099b6000468f8d9a1ebf653014"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/sequence01.jpg",
+      "bytes": 128838,
+      "sha256": "e7bb08220d201cd4d8dd50201bf2b26516c6f23c0a49f5a0b0b284fd9e669d7a"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/sequence02.jpg",
+      "bytes": 104757,
+      "sha256": "334cd8203471d78a5c44d14c9ef7ec79d3a41dfec8ca382c66f5ece3ec1d155b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/sequence03.jpg",
+      "bytes": 96214,
+      "sha256": "96806a2455009eab3561f7961ccb558134b9521443c92f02f110ccaee7052a8d"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/sequence04.jpg",
+      "bytes": 77164,
+      "sha256": "699bd738a8a612adb275635696bd1501134709cdd063dad4aab1f03e50b2f1e0"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/sequence05.jpg",
+      "bytes": 66456,
+      "sha256": "04c4b3f9b305151e936861ac5ebacbd2accb9f15373138c5f3a906787cf9471d"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/sequence06.jpg",
+      "bytes": 99215,
+      "sha256": "7dd667d68e779a30bf15f3f4af5a5f5b5221554318010eb74ec3634cd683e55f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V07/sequence07.jpg",
+      "bytes": 99134,
+      "sha256": "b31be74f23977891a6884847892f4c0385c5f83afd2befabf2cd12d397ba6191"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/initial-state.json",
+      "bytes": 3776,
+      "sha256": "d1e63566cf80b299ae2e46ac80f78243cb5aa8aba79b67186b848c1f9f6a3fe2"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/initial.jpg",
+      "bytes": 171668,
+      "sha256": "ea97a1d17519186ad905bc55e11d64618cf5ec61ccf59be22be26526eee4bcc6"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/observations.json",
+      "bytes": 9945,
+      "sha256": "088a370d4b68cd584d4f7202460e3f0481eb2b0ac09e540239f521468f8bd444"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/observations.md",
+      "bytes": 7425,
+      "sha256": "56d48f3b88bea5489aaf4ed1e26dfdbb366e947c7f13c849b84bc0761e18f3db"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/sequence-record.json",
+      "bytes": 1285,
+      "sha256": "530a3853a8d872e101914c7ab4d072e060df71db1f5474003b7ffe5d67c3e69f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/sequence01.jpg",
+      "bytes": 195984,
+      "sha256": "6ddbfdace16c556000886042eaae80df3b2841afb8103760d3e60da8e31669c2"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/sequence02.jpg",
+      "bytes": 197262,
+      "sha256": "4413d2c2033cca6e2a074e9407baf5199e6658e2a5b5724a913711f09455138f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/sequence03.jpg",
+      "bytes": 202313,
+      "sha256": "b524f01192155bf53463c1b6c49f1881eab27545d0dfa7c03af3475b353f5446"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/sequence04.jpg",
+      "bytes": 181081,
+      "sha256": "bfad03cc4344ee58523cde9275771f298727ccc44e69effcd98931211dcd6e79"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/sequence05.jpg",
+      "bytes": 129257,
+      "sha256": "4c2a7223a19a27ae8a8d30148fcee48f2e0dec299857c50297541cd9b56e2257"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/sequence06.jpg",
+      "bytes": 275074,
+      "sha256": "307192c0f0a768a98ff87e661c47f4583a68553a7ac61e5c32a0a3fe5ead08db"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V08/sequence07.jpg",
+      "bytes": 180692,
+      "sha256": "cc62e24886b44992f628cd0c7c84264af5123325f3ef8c7da206e3d8fe1ee5de"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/observations.json",
+      "bytes": 28190,
+      "sha256": "a82430d7ca56821a2954d3274a74816d23729453b4709811417767fd29cefdee"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/observations.md",
+      "bytes": 5965,
+      "sha256": "6a1a5e028fd379fa406156015dcce80a0d09a1b280c4d162757b20eb0839ffcd"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence-batch1.json",
+      "bytes": 1220,
+      "sha256": "d73f2fe2477c36ed48b6f06d55f50ff0719b1979ffa1ea5637f7047594f3fde3"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence-batch2.json",
+      "bytes": 1295,
+      "sha256": "9084f2bcc55b95306d86f6698a85f6cc7043170fd27714670974d6cb4a9ccc65"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence01.jpg",
+      "bytes": 214090,
+      "sha256": "05e645b96930e00eec1a891717682d1b019fff04a1406fbc96038b8dca5f7fa2"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence02.jpg",
+      "bytes": 241704,
+      "sha256": "ff67fc1d2722008e08b7d6894610d10719aa928be2d3cef3e075cee8eded44c6"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence03.jpg",
+      "bytes": 242720,
+      "sha256": "8134256d98a34a52e60293637e5b1765926d506e8e423cbfbb839a9062f9b575"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence04.jpg",
+      "bytes": 214997,
+      "sha256": "7e266bd878db6f2aedc817013bb9c52f1d480c8347d60b2f30d4723967e1acd1"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence05.jpg",
+      "bytes": 190217,
+      "sha256": "600087bfbd49bfd3d57231cd280f289de7f256fb18110ab7352d319be55106c6"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence06.jpg",
+      "bytes": 222545,
+      "sha256": "4f3851aec1a9142b8e0e33112ad7f7c27a0a5fd40764160fa5c2403aa47652c9"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence07.jpg",
+      "bytes": 222276,
+      "sha256": "0686d763696f3c061775d31db19586d69814acb9656666ef97fffb7da2d3c1ca"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence08.jpg",
+      "bytes": 221759,
+      "sha256": "b9cddfd1b003d4617fa6809abbb991fa2165ae15c0a505198d75635e5d31bfb9"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence09.jpg",
+      "bytes": 225699,
+      "sha256": "812ffe102bf68fd63256b23f7dfc7ff733363a797f586620ba752030ab5d1f56"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence10.jpg",
+      "bytes": 225199,
+      "sha256": "5c588314ed05cbde1819adde4eae6c17768a8821593f4bd10ee2d53114a28ee3"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence11.jpg",
+      "bytes": 150611,
+      "sha256": "84ea4b715ad32a3be8a72b325364edb30a10e141ed05097f0cef46623229a489"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence12.jpg",
+      "bytes": 150597,
+      "sha256": "74f9ad01aaea56cdf35205e2f566a119d2349f311539bc8abbaf7d0c50a99f1f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence13.jpg",
+      "bytes": 221018,
+      "sha256": "4bfec49c81d4da49203ff07c201affe33ea46a0e9c072ee7d7512ad41b44a625"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence14.jpg",
+      "bytes": 247558,
+      "sha256": "2bcbfdce5d2dbe2a26a16b5437252f6d256ecf544674779afbc8d633fad86420"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence15.jpg",
+      "bytes": 247055,
+      "sha256": "5544ff63e49cc5ab1970b4aeadba21752e3d68b925ee86a9cea3b1193bf64553"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/sequence16.jpg",
+      "bytes": 148966,
+      "sha256": "4759420bca8f6d34f1be0a5ffa4617bd4ab7793f43b2c93bacf84c1e185baf29"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V09/tail-stable-record.json",
+      "bytes": 853,
+      "sha256": "bd38836d07b76ed3c73d1173058efdd4d562218654fdfc4f38674862d2ac6251"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/case-summary.md",
+      "bytes": 1880,
+      "sha256": "66f58a70dad9fd96ea58c2655c28c57e6f827588c5fcc07ba36a6faf95b52033"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/hd-062s.jpg",
+      "bytes": 191703,
+      "sha256": "f755ebc7e9e76230e8a8d16da30f1adf767cda2c5060b1e8967b58ac3652a27e"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/initial-hd-state.json",
+      "bytes": 1098,
+      "sha256": "7e3d43ebbdeb8f23771a8c303bc71b60c2a737479823c3333c5370fa7a929b0b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/observations-batch1.json",
+      "bytes": 7970,
+      "sha256": "6261bbb63595fc2bb822eaa68ad3b3b3e25d5df4af8b4ba4b14d7696b115261a"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/observations-batch1.md",
+      "bytes": 3480,
+      "sha256": "e36e88969f1710184156799b363ddf359134e454283c266c33de737a4f24a3f9"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/observations-batch2.json",
+      "bytes": 9739,
+      "sha256": "c76d5ef820300a57391f5a29642a853feb54e3a932c0489ba2174878728d8cc4"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/observations-batch2.md",
+      "bytes": 8752,
+      "sha256": "346b7fc252e5ab0578945868246882a7019342dbd1eb6cfcdf6718ff409eada1"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/observations-batch3.json",
+      "bytes": 9338,
+      "sha256": "123335d0122f678795f18270abe90143457ea947079c54de1a7a281f8be60f0a"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/observations-batch3.md",
+      "bytes": 4550,
+      "sha256": "4c42885f70798481ec827532e477cadcbbb37ad2adf308e803c58936ef897a0f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/paused-116s.jpg",
+      "bytes": 194707,
+      "sha256": "93d3e38d43c415f06ce03291ad3f4fd6bd63b2647c148fdfdbc473d89bdc3799"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/paused-228s.jpg",
+      "bytes": 208642,
+      "sha256": "84fefbc69fce5871fceb38b7620c5a6236666ccf350e205eb2ca52e3f3249753"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-01.jpg",
+      "bytes": 159334,
+      "sha256": "ccff331a633c5ba71210b8f78967d48744082283567af8b9215aca85b62aeae3"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-02.jpg",
+      "bytes": 181216,
+      "sha256": "b4fcbb88625727bb897e60f0f30d8ce2343599a90cbf6b82a333a3d3ea2d4fe0"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-03.jpg",
+      "bytes": 221431,
+      "sha256": "df840ac168ce44a1d9f3460fa4322122641fdd98a1cc5656f251f745b533ab06"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-04.jpg",
+      "bytes": 194871,
+      "sha256": "2b6a3413b2d808be02fbfed712f497168cb0f4cf5ab58cb0f251eea0bf788c4b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-05.jpg",
+      "bytes": 228060,
+      "sha256": "1e9c1ecc349b7ce2cb7bb4d05f3a174e66ff88c486ff15c480c07d4bfbf5d2b6"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-06.jpg",
+      "bytes": 212029,
+      "sha256": "5a75f2a5f206f5c128a7c385fd80645ef398a4a6a43de21192bfe21f0ef7e881"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-07.jpg",
+      "bytes": 172777,
+      "sha256": "e8fc9791d39a26edf4fed1f996273eb3e85ef187a6d5d6c345f7ecf5cc35c2d1"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-08.jpg",
+      "bytes": 208275,
+      "sha256": "467664867f460b2fe03f9a2a20e15b04f4a84c7fb09e0b61f9ab538a793eaf51"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-09.jpg",
+      "bytes": 202161,
+      "sha256": "84f698ace3d5f14065c824ef2a380bfdbd2ccc65b67a1bd9ff2ff82949a31da1"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-10.jpg",
+      "bytes": 178945,
+      "sha256": "8274d834b59b96eaf90bea49ec18230464cb1c060ae39c82207aa89d2137d5ad"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-11.jpg",
+      "bytes": 188631,
+      "sha256": "7fe48800dc87982708aced4c2906e205666896450656a1525235854b533c85c1"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-12.jpg",
+      "bytes": 199013,
+      "sha256": "817854a1dc21d90935cd6bb4456ea7c6b87bdbdaf115f4e207abf95670d216d2"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-13.jpg",
+      "bytes": 207860,
+      "sha256": "1c7c2e715ea64b1a87382b7aa1d9a443a97b5976dd63cf32a2e49804794c25e8"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-14.jpg",
+      "bytes": 194639,
+      "sha256": "0c235144b0015a5f7d7d2336cfc4965feebb4ca0a96db358bf3cc9d80a05b46d"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-15.jpg",
+      "bytes": 197376,
+      "sha256": "c472802773c5742565cca90d1233d61393b2fe37cfe8eeea03e40d2a9637d595"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-16.jpg",
+      "bytes": 207684,
+      "sha256": "7ef4b4269dd416cca66fd8fdc180700648da8458e872d524a18d4b1e6e766e29"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-17.jpg",
+      "bytes": 178211,
+      "sha256": "f057cb9d8a4050b3cbc65a0474b48aa6e178cdbc5e805321af73eab0f7a83765"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-18.jpg",
+      "bytes": 174051,
+      "sha256": "54262505f87df5cb29ead29628ef6e9036af1619ff576a06f77971ae904ed633"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-batch1.json",
+      "bytes": 1362,
+      "sha256": "fccc0282b340e880a678e5992123e0727300c000a63a458b16426114d9311c04"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-batch2.json",
+      "bytes": 1460,
+      "sha256": "13de039522b4b2d79ff6f3dcb447e38f9dca6d6751aae140263560709b434ed5"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/sequence-batch3.json",
+      "bytes": 2726,
+      "sha256": "52ff0b7687c51febfa9304ca1c7d9d72abd7207076a63c699b859ba25b50ecf3"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/skin-transfer-review.md",
+      "bytes": 5496,
+      "sha256": "f7795bab37d58377868648a84041ee36981620a1b5eaf56c53a3d52dac49148e"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V10/tail-share.jpg",
+      "bytes": 169538,
+      "sha256": "9ff99f0da22b0ed6353ee512ce99b37f868fc5ff86e7aaeac4679ca315d8734f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/mask-followup-record.json",
+      "bytes": 850,
+      "sha256": "5a7a652763dd0e1139bdf467407824dc3fa4b63fabb1e0dc20d5f5426a966a49"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/mask-followup01.jpg",
+      "bytes": 188605,
+      "sha256": "5f816c14a7b83acc02cee9671cb5e9a7484cfc18202e0e90df915ab26fbd8848"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/mask-followup02.jpg",
+      "bytes": 214735,
+      "sha256": "3e950906ada3b8b52607556156ac7a4571187c0633be7c8e06e7179e9bc41b94"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/observations.json",
+      "bytes": 10111,
+      "sha256": "1e435b34bbbda2ee05d19644e073c61d83e0de3f92e7a5d14245f2669f7d9626"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/observations.md",
+      "bytes": 7333,
+      "sha256": "2c7560faf7d82f32ae7453c89a12c8c0d0a97b05ec12954868111d6a4a8b0350"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/sequence-record.json",
+      "bytes": 1211,
+      "sha256": "63c4d885a4a88e0e1c5c8817aa0fb1014ef85b92a36cd5dfeb39a26ef760633d"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/sequence01.jpg",
+      "bytes": 213049,
+      "sha256": "c660e3a87fdbc65a25699bb92c573c2dd19dea8da0aa400f33c0a06f67063cf5"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/sequence02.jpg",
+      "bytes": 237674,
+      "sha256": "cb77726e826e31872be9595e2e8e3d956addca0bc209b3de26637fc6436477f1"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/sequence03.jpg",
+      "bytes": 288277,
+      "sha256": "9cac5a914fd605b4eac2fc66383aa51a4c0373d095ae17917bb16a5ec9403b1f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/sequence04.jpg",
+      "bytes": 208018,
+      "sha256": "fd42825456b9282228bbef72434b6767f0f821d7f26ac9c0f79f76c790bbcbc5"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V11/sequence05.jpg",
+      "bytes": 203496,
+      "sha256": "23a2d37f2ccb979c1702fc48f24e874e2f109a2135b38f6535f00e5658f32ed4"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/mask-frame-review.md",
+      "bytes": 3018,
+      "sha256": "d7088f154f43683a5f1689ebda048245b7dddf0af7e7f779c22c1b0f9581f69e"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/observations-batch1.json",
+      "bytes": 7246,
+      "sha256": "df951921c3b2ecf15ffab23642ca0d9ec7aad8a2515ba23b8ceb0ade0e04f998"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/observations-batch1.md",
+      "bytes": 2544,
+      "sha256": "c1f95b05e1ba76d31a322a4686786d05a82d444d9f7453ecb68e2a5a59abef41"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/observations-batch2.json",
+      "bytes": 8743,
+      "sha256": "23dfcb2f7a5bda8d1c07d1f823fecf907856de37f1730a0e0498e37cfccd95f4"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/observations-batch2.md",
+      "bytes": 2913,
+      "sha256": "3586acde9fd028ff20ce9b4f8ea08cb5c1b4cfb0193ffe24de34d1f7c3f1d8ef"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-01.jpg",
+      "bytes": 116440,
+      "sha256": "c35771dc3f7b26582d9338bf1e13d6fa41db19c546cefc83720843d4697db54c"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-02.jpg",
+      "bytes": 116141,
+      "sha256": "673229a1d75e9eed32daf60b17bd06fb81343b3300c444d6fd8c524a7d6ed4ea"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-03.jpg",
+      "bytes": 130029,
+      "sha256": "c905d2ce24bd41cf814209ff567b5e3d709071b21ae00a6fdb93663db7f6f38b"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-04.jpg",
+      "bytes": 133496,
+      "sha256": "fb0b53dfcb7b6751b5bb73f3dac5defbacffd5a1472b5b92b84bbec2bc975362"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-05.jpg",
+      "bytes": 124855,
+      "sha256": "ec6fac37cbf80f266b0eb199f789d2d7d6a4b4f231b5a2f0cc3e8a6166f103f6"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-06.jpg",
+      "bytes": 136599,
+      "sha256": "976c80d1f1f6065aaf7d5570d6aa905b83c27672bd2a09027e69c4fd9dad3965"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-07.jpg",
+      "bytes": 136896,
+      "sha256": "9e0b03a867a31b62fbd210a05d9ab92c0a014a060efb99cd58708dac2c2e9aa8"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-08.jpg",
+      "bytes": 127624,
+      "sha256": "62934f7839fe2b4c2e962b5620a62c9feae3653ab29c7f89db83881f2ca8ad5a"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-09.jpg",
+      "bytes": 86026,
+      "sha256": "3870bee6ff6b79a6b7520d37db5e5ee63ccd15a559ba448b9a626e6acb61b89f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-batch1.json",
+      "bytes": 1424,
+      "sha256": "13b2fafa0105b7ee591b2b5410614bb93800474ce7ece3d5c487910198d2f2e1"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/sequence-batch2.json",
+      "bytes": 1170,
+      "sha256": "4edecf639a50fd4f150dc85e25e3472bab513461c029ed709fbc053c8eb28e6f"
+    },
+    {
+      "file": "assets/evidence/pixcake/reviewed-videos/V12/transfer-review.md",
+      "bytes": 5553,
+      "sha256": "6def64216462bf615b8b501254301bf310bb844c2f902d8a5165c31fc0cb7563"
+    },
+    {
+      "file": "assets/evidence/preview-benchmark/benchmark-same-format-results.txt",
+      "bytes": 347,
+      "sha256": "11726059079e6947bc7cd2a3c02c55d3fa46a51e56065bb2233d4a131e849307"
+    },
+    {
+      "file": "assets/evidence/preview-benchmark/final-audit.json",
+      "bytes": 1723,
+      "sha256": "fd7375e28fc67402ba4251224dd7c60bf07986572deb90579f5108193adddb75"
+    },
+    {
+      "file": "assets/evidence/preview-benchmark/verify-preview-results.json",
+      "bytes": 1888,
+      "sha256": "33fdb7a8c1db93f8341dc2106d3029395a5cce45e7846f7b3ad4d713d21fb48c"
+    },
+    {
+      "file": "assets/evidence/ps-displace-calibration.json",
+      "bytes": 1064,
+      "sha256": "5c7a2337ec04e9724401ec5bc02aba2aee229c41019a429b37f260daf5f1a87c"
+    },
+    {
+      "file": "assets/evidence/records/dora-v4-visual-review.json",
+      "bytes": 1638,
+      "sha256": "c6ca8084578721aa6701986f95cd2600f12e289b71c4e800c22b66199454f825"
+    },
+    {
+      "file": "assets/evidence/records/rem-v12-retouch-notes.md",
+      "bytes": 2357,
+      "sha256": "121b0dafd1b127e935b11b3e1430fdf718958fe9a69bbe17cf6e9119a26f1a44"
+    },
+    {
+      "file": "assets/evidence/records/sakura-additional-views-evidence.json",
+      "bytes": 2014,
+      "sha256": "0c766a44ed0b2a3b371cd1755368c431fc109ca20d0b52da9c6e6cdef3666830"
+    },
+    {
+      "file": "assets/evidence/records/sakura-multiview-evidence.json",
+      "bytes": 1885,
+      "sha256": "5b2f7b9f54904e090e73124c496080f1070a59d7eb70190347f39b3ae11d7fe2"
+    },
+    {
+      "file": "assets/evidence/rem-v12-final-qa.json",
+      "bytes": 1414,
+      "sha256": "b3a6847e378a61fa9eee56bf6571d98d74df66e7a74a8399e82d61c823ba17f1"
+    },
+    {
+      "file": "assets/evidence/sakura-references/new-reference-waist.png",
+      "bytes": 387523,
+      "sha256": "04fe869cc1610e9acb05731142923ee6eac9859ddac86b54c78106493e54c156"
+    },
+    {
+      "file": "assets/evidence/sakura-references/reference-arms-folded-waist.png",
+      "bytes": 490221,
+      "sha256": "ee17a6f0e22013214da69936bce55b049bbf62ad733c749d69517fb876eef42c"
+    },
+    {
+      "file": "assets/evidence/sakura-references/reference-similar-pose-waist.png",
+      "bytes": 455111,
+      "sha256": "428f92a850e17ce75a37919e3d55e819f7efbf6ae9f640f79238e256cdf61bff"
+    },
+    {
+      "file": "assets/evidence/sakura-v8-final-qa.json",
+      "bytes": 1736,
+      "sha256": "7c0b9ee37ead05dc5dcbf913bdb687da58511ce7308db8f301f880e5a94f0ca4"
+    },
+    {
+      "file": "assets/evidence/sakura-v9-final-qa.json",
+      "bytes": 1884,
+      "sha256": "8e252927e1f2c5c8d5b978a2ecacb7ea6a9cc519fd84697e0ec50fa4ec652861"
+    },
+    {
+      "file": "assets/evidence/sakura-v9-retouch-record.txt",
+      "bytes": 1395,
+      "sha256": "c343fa47c9735b0eb2f37939cfc58d0b292c52dda394e1341d3faff3c50d6d72"
+    },
+    {
+      "file": "assets/examples/dora-v4.jpg",
+      "bytes": 5240309,
+      "sha256": "4a55e8ae76b1077e91b7907881f69cf6eb9cc028cda83155c0a3247ed878d81e"
+    },
+    {
+      "file": "assets/examples/group111-v2.jpg",
+      "bytes": 5068196,
+      "sha256": "32061b4ecaf137fe0ce7fe812c86292eef4db135fa7d5f332ae3e48cb4708d8d"
+    },
+    {
+      "file": "assets/examples/rem-v12.jpg",
+      "bytes": 5585690,
+      "sha256": "39ce44bf045d1144017d534bb78f8e4dfe052b85bfd9b5f9a5e2b8487e793a7c"
+    },
+    {
+      "file": "assets/examples/sakura-v9.jpg",
+      "bytes": 3236107,
+      "sha256": "4353431c265fdc75dadb1e6ee3944dc54c6afe77ba0583ff0cee138b48f49114"
+    },
+    {
+      "file": "references/case-evidence.json",
+      "bytes": 4319,
+      "sha256": "186e68267aa164f745325da6f06abe9290d799b88904b9020748424f6cf4953b"
+    },
+    {
+      "file": "references/case-files.json",
+      "bytes": 23618,
+      "sha256": "323f70896b1269bb4da8a4d49ab24f1c73bd3fad8fbb93cd686dd2c38a3b0734"
+    },
+    {
+      "file": "references/cases/ns01-arm-corrected.png",
+      "bytes": 1628292,
+      "sha256": "c306430547435093dbb86a26b2f0bb4214df23e70fd31afe7f1ab45eae7dc31c"
+    },
+    {
+      "file": "references/cases/ns01-arm-rejected.png",
+      "bytes": 1479728,
+      "sha256": "a051cae2677ecd339dd6e06aab34a46066f099e9c071c9d8e6723948b080c060"
+    },
+    {
+      "file": "references/cases/ns02-elbow-before.png",
+      "bytes": 2051673,
+      "sha256": "3e7f30d74a79af93c5a593a68ed044554da52be4413b0b3b42e4ff5ebddcdb9f"
+    },
+    {
+      "file": "references/cases/ns02-elbow-brighter.png",
+      "bytes": 2076998,
+      "sha256": "3a8a1ace497989dfa573619539fdb94baaa9040a37dbe55fff29b11ee2801544"
+    },
+    {
+      "file": "references/cases/ns03-nose-accepted.png",
+      "bytes": 349879,
+      "sha256": "458c90459487e07d25f20057ee2d70e4a732ad00b673c2652e8d7a3ccdeb2e73"
+    },
+    {
+      "file": "references/cases/ns03-nose-before.png",
+      "bytes": 349821,
+      "sha256": "ab316b0a1114fcb99671561ced5ffdb200452dbab901b6a44ba97fc13086ccbf"
+    },
+    {
+      "file": "references/cases/ns04-head-before.png",
+      "bytes": 1090839,
+      "sha256": "6eeb4cedc0de103d818cf8a21726f61788026dfd0849ae0131515c8243bc372c"
+    },
+    {
+      "file": "references/cases/ns04-head-corrected.png",
+      "bytes": 1114232,
+      "sha256": "e3c1345ca16bc7bd87c42abee438f42f2e139866d7c41d06cc31c2996b45106f"
+    },
+    {
+      "file": "references/composition-and-capture.md",
+      "bytes": 13770,
+      "sha256": "554573ebd2e4176a8964f2e1c0bf1820a1b971ee4f21289bc1c19490d3eba66f"
+    },
+    {
+      "file": "references/composition-and-key-elements.md",
+      "bytes": 14611,
+      "sha256": "abd1c197fc5c3acc70585dff119c5794cbc4b4d6a9efefe0b0b1d4c3c96cf595"
+    },
+    {
+      "file": "references/cos-retouch-engines.md",
+      "bytes": 9305,
+      "sha256": "cc0c7be8e70f7eae1fc5e6ab56ee95596e7e4dbb453736d9036aa752c908992e"
+    },
+    {
+      "file": "references/engine-experiment-history.md",
+      "bytes": 5639,
+      "sha256": "851da6839eb6a4215dd94a1e80cade4bf48dd4d505f6a1c15f9b5aa54c2d6b82"
+    },
+    {
+      "file": "references/external-examples.md",
+      "bytes": 3172,
+      "sha256": "602412f699f0d238f00c9f7e719044f0794ecf9640d8381bf6799d37b35153bf"
+    },
+    {
+      "file": "references/mask-tools.md",
+      "bytes": 5102,
+      "sha256": "c4c184d47309169b8f5d297f9ebcbc62846b664d4dc706326277a0c0efc3f76c"
+    },
+    {
+      "file": "references/native-file-checks.md",
+      "bytes": 3438,
+      "sha256": "41072693d3ac0bfaa0a494a69ba18af4bc754a635796940f8e13e91928d706c8"
+    },
+    {
+      "file": "references/personal-cases.md",
+      "bytes": 13973,
+      "sha256": "3b3fb92304a55bc41a8208d69032f4efdf5e5c1f3e0c7475b97efe626de401cd"
+    },
+    {
+      "file": "references/pixcake-cos-cases.md",
+      "bytes": 10271,
+      "sha256": "e80c591916f616ca32f1368fc63add5bc20f14f306a35f22093da5601c6abac1"
+    },
+    {
+      "file": "references/pixcake-cos-workflow.md",
+      "bytes": 16066,
+      "sha256": "f59c3bd3f9ec29d6c887139320d16d7fdcd7400ff69fbb3cced410c0efec74ef"
+    },
+    {
+      "file": "references/pixcake-source-evidence.json",
+      "bytes": 55448,
+      "sha256": "936d8b30bef34ab9eb953a6aaa548e845910abe05ed708a1e0b21de260430b24"
+    },
+    {
+      "file": "references/pixcake-video-inspection.json",
+      "bytes": 1069497,
+      "sha256": "6bbe14b0d92ef3068a11d0679f6fbdc670a867078774605f00bf2537ed3ccc1d"
+    },
+    {
+      "file": "references/portability.md",
+      "bytes": 4646,
+      "sha256": "cd7124503d415307db9624653cc4cd026e71b84b29c2558566adf7681c7c1fb7"
+    },
+    {
+      "file": "references/portrait-beauty.md",
+      "bytes": 17988,
+      "sha256": "dbb58766b255f84465842208964b26c1a0000b03b75ddde982011543a8853081"
+    },
+    {
+      "file": "references/pose-and-occlusion-cases.md",
+      "bytes": 8614,
+      "sha256": "20f0859c2f9c05787fb60cca0760a8200ff0b1fc15c8610f90d14d34b47b4024"
+    },
+    {
+      "file": "references/production-retouch.md",
+      "bytes": 13654,
+      "sha256": "16f64610d70e05bb68ddd9558cfcfcf80bbe21535b7913307a378431189f9165"
+    },
+    {
+      "file": "references/ps-runtime.md",
+      "bytes": 10803,
+      "sha256": "88bf33edcab39fd05d4722e27cb8a5bed4f35707556883b18e20d7f286e7ec85"
+    },
+    {
+      "file": "references/quality-review.md",
+      "bytes": 6011,
+      "sha256": "5aa0734cddca0700b2a1a7ce48f86f2299a27b96a1014fa8797a50c82fa3a28b"
+    },
+    {
+      "file": "references/shape-and-pose.md",
+      "bytes": 5884,
+      "sha256": "7a88503606b933854e210b780ba28130d238a88304536ec711a96974cf58ea2e"
+    },
+    {
+      "file": "references/structure-review-and-generation.md",
+      "bytes": 7258,
+      "sha256": "9340b0cc73501dae0ba12dd4d746381c7a97b5bb3a12395c91d71dca30fff173"
+    },
+    {
+      "file": "references/tone-and-edges.md",
+      "bytes": 6536,
+      "sha256": "17fb93bdd059ecc3d78b15e2f168bfdda36e6235c824f96828a91ae77a544e01"
+    },
+    {
+      "file": "scripts/build_subject_mask.py",
+      "bytes": 12710,
+      "sha256": "eed8c995670cc2db89965ca1e3c57393e785a0d05db770f38d0756c466cd2640"
+    },
+    {
+      "file": "scripts/mask-requirements-lock.txt",
+      "bytes": 556,
+      "sha256": "80ce2eef1a722d5ad971fd704102f04dfad9b37b3c9c4db109e34bea786bfe4b"
+    },
+    {
+      "file": "scripts/ps_retouch_runtime.jsx",
+      "bytes": 21167,
+      "sha256": "175e8297002c694389967791bccb5ad4c4131d612fac94fba4723338f3cefe0e"
+    },
+    {
+      "file": "scripts/recompress_png.py",
+      "bytes": 5773,
+      "sha256": "ef147fb303c8266fa7bc4445229ce56cda3f57e1f2514d00358f7ee175069746"
+    },
+    {
+      "file": "scripts/validate_portable.py",
+      "bytes": 5750,
+      "sha256": "b3d9fe2850206e8f3bd2f93bf6c24cf870ebd271c2f545dbfbebc4511249d28b"
+    },
+    {
+      "file": "scripts/verify_native_png.ps1",
+      "bytes": 18377,
+      "sha256": "64c25c12baa83e631b2847f4ba7897a9a58926d73fc541b0129540c03bb09ba8"
+    },
+    {
+      "file": "SKILL.md",
+      "bytes": 15842,
+      "sha256": "6a7d52fed7e282c6eaf952646648d9067c5941b26e1094a97066bd408a14f1ad"
+    }
+  ]
+}

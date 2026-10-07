@@ -1,0 +1,261 @@
+{
+  "videoId": "V10",
+  "status": "all_supplied_batch2_frames_inspected",
+  "sourceUrl": "https://www.douyin.com/video/7520848746377235746",
+  "scope": "Actual inspection of seven local native frames; no claim of continuous watching",
+  "browserOperatedByThisAgent": false,
+  "continuousWatchVerified": false,
+  "fullyWatched": false,
+  "metadataProvenance": "Root's original-page reading and local sequence-batch2.json, distinguished from this agent's frame inspection",
+  "authorFromRoot": "KK",
+  "pageDateFromRoot": "2025-06-28",
+  "rootStateFile": "sequence-batch2.json",
+  "frames": [
+    {
+      "file": "paused-116s.jpg",
+      "uiTimeSeconds": 117,
+      "uiTimeLabel": "01:57",
+      "domTimeSeconds": 116.53573,
+      "domTimeBasis": "first_stable_frame.timestamp_seconds in root sequence-batch2.json",
+      "playbackObservation": "paused controls visible",
+      "observedPanel": "AI color and color adjustment",
+      "skinPanelVisible": false,
+      "parametersNotInferred": true
+    },
+    {
+      "file": "sequence-07.jpg",
+      "uiTimeSeconds": 132,
+      "uiTimeLabel": "02:12",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause control visible, captured while playing",
+      "photoPreviewZoomPercent": 14,
+      "observedPanel": "人像美化 / 女 / 祛除瑕疵",
+      "readableCurrentValues": {
+        "祛斑祛痘": 100,
+        "祛痘": 100,
+        "祛斑": 100,
+        "祛油光（脸部）": 0,
+        "祛黑眼圈": 0,
+        "祛眼袋": 0,
+        "眉纹修整": 0,
+        "祛双下巴": 0
+      },
+      "captionSummary": "Author says pores remain visible on enlargement; native photo texture not verified by this frame",
+      "verifiedSliderTransition": false,
+      "verifiedBeforeAfter": false
+    },
+    {
+      "file": "sequence-08.jpg",
+      "uiTimeSeconds": 149,
+      "uiTimeLabel": "02:29",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause control visible, captured while playing",
+      "photoPreviewZoomPercent": 65,
+      "observedPanel": "面部祛纹 / 身体祛瑕疵",
+      "readableCurrentValues": {
+        "祛抬头纹": 18,
+        "祛川字纹": 57,
+        "祛眼周纹": 50,
+        "祛法令纹左": 68,
+        "祛法令纹右": 68,
+        "祛木偶纹": 0,
+        "身体祛瑕疵": 0,
+        "祛副乳": 0,
+        "祛妊娠纹": 0
+      },
+      "makeupProtectionSwitch": "blue_on",
+      "nasolabialLinkIconVisible": true,
+      "aiTattooSwitch": "gray_off",
+      "captionSummary": "Author suggests a somewhat higher nasolabial setting; no default user value inferred",
+      "verifiedSliderTransition": false,
+      "verifiedBeforeAfter": false
+    },
+    {
+      "file": "sequence-09.jpg",
+      "uiTimeSeconds": 165,
+      "uiTimeLabel": "02:45",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause control visible, captured while playing",
+      "photoPreviewZoomPercent": 26,
+      "observedPanel": "皮肤调整",
+      "readableCurrentValues": {
+        "中性灰平整": 0,
+        "中性灰立体": 0,
+        "质感磨皮": 0,
+        "高低频磨皮（脸部）": 0,
+        "高低频磨皮（身体）": 0,
+        "水润磨皮（脸部）": 0,
+        "水润磨皮（身体）": 0,
+        "锁骨增强 beta": 0
+      },
+      "graySubcontrolValues": {
+        "五官": 80,
+        "轮廓": 80,
+        "高频增强（脸部）": 10,
+        "低频平整（脸部）": 50,
+        "高频增强（身体）": 10,
+        "低频平整（身体）": 50
+      },
+      "captionSummary": "Author introduces neutral-gray controls; explanation does not verify a finished effect",
+      "verifiedContinuousSliderDrag": false,
+      "verifiedBeforeAfter": false
+    },
+    {
+      "file": "sequence-10.jpg",
+      "uiTimeSeconds": 181,
+      "uiTimeLabel": "03:01",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause control visible, captured while playing",
+      "photoPreviewZoomPercent": 86,
+      "observedPanel": "皮肤调整",
+      "readableCurrentValues": {
+        "中性灰平整": 62,
+        "中性灰立体": 0,
+        "质感磨皮": 0,
+        "高低频磨皮（脸部）": 0,
+        "高低频磨皮（身体）": 0
+      },
+      "graySubcontrolValues": {
+        "五官": 80,
+        "轮廓": 80
+      },
+      "processingIndicatorVisible": "正在处理",
+      "effectAssessment": "Cannot validate the completed skin result while processing; preview zoom differs from sequence-09",
+      "verifiedContinuousSliderDrag": false,
+      "verifiedBeforeAfter": false
+    },
+    {
+      "file": "sequence-11.jpg",
+      "uiTimeSeconds": 197,
+      "uiTimeLabel": "03:17",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause control visible, captured while playing",
+      "photoPreviewZoomPercent": 65,
+      "observedPanel": "皮肤调整",
+      "readableCurrentValues": {
+        "中性灰平整": 62,
+        "中性灰立体": 45,
+        "五官": 80,
+        "轮廓": 80,
+        "质感磨皮": 43,
+        "高低频磨皮（脸部）": 0,
+        "高低频磨皮（身体）": 0,
+        "水润磨皮（脸部）": 0,
+        "水润磨皮（身体）": 0,
+        "锁骨增强 beta": 0
+      },
+      "graySubcontrolValues": {
+        "高频增强（脸部）": 10,
+        "低频平整（脸部）": 50,
+        "高频增强（身体）": 10,
+        "低频平整（身体）": 50
+      },
+      "captionSummary": "Author distinguishes skin-processing controls; no complete slider operation inferred",
+      "effectAssessment": "Pose, lashes, hair ornaments and collar accessory remain recognizable at preview size; no matched disabled-effect comparison or native-detail validation",
+      "verifiedContinuousSliderDrag": false,
+      "verifiedBeforeAfter": false
+    },
+    {
+      "file": "sequence-12.jpg",
+      "uiTimeSeconds": 213,
+      "uiTimeLabel": "03:33",
+      "domTimeSeconds": null,
+      "playbackObservation": "pause control visible, captured while playing",
+      "photoPreviewZoomPercent": 65,
+      "observedPanel": "皮肤调整",
+      "readableCurrentValues": {
+        "中性灰立体": 45,
+        "五官": 80,
+        "轮廓": 80,
+        "质感磨皮": 43,
+        "高低频磨皮（脸部）": 58,
+        "高频增强（脸部）": 32,
+        "低频平整（脸部）": 50,
+        "高低频磨皮（身体）": 0,
+        "水润磨皮（脸部）": 0,
+        "水润磨皮（身体）": 0,
+        "锁骨增强 beta": 0
+      },
+      "partiallyClippedControls": [
+        "中性灰平整; value not independently readable in this frame"
+      ],
+      "graySubcontrolValues": {
+        "高频增强（身体）": 10,
+        "低频平整（身体）": 50
+      },
+      "skinTextureBetaSelectedTile": "无",
+      "captionSummary": "Author suggests slightly higher low-frequency smoothing; the visible 50 is not a recommended default for the user",
+      "effectAssessment": "Same preview zoom as sequence-11, but not a disabled-versus-enabled comparison; no native pore-retention guarantee",
+      "verifiedContinuousSliderDrag": false,
+      "verifiedBeforeAfter": false
+    }
+  ],
+  "parameterStateComparisons": [
+    {
+      "from": "sequence-09.jpg",
+      "to": "sequence-10.jpg",
+      "observed": "中性灰平整 0 -> 62",
+      "causalEffectVerified": false,
+      "limit": "Different preview zoom; processing indicator in later frame"
+    },
+    {
+      "from": "sequence-10.jpg",
+      "to": "sequence-11.jpg",
+      "observed": "中性灰立体 0 -> 45; 质感磨皮 0 -> 43",
+      "causalEffectVerified": false,
+      "limit": "Multiple parameter states and preview zoom changed"
+    },
+    {
+      "from": "sequence-11.jpg",
+      "to": "sequence-12.jpg",
+      "observed": "高低频磨皮（脸部） 0 -> 58; 高频增强（脸部） gray 10 -> active 32; 低频平整（脸部） displays 50",
+      "causalEffectVerified": false,
+      "limit": "Same 65-percent preview zoom but no matched effect on/off comparison"
+    },
+    {
+      "frames": [
+        "sequence-09.jpg",
+        "sequence-10.jpg",
+        "sequence-11.jpg",
+        "sequence-12.jpg"
+      ],
+      "observed": "高低频磨皮（身体） remains 0",
+      "causalEffectVerified": false,
+      "limit": "Does not establish body skin-tone coordination or elbow quality"
+    }
+  ],
+  "playerLabels": {
+    "quality": "高清1080P",
+    "rate": "0.75x"
+  },
+  "rootEndPauseState": {
+    "timeSeconds": 228.935412,
+    "durationSeconds": 363.95,
+    "decodedWidth": 1920,
+    "decodedHeight": 1080,
+    "paused": true,
+    "rate": 0.75,
+    "assignedToAnyFrame": false
+  },
+  "remainingEvidence": [
+    "skin tone control operation",
+    "matched processing before-after",
+    "native photo detail",
+    "face and body geometric shaping in later stages",
+    "exact DOM times for sequence-07 through sequence-12"
+  ],
+  "rulesAdded": [],
+  "limits": [
+    "Discrete frame state changes do not establish continuous dragging operations",
+    "Software zoom is not retouch strength",
+    "Caption claims do not verify native skin texture or final identity preservation",
+    "Current author values are not defaults for the user's photos",
+    "This batch contains skin controls, not verified facial or body geometry edits"
+  ],
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

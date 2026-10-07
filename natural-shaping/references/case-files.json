@@ -1,0 +1,577 @@
+{
+  "status": "packaged_and_independently_verified",
+  "originalBytes": 22670997,
+  "packagedBytes": 10141462,
+  "files": [
+    {
+      "file": "references/cases/ns01-arm-rejected.png",
+      "original": "origin-not-bundled:coherent-arm-rejected.png",
+      "state": "rejected-design",
+      "imageScope": "native-roi",
+      "width": 640,
+      "height": 880,
+      "bitDepth": 16,
+      "pngColorType": 2,
+      "originalSha256": "f332faf2952584bd7d6178fa0526252f5f333f46afabc731e395f3ab17af0a73",
+      "packagedSha256": "a051cae2677ecd339dd6e06aab34a46066f099e9c071c9d8e6723948b080c060",
+      "originalBytes": 3385217,
+      "packagedBytes": 1479728,
+      "compressionReport": "origin-not-bundled:ns01-arm-rejected.json",
+      "compressionEvidence": {
+        "status": "compressed_pending_pixel_verification",
+        "image": {
+          "source": "origin-not-bundled:coherent-arm-rejected.png",
+          "output": "origin-not-bundled:ns01-arm-rejected.png",
+          "dimensions": [
+            640,
+            880
+          ],
+          "depthBits": 16,
+          "colorType": 2,
+          "sourceBytes": 3385217,
+          "outputBytes": 1479728,
+          "sourceMiB": 3.23,
+          "outputMiB": 1.41,
+          "reductionPercent": 56.3,
+          "sourceSha256": "f332faf2952584bd7d6178fa0526252f5f333f46afabc731e395f3ab17af0a73",
+          "outputSha256": "a051cae2677ecd339dd6e06aab34a46066f099e9c071c9d8e6723948b080c060",
+          "decodedScanlineBytes": 3380080,
+          "sourceScanlineSha256": "c4ffdf5820beeb68f1725903fc5c7b21bd993058c950cb761a93ad8b2fce758a",
+          "method": "IDAT zlib compression level 9 only; all other chunks copied unchanged"
+        }
+      },
+      "independentPixelVerification": {
+        "status": "passed",
+        "report": "origin-not-bundled:ns01-arm-rejected-pixels.json",
+        "expectedDepth": 16,
+        "allowMissingIcc": false,
+        "checks": {
+          "before": {
+            "comparedPixels": 563200,
+            "depthBits": 16,
+            "comparedChannels": 3,
+            "alphaIncluded": false,
+            "referenceOffset": [
+              0,
+              0
+            ],
+            "allowedRoisExclusiveFlattened": [],
+            "changedPixels": 0,
+            "changedChannelSamples": 0,
+            "maximumChannelDifference": 0,
+            "changedBoundsExclusive": null,
+            "changedPixelsOutsideAllowedRois": 0,
+            "changedBoundsOutsideAllowedRoisExclusive": null,
+            "outsideMismatchExamples": [],
+            "allPixelsIdentical": true,
+            "outsideAllowedRoisIdentical": true,
+            "iccProfilesEmbeddedInBoth": true,
+            "iccByteIdentical": true,
+            "iccPresenceAndBytesMatch": true,
+            "colorDefinitionPreserved": true
+          }
+        }
+      }
+    },
+    {
+      "file": "references/cases/ns01-arm-corrected.png",
+      "original": "origin-not-bundled:coherent-arm-after.png",
+      "state": "feedback-driven-correction",
+      "imageScope": "native-roi",
+      "width": 640,
+      "height": 880,
+      "bitDepth": 16,
+      "pngColorType": 2,
+      "originalSha256": "b8d5cd3e6569a6f3bdb4e41e88aa95f00192c01f4c2827e4966cf69fc2a29156",
+      "packagedSha256": "c306430547435093dbb86a26b2f0bb4214df23e70fd31afe7f1ab45eae7dc31c",
+      "originalBytes": 3385375,
+      "packagedBytes": 1628292,
+      "compressionReport": "origin-not-bundled:ns01-arm-corrected.json",
+      "compressionEvidence": {
+        "status": "compressed_pending_pixel_verification",
+        "image": {
+          "source": "origin-not-bundled:coherent-arm-after.png",
+          "output": "origin-not-bundled:ns01-arm-corrected.png",
+          "dimensions": [
+            640,
+            880
+          ],
+          "depthBits": 16,
+          "colorType": 2,
+          "sourceBytes": 3385375,
+          "outputBytes": 1628292,
+          "sourceMiB": 3.23,
+          "outputMiB": 1.55,
+          "reductionPercent": 51.9,
+          "sourceSha256": "b8d5cd3e6569a6f3bdb4e41e88aa95f00192c01f4c2827e4966cf69fc2a29156",
+          "outputSha256": "c306430547435093dbb86a26b2f0bb4214df23e70fd31afe7f1ab45eae7dc31c",
+          "decodedScanlineBytes": 3380080,
+          "sourceScanlineSha256": "4da545b1b9606f0fb18e0488e8aa69dad00a834c8a8618cede443da90e5677fc",
+          "method": "IDAT zlib compression level 9 only; all other chunks copied unchanged"
+        }
+      },
+      "independentPixelVerification": {
+        "status": "passed",
+        "report": "origin-not-bundled:ns01-arm-corrected-pixels.json",
+        "expectedDepth": 16,
+        "allowMissingIcc": false,
+        "checks": {
+          "before": {
+            "comparedPixels": 563200,
+            "depthBits": 16,
+            "comparedChannels": 3,
+            "alphaIncluded": false,
+            "referenceOffset": [
+              0,
+              0
+            ],
+            "allowedRoisExclusiveFlattened": [],
+            "changedPixels": 0,
+            "changedChannelSamples": 0,
+            "maximumChannelDifference": 0,
+            "changedBoundsExclusive": null,
+            "changedPixelsOutsideAllowedRois": 0,
+            "changedBoundsOutsideAllowedRoisExclusive": null,
+            "outsideMismatchExamples": [],
+            "allPixelsIdentical": true,
+            "outsideAllowedRoisIdentical": true,
+            "iccProfilesEmbeddedInBoth": true,
+            "iccByteIdentical": true,
+            "iccPresenceAndBytesMatch": true,
+            "colorDefinitionPreserved": true
+          }
+        }
+      }
+    },
+    {
+      "file": "references/cases/ns02-elbow-before.png",
+      "original": "origin-not-bundled:before-context.png",
+      "state": "before",
+      "imageScope": "native-roi",
+      "width": 910,
+      "height": 700,
+      "bitDepth": 16,
+      "pngColorType": 2,
+      "originalSha256": "2381f017bc40291277760b815216d7113593db9018a47e12089eaeccc3822003",
+      "packagedSha256": "3e7f30d74a79af93c5a593a68ed044554da52be4413b0b3b42e4ff5ebddcdb9f",
+      "originalBytes": 3828387,
+      "packagedBytes": 2051673,
+      "compressionReport": "origin-not-bundled:ns02-elbow-before.json",
+      "compressionEvidence": {
+        "status": "compressed_pending_pixel_verification",
+        "image": {
+          "source": "origin-not-bundled:before-context.png",
+          "output": "origin-not-bundled:ns02-elbow-before.png",
+          "dimensions": [
+            910,
+            700
+          ],
+          "depthBits": 16,
+          "colorType": 2,
+          "sourceBytes": 3828387,
+          "outputBytes": 2051673,
+          "sourceMiB": 3.65,
+          "outputMiB": 1.96,
+          "reductionPercent": 46.4,
+          "sourceSha256": "2381f017bc40291277760b815216d7113593db9018a47e12089eaeccc3822003",
+          "outputSha256": "3e7f30d74a79af93c5a593a68ed044554da52be4413b0b3b42e4ff5ebddcdb9f",
+          "decodedScanlineBytes": 3822700,
+          "sourceScanlineSha256": "8ac50b5f5d7fa115a532607e8925e55edfac370cae1b1689dccfc13e8c22270c",
+          "method": "IDAT zlib compression level 9 only; all other chunks copied unchanged"
+        }
+      },
+      "independentPixelVerification": {
+        "status": "passed",
+        "report": "origin-not-bundled:ns02-elbow-before-pixels.json",
+        "expectedDepth": 16,
+        "allowMissingIcc": false,
+        "checks": {
+          "before": {
+            "comparedPixels": 637000,
+            "depthBits": 16,
+            "comparedChannels": 3,
+            "alphaIncluded": false,
+            "referenceOffset": [
+              0,
+              0
+            ],
+            "allowedRoisExclusiveFlattened": [],
+            "changedPixels": 0,
+            "changedChannelSamples": 0,
+            "maximumChannelDifference": 0,
+            "changedBoundsExclusive": null,
+            "changedPixelsOutsideAllowedRois": 0,
+            "changedBoundsOutsideAllowedRoisExclusive": null,
+            "outsideMismatchExamples": [],
+            "allPixelsIdentical": true,
+            "outsideAllowedRoisIdentical": true,
+            "iccProfilesEmbeddedInBoth": true,
+            "iccByteIdentical": true,
+            "iccPresenceAndBytesMatch": true,
+            "colorDefinitionPreserved": true
+          }
+        }
+      }
+    },
+    {
+      "file": "references/cases/ns02-elbow-brighter.png",
+      "original": "origin-not-bundled:after-context.png",
+      "state": "requested-brighter-candidate",
+      "imageScope": "native-roi",
+      "width": 910,
+      "height": 700,
+      "bitDepth": 16,
+      "pngColorType": 2,
+      "originalSha256": "c46341e17d5ec68d0269326fe69da749a74d3cdc6cae39582e822229be1a7c7a",
+      "packagedSha256": "3a8a1ace497989dfa573619539fdb94baaa9040a37dbe55fff29b11ee2801544",
+      "originalBytes": 3828387,
+      "packagedBytes": 2076998,
+      "compressionReport": "origin-not-bundled:ns02-elbow-brighter.json",
+      "compressionEvidence": {
+        "status": "compressed_pending_pixel_verification",
+        "image": {
+          "source": "origin-not-bundled:after-context.png",
+          "output": "origin-not-bundled:ns02-elbow-brighter.png",
+          "dimensions": [
+            910,
+            700
+          ],
+          "depthBits": 16,
+          "colorType": 2,
+          "sourceBytes": 3828387,
+          "outputBytes": 2076998,
+          "sourceMiB": 3.65,
+          "outputMiB": 1.98,
+          "reductionPercent": 45.7,
+          "sourceSha256": "c46341e17d5ec68d0269326fe69da749a74d3cdc6cae39582e822229be1a7c7a",
+          "outputSha256": "3a8a1ace497989dfa573619539fdb94baaa9040a37dbe55fff29b11ee2801544",
+          "decodedScanlineBytes": 3822700,
+          "sourceScanlineSha256": "ccf8b3d78ec2ac56d44684859430d3c9117a2681fc72c01cebc1d92b683d03bd",
+          "method": "IDAT zlib compression level 9 only; all other chunks copied unchanged"
+        }
+      },
+      "independentPixelVerification": {
+        "status": "passed",
+        "report": "origin-not-bundled:ns02-elbow-brighter-pixels.json",
+        "expectedDepth": 16,
+        "allowMissingIcc": false,
+        "checks": {
+          "before": {
+            "comparedPixels": 637000,
+            "depthBits": 16,
+            "comparedChannels": 3,
+            "alphaIncluded": false,
+            "referenceOffset": [
+              0,
+              0
+            ],
+            "allowedRoisExclusiveFlattened": [],
+            "changedPixels": 0,
+            "changedChannelSamples": 0,
+            "maximumChannelDifference": 0,
+            "changedBoundsExclusive": null,
+            "changedPixelsOutsideAllowedRois": 0,
+            "changedBoundsOutsideAllowedRoisExclusive": null,
+            "outsideMismatchExamples": [],
+            "allPixelsIdentical": true,
+            "outsideAllowedRoisIdentical": true,
+            "iccProfilesEmbeddedInBoth": true,
+            "iccByteIdentical": true,
+            "iccPresenceAndBytesMatch": true,
+            "colorDefinitionPreserved": true
+          }
+        }
+      }
+    },
+    {
+      "file": "references/cases/ns03-nose-before.png",
+      "original": "origin-not-bundled:before-nose-face.png",
+      "state": "before",
+      "imageScope": "diagnostic-preview",
+      "width": 530,
+      "height": 460,
+      "bitDepth": 8,
+      "pngColorType": 2,
+      "originalSha256": "900cd9776bfb66265c8c292a163e48b065090da3ff656c0efc21eee0607a1738",
+      "packagedSha256": "ab316b0a1114fcb99671561ced5ffdb200452dbab901b6a44ba97fc13086ccbf",
+      "originalBytes": 736790,
+      "packagedBytes": 349821,
+      "compressionReport": "origin-not-bundled:ns03-nose-before.json",
+      "compressionEvidence": {
+        "status": "compressed_pending_pixel_verification",
+        "image": {
+          "source": "origin-not-bundled:before-nose-face.png",
+          "output": "origin-not-bundled:ns03-nose-before.png",
+          "dimensions": [
+            530,
+            460
+          ],
+          "depthBits": 8,
+          "colorType": 2,
+          "sourceBytes": 736790,
+          "outputBytes": 349821,
+          "sourceMiB": 0.7,
+          "outputMiB": 0.33,
+          "reductionPercent": 52.5,
+          "sourceSha256": "900cd9776bfb66265c8c292a163e48b065090da3ff656c0efc21eee0607a1738",
+          "outputSha256": "ab316b0a1114fcb99671561ced5ffdb200452dbab901b6a44ba97fc13086ccbf",
+          "decodedScanlineBytes": 731860,
+          "sourceScanlineSha256": "69dd971fd06d1f3cda263fe59ffcdf7b48ac368ab850eb26b89d146d776074cd",
+          "method": "IDAT zlib compression level 9 only; all other chunks copied unchanged"
+        }
+      },
+      "independentPixelVerification": {
+        "status": "passed",
+        "report": "origin-not-bundled:ns03-nose-before-pixels.json",
+        "expectedDepth": 8,
+        "allowMissingIcc": true,
+        "checks": {
+          "before": {
+            "comparedPixels": 243800,
+            "depthBits": 8,
+            "comparedChannels": 3,
+            "alphaIncluded": false,
+            "referenceOffset": [
+              0,
+              0
+            ],
+            "allowedRoisExclusiveFlattened": [],
+            "changedPixels": 0,
+            "changedChannelSamples": 0,
+            "maximumChannelDifference": 0,
+            "changedBoundsExclusive": null,
+            "changedPixelsOutsideAllowedRois": 0,
+            "changedBoundsOutsideAllowedRoisExclusive": null,
+            "outsideMismatchExamples": [],
+            "allPixelsIdentical": true,
+            "outsideAllowedRoisIdentical": true,
+            "iccProfilesEmbeddedInBoth": false,
+            "iccByteIdentical": false,
+            "iccPresenceAndBytesMatch": true,
+            "colorDefinitionPreserved": true
+          }
+        }
+      }
+    },
+    {
+      "file": "references/cases/ns03-nose-accepted.png",
+      "original": "origin-not-bundled:final-nose-face.png",
+      "state": "user-accepted-local-result",
+      "imageScope": "diagnostic-preview",
+      "width": 530,
+      "height": 460,
+      "bitDepth": 8,
+      "pngColorType": 2,
+      "originalSha256": "40567eeec1bfdc4cb6e85aa5c8798e456fc4dd50f7f136f612dd075c31012462",
+      "packagedSha256": "458c90459487e07d25f20057ee2d70e4a732ad00b673c2652e8d7a3ccdeb2e73",
+      "originalBytes": 736790,
+      "packagedBytes": 349879,
+      "compressionReport": "origin-not-bundled:ns03-nose-accepted.json",
+      "compressionEvidence": {
+        "status": "compressed_pending_pixel_verification",
+        "image": {
+          "source": "origin-not-bundled:final-nose-face.png",
+          "output": "origin-not-bundled:ns03-nose-accepted.png",
+          "dimensions": [
+            530,
+            460
+          ],
+          "depthBits": 8,
+          "colorType": 2,
+          "sourceBytes": 736790,
+          "outputBytes": 349879,
+          "sourceMiB": 0.7,
+          "outputMiB": 0.33,
+          "reductionPercent": 52.5,
+          "sourceSha256": "40567eeec1bfdc4cb6e85aa5c8798e456fc4dd50f7f136f612dd075c31012462",
+          "outputSha256": "458c90459487e07d25f20057ee2d70e4a732ad00b673c2652e8d7a3ccdeb2e73",
+          "decodedScanlineBytes": 731860,
+          "sourceScanlineSha256": "beea040f73404e0db1fc9c58c45f1e0be625e47defeed087b1256b5c707de5b8",
+          "method": "IDAT zlib compression level 9 only; all other chunks copied unchanged"
+        }
+      },
+      "independentPixelVerification": {
+        "status": "passed",
+        "report": "origin-not-bundled:ns03-nose-accepted-pixels.json",
+        "expectedDepth": 8,
+        "allowMissingIcc": true,
+        "checks": {
+          "before": {
+            "comparedPixels": 243800,
+            "depthBits": 8,
+            "comparedChannels": 3,
+            "alphaIncluded": false,
+            "referenceOffset": [
+              0,
+              0
+            ],
+            "allowedRoisExclusiveFlattened": [],
+            "changedPixels": 0,
+            "changedChannelSamples": 0,
+            "maximumChannelDifference": 0,
+            "changedBoundsExclusive": null,
+            "changedPixelsOutsideAllowedRois": 0,
+            "changedBoundsOutsideAllowedRoisExclusive": null,
+            "outsideMismatchExamples": [],
+            "allPixelsIdentical": true,
+            "outsideAllowedRoisIdentical": true,
+            "iccProfilesEmbeddedInBoth": false,
+            "iccByteIdentical": false,
+            "iccPresenceAndBytesMatch": true,
+            "colorDefinitionPreserved": true
+          }
+        }
+      }
+    },
+    {
+      "file": "references/cases/ns04-head-before.png",
+      "original": "origin-not-bundled:final-head.png",
+      "state": "before-light-and-hair-corrections",
+      "imageScope": "diagnostic-preview-different-crops",
+      "width": 820,
+      "height": 998,
+      "bitDepth": 8,
+      "pngColorType": 6,
+      "originalSha256": "74e1aa6ea582f77003225cd8ec3f1824843bfe816a29351c36e262e0b7e8c242",
+      "packagedSha256": "6eeb4cedc0de103d818cf8a21726f61788026dfd0849ae0131515c8243bc372c",
+      "originalBytes": 3279794,
+      "packagedBytes": 1090839,
+      "compressionReport": "origin-not-bundled:ns04-head-before.json",
+      "compressionEvidence": {
+        "status": "compressed_pending_pixel_verification",
+        "image": {
+          "source": "origin-not-bundled:final-head.png",
+          "output": "origin-not-bundled:ns04-head-before.png",
+          "dimensions": [
+            820,
+            998
+          ],
+          "depthBits": 8,
+          "colorType": 6,
+          "sourceBytes": 3279794,
+          "outputBytes": 1090839,
+          "sourceMiB": 3.13,
+          "outputMiB": 1.04,
+          "reductionPercent": 66.7,
+          "sourceSha256": "74e1aa6ea582f77003225cd8ec3f1824843bfe816a29351c36e262e0b7e8c242",
+          "outputSha256": "6eeb4cedc0de103d818cf8a21726f61788026dfd0849ae0131515c8243bc372c",
+          "decodedScanlineBytes": 3274438,
+          "sourceScanlineSha256": "a89f41895d1871bf0e3a6d63a644ec1fd0c89c41cd9070dd9b2cacf0c7469a69",
+          "method": "IDAT zlib compression level 9 only; all other chunks copied unchanged"
+        }
+      },
+      "independentPixelVerification": {
+        "status": "passed",
+        "report": "origin-not-bundled:ns04-head-before-pixels.json",
+        "expectedDepth": 8,
+        "allowMissingIcc": true,
+        "checks": {
+          "before": {
+            "comparedPixels": 818360,
+            "depthBits": 8,
+            "comparedChannels": 4,
+            "alphaIncluded": true,
+            "referenceOffset": [
+              0,
+              0
+            ],
+            "allowedRoisExclusiveFlattened": [],
+            "changedPixels": 0,
+            "changedChannelSamples": 0,
+            "maximumChannelDifference": 0,
+            "changedBoundsExclusive": null,
+            "changedPixelsOutsideAllowedRois": 0,
+            "changedBoundsOutsideAllowedRoisExclusive": null,
+            "outsideMismatchExamples": [],
+            "allPixelsIdentical": true,
+            "outsideAllowedRoisIdentical": true,
+            "iccProfilesEmbeddedInBoth": false,
+            "iccByteIdentical": false,
+            "iccPresenceAndBytesMatch": true,
+            "colorDefinitionPreserved": true
+          }
+        }
+      }
+    },
+    {
+      "file": "references/cases/ns04-head-corrected.png",
+      "original": "origin-not-bundled:final-candidate-head.png",
+      "state": "reviewed-correction",
+      "imageScope": "diagnostic-preview-different-crops",
+      "width": 1000,
+      "height": 871,
+      "bitDepth": 8,
+      "pngColorType": 6,
+      "originalSha256": "cac2aa3de9e78bc54dfcb2ece7d754f4fb4037d462267eda8d34502f5b84bc16",
+      "packagedSha256": "e3c1345ca16bc7bd87c42abee438f42f2e139866d7c41d06cc31c2996b45106f",
+      "originalBytes": 3490257,
+      "packagedBytes": 1114232,
+      "compressionReport": "origin-not-bundled:ns04-head-corrected.json",
+      "compressionEvidence": {
+        "status": "compressed_pending_pixel_verification",
+        "image": {
+          "source": "origin-not-bundled:final-candidate-head.png",
+          "output": "origin-not-bundled:ns04-head-corrected.png",
+          "dimensions": [
+            1000,
+            871
+          ],
+          "depthBits": 8,
+          "colorType": 6,
+          "sourceBytes": 3490257,
+          "outputBytes": 1114232,
+          "sourceMiB": 3.33,
+          "outputMiB": 1.06,
+          "reductionPercent": 68.1,
+          "sourceSha256": "cac2aa3de9e78bc54dfcb2ece7d754f4fb4037d462267eda8d34502f5b84bc16",
+          "outputSha256": "e3c1345ca16bc7bd87c42abee438f42f2e139866d7c41d06cc31c2996b45106f",
+          "decodedScanlineBytes": 3484871,
+          "sourceScanlineSha256": "a959f8ca5dd5a482c25497a4ff897da2f1aa9b1c4a96c510cd80417a17639596",
+          "method": "IDAT zlib compression level 9 only; all other chunks copied unchanged"
+        }
+      },
+      "independentPixelVerification": {
+        "status": "passed",
+        "report": "origin-not-bundled:ns04-head-corrected-pixels.json",
+        "expectedDepth": 8,
+        "allowMissingIcc": true,
+        "checks": {
+          "before": {
+            "comparedPixels": 871000,
+            "depthBits": 8,
+            "comparedChannels": 4,
+            "alphaIncluded": true,
+            "referenceOffset": [
+              0,
+              0
+            ],
+            "allowedRoisExclusiveFlattened": [],
+            "changedPixels": 0,
+            "changedChannelSamples": 0,
+            "maximumChannelDifference": 0,
+            "changedBoundsExclusive": null,
+            "changedPixelsOutsideAllowedRois": 0,
+            "changedBoundsOutsideAllowedRoisExclusive": null,
+            "outsideMismatchExamples": [],
+            "allPixelsIdentical": true,
+            "outsideAllowedRoisIdentical": true,
+            "iccProfilesEmbeddedInBoth": false,
+            "iccByteIdentical": false,
+            "iccPresenceAndBytesMatch": true,
+            "colorDefinitionPreserved": true
+          }
+        }
+      }
+    }
+  ],
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled resource paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "historical_metadata": "Existing sha256, bytes and similar source-evidence fields describe the historical files. Portable text adaptations change their bytes. They are not current-package integrity checks. Existing case-file packagedSha256 fields remain applicable only to the unchanged eight case images.",
+    "current_package_manifest": "package-manifest.json",
+    "current_verification": "Use the package manifest for current bundled-file hashes and sizes; its scope does not establish fresh source viewing, aesthetic acceptance or model performance.",
+    "historical_labels": "fact_id and candidate_id are stable evidence identifiers, not paths. Visible UI filenames and quoted observation text are historical labels, not bundled resources. Other explicit resource fields use the declared skill-root base or origin-not-bundled marker."
+  },
+  "assetScope": "Eight bundled historical ROI images, not full original photos or current presets."
+}

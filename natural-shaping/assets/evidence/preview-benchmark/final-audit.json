@@ -1,0 +1,61 @@
+{
+  "runtime_version": "1.0.7",
+  "legacy_preview_source_unchanged": true,
+  "legacy_export_source_unchanged": true,
+  "runtime_sha256": "006ba8b783366534b12331748fdc0077d41318c9ab0617c30b1edac814e7ef74",
+  "same_format_benchmarks": [
+    {
+      "sample": "800x600_20_painted_layers",
+      "paired_ms": [
+        [
+          0,
+          1222,
+          1284
+        ],
+        [
+          1,
+          1248,
+          1222
+        ],
+        [
+          2,
+          1219,
+          1485
+        ]
+      ],
+      "direct_median_ms": 1222,
+      "batch_median_ms": 1284,
+      "all_jpeg_pixels_equal": true
+    },
+    {
+      "sample": "1600x1200_40_painted_layers",
+      "paired_ms": [
+        [
+          0,
+          1481,
+          1413
+        ],
+        [
+          1,
+          1264,
+          1409
+        ],
+        [
+          2,
+          1274,
+          1380
+        ]
+      ],
+      "direct_median_ms": 1274,
+      "batch_median_ms": 1409,
+      "all_jpeg_pixels_equal": true
+    }
+  ],
+  "conclusion": "Correctness and cleanup verified. These small synthetic samples do not demonstrate acceleration. No claim about full retouch speed or quality.",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

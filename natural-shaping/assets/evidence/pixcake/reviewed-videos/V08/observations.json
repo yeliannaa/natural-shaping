@@ -1,0 +1,276 @@
+{
+  "case_id": "V08",
+  "source_url": "https://www.bilibili.com/video/BV1JoyKYNEAV/",
+  "inspection_scope": "independent visual inspection of seven actual sequence screenshots plus the preserved initial screenshot; not a continuous full watch",
+  "subtitle_policy": "brief meaning summaries only; no accumulated transcript",
+  "metadata_read": [
+    "initial-state.json",
+    "sequence-record.json"
+  ],
+  "original_initial_note_preserved": "observations.md initial-frame section",
+  "root_batch_end_state": {
+    "timestamp_seconds": 87.211536,
+    "duration_seconds": 87.379,
+    "paused": true,
+    "playback_rate": 0.5,
+    "decoded_width": 1920,
+    "decoded_height": 1080
+  },
+  "initial_duration_record_seconds": 88,
+  "duration_limit": "The initial HTML/media snapshot recorded 88 seconds; the batch-end actual media duration is 87.379 seconds. Neither duration locates a screenshot by filename.",
+  "screenshot_dimensions": [
+    1698,
+    1080
+  ],
+  "screenshot_encoding_verified": "JPEG",
+  "frames": [
+    {
+      "file": "initial.jpg",
+      "bytes": 171668,
+      "sha256": "ea97a1d17519186ad905bc55e11d64618cf5ec61ccf59be22be26526eee4bcc6",
+      "timestamp_seconds": null,
+      "associated_initial_dom_state": {
+        "timestamp_seconds": 45.692667,
+        "paused": true,
+        "playback_rate": 1
+      },
+      "exact_capture_time_verified": false,
+      "parameters": {
+        "祛碎发": 64,
+        "人像区域": 100,
+        "背景区域": 100,
+        "祛白发": 0,
+        "发色统一": 0
+      },
+      "selected_hair_color": "无",
+      "unmapped_visible_slider_values": [
+        50,
+        0,
+        0
+      ],
+      "background_person_removal_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence01.jpg",
+      "bytes": 195984,
+      "sha256": "6ddbfdace16c556000886042eaae80df3b2841afb8103760d3e60da8e31669c2",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:11 / 01:28",
+      "player_display_seconds": 11,
+      "preview_zoom_percent": 29,
+      "photo_group": "floor_seated_winking_photo",
+      "subtitle_meaning_summary": "Discusses a sweet-looking portrait style.",
+      "visible_ui": [
+        "AI色彩风格",
+        "全图调色",
+        "滤镜 无"
+      ],
+      "visible_applied_style": "甜沁亮调01",
+      "parameters": {
+        "style_strength": 100,
+        "scope": "全图调色",
+        "色温": 4752,
+        "色调": 13
+      },
+      "style_applied_state_verified": true,
+      "style_application_action_verified": false,
+      "manual_skin_color_adjustment_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence02.jpg",
+      "bytes": 197262,
+      "sha256": "4413d2c2033cca6e2a074e9407baf5199e6658e2a5b5724a913711f09455138f",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:23 / 01:28",
+      "player_display_seconds": 23,
+      "preview_zoom_percent": 32,
+      "photo_group": "floor_seated_winking_photo",
+      "subtitle_meaning_summary": "Discusses stronger nasolabial-fold treatment.",
+      "parameters": {
+        "祛法令纹": 100,
+        "祛双下巴": 0
+      },
+      "face_reshape_section_expanded": false,
+      "actual_face_geometry_operation_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence03.jpg",
+      "bytes": 202313,
+      "sha256": "b524f01192155bf53463c1b6c49f1881eab27545d0dfa7c03af3475b353f5446",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:34 / 01:28",
+      "player_display_seconds": 34,
+      "preview_zoom_percent": 32,
+      "photo_group": "floor_seated_winking_photo",
+      "subtitle_meaning_summary": "Moves toward the hair adjustment section.",
+      "parameters": {
+        "祛法令纹": 100,
+        "祛双下巴": 100
+      },
+      "observed_control_difference_from_sequence02": {
+        "祛双下巴": [
+          0,
+          100
+        ]
+      },
+      "face_reshape_section_expanded": false,
+      "exact_slider_action_verified": false,
+      "actual_face_geometry_operation_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence04.jpg",
+      "bytes": 181081,
+      "sha256": "bfad03cc4344ee58523cde9275771f298727ccc44e69effcd98931211dcd6e79",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:44 / 01:28",
+      "player_display_seconds": 44,
+      "preview_zoom_percent": 26,
+      "photo_group": "floor_seated_winking_photo",
+      "subtitle_meaning_summary": "Discusses the cleaner appearance after the hair step.",
+      "visible_ui": [
+        "头发调整"
+      ],
+      "parameters": {
+        "祛碎发": 64,
+        "人像区域": 100,
+        "背景区域": 100,
+        "祛白发": 0,
+        "发色统一": 0
+      },
+      "selected_hair_color": "无",
+      "unmapped_visible_slider_values": [
+        50,
+        0,
+        0
+      ],
+      "parameter_scope_limit": "Person/background region controls belong to the hair-removal subsection; they do not establish bystander removal.",
+      "background_person_removal_verified": false,
+      "hair_accessory_preservation_verified": false,
+      "mask_coverage_verified": false,
+      "before_after_verified": false
+    },
+    {
+      "file": "sequence05.jpg",
+      "bytes": 129257,
+      "sha256": "4c2a7223a19a27ae8a8d30148fcee48f2e0dec299857c50297541cd9b56e2257",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "00:55 / 01:28",
+      "player_display_seconds": 55,
+      "photo_group": "floor_seated_winking_photo",
+      "subtitle_meaning_summary": "Discusses finishing the preparation before reuse.",
+      "visible_ui": [
+        "保存预设",
+        "预设类型",
+        "保存"
+      ],
+      "preset_type": "组合",
+      "checked_preset_groups": [
+        "AI色彩调节",
+        "色彩调节",
+        "人像美化",
+        "图像美化",
+        "衣物美化"
+      ],
+      "unchecked_preset_groups": [
+        "裁剪"
+      ],
+      "save_dialog_verified": true,
+      "save_click_verified": false,
+      "save_success_verified": false,
+      "preset_export_verified": false
+    },
+    {
+      "file": "sequence06.jpg",
+      "bytes": 275074,
+      "sha256": "307192c0f0a768a98ff87e661c47f4583a68553a7ac61e5c32a0a3fe5ead08db",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:06 / 01:28",
+      "player_display_seconds": 66,
+      "subtitle_meaning_summary": "Discusses choosing the prepared preset.",
+      "visible_ui": [
+        "图库",
+        "预设"
+      ],
+      "visible_selected_photo_count": 36,
+      "visible_total_photo_count": 36,
+      "multi_photo_grid_verified": true,
+      "all_photos_preset_application_success_verified": false,
+      "per_photo_quality_acceptance_verified": false,
+      "matched_batch_before_after_verified": false
+    },
+    {
+      "file": "sequence07.jpg",
+      "bytes": 180692,
+      "sha256": "cc62e24886b44992f628cd0c7c84264af5123325f3ef8c7da206e3d8fe1ee5de",
+      "timestamp_seconds": null,
+      "stable_paused": false,
+      "player_display_time": "01:16 / 01:28",
+      "player_display_seconds": 76,
+      "preview_zoom_percent": 19,
+      "photo_group": "different_front_reaching_hand_photo",
+      "subtitle_meaning_summary": "Discusses selecting pictures afterwards.",
+      "visible_ui": [
+        "AI色彩风格",
+        "全图调色",
+        "全图"
+      ],
+      "visible_applied_style": "自然灵动01",
+      "active_mask_list_entry": "全图",
+      "parameters": {
+        "style_strength": 100,
+        "scope": "全图调色",
+        "色温": 4721,
+        "色调": 11,
+        "曝光": 0.25,
+        "对比度": -8,
+        "亮度": 0,
+        "高光": -22,
+        "阴影": 23,
+        "白色": 5
+      },
+      "style_applied_state_verified": true,
+      "different_photo_from_sequence01_to05": true,
+      "same_photo_before_after_verified": false,
+      "background_adjustment_operation_verified": false
+    }
+  ],
+  "quality_limits": [
+    "End-of-video playback and isolated samples do not establish continuous or full viewing.",
+    "Applied-style labels establish a current UI state, not an independently verified quality improvement.",
+    "Blemish controls do not establish manual facial geometry or body reshaping.",
+    "Hair background-region settings do not establish background/bystander removal.",
+    "Grid selection, a save dialog and different photos do not establish batch success or matched before/after.",
+    "Video previews are not original-photo or exported-output quality evidence.",
+    "The title's universal/three-minute claim is not a measured local speed result; visible values are not default natural-shaping parameters."
+  ],
+  "verified_continuous_intervals": [],
+  "continuous_full_watch": false,
+  "fully_watched": false,
+  "matched_before_after_verified": false,
+  "face_geometry_operation_verified": false,
+  "body_geometry_operation_verified": false,
+  "pose_adjustment_verified": false,
+  "identity_preservation_verified": false,
+  "joint_continuity_verified": false,
+  "original_photo_quality_verified": false,
+  "exported_output_quality_verified": false,
+  "local_speed_benchmark_verified": false,
+  "natural_shaping_acceptance_verified": false,
+  "derived_default_rules_eligible": false,
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

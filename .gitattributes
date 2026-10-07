@@ -1,0 +1,5 @@
+# Preserve validated package bytes on every platform.
+natural-shaping/** -text
+README.md text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf

@@ -1,0 +1,94 @@
+{
+  "date_local": "2026-10-06",
+  "size": [
+    3248,
+    4108
+  ],
+  "icc": "IEC 61966-2.1 Default RGB colour space - sRGB",
+  "source_size": [
+    3072,
+    4080
+  ],
+  "source_offset": [
+    112,
+    0
+  ],
+  "source_scale": 1,
+  "original_source_cropped": false,
+  "operations": [
+    "继承 v2 肤质、脸型/五官、腰部软衣、上臂和小腿的局部精修",
+    "补顺刘海下眼周与面部光线",
+    "保留现场人群，弱化背景明暗、颜色及远处细节",
+    "小范围左右/底部补边和左翼尖续接",
+    "接收武器参考后撤回不准确的上方补尖，保留真实枪身自然出框",
+    "收紧新增空间，优先全身与腿部观感；没有本轮拉腿"
+  ],
+  "weapon_reference": "origin-not-bundled:weapon-reference.png",
+  "weapon_complete": false,
+  "upper_weapon_reconstruction_retained": false,
+  "remaining_original_crop": "顶部枪口及原有头饰画边截断保留",
+  "rejected_directions": [
+    "全部清空路人的空场背景",
+    "未经真实参考核对的单尖武器补全"
+  ],
+  "limitations": [
+    "左翼少量画外补全仍含推断",
+    "本轮不恢复整件武器，真实枪身自然出框",
+    "技能/技术检查不等于用户接受精致程度与腿部观感",
+    "没有同口径全流程速度对照，不能宣称整体加速"
+  ],
+  "generation_tool_seconds_total": 107.343,
+  "generation_backend_model": "unknown",
+  "leg_length_changed_this_round": false,
+  "protected_patch_max_difference_vs_v2": {
+    "chest_emblem": 0,
+    "weapon_panel": 0,
+    "hip_armor": 0,
+    "knee_armor": 0,
+    "left_boot": 0,
+    "right_boot": 0
+  },
+  "review": {
+    "reviewer": "portrait_effects",
+    "status": "pass_for_user_review_with_original_top_truncation",
+    "checked_files": [
+      "origin-not-bundled:v4-export-overall.png",
+      "origin-not-bundled:v4-export-upper.png",
+      "origin-not-bundled:v4-export-left-tip.png",
+      "origin-not-bundled:v4-export-bottom.png"
+    ],
+    "must_fix_findings": [],
+    "findings": [
+      "撤回上方推断区后，画面恢复较紧凑的全身观感；人物在同屏显示中更突出，未见腿被纵向压短的视觉异常。",
+      "上方武器仍延伸出画框，头顶部件也保持原拍的贴边/截断状态；本版不是完整枪口补全。",
+      "所查左翼尖板材接续与鞋底接地未见新的明确断线、竖缝或悬浮问题。"
+    ],
+    "limitations": [
+      "仅对所列实际导出预览/裁片进行目视复核，其余区域沿用前轮检查结果；不是全图逐像素无瑕证明。",
+      "未据这些预览独立验证源像素偏移、尺寸及无缩放断言。",
+      "整体精致程度、腿部观感及保留武器出框的构图取舍仍待用户接受。"
+    ],
+    "user_accepted_at_review_time": false,
+    "acceptance_status_note": "This technical review predates the later explicit acceptance recorded in acceptance_feedback."
+  },
+  "user_accepted": true,
+  "png_sha256": "a07dcd0c47c918ba19fd7be894979511b9351cfb756ed214c0a4019e445e83c1",
+  "recorded_utc": "2026-10-05T18:38:59.752100+00:00",
+  "acceptance_feedback": {
+    "date": "2026-10-06",
+    "timezone": "Asia/Shanghai",
+    "feedback": "目前这两次最终已经能达到我的预期了",
+    "scope": [
+      "dora final reference v4",
+      "Rem complete v12"
+    ],
+    "excludes": "Earlier rejected or intermediate versions; other portraits",
+    "source": "Current chat explicit user feedback"
+  },
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

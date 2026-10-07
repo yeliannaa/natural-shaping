@@ -1,0 +1,91 @@
+{
+  "recordedAt": "2026-10-03",
+  "scope": "Historical case evidence and explicit feedback state; not certification of future edits",
+  "caseImages": "references/case-files.json",
+  "cases": [
+    {
+      "id": "NS01",
+      "feedbackState": "mid-arm dent rejected; subsequent coherent correction has no explicit user acceptance",
+      "technicalScope": "isolated continuous upper-arm correction, RGB16 full-frame comparison",
+      "originalCanvas": [
+        3072,
+        4080
+      ],
+      "changedPixels": 383663,
+      "allowedRoi": [
+        1900,
+        1040,
+        2390,
+        1870
+      ],
+      "changedOutsideRoi": 0,
+      "evidence": [
+        "assets/evidence/early-case-records/ns01-coherent-qa.json",
+        "assets/evidence/early-case-records/ns01-feedback-revision.json",
+        "assets/evidence/early-case-records/ns01-arm-coherent-manifest.json"
+      ]
+    },
+    {
+      "id": "NS02",
+      "feedbackState": "brighter, whiter and continuous elbow requested; no explicit final v6 user acceptance",
+      "technicalScope": "elbow-v6 local tone/color pass; no new geometry or pose",
+      "allowedRoi": [
+        1100,
+        2050,
+        1630,
+        2540
+      ],
+      "changedOutsideRoi": 0,
+      "evidence": [
+        "assets/evidence/early-case-records/ns02-pixel-difference.json",
+        "assets/evidence/early-case-records/ns02-native-delivery.json"
+      ]
+    },
+    {
+      "id": "NS03",
+      "feedbackState": "user accepted the local nose-light result with 不赖",
+      "technicalScope": "v6 native master tone correction; no new liquify, generation or makeup drawing",
+      "allowedRoi": [
+        1580,
+        550,
+        1820,
+        770
+      ],
+      "changedOutsideRoi": 0,
+      "evidence": [
+        "assets/evidence/early-case-records/ns03-native-pixels-qa.json",
+        "assets/evidence/early-case-records/ns03-nose-refinement.json",
+        "origin-not-bundled:nose-light.jsx"
+      ],
+      "imageLimit": "8-bit diagnostic previews without embedded ICC do not demonstrate native master depth/profile"
+    },
+    {
+      "id": "NS04",
+      "feedbackState": "feedback-driven light and hair fixes; focused independent visual review, no explicit final user acceptance",
+      "technicalScope": "08 to 09 left hair only; this scope does not cover all earlier background/light reconstruction",
+      "allowedRoi": [
+        1260,
+        610,
+        1580,
+        1280
+      ],
+      "changedOutsideRoi": 0,
+      "evidence": [
+        "assets/evidence/early-case-records/ns04-visual-acceptance-light.md",
+        "assets/evidence/early-case-records/ns04-visual-acceptance.md",
+        "assets/evidence/early-case-records/ns04-cosplay-box-scene-09-verification.json"
+      ],
+      "imageLimit": "8-bit different head/shoulder crops, visual reference only"
+    }
+  ],
+  "interpretation": "Historical technical checks are separate from user acceptance. NS04 covers early 08 to 09 only; later v12 acceptance is recorded in references/personal-cases.md. Old coordinates must not be replayed.",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled resource paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "historical_metadata": "Existing sha256, bytes and similar source-evidence fields describe the historical files. Portable text adaptations change their bytes. They are not current-package integrity checks. Existing case-file packagedSha256 fields remain applicable only to the unchanged eight case images.",
+    "current_package_manifest": "package-manifest.json",
+    "current_verification": "Use the package manifest for current bundled-file hashes and sizes; its scope does not establish fresh source viewing, aesthetic acceptance or model performance.",
+    "historical_labels": "fact_id and candidate_id are stable evidence identifiers, not paths. Visible UI filenames and quoted observation text are historical labels, not bundled resources. Other explicit resource fields use the declared skill-root base or origin-not-bundled marker."
+  }
+}

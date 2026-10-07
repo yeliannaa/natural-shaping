@@ -1,0 +1,144 @@
+{
+  "user_confirmation": "开始",
+  "basis": "same approved B composition, latest user deferred bottom extension; authorized local finishing after review and lip complexion discussion",
+  "master": "Group_111_Finish_v2",
+  "canvas": [
+    3072,
+    4080
+  ],
+  "export_crop": [
+    0,
+    240,
+    3072,
+    4080
+  ],
+  "adjustments": [
+    {
+      "area": "left lips",
+      "goal": "brighter natural rose/bean-paste color; preserve lip crease and gloss",
+      "method": "masked luminosity curve plus low-opacity color",
+      "protection": "lip outline and nearby skin"
+    },
+    {
+      "area": "left face and neck",
+      "goal": "face more present, warmer cheek color, coherent neckline",
+      "method": "local tonal fill and subtle chroma; no facial geometry"
+    },
+    {
+      "area": "removed-member seams",
+      "goal": "remove false pale triangle and hard dark edge",
+      "method": "repair actual donor and responsibility masks, refresh derived background snapshots"
+    },
+    {
+      "area": "front knee",
+      "goal": "one minor spot removed with local source content-aware fill",
+      "protection": "joint form and texture"
+    },
+    {
+      "area": "yellow cushion",
+      "goal": "reduce competition slightly",
+      "method": "masked saturation/value"
+    }
+  ],
+  "geometry": "unchanged",
+  "generation": "none; native Photoshop only",
+  "status": "Local finish complete; bottom extension deferred by user",
+  "dimensions": [
+    3072,
+    3840
+  ],
+  "ratio": "4:5",
+  "profile": "sRGB IEC61966-2.1",
+  "PNGDepth": 16,
+  "PSDDepth": 16,
+  "layer_count": 56,
+  "source_unchanged": true,
+  "stable_v1_unchanged": true,
+  "PNG_ICC_added_metadata_only": true,
+  "PNG_IDAT_SHA256": "4d0280697e118eb8cb43dc72467c6c11eeb32facde808005c289c3ca837b5a2c",
+  "protected_sample_checks": {
+    "gold_face": {
+      "box": [
+        2320,
+        470,
+        2600,
+        660
+      ],
+      "max_channel_change_8bit_view": 0
+    },
+    "front_face": {
+      "box": [
+        2230,
+        2100,
+        2430,
+        2300
+      ],
+      "max_channel_change_8bit_view": 2
+    },
+    "racket_hand": {
+      "box": [
+        80,
+        1820,
+        330,
+        2100
+      ],
+      "max_channel_change_8bit_view": 12
+    }
+  },
+  "actual_changes": [
+    "left lip luminosity and rose/bean-paste color, final dark-midtones calibrated",
+    "left face and eye-shadow local fill, subtle cheek warmth and neck continuity",
+    "36b sofa donor corrected to exclude false rail pixels; 34b/37b/42 local masks repaired; 41c background snapshot refreshed",
+    "one minor foreground knee spot healed",
+    "yellow cushion modest desaturation/value reduction"
+  ],
+  "visual_QA": {
+    "complexion": "root and independent reviewer saw native crops and full final candidate; lips natural and improved, no obvious spill",
+    "seams": "root and independent reviewer verified pale triangle gone, leg dark edge reduced; two tiny shirt fold points still visible at native detail but not prominent in full image",
+    "actual_export": "Root reopened actual exported PNG full image and native lip/rail/leg crops; file attributes and native PSD reopen checked."
+  },
+  "files": [
+    {
+      "path": "assets/examples/group111-v2.jpg",
+      "bytes": 5068196,
+      "sha256": "32061b4ecaf137fe0ce7fe812c86292eef4db135fa7d5f332ae3e48cb4708d8d"
+    },
+    {
+      "path": "origin-not-bundled:group-111-finish-v2.png",
+      "bytes": 70801079,
+      "sha256": "a9e4c43a34182e4f23ff579a35d07293e3e33e1b9824896dc05342f839d27e58"
+    },
+    {
+      "path": "origin-not-bundled:群像-111-自然美型-气色收尾-v2-分层母稿.psd",
+      "bytes": 429689134,
+      "sha256": "63c44bf3d0fa0bc5455ae4eadcbbaf831a5e598d2f5c534c6cd286b8ff466bc5"
+    }
+  ],
+  "desktopDelivery": {
+    "directory": "origin-not-bundled:自然美型_111_气色收尾v2_20261007",
+    "verified": true,
+    "files": [
+      {
+        "path": "origin-not-bundled:群像-111-自然美型-气色收尾-v2.jpg",
+        "bytes": 5068196,
+        "sha256": "32061b4ecaf137fe0ce7fe812c86292eef4db135fa7d5f332ae3e48cb4708d8d"
+      },
+      {
+        "path": "origin-not-bundled:群像-111-自然美型-气色收尾-v2.png",
+        "bytes": 70801079,
+        "sha256": "a9e4c43a34182e4f23ff579a35d07293e3e33e1b9824896dc05342f839d27e58"
+      },
+      {
+        "path": "origin-not-bundled:群像-111-自然美型-气色收尾-v2-分层母稿.psd",
+        "bytes": 429689134,
+        "sha256": "63c44bf3d0fa0bc5455ae4eadcbbaf831a5e598d2f5c534c6cd286b8ff466bc5"
+      }
+    ]
+  },
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

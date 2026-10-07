@@ -1,0 +1,28 @@
+{
+  "reviewer": "portrait_effects",
+  "status": "pass_for_user_review_with_original_top_truncation",
+  "user_accepted": false,
+  "checked_files": [
+    "origin-not-bundled:v4-export-overall.png",
+    "origin-not-bundled:v4-export-upper.png",
+    "origin-not-bundled:v4-export-left-tip.png",
+    "origin-not-bundled:v4-export-bottom.png"
+  ],
+  "must_fix_findings": [],
+  "findings": [
+    "撤回上方推断区后，画面恢复较紧凑的全身观感；人物在同屏显示中更突出，未见腿被纵向压短的视觉异常。",
+    "上方武器仍延伸出画框，头顶部件也保持原拍的贴边/截断状态；本版不是完整枪口补全。",
+    "所查左翼尖板材接续与鞋底接地未见新的明确断线、竖缝或悬浮问题。"
+  ],
+  "limitations": [
+    "仅对所列实际导出预览/裁片进行目视复核，其余区域沿用前轮检查结果；不是全图逐像素无瑕证明。",
+    "未据这些预览独立验证源像素偏移、尺寸及无缩放断言。",
+    "整体精致程度、腿部观感及保留武器出框的构图取舍仍待用户接受。"
+  ],
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

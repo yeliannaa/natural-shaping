@@ -1,0 +1,50 @@
+{
+  "date_local": "2026-10-06",
+  "route": "在上版分层稿上使用原生 Photoshop 曲线和局部位移；本轮无新图像生成调用",
+  "source_previous": "origin-not-bundled:dora-hybrid-test.psd",
+  "size": [
+    3072,
+    4080
+  ],
+  "mode": "RGB",
+  "icc": "IEC 61966-2.1 Default RGB colour space - sRGB",
+  "png_metadata_repair": "补入同一已转换sRGB文档导出的ICC；验证RGB像素不变",
+  "operations": [
+    "脸部与眼周/鼻旁光影协调",
+    "脸颊和下颌局部内收，主假发保护",
+    "鼻翼微收与上睑微调",
+    "腰部软衣局部收束",
+    "右侧上臂外弧整理",
+    "可见小腿两侧轮廓整理",
+    "胸肩、手、腿肤色及明暗协调",
+    "主体和道具保护下压低背景明暗与饱和度"
+  ],
+  "not_done": [
+    "没有增加腿部总长度",
+    "没有扩图或补全顶部原有截断",
+    "没有删除背景路人",
+    "腰部受硬甲遮挡，调整仅限可见软衣，不能当成隐蔽腰围测量"
+  ],
+  "repairs": [
+    "初次脸型位移带弯右侧主发束，已替换为重新定位皮肤边界的地图；未叠加旧位移",
+    "再次复核发现眼尾外侧发束仍有局部内折，已在独立蒙版层恢复原图这一小段发丝，重新导出并重开检查"
+  ],
+  "technical_protected_patch_max_difference_vs_previous": {
+    "chest_emblem": 0,
+    "weapon_white_panel": 0,
+    "hip_armor_center": 0,
+    "knee_armor_center": 0,
+    "left_boot_center": 0,
+    "right_boot_center": 0
+  },
+  "qa_scope": "已重开实际PNG查看全图、脸、腰、上臂、小腿；对照衣带、硬甲、膝甲、靴口与本人感。独立复核记录另附。",
+  "acceptance": "未收到用户对本版效果的接受反馈，不宣称达到像素蛋糕等效效果",
+  "png_sha256": "806e869f71683d7be3163fafd74ff9e873dbfe1e7ecf47077ddf527b15019438",
+  "recorded_utc": "2026-10-05T17:13:48.844781+00:00",
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-03",
+  "source": {
+    "video_id": "V12",
+    "bvid": "BV1VLLm6aExw",
+    "url": "https://www.bilibili.com/video/BV1VLLm6aExw/"
+  },
+  "environment": {
+    "login_performed_by_user": true,
+    "account_information_stored": false,
+    "decoded_video_width": 1920,
+    "decoded_video_height": 1080,
+    "decoded_resolution_basis": "root verified videoWidth and videoHeight in the actual video element DOM",
+    "route": "official browser player after user login",
+    "download_attempt_status": "rejected_by_auto_review",
+    "remote_video_downloaded": false,
+    "download_rejection_scope": "This records the attempted action's automatic approval outcome, not a conclusion about platform download capability."
+  },
+  "frames": [
+    {
+      "frame_id": "V12-HD01",
+      "asset_path": "../frames/v12-hd-native-paused.png",
+      "bytes": 116147,
+      "sha256": "4b1a96e05fe9de6ff97309a4b87c13e5d168647ed9fde1d3959f58fd4b33b111",
+      "width": 1698,
+      "height": 1080,
+      "actual_image_format": "JPEG",
+      "playback_state_at_capture": "playing",
+      "playback_state_basis": "root reported capture during playback; the filename is not state evidence",
+      "timestamp_seconds": null,
+      "timestamp_basis": "Only a DOM time read after capture was available; it is not used to locate this screenshot.",
+      "image_inspected_with": "view_image(detail=original)",
+      "visible_text": [
+        "蒙版列表",
+        "预设",
+        "推荐",
+        "我的",
+        "筛选",
+        "全部预设",
+        "细节精修人物衣服偏色"
+      ],
+      "visible_parameter_values_verified": false,
+      "selection_or_mask_creation_verified": false,
+      "matched_before_after_verified": false
+    },
+    {
+      "frame_id": "V12-HD02",
+      "asset_path": "../frames/v12-hd-frozen-early.png",
+      "bytes": 123078,
+      "sha256": "badd0964400d9c640b4f19dde355af5359b3ab75e0aef2f381693fe33a2fc3d6",
+      "width": 1920,
+      "height": 1080,
+      "actual_image_format": "JPEG",
+      "playback_state_at_capture": "paused",
+      "playback_state_basis": "root reported stable paused video element DOM observations",
+      "timestamp_seconds": 21.035102,
+      "timestamp_basis": "root verified stable video element currentTime at the paused capture",
+      "image_inspected_with": "view_image(detail=original)",
+      "visible_parameter_check": {
+        "module": "HSL",
+        "active_tab": "饱和度",
+        "orange_saturation": -10,
+        "yellow_saturation": -100,
+        "double_checked_by": [
+          "root",
+          "pixcake_official_cases"
+        ],
+        "scope": "values displayed for this tutorial sample at this moment; not generic Cos or Photoshop defaults",
+        "brightness_values_verified": false
+      },
+      "visible_subtitle": "稍微降低橙色的饱和度 提高一些亮度",
+      "selection_or_mask_creation_verified": false,
+      "matched_before_after_verified": false
+    }
+  ],
+  "verification_limits": {
+    "screenshot_dimensions_equal_decoded_video_dimensions_required": false,
+    "file_names_used_as_timing_or_state_evidence": false,
+    "continuous_viewing_intervals": [],
+    "fully_watched": false,
+    "complete_operation_sequence_verified": false,
+    "matched_before_after_verified": false,
+    "original_photo_output_quality_verified": false,
+    "natural_shaping_result_verified": false,
+    "eligible_for_derived_default_rules": false,
+    "derived_default_rules_added": false,
+    "transferable_default_rules": []
+  },
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}

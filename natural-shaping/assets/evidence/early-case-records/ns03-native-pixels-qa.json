@@ -1,0 +1,299 @@
+{
+  "method": "Read-only native RGB 16-bit PNG raster comparison using existing C# PNG unfilter decoder; no quantization, resampling or image changes. Bounds are exclusive.",
+  "status": "passed",
+  "masterExportStatus": "passed",
+  "metadata": {
+    "baselinePng": {
+      "width": 3072,
+      "height": 4080,
+      "depthBits": 16,
+      "colorType": 2,
+      "interlace": 0,
+      "profileName": "sRGB EOTF with DCI-P3 Color Gamut",
+      "fileBytes": 75224493,
+      "completeChunkStream": true,
+      "chunkCount": 77,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287"
+    },
+    "finalPng": {
+      "width": 3072,
+      "height": 4080,
+      "depthBits": 16,
+      "colorType": 2,
+      "interlace": 0,
+      "profileName": "sRGB EOTF with DCI-P3 Color Gamut",
+      "fileBytes": 75224493,
+      "completeChunkStream": true,
+      "chunkCount": 77,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287"
+    },
+    "baselinePsd": {
+      "version": 1,
+      "channels": 12,
+      "height": 4080,
+      "width": 3072,
+      "depthBits": 16,
+      "colorMode": 3,
+      "fileBytes": 754973732,
+      "resourceSectionBytes": 28036,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287"
+    },
+    "finalPsd": {
+      "version": 1,
+      "channels": 12,
+      "height": 4080,
+      "width": 3072,
+      "depthBits": 16,
+      "colorMode": 3,
+      "fileBytes": 755036438,
+      "resourceSectionBytes": 28038,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287"
+    },
+    "cropPng": {
+      "width": 2430,
+      "height": 4080,
+      "depthBits": 16,
+      "colorType": 2,
+      "interlace": 0,
+      "profileName": "sRGB EOTF with DCI-P3 Color Gamut",
+      "fileBytes": 59505753,
+      "completeChunkStream": true,
+      "chunkCount": 62,
+      "iccBytes": 632,
+      "iccSha256": "1d237db429c6bf2f12c2979d541a0e52dd3a2b5a4e0bd6109af558deb7dd1287"
+    }
+  },
+  "baselineAndFinalMasterFormatsMatch": true,
+  "allEmbeddedIccProfilesByteIdentical": true,
+  "finalFileSha256": {
+    "fullPng": "0a2e3fdae5a3904f8ca8346974d9b0105289ee2846b79c85c0f4e7e5a43bca2c",
+    "psd": "0ddf663d4fb23b8535c40af6ba8d604c238a10a854cead68d83767cf7fafb357",
+    "cropPng": "229d9464d1fe96e2f7b5e273be0bf76d2bb0ae7ebf9d63056fae75e1ec4d0171"
+  },
+  "finalFilesStableThroughoutAudit": true,
+  "comparison": {
+    "comparisonDepthBits": 16,
+    "dimensions": [
+      3072,
+      4080
+    ],
+    "channels": 3,
+    "comparedPixels": 12533760,
+    "changedPixels": 15928,
+    "changedChannelSamples": 47784,
+    "maximum16BitChannelDifference": 1504,
+    "meanAbsoluteChannelDifferenceAcrossAllPixels": 0.19494450720826526,
+    "byteIdentical": false,
+    "changedBoundsExclusive": [
+      1605,
+      585,
+      1791,
+      749
+    ],
+    "allowedEditBoxExclusive": [
+      1580,
+      550,
+      1820,
+      770
+    ],
+    "changedPixelsOutsideAllowedBox": 0,
+    "outsideBoxSamples": [],
+    "outsideAllowedBoxByteIdentical": true,
+    "regions": {
+      "visibleEye": {
+        "boundsExclusive": [
+          1750,
+          480,
+          1910,
+          665
+        ],
+        "totalPixels": 29600,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0,
+        "changedBoundsExclusive": null
+      },
+      "noseCore": {
+        "boundsExclusive": [
+          1620,
+          640,
+          1760,
+          735
+        ],
+        "totalPixels": 13300,
+        "changedPixels": 8804,
+        "changedChannelSamples": 26412,
+        "byteIdentical": false,
+        "maximum16BitChannelDifference": 1504,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 133.72634085213033,
+        "changedBoundsExclusive": [
+          1620,
+          640,
+          1760,
+          735
+        ]
+      },
+      "lipsCore": {
+        "boundsExclusive": [
+          1590,
+          750,
+          1740,
+          845
+        ],
+        "totalPixels": 14250,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0,
+        "changedBoundsExclusive": null
+      },
+      "cameraHand": {
+        "boundsExclusive": [
+          1020,
+          1740,
+          1640,
+          2200
+        ],
+        "totalPixels": 285200,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0,
+        "changedBoundsExclusive": null
+      },
+      "shoes": {
+        "boundsExclusive": [
+          1120,
+          3290,
+          2310,
+          4080
+        ],
+        "totalPixels": 940100,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0,
+        "changedBoundsExclusive": null
+      },
+      "shoulderCap": {
+        "boundsExclusive": [
+          1950,
+          1040,
+          2210,
+          1170
+        ],
+        "totalPixels": 33800,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0,
+        "changedBoundsExclusive": null
+      },
+      "knee": {
+        "boundsExclusive": [
+          1250,
+          2090,
+          1710,
+          2230
+        ],
+        "totalPixels": 64400,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0,
+        "changedBoundsExclusive": null
+      },
+      "ankle": {
+        "boundsExclusive": [
+          1180,
+          3000,
+          2050,
+          3280
+        ],
+        "totalPixels": 243600,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0,
+        "changedBoundsExclusive": null
+      },
+      "bodyBelowFace": {
+        "boundsExclusive": [
+          700,
+          1310,
+          2530,
+          4080
+        ],
+        "totalPixels": 5069100,
+        "changedPixels": 0,
+        "changedChannelSamples": 0,
+        "byteIdentical": true,
+        "maximum16BitChannelDifference": 0,
+        "meanAbsoluteChannelDifferenceAcrossAllROIPixels": 0.0,
+        "changedBoundsExclusive": null
+      }
+    }
+  },
+  "cropComparison": {
+    "cropBoxExclusive": [
+      350,
+      0,
+      2780,
+      4080
+    ],
+    "dimensions": [
+      2430,
+      4080
+    ],
+    "comparisonDepthBits": 16,
+    "comparedPixels": 9914400,
+    "changedPixels": 0,
+    "changedChannelSamples": 0,
+    "maximum16BitChannelDifference": 0,
+    "byteIdenticalToFullRasterCrop": true
+  },
+  "original": {
+    "path": "origin-not-bundled:微信图片_20261003001752_102_163.jpg",
+    "expectedSha256": "84c76c308932337a753e655c11b8a2d01930f3cbd5d2285fd0ca7e459f45607f",
+    "actualSha256": "84c76c308932337a753e655c11b8a2d01930f3cbd5d2285fd0ca7e459f45607f",
+    "hashMatches": true
+  },
+  "scriptAudit": {
+    "inspected": [
+      "origin-not-bundled:nose-light.jsx",
+      "assets/evidence/early-case-records/ns03-nose-refinement.json",
+      "origin-not-bundled:export-crop-comparison.jsx"
+    ],
+    "newGroup": "08_鼻侧线条柔光（仅明暗｜无鼻形变化）",
+    "operations": [
+      "Two local curves adjustment layers in luminosity blend mode",
+      "Soft polygon masks and nostril centre protection"
+    ],
+    "geometryOperationsFoundInCurrentEditScripts": false,
+    "additionalAiCallsFound": false,
+    "makeupChanged": false
+  },
+  "limits": [
+    "Pixel equality proves preservation only for zero-difference regions; changed pixels alone do not distinguish colour from geometry. The no-new-geometry conclusion is supported by the inspected current-edit scripts, not derived solely from raster differences.",
+    "PSD header and embedded ICC are checked directly. This read-only audit does not independently render the PSD, inspect all existing layer contents, or establish subjective retouch quality.",
+    "Tiny nonzero feature-core differences can come from soft feathered mask overlap and 16-bit compositing; exact counts and magnitudes are reported without calling them unchanged."
+  ],
+  "_portability": {
+    "adapted_on": "2026-10-07",
+    "path_base": "skill-root",
+    "meaning": "Bundled paths are relative to this skill root. origin-not-bundled: values identify historical resources only, not executable paths. Dates, measurements and historical conclusions were not re-tested by packaging.",
+    "hash_scope": "Existing numeric and SHA256 fields describe the historical source. Text paths were adapted; use package-manifest.json at skill root for current bytes/hashes."
+  }
+}

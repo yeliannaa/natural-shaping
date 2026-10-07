@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-04",
+  "scope": "Targeted visible-frame and native-crop validation; no new broad search",
+  "continuous_full_video_viewing": 0,
+  "new_paused_frame_count": 6,
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1q4xAzQEYe/",
+    "title": "实战怎么引导模特？5分钟讲透3个摆姿的底层逻辑！丨如何上手拍写真·第22期",
+    "decoded_width": 1920,
+    "decoded_height": 1080,
+    "duration_seconds": 320,
+    "paid_preview_notice_observed": false,
+    "final_paused_time_seconds": 129.011577
+  },
+  "frames": [
+    {
+      "file": "frames/V07-T01.png",
+      "time_seconds": 101.973422,
+      "paused": true,
+      "visible": "Full-body white-dress portrait beside black sofa; crossed legs, low hands; caption emphasizes guiding order."
+    },
+    {
+      "file": "frames/V07-T02.png",
+      "time_seconds": 123.496032,
+      "paused": true,
+      "visible": "Behind-the-scenes standing pose; second-step hand instruction asks right hand to catch skirt edge."
+    },
+    {
+      "file": "frames/V07-T03.png",
+      "time_seconds": 145.008339,
+      "paused": true,
+      "visible": "Upper-body portrait against doorway; different scene and incomplete hands, unsuitable as result of skirt instruction."
+    },
+    {
+      "file": "frames/V07-T04.png",
+      "time_seconds": 125.41037,
+      "paused": true,
+      "visible": "Same standing setup as T02; right hand has clearer contact with skirt edge; coarse pose stable, head/photographer not held constant."
+    },
+    {
+      "file": "frames/V07-T05.png",
+      "time_seconds": 135.607111,
+      "paused": true,
+      "visible": "Full-body finished portrait beside same black sofa; head direction and feet differ from T01. Not an isolated head-only experiment."
+    },
+    {
+      "file": "frames/V07-T06.png",
+      "time_seconds": 129.011577,
+      "paused": true,
+      "visible": "Standing behind-the-scenes view still labelled second step: hand; hand near skirt, head turned. No verified third-step head instruction."
+    }
+  ],
+  "supported_change": "T02 to T04, approximately 1.91 seconds apart, supports the visible local hand-contact adjustment following the skirt instruction; not a controlled effect comparison or continuous action observation.",
+  "not_established": [
+    "complete continuous tutorial coverage",
+    "head-neck-shoulder correction effectiveness",
+    "a slimming result",
+    "a fixed shaping amplitude"
+  ],
+  "photo_validation": {
+    "route": "Photoshop 2020 source-pixel crop, downsample, sRGB 8-bit JPEG preview",
+    "source_photo_count": 2,
+    "baseline_preview_count": 2,
+    "crop_preview_count": 4,
+    "comparison_board_count": 2,
+    "source_jpeg_hashes_preserved": true,
+    "existing_photoshop_documents_preserved": true,
+    "geometry_shaping_executed": false,
+    "occlusion_reconstruction_executed": false,
+    "report": "preview-render-report.md"
+  },
+  "_portability": {
+    "relative_path_base": "this file directory",
+    "unbundled_reference_scheme": "origin:unbundled/ is historical provenance, not a loadable file",
+    "historical_facts": "Original observations/numeric facts and acceptance scope retained; paths adapted only.",
+    "ui_filenames": "visible_target_filename and ui_reported_file_metadata/filename record text seen in the tutorial UI; they are not bundled photo file paths."
+  }
+}
