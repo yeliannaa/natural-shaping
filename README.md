@@ -21,14 +21,21 @@ A Codex skill for **portrait retouching** and **cosplay photo editing**. It guid
 
 ## 构图草图｜Composition sketches
 
-以下均为**精修前的原片标注**。它们展示如何解释方案和不确定性；后续成片及反馈状态另行记录。
+以下是基于**精修前原片**的完整方案拆解示例：构图、肤质五官、肩颈腰腿、光线背景、衣装道具与验收一起说明。F/W/L 标出检查区域，照片未重新精修；历史已选方案与新增教学建议分别标明。
 
-| 狩司司 114：裁顶与少量补底 | 狩司司 110：动线、遮挡与道具 |
-|---|---|
-| [![狩司司114原片A与拟裁顶补底B的构图草图](natural-shaping/assets/evidence/composition/shousisi-114-plan-ab-v1.png)](natural-shaping/references/composition-and-key-elements.md#狩司司-114-号用-ab-解释裁顶与少量补底) | [![狩司司110原幅构图草图，标注动作路径、背景干扰和保护范围](natural-shaping/assets/evidence/composition/shousisi-110-plan-a-v1.png)](natural-shaping/references/composition-and-key-elements.md#狩司司-110-号动线遮挡与道具补全边界) |
-| 顶部偏空、脚底贴边；比较 A/B，待补区域用斜线留空。 | 区分白墙、观众、黄色摆件和右下遮挡，保护双脚与握拍关系。 |
+### 狩司司 114：裁顶与少量补底
 
-点击图片阅读[完整拆解与取舍](natural-shaping/references/composition-and-key-elements.md#示例草图的制作与展示)。截图为静态展示，图内按钮不可点击；具体裁幅与历史确认仅适用于对应照片。
+比较 A/B 裁顶补底；同时拆解肤质五官、肩颈腰线、光色与杂物清理，保留交叠膝和脚形。
+
+[![狩司司114原片A与拟裁顶补底B的构图草图](natural-shaping/assets/evidence/composition/shousisi-114-retouch-plan-v2.png)](natural-shaping/references/composition-and-key-elements.md#狩司司-114-号用-ab-解释裁顶与少量补底)
+
+### 狩司司 110：动线、遮挡与道具
+
+联看白墙、观众与持拍动线；说明收腰腹、腿部比例、脸颈手光色，以及球拍结构验收。
+
+[![狩司司110原幅构图草图，标注动作路径、背景干扰和保护范围](natural-shaping/assets/evidence/composition/shousisi-110-retouch-plan-v2.png)](natural-shaping/references/composition-and-key-elements.md#狩司司-110-号动线遮挡与道具补全边界)
+
+点击图片阅读[完整拆解与取舍](natural-shaping/references/composition-and-key-elements.md#示例草图的制作与展示)。图片为静态方案示意；具体裁幅、调整范围与历史确认仅适用于对应照片。
 
 ## 安装与使用
 

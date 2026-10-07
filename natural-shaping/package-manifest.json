@@ -1,6 +1,6 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-07-portable-composition-r3",
+  "version": "2026-10-07-portable-layout-r4",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
@@ -289,19 +289,19 @@
       "sha256": "300cace99e9717353218c05c68c282334b023641b9935eb21000ee80a4c9df1e"
     },
     {
-      "file": "assets/evidence/composition/shousisi-110-plan-a-v1.png",
-      "bytes": 639417,
-      "sha256": "8b58495e391304a5bb3b42ccb2b70cd7367032aec839692eea8c80d6a8335788"
+      "file": "assets/evidence/composition/shousisi-110-retouch-plan-v2.png",
+      "bytes": 676225,
+      "sha256": "57da85d401090258107a4efc80d081c59c38dc453fcec82a66856dbd08855a71"
     },
     {
-      "file": "assets/evidence/composition/shousisi-114-plan-ab-v1.png",
-      "bytes": 389520,
-      "sha256": "a537b31274033ef8ec496f863090a6f2f659b9c0f7c76e321c5a43d537796192"
+      "file": "assets/evidence/composition/shousisi-114-retouch-plan-v2.png",
+      "bytes": 421418,
+      "sha256": "c7a3b6001ef26d333f4a386544efd0295d8b7ea4a4a28b17021b417ac566b396"
     },
     {
       "file": "assets/evidence/composition/skill-sketch-examples-20261007.json",
-      "bytes": 3584,
-      "sha256": "d1e1581916ffb77fa2d8236bfc6b0e2ac511cc9c58a6df1505f77199cbf5a72f"
+      "bytes": 5277,
+      "sha256": "31a24ff38574fe652e193c1656fbf408acc92a15a208dd46f4113e6c6d3208fb"
     },
     {
       "file": "assets/evidence/composition/targeted-validation-20261004/crop-independent-review.md",
@@ -1745,8 +1745,8 @@
     },
     {
       "file": "references/composition-and-key-elements.md",
-      "bytes": 17428,
-      "sha256": "d78d534b9ffa6b7e335f382be1fb019f7c5bb8ef18dac54da7cf4eda5c4fd8ee"
+      "bytes": 20438,
+      "sha256": "b27407a19364ecd70fe310c169787d702934e4e903bfad89a11039722d53817b"
     },
     {
       "file": "references/cos-retouch-engines.md",

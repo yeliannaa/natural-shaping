@@ -7,8 +7,8 @@
   "examples": [
     {
       "id": "shousisi-114",
-      "plan_version": "v1",
-      "file": "assets/evidence/composition/shousisi-114-plan-ab-v1.png",
+      "plan_version": "v2-documentation-full-retouch-plan",
+      "file": "assets/evidence/composition/shousisi-114-retouch-plan-v2.png",
       "original_photo": "微信图片_20261005171942_114_163.jpg",
       "original_sha256": "13a36ae900ab8f72d421447f813b39e38528f3908c9671341efe49440cd21190",
       "source_dimensions": [
@@ -30,16 +30,34 @@
       "historical_confirmation": "The source plan record reports B selected; the current chat history also includes B after the 114 photo request. This historical choice is not authorization for a new photo.",
       "source_screenshot": "origin-not-bundled:plan-736-light.png",
       "source_sha256": "a537b31274033ef8ec496f863090a6f2f659b9c0f7c76e321c5a43d537796192",
-      "packaged_sha256": "a537b31274033ef8ec496f863090a6f2f659b9c0f7c76e321c5a43d537796192",
+      "packaged_sha256": "c7a3b6001ef26d333f4a386544efd0295d8b7ea4a4a28b17021b417ac566b396",
       "source_record": "origin-not-bundled:shousisi-114-plan/visual-build-record.json",
       "source_record_sha256": "ef2ab4eb8fc7aa9eefd4591038788d5f9cc5ac106d66cb8c1952d84383a4ddd5",
       "no_new_retouching": true,
-      "copy_method": "Exact existing screenshot bytes copied; no new photo editing, generation or reconstruction."
+      "copy_method": "Re-rendered from the source HTML with F/W/L inspection pointers and six full-retouch scope notes. Removed outer viewport whitespace. Embedded photos unchanged; annotations and explanatory text updated, with no new retouching.",
+      "source_plan_version": "v1",
+      "presentation_update": {
+        "source_html": "origin-not-bundled:shousisi-114-plan/browser-plan.html",
+        "source_html_sha256": "6de3e20a073d15b6ddcefca4f67d6a70bbfd1e54b79d46d9747c0937f04798fa",
+        "previous_screenshot_dimensions": [
+          736,
+          780
+        ],
+        "packaged_dimensions": [
+          704,
+          838
+        ],
+        "embedded_photo_sources_sha256": [
+          "470a8f18cbf583c79caac76f9ead23dd51db3439da76b531be8e715bd035765c",
+          "f3e5debf654289cd21e9c2925ce711c4383babb5ed3d1cbec46d9545095ce409"
+        ],
+        "all_content_inside_screenshot": true
+      }
     },
     {
       "id": "shousisi-110",
-      "plan_version": "v1-A",
-      "file": "assets/evidence/composition/shousisi-110-plan-a-v1.png",
+      "plan_version": "v2-documentation-full-retouch-plan",
+      "file": "assets/evidence/composition/shousisi-110-retouch-plan-v2.png",
       "original_photo": "微信图片_20261005171934_110_163.jpg",
       "original_sha256": "bd687d744933acf99b90ed7e3dce522e7ba382059f49cc91acb4bae79a88dc54",
       "source_dimensions": [
@@ -50,7 +68,7 @@
         2912,
         4080
       ],
-      "plan": "Screenshot shows original A with white-wall space, spectators, yellow prop and lower-right occlusion. B only crops 160px from the left. Screenshot buttons are not interactive in Markdown.",
+      "plan": "Original photo with a proposed B left crop boundary at 160px; static documentation explains the later confirmed foreground cleanup and body refinement. Original headroom, feet and racket anchors remain visible. No reconstruction executed.",
       "protection": [
         "horns and headroom",
         "both feet and ground contacts",
@@ -61,11 +79,28 @@
       "historical_confirmation": "v1 build record was captured before selection. Later user chose B and explicitly requested foreground removal, spectator blur, waist/abdomen refinement and longer-looking legs. Additional reconstruction remained unverified at sketch time.",
       "source_screenshot": "origin-not-bundled:plan-A-736-light.png",
       "source_sha256": "8b58495e391304a5bb3b42ccb2b70cd7367032aec839692eea8c80d6a8335788",
-      "packaged_sha256": "8b58495e391304a5bb3b42ccb2b70cd7367032aec839692eea8c80d6a8335788",
+      "packaged_sha256": "57da85d401090258107a4efc80d081c59c38dc453fcec82a66856dbd08855a71",
       "source_record": "origin-not-bundled:shousisi-110-composition-plan/build-report.json",
       "source_record_sha256": "19e000ea8bab01d6693c9bb7dc14048c0912a0429808064a96c035931e0a6a8f",
       "no_new_retouching": true,
-      "copy_method": "Exact existing screenshot bytes copied; no new photo editing, generation or reconstruction."
+      "copy_method": "Re-rendered from the source HTML with F/W/L inspection pointers and six full-retouch scope notes. Removed outer viewport whitespace. Embedded photos unchanged; annotations and explanatory text updated, with no new retouching.",
+      "source_plan_version": "v1-A",
+      "presentation_update": {
+        "source_html": "origin-not-bundled:shousisi-110-composition-plan/rendered.html",
+        "source_html_sha256": "b7ddf3b39188c88653005d6595db18db8f421922486bbbd38f105aba366e6ef3",
+        "previous_screenshot_dimensions": [
+          736,
+          1600
+        ],
+        "packaged_dimensions": [
+          704,
+          1421
+        ],
+        "embedded_photo_sources_sha256": [
+          "172c6411a9e9d65b729e13b436a389f43029722849212bf200c648ae4898cc99"
+        ],
+        "all_content_inside_screenshot": true
+      }
     }
   ]
 }
