@@ -540,8 +540,8 @@
     },
     {
       "file": "assets/evidence/group-111-v2-edit-record.json",
-      "bytes": 5184,
-      "sha256": "7d5252c1347a0242ae28902b4fe1a2624d343c6b1777265c71a3f9255ef57803"
+      "bytes": 5195,
+      "sha256": "9ce43cf7163c7808e9201202bca5e26232d0e988effc6bed6f63c9e30f82373c"
     },
     {
       "file": "assets/evidence/pixcake/frames/v04-paused-61.png",
@@ -1639,9 +1639,9 @@
       "sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef"
     },
     {
-      "file": "assets/examples/group111-v2.jpg",
-      "bytes": 5068196,
-      "sha256": "32061b4ecaf137fe0ce7fe812c86292eef4db135fa7d5f332ae3e48cb4708d8d"
+      "file": "assets/examples/group111-v4.jpg",
+      "bytes": 5069625,
+      "sha256": "a90c3a15239048b7fcc3e7a607d948ea27058ec7526c8384bd4222e3a83aaa8f"
     },
     {
       "file": "assets/examples/kamisato-v2.jpg",
@@ -1650,8 +1650,8 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2453,
-      "sha256": "6f518288eb8d36c45da24b20acae52f16d4665f0b23ceaf7fe3146bd0bcd7cda"
+      "bytes": 2471,
+      "sha256": "546a288fbd48f1aab3eedf00945a4d2f1ce8bec8d1c224b23647d1be5f06ebbc"
     },
     {
       "file": "assets/examples/rem-v20.jpg",
@@ -1775,8 +1775,8 @@
     },
     {
       "file": "references/personal-cases.md",
-      "bytes": 16684,
-      "sha256": "e55992b6795969846e4408e67845f2787e7d2680c10a078857f67318878edca2"
+      "bytes": 16707,
+      "sha256": "db84169fc8f3f9fd79abcf15adb63ae625a8e5fcc9acfafd458f34677dfdcb2e"
     },
     {
       "file": "references/pixcake-cos-cases.md",

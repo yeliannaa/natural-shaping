@@ -74,7 +74,7 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 | 收腰、拉腿和球拍补全怎样保持坐姿可信 | [狩司司：整体比例、握持与球拍透视一起复核](natural-shaping/references/personal-cases.md#ns10狩司司三张已保存示例与球拍返修) | 110 v4 已返修保存；未记录用户最终认可 |
 | 手、衣带与衣缘补完仍不自然 | [宫本樱：多视角定位，再锁定结构做材质收尾](natural-shaping/references/personal-cases.md#ns09宫本樱-v8-结构认可--v9-材质收尾与指定目录交付2026-10-06) | v8 整体与位置获认可，v9 获保存指示 |
 | 鼻旁阴影显硬，是否需要直接瘦鼻 | [鼻旁局部：先柔化光影，再判断鼻形](natural-shaping/references/personal-cases.md#ns03鼻旁先柔光不默认改变鼻形) | 柔光效果获局部认可；该次未新增鼻形几何修改 |
-| 群像补鞋不可靠，人物气色又不一致 | [群像：撤回补鞋、保留稳定取景，逐人检查肤色与唇色](natural-shaping/references/personal-cases.md#ns12群像111补鞋撤回气色漏检与派生层2026-10-07) | 补鞋／下扩已撤回；气色 v2 已交付，未记录全图认可 |
+| 群像补鞋不可靠，人物气色又不一致 | [群像：撤回补鞋、保留稳定取景，逐人检查肤色与唇色](natural-shaping/references/personal-cases.md#ns12群像111补鞋撤回气色漏检与派生层2026-10-07) | 补鞋／下扩已撤回；当前示例：群像 111 v4 |
 
 ## 安装与使用
 

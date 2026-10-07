@@ -99,7 +99,7 @@
   },
   "files": [
     {
-      "path": "assets/examples/group111-v2.jpg",
+      "path": "origin-not-bundled:group-111-finish-v2.jpg",
       "bytes": 5068196,
       "sha256": "32061b4ecaf137fe0ce7fe812c86292eef4db135fa7d5f332ae3e48cb4708d8d"
     },
