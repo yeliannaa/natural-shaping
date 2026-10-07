@@ -1629,9 +1629,9 @@
       "sha256": "c343fa47c9735b0eb2f37939cfc58d0b292c52dda394e1341d3faff3c50d6d72"
     },
     {
-      "file": "assets/examples/dora-v4.jpg",
-      "bytes": 5240309,
-      "sha256": "4a55e8ae76b1077e91b7907881f69cf6eb9cc028cda83155c0a3247ed878d81e"
+      "file": "assets/examples/dora-v7.jpg",
+      "bytes": 5231955,
+      "sha256": "a4db5cd766b50ed98f38fcd4016d7c15905fb8e7949090a8b6d65b03a01e880c"
     },
     {
       "file": "assets/examples/elysia-saved-20261005.jpg",
@@ -1650,8 +1650,8 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2471,
-      "sha256": "546a288fbd48f1aab3eedf00945a4d2f1ce8bec8d1c224b23647d1be5f06ebbc"
+      "bytes": 2489,
+      "sha256": "a6e92863da1a2bafc810aa6a53201a40214068dfa8572e41c329bfc57b476069"
     },
     {
       "file": "assets/examples/rem-v20.jpg",
@@ -1775,8 +1775,8 @@
     },
     {
       "file": "references/personal-cases.md",
-      "bytes": 16707,
-      "sha256": "db84169fc8f3f9fd79abcf15adb63ae625a8e5fcc9acfafd458f34677dfdcb2e"
+      "bytes": 16652,
+      "sha256": "093306743237b5b7d61afe7ca571443af1d5dd9f7ea9325a606db006abe3263c"
     },
     {
       "file": "references/pixcake-cos-cases.md",
