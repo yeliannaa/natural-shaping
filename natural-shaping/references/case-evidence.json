@@ -75,7 +75,14 @@
         "assets/evidence/early-case-records/ns04-visual-acceptance.md",
         "assets/evidence/early-case-records/ns04-cosplay-box-scene-09-verification.json"
       ],
-      "imageLimit": "8-bit different head/shoulder crops, visual reference only"
+      "imageLimit": "8-bit different head/shoulder crops, visual reference only",
+      "latestOutcome": {
+        "version": "v12",
+        "image": "assets/examples/rem-v12.jpg",
+        "status": "User accepted the final v12; early stage checks above do not certify the final.",
+        "record": "assets/evidence/rem-v12-final-qa.json",
+        "usage": "Read the accepted v12 first for appearance; historical crops only explain previous failures."
+      }
     }
   ],
   "interpretation": "Historical technical checks are separate from user acceptance. NS04 covers early 08 to 09 only; later v12 acceptance is recorded in references/personal-cases.md. Old coordinates must not be replayed.",

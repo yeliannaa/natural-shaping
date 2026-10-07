@@ -424,7 +424,7 @@
       }
     },
     {
-      "file": "references/cases/ns04-head-before.png",
+      "file": "references/cases/history/ns04-rem-head-before.png",
       "original": "origin-not-bundled:final-head.png",
       "state": "before-light-and-hair-corrections",
       "imageScope": "diagnostic-preview-different-crops",
@@ -491,10 +491,12 @@
             "colorDefinitionPreserved": true
           }
         }
-      }
+      },
+      "currentUse": "Historical process/failure evidence only; use rem-v12.jpg for the accepted final appearance.",
+      "latestAcceptedImage": "assets/examples/rem-v12.jpg"
     },
     {
-      "file": "references/cases/ns04-head-corrected.png",
+      "file": "references/cases/history/ns04-rem-head-intermediate.png",
       "original": "origin-not-bundled:final-candidate-head.png",
       "state": "reviewed-correction",
       "imageScope": "diagnostic-preview-different-crops",
@@ -561,7 +563,9 @@
             "colorDefinitionPreserved": true
           }
         }
-      }
+      },
+      "currentUse": "Historical process/failure evidence only; use rem-v12.jpg for the accepted final appearance.",
+      "latestAcceptedImage": "assets/examples/rem-v12.jpg"
     }
   ],
   "_portability": {

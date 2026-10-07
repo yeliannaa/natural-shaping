@@ -60,7 +60,7 @@ description: "Retouch or analyze portrait and cosplay photos in a 自然美型 s
 | 手与衣带、硬质道具、遮挡重建、多角度参照 | [结构复核与生成参照](references/structure-review-and-generation.md) |
 | 美颜能力不足、PS 几何、生成与外部引擎分工 | [执行方法与引擎参考](references/cos-retouch-engines.md) |
 | Cos 分区、妆造保护、同组复用 | [像素蛋糕方法迁移](references/pixcake-cos-workflow.md) |
-| 对应成功／失败案例 | [个人案例索引](references/personal-cases.md)，只看相关版本 |
+| 对应成片／历史问题 | 先看[成片示例索引](assets/examples/README.md)的版本与状态；查失败过程再看[局部案例](references/cases/README.md)与[个人案例记录](references/personal-cases.md) |
 | 方法出处或现有资料无法解释的问题 | [外部案例](references/external-examples.md)、[操作帧记录](references/pixcake-cos-cases.md) |
 
 有真实像素且原生操作能达到目标时，沿用已授权 PS 路线；缺失纹理或边缘才按收益测试局部生成。裁片保留完整连接和足够上下文，合入范围提前明确；生成不会自动保住身份、道具或蒙版外像素。复杂结构先核真实参考，不把生成图当事实。后端未暴露型号时记“型号未知”；接口存在、官方宣传与本机实际验证分开。

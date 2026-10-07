@@ -1,0 +1,175 @@
+{
+  "recorded_on": "2026-10-07",
+  "request": "examples新增神里、知更鸟、爱莉希雅的例子；狩司司的几张也加上",
+  "scope": "Example curation only; no new image editing or automatic change to historical acceptance.",
+  "_portability": {
+    "path_base": "skill-root",
+    "source_labels": "Source filenames identify saved inputs; original absolute directories are not required or bundled."
+  },
+  "examples": [
+    {
+      "character": "神里",
+      "version": "v2",
+      "file": "assets/examples/kamisato-v2.jpg",
+      "source_filename": "神里-自然美型v2.jpg",
+      "source_sha256": "183907f4e0c4aa00aea49bf41691101047251cfe35282f7d99a63bd232a08100",
+      "packaged_sha256": "183907f4e0c4aa00aea49bf41691101047251cfe35282f7d99a63bd232a08100",
+      "bytes": 7256609,
+      "dimensions": [
+        3072,
+        4080
+      ],
+      "copy_method": "Original saved JPG bytes copied without retouching, resize or recompression.",
+      "status": "user_requested_saved_example; no new claim of whole-image acceptance",
+      "inspection_scope": "Full image viewed for example selection; no new pixel-level aesthetic acceptance.",
+      "original_photo_id": "微信图片_20261002003343_95_163.jpg",
+      "historical_execution_and_delivery_summary": "Execution record describes continuous shoulder-to-sleeve contour refinement and neck/shoulder tone; current saved JPG hash matches the consolidation record. Full 3072x4080 frame retained. Whole-image user acceptance was not established by these records.",
+      "inspected_source_records": [
+        {
+          "source_id": "origin-not-bundled:natural-four-20261004/white-edited.json",
+          "sha256": "1f1eb0c0ca635ae27a53821d055b1f521e5a9df9a552803a6bcdf369e81b7ca6"
+        },
+        {
+          "source_id": "origin-not-bundled:ps-consolidation-20261004/integrate-complete.json",
+          "sha256": "25e85b49277d828371a3a3054553f5f7199d30296d1bd908393b7b99979df4ba"
+        }
+      ]
+    },
+    {
+      "character": "知更鸟",
+      "version": "v8",
+      "file": "assets/examples/robin-v8.jpg",
+      "source_filename": "知更鸟-自然美型v8.jpg",
+      "source_sha256": "bce63d516b4f7d9e4454b3e142f8e36a115616a4bf660e9bb77b5afb989f5c52",
+      "packaged_sha256": "bce63d516b4f7d9e4454b3e142f8e36a115616a4bf660e9bb77b5afb989f5c52",
+      "bytes": 4144374,
+      "dimensions": [
+        2456,
+        3070
+      ],
+      "copy_method": "Original saved JPG bytes copied without retouching, resize or recompression.",
+      "status": "user_requested_saved_example; no new claim of whole-image acceptance",
+      "inspection_scope": "Full image viewed for example selection; no new pixel-level aesthetic acceptance.",
+      "original_photo_id": "微信图片_20261002005630_97_163.jpg",
+      "historical_execution_and_delivery_summary": "v8 records no new geometry; elbow/forearm tone and background refinements preserve the prior geometry. The delivery is 2456x3070, not the original 4080x3072 canvas. Delivery identity is verified; whole-image user acceptance is not established.",
+      "inspected_source_records": [
+        {
+          "source_id": "origin-not-bundled:natural-four-20261004/robin-edited.json",
+          "sha256": "953c4ee76d6902afcb357c56038a847c6722f0680757a8f420dd65ecfce7a958"
+        },
+        {
+          "source_id": "origin-not-bundled:ps-consolidation-20261004/integrate-complete.json",
+          "sha256": "25e85b49277d828371a3a3054553f5f7199d30296d1bd908393b7b99979df4ba"
+        }
+      ]
+    },
+    {
+      "character": "爱莉希雅",
+      "version": "自然美型新版（2026-10-05 已保存）",
+      "file": "assets/examples/elysia-saved-20261005.jpg",
+      "source_filename": "爱莉希雅-自然美型新版.jpg",
+      "source_sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef",
+      "packaged_sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef",
+      "bytes": 3735637,
+      "dimensions": [
+        3252,
+        2952
+      ],
+      "copy_method": "Original saved JPG bytes copied without retouching, resize or recompression.",
+      "status": "user_requested_saved_example; portrait refinement previously requested and not recorded as resolved",
+      "inspection_scope": "Full image viewed for example selection; no new pixel-level aesthetic acceptance.",
+      "original_photo_id": "微信图片_20261004231003_103_163.jpg",
+      "historical_execution_and_delivery_summary": "Production visual QA recorded userAcceptance=not_yet_reviewed; later NS05 feedback still requested more portrait refinement. Native geometry/tone and localized inferred flower/leaf extension were performed. Final saved JPG identity is verified, not newly accepted.",
+      "inspected_source_records": [
+        {
+          "source_id": "origin-not-bundled:elysia-natural-v2-20261005/final-visual-qa.json",
+          "sha256": "696d6455d0668fc00c88bf2aa3ce49a762af3db0fad5bc47322d9dcc3bb2323c"
+        },
+        {
+          "source_id": "origin-not-bundled:elysia-natural-v2-20261005/delivery-copy-verification.json",
+          "sha256": "159dfec77bbb6cebfcbc923fcb5e7123764fecfa6cea5422209296244d72d104"
+        }
+      ]
+    },
+    {
+      "character": "狩司司 110",
+      "version": "v4",
+      "file": "assets/examples/shousisi-110-v4.jpg",
+      "source_filename": "狩司司-110-自然美型-v4-精修.jpg",
+      "source_sha256": "864d38fca7aa67afa51f0a54f3a55f0153598f1aea6137eca87ca8a082764103",
+      "packaged_sha256": "864d38fca7aa67afa51f0a54f3a55f0153598f1aea6137eca87ca8a082764103",
+      "bytes": 4019640,
+      "dimensions": [
+        2912,
+        4080
+      ],
+      "copy_method": "Original saved JPG bytes copied without retouching, resize or recompression.",
+      "status": "latest_saved_revision_after_racket_feedback; internal review does not establish user acceptance",
+      "inspection_scope": "Full image viewed for example selection; no new pixel-level aesthetic acceptance.",
+      "original_photo_id": "微信图片_20261005171934_110_163.jpg",
+      "historical_execution_and_delivery_summary": "Latest saved v4 follows the earlier bent-racket feedback. It adjusts the racket surface and frame together, keeps grip/person and v3 blue-strap removal stable. Production review reported less apparent downward bend and explicitly did not establish user acceptance. Saved crop is 2912x4080.",
+      "inspected_source_records": [
+        {
+          "source_id": "origin-not-bundled:自然美型_110_20261006/狩司司-110-自然美型-v4-修图记录.txt",
+          "sha256": "ef4cfc60981e1489f7db4e9e1a5959057e529b08cc0ed3fae7738b5d487c5f11"
+        },
+        {
+          "source_id": "origin-not-bundled:shousisi-110-v4/delivery-verification.json",
+          "sha256": "f553d36933fcc5cb1146b18d9b9cae4862a62aadd5808a28ace27ba18caf6d40"
+        }
+      ]
+    },
+    {
+      "character": "狩司司 113",
+      "version": "v2",
+      "file": "assets/examples/shousisi-113-v2.jpg",
+      "source_filename": "狩司司-自然美型-v2-精修.jpg",
+      "source_sha256": "213c3c65be08b9ba30b2e205fa488e1e691e3265a3e9daf8491ce8dccb8931e9",
+      "packaged_sha256": "213c3c65be08b9ba30b2e205fa488e1e691e3265a3e9daf8491ce8dccb8931e9",
+      "bytes": 4744320,
+      "dimensions": [
+        3072,
+        4080
+      ],
+      "copy_method": "Original saved JPG bytes copied without retouching, resize or recompression.",
+      "status": "user_requested_saved_example; no recorded whole-image acceptance",
+      "inspection_scope": "Full image viewed for example selection; no new pixel-level aesthetic acceptance.",
+      "original_photo_id": "微信图片_20261005171940_113_163.jpg",
+      "historical_execution_and_delivery_summary": "Delivery record OriginalSHA256 identifies original photo 113 despite the unnumbered output filename. v2 retains the full canvas after comparing crop options and refines light/color without new geometry or generation. Record explicitly says the user has not evaluated v2.",
+      "inspected_source_records": [
+        {
+          "source_id": "origin-not-bundled:自然美型_终稿_20261006/狩司司-自然美型-v2-修图记录.txt",
+          "sha256": "dcf401f10ab08925ac28820b859ffd67314595966f4809caebac14fbed759383"
+        },
+        {
+          "source_id": "origin-not-bundled:shousisi-v2/delivery-verification.json",
+          "sha256": "7d4fdeafa1a7f9ff10f4f2d5b122a2632761b45927081a622985bfe45c122226"
+        }
+      ]
+    },
+    {
+      "character": "狩司司 114",
+      "version": "v1",
+      "file": "assets/examples/shousisi-114-v1.jpg",
+      "source_filename": "狩司司-114-自然美型-v1.jpg",
+      "source_sha256": "03baccd1a8e794737b8dc1347173e2b1084b067a3f03eced1976eabcf20baf7e",
+      "packaged_sha256": "03baccd1a8e794737b8dc1347173e2b1084b067a3f03eced1976eabcf20baf7e",
+      "bytes": 4234084,
+      "dimensions": [
+        3072,
+        3840
+      ],
+      "copy_method": "Original saved JPG bytes copied without retouching, resize or recompression.",
+      "status": "user_requested_saved_example; no recorded whole-image acceptance",
+      "inspection_scope": "Full image viewed for example selection; no new pixel-level aesthetic acceptance.",
+      "original_photo_id": "微信图片_20261005171942_114_163.jpg",
+      "historical_execution_and_delivery_summary": "Use the completed desktop delivery record, not the earlier in-progress working record. Final 3072x3840 uses 360px top crop and 120px inferred lower environment; leg length and feet geometry are preserved. Production review is complete, user acceptance pending.",
+      "inspected_source_records": [
+        {
+          "source_id": "origin-not-bundled:自然美型_114_20261007/shousisi-114-edit-record.json",
+          "sha256": "d379fd6e630f84956cf2cdaf1530873ec51919f3830e12ff01ecd05d3dd27738"
+        }
+      ]
+    }
+  ]
+}

@@ -26,4 +26,4 @@ python natural-shaping/scripts/validate_portable.py
 
 校验脚本从自身位置定位技能根，检查文件清单、SHA256 和显式本地引用，不联网、不修图、不写包内文件。检查通过不代表图像效果或外部执行环境已经验收；当前包内容以 `natural-shaping/package-manifest.json` 为准。
 
-包内案例、照片局部和教程操作帧用于理解风格与失败边界。历史记录区分失败、阶段候选、技术检查及用户认可，不能把局部通过当作全图认可，也不能重放旧图坐标。资料按问题读取；保留外部来源链接不等于每次使用都会重新访问或观看。更多流程见 [`SKILL.md`](natural-shaping/SKILL.md)。
+包内[成片示例](natural-shaping/assets/examples/README.md)、[历史局部案例](natural-shaping/references/cases/README.md)和教程操作帧用于理解风格与失败边界。蕾姆效果以 v12 为入口，旧图单独归入历史过程；新增神里、知更鸟、爱莉希雅及三张狩司司的已保存示例并逐张标注状态。历史记录区分失败、阶段候选、技术检查及用户认可，不能把局部通过当作全图认可，也不能重放旧图坐标。资料按问题读取；保留外部来源链接不等于每次使用都会重新访问或观看。更多流程见 [`SKILL.md`](natural-shaping/SKILL.md)。
