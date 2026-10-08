@@ -1639,9 +1639,9 @@
       "sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef"
     },
     {
-      "file": "assets/examples/group111-v4.jpg",
-      "bytes": 5069625,
-      "sha256": "a90c3a15239048b7fcc3e7a607d948ea27058ec7526c8384bd4222e3a83aaa8f"
+      "file": "assets/examples/group111-v5.jpg",
+      "bytes": 5413381,
+      "sha256": "0926e5cb774c88ad1a512e80703a3e4d1acface01e4bb388dc339de8b44f8c1c"
     },
     {
       "file": "assets/examples/kamisato-v2.jpg",
@@ -1650,8 +1650,8 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2495,
-      "sha256": "3cc57d76e776d426481176a8aa53e94a9cec74d34a8262a183abbb0bb47cfa02"
+      "bytes": 2477,
+      "sha256": "9e3858ce2c5f5511fa4c85706f4053990f8bcb5f2cf61d72256755aa938d8e63"
     },
     {
       "file": "assets/examples/rem-v21.jpg",
@@ -1776,7 +1776,7 @@
     {
       "file": "references/personal-cases.md",
       "bytes": 16652,
-      "sha256": "6a8131aa28e6a43809ba5997f4aee3e1025bf081c7cfeedbe0684b8d26d6c934"
+      "sha256": "7214080dfc4736ec2deafac1e1ce8b7aa11ebcaeba3f08c9583b9d468e1da7d2"
     },
     {
       "file": "references/pixcake-cos-cases.md",
