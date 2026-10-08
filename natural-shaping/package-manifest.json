@@ -1650,13 +1650,13 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2489,
-      "sha256": "a6e92863da1a2bafc810aa6a53201a40214068dfa8572e41c329bfc57b476069"
+      "bytes": 2495,
+      "sha256": "3cc57d76e776d426481176a8aa53e94a9cec74d34a8262a183abbb0bb47cfa02"
     },
     {
-      "file": "assets/examples/rem-v20.jpg",
-      "bytes": 5589417,
-      "sha256": "708715fefaae11d92f3ca0be8c3891682731786e89533df8dc6059628694fdbd"
+      "file": "assets/examples/rem-v21.jpg",
+      "bytes": 5596374,
+      "sha256": "3f9cbcb8fbcc4f4874363b104b71eb235863d97e058ce46a18e6920112c11935"
     },
     {
       "file": "assets/examples/robin-v8.jpg",
@@ -1685,13 +1685,13 @@
     },
     {
       "file": "references/case-evidence.json",
-      "bytes": 4595,
-      "sha256": "fcb5bbb1c6f123df9e2db37955f77a8b50b3d3bd164a2af33d4039a484dea7e9"
+      "bytes": 4594,
+      "sha256": "8171368be94658fe0968a1803385134051ebfe1ad14d61580bc4bb8f043fe8ba"
     },
     {
       "file": "references/case-files.json",
       "bytes": 24001,
-      "sha256": "b77561a5123fcc610a0a8ad7dd3cda559be5629c2e145b01b8efea15192ded82"
+      "sha256": "92f066fc5dd57a004a9be3ea17dea8e1ab515965a9517134ed5393bb2f95558f"
     },
     {
       "file": "references/cases/history/ns04-rem-head-before.png",
@@ -1736,7 +1736,7 @@
     {
       "file": "references/cases/README.md",
       "bytes": 1440,
-      "sha256": "d03df700fe7b4f14c264d7d44178287dd8b2fdf5ad4d013c14dcc279f446ecfb"
+      "sha256": "3962bd4030eb073138fb698a3990ec4c2e8dc9b85c640ed46a5470cd496f7571"
     },
     {
       "file": "references/composition-and-capture.md",
@@ -1776,7 +1776,7 @@
     {
       "file": "references/personal-cases.md",
       "bytes": 16652,
-      "sha256": "093306743237b5b7d61afe7ca571443af1d5dd9f7ea9325a606db006abe3263c"
+      "sha256": "6a8131aa28e6a43809ba5997f4aee3e1025bf081c7cfeedbe0684b8d26d6c934"
     },
     {
       "file": "references/pixcake-cos-cases.md",

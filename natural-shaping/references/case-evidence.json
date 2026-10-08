@@ -77,9 +77,9 @@
       ],
       "imageLimit": "8-bit different head/shoulder crops, visual reference only",
       "latestOutcome": {
-        "version": "v20",
-        "image": "assets/examples/rem-v20.jpg",
-        "status": "User confirmed v20 as the current example.",
+        "version": "v21",
+        "image": "assets/examples/rem-v21.jpg",
+        "status": "User selected v21 as the current example.",
         "usage": "Current appearance reference; historical crops only explain previous failures."
       }
     }
