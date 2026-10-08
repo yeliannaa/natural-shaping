@@ -64,9 +64,11 @@
       ]
     },
     {
-      "character": "爱莉希雅",
+      "character": "昔涟",
+      "historical_character_label": "爱莉希雅",
+      "name_correction_note": "案例提供者确认角色为昔涟；历史请求、源文件名和 source_id 保留原标记。",
       "version": "自然美型新版（2026-10-05 已保存）",
-      "file": "assets/examples/elysia-saved-20261005.jpg",
+      "file": "assets/examples/xilian-saved-20261005.jpg",
       "source_filename": "爱莉希雅-自然美型新版.jpg",
       "source_sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef",
       "packaged_sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef",

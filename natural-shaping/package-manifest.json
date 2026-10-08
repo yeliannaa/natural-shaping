@@ -535,8 +535,8 @@
     },
     {
       "file": "assets/evidence/example-additions-20261007.json",
-      "bytes": 10044,
-      "sha256": "eb623d765749d431afaf594c7a448e46a1b6065575c2a76eeb04bb8f35e103e2"
+      "bytes": 10224,
+      "sha256": "77fc61cd6456c7946175d7bf8156df473823563ea58413ad9aed53686c0a7e5c"
     },
     {
       "file": "assets/evidence/group-111-v2-edit-record.json",
@@ -1634,7 +1634,7 @@
       "sha256": "a4db5cd766b50ed98f38fcd4016d7c15905fb8e7949090a8b6d65b03a01e880c"
     },
     {
-      "file": "assets/examples/elysia-saved-20261005.jpg",
+      "file": "assets/examples/xilian-saved-20261005.jpg",
       "bytes": 3735637,
       "sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef"
     },
@@ -1650,8 +1650,8 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2477,
-      "sha256": "9e3858ce2c5f5511fa4c85706f4053990f8bcb5f2cf61d72256755aa938d8e63"
+      "bytes": 2471,
+      "sha256": "26be2d2eeea0bce6ec367d8bf38b714817eb7fd832e0dc04ca0dab7aa4143e5b"
     },
     {
       "file": "assets/examples/rem-v21.jpg",
@@ -1745,8 +1745,8 @@
     },
     {
       "file": "references/composition-and-key-elements.md",
-      "bytes": 20438,
-      "sha256": "b27407a19364ecd70fe310c169787d702934e4e903bfad89a11039722d53817b"
+      "bytes": 20514,
+      "sha256": "71d3f01f5b8c0673bd41c6460fd814a3d7d7a5fd52fe2bef3914fd6dd19c93fc"
     },
     {
       "file": "references/cos-retouch-engines.md",
@@ -1775,8 +1775,8 @@
     },
     {
       "file": "references/personal-cases.md",
-      "bytes": 16652,
-      "sha256": "7214080dfc4736ec2deafac1e1ce8b7aa11ebcaeba3f08c9583b9d468e1da7d2"
+      "bytes": 16655,
+      "sha256": "6a2f1d014771c703e259e8e3eb7cf661471f4caee4613d31e816a41a7b7c5800"
     },
     {
       "file": "references/pixcake-cos-cases.md",
