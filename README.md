@@ -4,7 +4,7 @@
 
 面向人像修图、漫展场照精修与 Cos 后期的可移植技能：先拆解构图、展示原片标注草图，确认后再精修肤质、五官、身形、光线与背景。保留本人感、角色妆造、关节和道具结构，并主动检查修后瑕疵。
 
-A reusable **photo retouching agent skill** for Codex, focused on **portrait retouching** and **cosplay photo editing**. The workflow is defined in [`natural-shaping/SKILL.md`](natural-shaping/SKILL.md): source-based composition sketches, identity-preserving refinement and visual quality checks, with **Photoshop ExtendScript (JSX)** helpers. Editing requires the tools available in your environment.
+A reusable **photo retouching agent skill** for Codex, focused on **portrait retouching** and **cosplay photo editing**. The workflow is defined in [`natural-shaping/SKILL.md`](natural-shaping/SKILL.md): source-based composition sketches, identity-preserving refinement and visual quality checks, with **Photoshop ExtendScript (JSX)** helpers. Codex chooses among the tools available in your environment: built-in image generation/editing can run the editing route without Qwen; Qwen is an optional backend, and Photoshop enables precise local work and layered delivery when available.
 
 [安装与使用](#安装与使用) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [10 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
 
@@ -57,7 +57,7 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 
 ### 需要哪些工具？能直接一键修图吗？
 
-本包提供流程、参考和辅助脚本。看图诊断需要文件读取和图像查看能力；原生 PS 精修需要 Photoshop 与可执行 ExtendScript 的连接；局部生成需要当前环境另外提供图像编辑能力。安装 skill 不会同时安装 Photoshop 或配置工具连接。支持 Agent Skills 文件格式，不代表所有客户端的实际修图路线都已验证。见[迁移与能力检查](natural-shaping/references/portability.md)。
+本包提供流程、参考和辅助脚本，由 Codex 主导构图、美型判断、工具选路和验收。**不需要安装 Qwen**：没有 Qwen 时调用当前应用可用的内置图像生成／编辑工具；Qwen 是可选后端。没有 PS 时仍可使用内置编辑，原生 PS 精修和 PSD 交付才需要 Photoshop 与可执行连接。安装 skill 不会同时安装软件、模型或配置工具连接；当前环境没有实际图像编辑工具时只能诊断。支持 Agent Skills 文件格式，不代表所有客户端的实际修图路线都已验证。见[迁移与能力检查](natural-shaping/references/portability.md)。
 
 ### 同组照片可以批量修图吗？
 
@@ -110,8 +110,9 @@ $natural-shaping 请先拆解这张 Cos 照的构图，展示基于原片的方�
 ## 工具与能力边界
 
 - 看图诊断与验收需要文件读取、图像查看能力。
-- 原生精修需要 Photoshop 及能够执行 ExtendScript 的连接。包内 runtime 提供曲线、颜色层、蒙版、预览和导出；没有自动身体识别或液化接口。
-- 局部生成需要当前应用提供的图像编辑能力；不附模型、账户、密钥或固定生图型号。
+- 内置图像生成／编辑可独立承担生成路线，由 Codex 调用、检查并决定整图采用、局部融合或仅作参考；没有 Qwen 不影响此路线。
+- Qwen 是可选后端，程序、模型和资源由当前环境提供；不附模型、账户、密钥或固定生图型号。
+- 原生 PS 精修需要 Photoshop 及可执行 ExtendScript 的连接。包内 runtime 提供曲线、颜色层、蒙版、预览和导出；没有自动身体识别或液化接口。无 PS 时如实交付现有工具支持的格式与细节，不承诺 PSD。
 - 交互对照依赖应用的可视化能力；没有时使用等尺度静态对照。
 - PNG 检查需要 PowerShell；无损压缩需要 Python 3.11+。自动主体蒙版是可选功能，其环境和模型按[蒙版说明](natural-shaping/references/mask-tools.md)另行准备。
 

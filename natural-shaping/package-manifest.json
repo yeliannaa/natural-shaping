@@ -1,6 +1,6 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-07-portable-layout-r4",
+  "version": "2026-10-09-portable-hybrid-r1",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
@@ -1750,8 +1750,8 @@
     },
     {
       "file": "references/cos-retouch-engines.md",
-      "bytes": 9305,
-      "sha256": "cc0c7be8e70f7eae1fc5e6ab56ee95596e7e4dbb453736d9036aa752c908992e"
+      "bytes": 15027,
+      "sha256": "1214e27cc9b7ad13c5fec1d47e955c45da10d509c63087d1b3b190d1dba20f42"
     },
     {
       "file": "references/engine-experiment-history.md",
@@ -1800,13 +1800,13 @@
     },
     {
       "file": "references/portability.md",
-      "bytes": 4646,
-      "sha256": "cd7124503d415307db9624653cc4cd026e71b84b29c2558566adf7681c7c1fb7"
+      "bytes": 5818,
+      "sha256": "3f5606c5d37db221ec2d94ec9663dec378c65c9deb12b8096473bcf826984520"
     },
     {
       "file": "references/portrait-beauty.md",
-      "bytes": 17988,
-      "sha256": "dbb58766b255f84465842208964b26c1a0000b03b75ddde982011543a8853081"
+      "bytes": 19737,
+      "sha256": "207c6258f6cdfe14edba75ec70a9f4dfaeda91fb28a98d571909d46c5a25ac6b"
     },
     {
       "file": "references/pose-and-occlusion-cases.md",
@@ -1815,8 +1815,8 @@
     },
     {
       "file": "references/production-retouch.md",
-      "bytes": 13654,
-      "sha256": "16f64610d70e05bb68ddd9558cfcfcf80bbe21535b7913307a378431189f9165"
+      "bytes": 13920,
+      "sha256": "9f692ecb0ed23c8a2b9bf18fd6b3c93d561d22f79ea6157300b0fd67d4baf489"
     },
     {
       "file": "references/ps-runtime.md",
@@ -1825,8 +1825,8 @@
     },
     {
       "file": "references/quality-review.md",
-      "bytes": 6011,
-      "sha256": "5aa0734cddca0700b2a1a7ce48f86f2299a27b96a1014fa8797a50c82fa3a28b"
+      "bytes": 7879,
+      "sha256": "6a228f1fc0d174348691f5a992a2c05eb9dedde3427fe05e67cc4abe6d583440"
     },
     {
       "file": "references/shape-and-pose.md",
@@ -1875,8 +1875,8 @@
     },
     {
       "file": "SKILL.md",
-      "bytes": 15961,
-      "sha256": "59577f05c1dc6abfb7f3ac43fb61da00ae092d4838bcc78d7de6ffca5315674c"
+      "bytes": 17254,
+      "sha256": "a52b00a7d0b4b1860315e04ce27c5aa73d9d6c7d046235192f63720735b6c4d4"
     }
   ]
 }
