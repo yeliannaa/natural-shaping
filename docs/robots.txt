@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yeliannaa.github.io/natural-shaping/sitemap.xml
+

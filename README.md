@@ -1,12 +1,42 @@
-# natural-shaping · 自然美型
+# natural-shaping · Cos 照片 P图与人像精修 Skill
 
 **人像精修与 Cosplay 修图 Skill for Codex · Portrait & cosplay photo retouching**
 
-面向人像修图、漫展场照精修与 Cos 后期的可移植技能：先拆解构图、展示原片标注草图，确认后再精修肤质、五官、身形、光线与背景。保留本人感、角色妆造、关节和道具结构，并主动检查修后瑕疵。
+用 AI 辅助 Cos 照片 P图、漫展修图与人像精修的可移植技能：先拆解构图、展示原片标注草图，确认后再精修肤质、五官、身形、光线与背景。保留本人感、角色妆造、关节和道具结构，并主动检查修后瑕疵。
 
 A reusable **photo retouching agent skill** for Codex, focused on **portrait retouching** and **cosplay photo editing**. The workflow is defined in [`natural-shaping/SKILL.md`](natural-shaping/SKILL.md): source-based composition sketches, identity-preserving refinement and visual quality checks, with **Photoshop ExtendScript (JSX)** helpers. Codex chooses among the tools available in your environment: built-in image generation/editing can run the editing route without Qwen; Qwen is an optional backend, and Photoshop enables precise local work and layered delivery when available.
 
-[安装与使用](#安装与使用) · [调用链与分工](#调用链与分工) · [缺少工具时如何继续](#缺少工具时如何继续) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [10 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
+[实战教程与效果拆解](https://yeliannaa.github.io/natural-shaping/) · [安装与使用](#安装与使用) · [调用链与分工](#调用链与分工) · [缺少工具时如何继续](#缺少工具时如何继续) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [10 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
+
+## 代表效果与细节拆解
+
+三组真实案例展示不同问题：**蕾姆的遮挡与衣装连接、群像的逐人补光、宫本樱的衣带受力与手部补全**。点击进入原片／终稿对照、构图标注和局部细节教学。
+
+<table>
+<tr><th>蕾姆 · 遮挡、彩光与袖口</th><th>群像 · 三人构图与气色</th><th>宫本樱 · 手部与双侧衣带</th></tr>
+<tr>
+<td><a href="https://yeliannaa.github.io/natural-shaping/rem.html"><img src="docs/assets/rem-final.jpg" width="240" height="300" alt="蕾姆最新版v21成片：坐姿、相机手腕与蕾丝袖口连接"></a></td>
+<td><a href="https://yeliannaa.github.io/natural-shaping/group.html"><img src="docs/assets/group-final.jpg" width="222" height="300" alt="群像111最新版v5成片：三人脸部光线、妆造与姿态协调"></a></td>
+<td><a href="https://yeliannaa.github.io/natural-shaping/sakura.html"><img src="docs/assets/sakura-final.jpg" width="225" height="300" alt="宫本樱v9保存成片：腰腹轮廓、手指和双侧双衣带连接"></a></td>
+</tr>
+<tr>
+<td>看坐姿与相机形成的视觉路径，怎样检查发缘、黑色带子及手背—手腕—袖口的连续性。<a href="https://yeliannaa.github.io/natural-shaping/rem.html">详细拆解</a></td>
+<td>看三张脸的层次、左侧人物眼周与唇色、前后人物关系，以及合影边缘的取舍。<a href="https://yeliannaa.github.io/natural-shaping/group.html">详细拆解</a></td>
+<td>看双侧衣带的起点、数量、松紧与握点；腰腹修改还要联看肚脐、裤腰和手指。<a href="https://yeliannaa.github.io/natural-shaping/sakura.html">详细拆解</a></td>
+</tr>
+</table>
+
+也可以直接在 GitHub 阅读[蕾姆](docs/rem.md)、[群像](docs/group.md)、[宫本樱](docs/sakura.md)的图文分析；[教程站源码与维护说明](docs/README.md)随仓库提供。
+
+每页都把**位置 → 观看影响 → 处理判断 → 保护与验收**讲清楚，附整体对照与局部特写。蕾姆使用 v21，群像使用 111 v5；宫本樱 v8 结构获认可，v9 获保存指示。网页图片是轻量预览，原尺寸 JPG 仍在[成片示例目录](natural-shaping/assets/examples/README.md)。不同取景的整图对照用于观察构图与观感，不能当作像素叠图或处理幅度的测量。
+
+## 三步开始
+
+1. 按[安装与使用](#安装与使用)复制完整技能目录，并确认当前应用有实际图像编辑工具。
+2. 提供照片与输出目录，调用 `$natural-shaping`；先查看基于原片的构图、美型与保护方案，再确认范围。
+3. 检查实际成片及局部对照，认可后保存终稿。第一次使用可跟着[完整实战教程](https://yeliannaa.github.io/natural-shaping/first-photo.html)操作。
+
+Qwen 是可选后端；内置图像编辑可独立承担生成路线。精确 PS 编辑和 PSD 交付需要实际 Photoshop 连接。详见[调用链](#调用链与分工)与[缺少工具时如何继续](#缺少工具时如何继续)。
 
 ## 能做什么
 
@@ -18,6 +48,37 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 | 道具与验收 | 联看手、衣带、球拍等完整连接；查新增损伤、原尺寸细节与实际交付文件 |
 
 包内提供方法、参考图和辅助脚本。修图效果取决于执行工具与实际验收；不包含像素蛋糕算法、Photoshop 软件或生图模型。
+
+## 安装与使用
+
+下载或克隆本仓库，将整个 [`natural-shaping/`](natural-shaping/) 文件夹放入目标应用支持的技能目录，保持内部目录结构；不要只复制 `SKILL.md`。不需要另外安装原作者的其他修图 skill。首次使用先阅读[移植说明](natural-shaping/references/portability.md)，确认应用已识别技能并检查实际工具入口；选择 PS／随包脚本路线时再用合成小图测试会用到的功能。
+
+也可以通过 [Vercel Skills CLI](https://github.com/vercel-labs/skills) 安装。以下固定版本命令需要 Node.js 22.20.0 或更高版本；先列举仓库中的技能：
+
+```sh
+npx skills@1.7.1 add yeliannaa/natural-shaping --list
+```
+
+在目标项目目录中，为 Codex 复制安装该技能：
+
+```sh
+npx skills@1.7.1 add yeliannaa/natural-shaping --skill natural-shaping --agent codex --copy --yes
+```
+
+**安装验证（2026-10-07）**：独立 Windows 测试项目使用 Node.js 22.20.0、Skills CLI 1.7.1，识别出一个 `natural-shaping`，项目安装至 `.agents/skills/natural-shaping`；364 个文件的清单、哈希和本地引用通过包内校验。此项验证覆盖技能发现与复制安装，实际 Photoshop 连接和其他客户端执行能力仍按迁移说明检查。
+
+**目录状态（2026-10-10）**：已有可访问的 [skills.sh 公开条目](https://www.skills.sh/yeliannaa/natural-shaping/natural-shaping)。仓库可安装、目录存在条目、普通用途搜索能否发现是三个分别核验的状态；条目存在不保证所有查询命中或固定排名。目录按真实安装遥测形成收录和排名，详见 [skills.sh 收录说明](https://skills.sh/docs/faq)。此前安装验证关闭了遥测，不把该次测试计作真实使用。
+
+在支持 `$` 调用的 Codex 环境中，可提供照片或文件夹并这样请求：
+
+```text
+$natural-shaping 请先拆解这张 Cos 照的构图，展示基于原片的方案草图。
+等我确认后，再精修肤质、五官、身形、背景和光线，并保存到我指定的目录。
+```
+
+每张新图或完整重修，应先展示草图并等待确认。同一方案内的局部返修沿用已有确认。源图保持只读，照片、PSD 和预览保存在本次任务目录，不写入技能安装目录。
+
+**Quick start:** Copy the complete `natural-shaping/` folder into the skill location supported by your application. Provide a photo and output directory, invoke the skill, review the composition sketch, then confirm the editing scope. See [portability and dependencies](natural-shaping/references/portability.md) before using the scripts.
 
 ## 调用链与分工
 
@@ -123,37 +184,6 @@ flowchart TD
 | 手、衣带与衣缘补完仍不自然 | [宫本樱：多视角定位，再锁定结构做材质收尾](natural-shaping/references/personal-cases.md#ns09宫本樱-v8-结构认可--v9-材质收尾与指定目录交付2026-10-06) | v8 整体与位置获认可，v9 获保存指示 |
 | 鼻旁阴影显硬，是否需要直接瘦鼻 | [鼻旁局部：先柔化光影，再判断鼻形](natural-shaping/references/personal-cases.md#ns03鼻旁先柔光不默认改变鼻形) | 柔光效果获局部认可；该次未新增鼻形几何修改 |
 | 群像补鞋不可靠，人物气色又不一致 | [群像：补全边界与逐人气色检查](natural-shaping/references/personal-cases.md#ns12群像111补鞋撤回气色漏检与派生层2026-10-07) | 当前示例：群像 111 v5；下沿已补全 |
-
-## 安装与使用
-
-下载或克隆本仓库，将整个 [`natural-shaping/`](natural-shaping/) 文件夹放入目标应用支持的技能目录，保持内部目录结构；不要只复制 `SKILL.md`。不需要另外安装原作者的其他修图 skill。首次使用先阅读[移植说明](natural-shaping/references/portability.md)，确认应用已识别技能并检查实际工具入口；选择 PS／随包脚本路线时再用合成小图测试会用到的功能。
-
-也可以通过 [Vercel Skills CLI](https://github.com/vercel-labs/skills) 安装。以下固定版本命令需要 Node.js 22.20.0 或更高版本；先列举仓库中的技能：
-
-```sh
-npx skills@1.7.1 add yeliannaa/natural-shaping --list
-```
-
-在目标项目目录中，为 Codex 复制安装该技能：
-
-```sh
-npx skills@1.7.1 add yeliannaa/natural-shaping --skill natural-shaping --agent codex --copy --yes
-```
-
-**安装验证（2026-10-07）**：独立 Windows 测试项目使用 Node.js 22.20.0、Skills CLI 1.7.1，识别出一个 `natural-shaping`，项目安装至 `.agents/skills/natural-shaping`；364 个文件的清单、哈希和本地引用通过包内校验。此项验证覆盖技能发现与复制安装，实际 Photoshop 连接和其他客户端执行能力仍按迁移说明检查。
-
-仓库可直接安装与 skills.sh 目录收录是不同状态。本次 `skills find natural-shaping` 暂未返回条目；目录按真实安装遥测形成收录和排名，详见 [skills.sh 收录说明](https://skills.sh/docs/faq)。测试已关闭遥测，不把安装验证计作真实使用。
-
-在支持 `$` 调用的 Codex 环境中，可提供照片或文件夹并这样请求：
-
-```text
-$natural-shaping 请先拆解这张 Cos 照的构图，展示基于原片的方案草图。
-等我确认后，再精修肤质、五官、身形、背景和光线，并保存到我指定的目录。
-```
-
-每张新图或完整重修，应先展示草图并等待确认。同一方案内的局部返修沿用已有确认。源图保持只读，照片、PSD 和预览保存在本次任务目录，不写入技能安装目录。
-
-**Quick start:** Copy the complete `natural-shaping/` folder into the skill location supported by your application. Provide a photo and output directory, invoke the skill, review the composition sketch, then confirm the editing scope. See [portability and dependencies](natural-shaping/references/portability.md) before using the scripts.
 
 ## 工具与能力边界
 

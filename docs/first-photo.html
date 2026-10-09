@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第一次使用自然美型修图｜安装、源图草图与成片交付教程</title>
+  <meta name="description" content="从安装 natural-shaping 到修好第一张 Cos 照片：提供原片、目标和输出目录，复制调用请求，看源图草图并确认，再检查实际成片和文件。Qwen 可选，Photoshop 按路线需要。">
+  <link rel="canonical" href="https://yeliannaa.github.io/natural-shaping/first-photo.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="自然美型 · natural-shaping">
+  <meta property="og:title" content="从第一张照片开始｜自然美型首次操作教程">
+  <meta property="og:description" content="安装技能、提供照片、确认源图草图，再检查实际成片。包含可复制命令与调用请求。">
+  <meta property="og:url" content="https://yeliannaa.github.io/natural-shaping/first-photo.html">
+  <meta property="og:image" content="https://yeliannaa.github.io/natural-shaping/assets/rem-final.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="stylesheet" href="site.css">
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="nav"><div class="container nav-inner"><a class="brand" href="index.html" aria-label="自然美型首页"><span class="brand-mark" aria-hidden="true">N</span><span class="brand-name">自然美型 <span>natural-shaping</span></span></a><nav class="nav-links" aria-label="主导航"><a class="cases-link" href="index.html#cases">真实案例</a><a class="github-link" href="https://github.com/yeliannaa/natural-shaping">GitHub ↗</a><a class="nav-cta" aria-current="page" href="first-photo.html">开始第一张</a></nav></div></header>
+  <main id="main">
+    <header class="page-hero"><div class="container"><p class="breadcrumb"><a href="index.html">首页</a> / 首次操作</p><p class="kicker">FIRST PHOTO · 首次操作</p><h1>从你的第一张照片开始。</h1><p class="lead">装好技能，提供原片、想要的效果和保存目录。Codex 先展示源图草图；你确认后，再执行修图、检查成片并交付实际文件。</p><div class="page-meta"><span class="tag">Codex 使用教程</span><span>命令沿用仓库已验证版本</span><span>更新于 2026-10-10</span></div></div></header>
+    <div class="container reading-layout">
+      <nav class="toc" aria-label="教程目录"><p>本页步骤</p><a href="#prepare">1. 准备环境</a><a href="#install">2. 安装技能</a><a href="#request">3. 提供照片并调用</a><a href="#confirm">4. 看草图并确认</a><a href="#review">5. 检查与交付</a><a href="#example">已有案例示例</a><a href="#tools">工具与依赖</a></nav>
+      <article class="prose">
+        <section id="prepare" aria-labelledby="prepare-title"><h2 id="prepare-title">1. 准备环境和一张原片</h2><p>在支持 Agent Skills 的 Codex 环境中使用本技能。确认 Codex 能读取你的照片、查看图像，并能调用至少一种实际图像编辑工具。</p><div class="detail-grid"><div class="detail-card"><h3>一张可读取的原片</h3><p>优先提供原始照片文件。可以在聊天中附图，或给出本地绝对路径；请允许应用访问所在目录。</p></div><div class="detail-card"><h3>明确的输出目录</h3><p>给本次任务一个独立目录，保存草图、预览和成片。原片只读，输出不要写入技能安装目录。</p></div></div><div class="note"><p><strong>安装技能不会同时安装修图工具。</strong>内置图像编辑可承担生成路线；Qwen 可选。需要原生 PS 操作或分层 PSD 时，再准备 Photoshop 与可执行连接。当前没有实际图像编辑工具时，只能进行诊断和方案说明。</p></div></section>
+
+        <section id="install" aria-labelledby="install-title"><h2 id="install-title">2. 安装完整技能包</h2><p>以下命令沿用仓库已验证的 <strong>Skills CLI 1.7.1</strong>，需要 <strong>Node.js 22.20.0 或更高版本</strong>。在你准备使用技能的项目目录打开终端，先查看仓库中的技能：</p><div class="code-block"><div class="code-header"><span>终端 · 列出技能</span><button class="copy-button" type="button" data-copy-target="list-command" aria-live="polite">复制</button></div><pre id="list-command">npx skills@1.7.1 add yeliannaa/natural-shaping --list</pre></div><p>为当前项目中的 Codex 复制安装：</p><div class="code-block"><div class="code-header"><span>终端 · 项目内安装</span><button class="copy-button" type="button" data-copy-target="install-command" aria-live="polite">复制</button></div><pre id="install-command">npx skills@1.7.1 add yeliannaa/natural-shaping --skill natural-shaping --agent codex --copy --yes</pre></div><p>项目安装位置为 <code>.agents/skills/natural-shaping</code>。让 Codex 识别新增技能后再调用；仓库的安装验证覆盖技能发现和复制安装，具体图像编辑能力仍需在你的环境中检查。也可查看已公开的 <a href="https://www.skills.sh/yeliannaa/natural-shaping/natural-shaping">skills.sh 技能条目</a>。</p><h3>也可以手动复制</h3><p>从 <a href="https://github.com/yeliannaa/natural-shaping">GitHub 仓库</a>下载或克隆文件，将<strong>完整的 <code>natural-shaping/</code> 文件夹</strong>放入目标应用支持的技能目录，保持内部结构。不要只复制 <code>SKILL.md</code>。首次能力检查见 <a href="https://github.com/yeliannaa/natural-shaping/blob/main/natural-shaping/references/portability.md">移植说明</a>。</p></section>
+
+        <section id="request" aria-labelledby="request-title"><h2 id="request-title">3. 提供照片、目标和输出目录</h2><p>先选一张照片，把最在意的效果和保护点说清楚。文件路径示例需要替换成你实际的路径；也可以直接附图，并把“源图”一行改为“本次附图”。</p><div class="code-block"><div class="code-header"><span>复制到 Codex · 首次请求</span><button class="copy-button" type="button" data-copy-target="first-request" aria-live="polite">复制</button></div><pre id="first-request">$natural-shaping 请处理这张 Cos 照片。
+源图：[你的照片路径，或本次附图]
+输出目录：[你指定的独立输出目录]
+
+目标：肤质更细腻、五官与身形更协调，统一脸颈手光色，让人物更突出。
+保护：保留本人感、角色妆造、关节、衣装与道具完整连接。
+背景如需清理、替换或补全，请先说明范围。
+
+请先拆解构图与整体美型，展示基于这张原片的标注草图，说明调整点和保护点。
+等我确认本图方案后再修图。保持源图只读，将草图、预览与实际成片保存在输出目录。
+开始时检查当前可用的图像编辑工具，并据此选择执行路线。</pre></div><p>如果对背景、身形或服装有明确限制，请直接加在请求中，例如“保留现场背景”“脸型只做轻微协调”“不改角色服装”。明确只用某个后端时，也在请求里说明。</p></section>
+
+        <section id="confirm" aria-labelledby="confirm-title"><h2 id="confirm-title">4. 先看源图草图，再确认范围</h2><p>第一次处理新图，或准备完整重修时，Codex 应先解释构图，并展示基于原片的标注草图。你看到的应当是这张照片的方案：哪些区域调整、哪些关系保护，缺失内容中哪些属于推断。</p><ol class="steps"><li><h3>核对构图和保护点</h3><p>检查画边、留白、动作路径与遮挡。再联看脸、假发颈肩、胸腰髋、腿脚和道具，确认整张照片的方向。</p></li><li><h3>说出需要改动的范围</h3><p>可以要求减弱某处调整，保留某个背景元素，或选择另一种裁幅。不要把不同照片的草图当作本图确认。</p></li><li><h3>明确确认后开始执行</h3><p>你可以使用下面的回复，并按实际方案修改。Codex 在确认范围内选择当前可用工具进行编辑。</p></li></ol><div class="code-block"><div class="code-header"><span>复制并按实际草图调整 · 确认示例</span><button class="copy-button" type="button" data-copy-target="confirm-request" aria-live="polite">复制</button></div><pre id="confirm-request">确认按刚才展示的本图方案执行。
+请保留已标明的妆造、关节、衣装和道具保护点。
+修后展示整图对照与关键细节，并给出输出目录中的实际成片文件。</pre></div><div class="note"><p>同一已确认方案内的局部返修沿用有效确认。新图、完整重修或新增构图、重建范围，按技能规则执行对应草图确认。</p></div><p style="margin-top:22px">想先了解草图应该解释到什么程度，可以看 <a href="shousisi.html">狩司司 110、114 原片方案拆解</a>。</p></section>
+
+        <section id="review" aria-labelledby="review-title"><h2 id="review-title">5. 检查整体、细节和实际文件</h2><p>看过整图，再放大检查关键处。皮肤应细腻且可信，妆面和本人特征清楚；脸颈手光色协调；手、衣带、握点、鞋和道具连接完整，边缘没有明显涂抹、灰边或接缝。</p><p>不同裁幅或重建背景的整图可以按同一展示高度比较观感；检查细节时应另看同倍率局部。整图等高展示不代表像素已对齐。</p><div class="code-block"><div class="code-header"><span>复制到 Codex · 局部返修示例</span><button class="copy-button" type="button" data-copy-target="revision-request" aria-live="polite">复制</button></div><pre id="revision-request">整体方向可以。请在已确认方案内检查并返修这处细节：______。
+联看它与周围结构的完整连接，完成后展示局部对照和整图，保存新版本文件。
+请保留上一个稳定版本。</pre></div><p>最后确认你拿到的是可打开的实际文件，并核对目录、尺寸和版本。你认可整张成片后，再记录为终稿；仅局部满意或技术检查通过，不能代替整体认可。分层 PSD 只在当前工具实际支持时交付。</p></section>
+
+        <section id="example" aria-labelledby="example-title"><h2 id="example-title">用已有案例了解对照怎么看</h2><p>下面是蕾姆案例已有原片与当前 v21 成片的网页预览。当前成片将原箱景替换为大厅背景，取景和内容发生变化；两图按同一高度完整展示，用于观察整体效果。</p><div class="comparison"><figure><div class="photo-frame"><a class="photo-link" href="assets/rem-source.jpg" data-lightbox data-caption="蕾姆 · 已有原片网页预览"><img src="assets/rem-source.jpg" alt="蕾姆案例原片，人物坐在箱景前，背景与画面边缘存在干扰" loading="lazy"></a><span class="photo-hint">点击放大</span></div><figcaption><strong>已有原片</strong><span>源图预览</span></figcaption></figure><figure><div class="photo-frame"><a class="photo-link" href="assets/rem-final.jpg" data-lightbox data-caption="蕾姆 · 当前成片 v21 网页预览"><img src="assets/rem-final.jpg" alt="蕾姆当前 v21 成片，人物精修并使用大厅背景" width="1280" height="1600" loading="lazy"></a><span class="photo-hint">点击放大</span></div><figcaption><strong>当前成片</strong><span>v21</span></figcaption></figure></div><p><a href="rem.html">打开蕾姆案例，查看处理重点与版本状态 →</a></p><div class="note"><p>这里展示已有案例文件，没有模拟会话截图，也没有重新生成或精修照片。网页预览长边最多 1600 像素，不能代表实际交付终稿的原始分辨率；本页示例不是你的第一张照片的执行结果。</p></div></section>
+
+        <section id="tools" aria-labelledby="tools-title"><h2 id="tools-title">工具按执行路线准备</h2><p>Codex 负责分析、选路、调用工具和验收，不要求每张照片同时使用全部后端。先确认你当前应用里哪些工具真实可用，再选择对应路线。</p><div class="table-wrap"><table class="table"><thead><tr><th scope="col">能力或工具</th><th scope="col">什么时候需要</th><th scope="col">实际边界</th></tr></thead><tbody><tr><td>文件读取与图像查看</td><td>源图分析、草图沟通和成片复核</td><td>必须能读到本次照片和输出文件。</td></tr><tr><td>内置图像编辑</td><td>当前应用支持时，可独立承担生成编辑路线</td><td>候选仍要检查；是否采用整图、局部融合或仅作参考，依实际结果决定。</td></tr><tr><td>Qwen</td><td>可选生成后端</td><td>模型、程序、资源和连接由当前环境提供；本包不附模型或账户。没有 Qwen 时，可使用可用的内置图像编辑。</td></tr><tr><td>Photoshop 与可执行连接</td><td>原生 PS 精修、精确局部调整或分层 PSD 交付</td><td>需能执行 ExtendScript。没有 PS 时仍可使用其他可用编辑路线，交付其实际支持的栅格格式。</td></tr><tr><td>PowerShell / Python 3.11+</td><td>使用包内 PNG 检查 / 无损压缩脚本时</td><td>按需准备；包内没有自动身体识别或液化接口。自动主体蒙版另有可选依赖。</td></tr></tbody></table></div><p style="margin-top:22px">如果当前没有任何可执行图像编辑工具，Codex 可以继续看图诊断和方案说明；提示词、草图或方案不能作为修后成片交付。详细环境与依赖见 <a href="https://github.com/yeliannaa/natural-shaping/blob/main/natural-shaping/references/portability.md">移植说明</a>和 <a href="https://github.com/yeliannaa/natural-shaping#工具与能力边界">仓库能力边界</a>。</p></section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>自然美型 · natural-shaping　先看源图草图，确认后修图。</p><div class="footer-links"><a href="index.html#cases">真实案例</a><a href="shousisi.html">构图方案</a><a href="https://github.com/yeliannaa/natural-shaping">GitHub ↗</a></div></div></footer>
+</body>
+</html>
+
