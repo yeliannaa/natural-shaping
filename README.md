@@ -6,7 +6,7 @@
 
 A reusable **photo retouching agent skill** for Codex, focused on **portrait retouching** and **cosplay photo editing**. The workflow is defined in [`natural-shaping/SKILL.md`](natural-shaping/SKILL.md): source-based composition sketches, identity-preserving refinement and visual quality checks, with **Photoshop ExtendScript (JSX)** helpers. Codex chooses among the tools available in your environment: built-in image generation/editing can run the editing route without Qwen; Qwen is an optional backend, and Photoshop enables precise local work and layered delivery when available.
 
-[安装与使用](#安装与使用) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [10 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
+[安装与使用](#安装与使用) · [调用链与分工](#调用链与分工) · [缺少工具时如何继续](#缺少工具时如何继续) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [10 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
 
 ## 能做什么
 
@@ -18,6 +18,54 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 | 道具与验收 | 联看手、衣带、球拍等完整连接；查新增损伤、原尺寸细节与实际交付文件 |
 
 包内提供方法、参考图和辅助脚本。修图效果取决于执行工具与实际验收；不包含像素蛋糕算法、Photoshop 软件或生图模型。
+
+## 调用链与分工
+
+**Codex 负责主导整条流程**：分析照片、展示构图与美型方案、准备工具输入、调用当前可用工具、查看实际结果并验收。Qwen 与内置图像编辑是可选生成路线，PS／局部编辑工具用于精确调整和按需融合；无需每张照片都调用全部工具。
+
+```mermaid
+flowchart TD
+    A["用户提供原片、目标与保存位置"] --> B["Codex 拆解构图、美型与保护关系"]
+    B --> C["展示源图草图，用户确认本图范围"]
+    C --> D{"Codex 按问题与实际能力选路"}
+    D --> E["PS／可用局部工具精修"]
+    D --> F["Qwen 或内置图像编辑生成候选"]
+    F --> G["Codex 查看候选，判断收益与损伤"]
+    G --> H["整图采用／局部融合／参考原图重做／退回稳定版"]
+    H --> I["Codex 检查实际成片与完整连接"]
+    E --> I
+    I --> J["对照展示与实际文件交付"]
+    J --> K["用户认可后记录终稿"]
+    I -. "需返修：按停止条件换方法" .-> D
+```
+
+同一已确认方案内的局部返修沿用有效确认；新图、完整重修或新增构图／重建范围按 [SKILL.md](natural-shaping/SKILL.md) 执行对应草图确认。图中每条编辑路线都以工具真实可用为前提。
+
+| 环节 | 谁负责 | 分工与采用条件 |
+|---|---|---|
+| 构图与整体美型判断 | Codex 主导，用户确认方向 | 联看脸型五官、假发颈肩、胸腰髋和腿脚；先解释收益、保护点与推断范围，不只处理最后被指出的一处 |
+| 精确肤质、光色与比例调整 | Codex 调用 PS／当前可用的局部编辑工具 | 分开处理纹理、明暗、颜色和几何；保留角色妆造、关节、衣装与握点，按本图实际收益决定强度 |
+| 补光、美型探索、复杂修复与补全候选 | Codex 调用 Qwen 或内置图像编辑 | 使用真实原图与必要参考；生成结果仍需检查，提示词不保证选区外像素或身份不变 |
+| 采用与收尾 | Codex 判断，局部工具按能力执行 | 整图通过才整图采用；局部有益且能可靠对齐时融合；只有方向有价值时参考原图重做；不合格则退回稳定版 |
+| 成片验收与交付 | Codex 负责检查和保存，用户确认终稿 | 查目标、美型、妆造、原尺寸细节、完整连接和实际文件；技术检查不等于用户认可，仅局部认可不算全图接受 |
+
+详细判断见 [美型分工](natural-shaping/references/portrait-beauty.md#美型的判断与执行分工)、[引擎与候选采用](natural-shaping/references/cos-retouch-engines.md#codex-主导与可选生成后端)及 [生成验收](natural-shaping/references/quality-review.md#生成候选的采用检查)。
+
+## 缺少工具时如何继续
+
+所有路线仍由 Codex 主导，并使用同样的目标与验收标准。降级只选择当前能实际执行的方法；做不到的目标记为受限，不能用弱处理替代已要求的精修后宣称完成。
+
+| 当前环境／缺少的能力 | 由谁接替执行 | 可以继续做什么与交付边界 |
+|---|---|---|
+| 没有 Qwen，或 Qwen 不可调用／资源不足 | Codex 调用可用且获授权的内置图像编辑；有 PS 时继续局部精修 | 仍可生成与评估候选，不要求安装 Qwen 或本地 GPU；实际型号不可见时记“未知” |
+| 没有内置图像编辑，但 Qwen 已接入可用 | Codex 调用已获授权的 Qwen；有局部工具时按需收尾 | 候选使用同样验收标准，Qwen 能出图不代表自动保住妆造、结构或原片细节 |
+| 没有 PS，但有内置编辑或 Qwen | Codex 调用现有生成／其他可用栅格编辑工具 | 交付实际可用的栅格成片；局部融合须有真实合成能力，不承诺分层 PSD 或原生细节完全保留 |
+| Qwen 与 PS 都没有，但内置编辑可用 | Codex 直接调用内置图像编辑 | 可以独立完成候选编辑、复核与栅格交付；不需要另装原作者的个人 skill |
+| 没有任何生成后端，但 PS／局部编辑工具可用 | Codex 使用已授权的原生编辑路线 | 继续肤质、光色、可控几何与真实纹理修补；缺失内容无法可靠完成时保留稳定版并说明限制 |
+| 没有任何实际图像编辑能力 | Codex 只进行看图诊断与方案说明 | 可继续分析；不能把提示词、方案或草图称为修后成片，不能虚构文件和分层结果 |
+| 用户明确只用某个后端，而它不可用 | Codex 核实状态，说明缺口并确认可接受替代 | 不擅自换用内置或云端；未受影响的只读分析可继续，依赖该后端的编辑等待恢复或新选择 |
+
+表中的工具必须在当前应用真实可调用并获得相应授权。安装 skill 不会安装模型、提供账号或替用户接入工具。缺少后端时不重复确认同一编辑范围；用户明确限定路线时遵循其选择。首次能力检查与路径约定见 [移植说明](natural-shaping/references/portability.md)。
 
 ## 构图草图｜Composition sketches
 
@@ -78,7 +126,7 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 
 ## 安装与使用
 
-下载或克隆本仓库，将整个 [`natural-shaping/`](natural-shaping/) 文件夹放入目标应用支持的技能目录，保持内部目录结构；不要只复制 `SKILL.md`。不需要另外安装原作者的其他修图 skill。首次使用先阅读[移植说明](natural-shaping/references/portability.md)，确认应用已识别技能，再用合成小图测试实际要用的执行路线。
+下载或克隆本仓库，将整个 [`natural-shaping/`](natural-shaping/) 文件夹放入目标应用支持的技能目录，保持内部目录结构；不要只复制 `SKILL.md`。不需要另外安装原作者的其他修图 skill。首次使用先阅读[移植说明](natural-shaping/references/portability.md)，确认应用已识别技能并检查实际工具入口；选择 PS／随包脚本路线时再用合成小图测试会用到的功能。
 
 也可以通过 [Vercel Skills CLI](https://github.com/vercel-labs/skills) 安装。以下固定版本命令需要 Node.js 22.20.0 或更高版本；先列举仓库中的技能：
 
