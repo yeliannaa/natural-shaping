@@ -1,0 +1,604 @@
+{
+  "_portability": {
+    "path_base": "skill-root"
+  },
+  "schema_version": 1,
+  "created_utc": "2026-10-10T03:46:05.735648+00:00",
+  "status": "passed_with_disclosed_native_png_profile_limit",
+  "photoshop": "21.2.9",
+  "runtime": "1.0.7",
+  "scripts": [
+    {
+      "file": "scripts/ps_retouch_runtime.jsx",
+      "sha256": "7a21789c39aaffe5bc33ba4044b41d8ba0dcc6c68d221c64a1ce92c50a5d8623"
+    },
+    {
+      "file": "scripts/ps_liquify_runtime.jsx",
+      "sha256": "4615f833845119c6e795f9e5a3995f009eb7f4d4685c76a5f4792cef46fb6b9d"
+    },
+    {
+      "file": "scripts/build_liquify_mesh.py",
+      "sha256": "3aec4c000a647b71193b94aaa619080e709a407fd6118c9484f3dc6cb6d32d3d"
+    },
+    {
+      "file": "scripts/verify_native_png.ps1",
+      "sha256": "64c25c12baa83e631b2847f4ba7897a9a58926d73fc541b0129540c03bb09ba8"
+    }
+  ],
+  "scope": "Actual Photoshop script execution plus decoded 8/16-bit PNG comparisons. Synthetic layered grids, RGBA alpha source and an isolated existing portrait copy; no accepted final was edited.",
+  "real_photoshop_checks": [
+    {
+      "case": "probe_is_readonly",
+      "passed": true
+    },
+    {
+      "case": "identity_8",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 379,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "shift_8",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 445,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "snapshot_above_existing_layers_8",
+      "passed": true
+    },
+    {
+      "case": "continuation_rolls_back_8",
+      "passed": true,
+      "expected_rejection": "Unsupported operation: unsupported_fail",
+      "rollback": {
+        "attempted": true,
+        "succeeded": true,
+        "error": null
+      },
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 411,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "layered_native_psd_reopens_8",
+      "passed": true,
+      "saved_master": {
+        "width": 512,
+        "height": 512,
+        "bits": "BitsPerChannelType.EIGHT",
+        "profile": "sRGB IEC61966-2.1",
+        "layers": 4
+      }
+    },
+    {
+      "case": "identity_16",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 451,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "shift_16",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 398,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "snapshot_above_existing_layers_16",
+      "passed": true
+    },
+    {
+      "case": "continuation_rolls_back_16",
+      "passed": true,
+      "expected_rejection": "Unsupported operation: unsupported_fail",
+      "rollback": {
+        "attempted": true,
+        "succeeded": true,
+        "error": null
+      },
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 434,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "layered_native_psd_reopens_16",
+      "passed": true,
+      "saved_master": {
+        "width": 512,
+        "height": 512,
+        "bits": "BitsPerChannelType.SIXTEEN",
+        "profile": "Adobe RGB (1998)",
+        "layers": 4
+      }
+    },
+    {
+      "case": "guarded_mesh",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 424,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "roi_mask_and_opacity",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 411,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "black_mask",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 427,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "rejects_before_copy_0",
+      "passed": true,
+      "expected_rejection": "NativeLiquify: Only measured LqMe mesh v4 with yfqLhseM magic is supported"
+    },
+    {
+      "case": "rejects_before_copy_1",
+      "passed": true,
+      "expected_rejection": "NativeLiquify: Truncated mesh integer"
+    },
+    {
+      "case": "rejects_before_copy_2",
+      "passed": true,
+      "expected_rejection": "NativeLiquify: Mesh header, canvas dimensions or mesh dimensions do not match the measured v4 format"
+    },
+    {
+      "case": "rejects_before_copy_3",
+      "passed": true,
+      "expected_rejection": "NativeLiquify: mergedVisible does not allow parent: its snapshot must remain at the document root above all visible content"
+    },
+    {
+      "case": "rejects_before_copy_4",
+      "passed": true,
+      "expected_rejection": "NativeLiquify: Unsupported liquifyFace field: eyeDistance"
+    },
+    {
+      "case": "missing_module_refuses_native_op",
+      "passed": true,
+      "expected_rejection": "NativeLiquify module is not loaded; load ps_liquify_runtime.jsx before native liquify operations"
+    },
+    {
+      "case": "transparent_merged_source_refused",
+      "passed": true,
+      "expected_rejection": "NativeLiquify: mergedVisible requires a visible root-level Photoshop Background at normal 100 percent without masks or effects; canvas bounds do not prove alpha opacity"
+    },
+    {
+      "case": "target_replacement_alpha_identity",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 376,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "target_hides_original_donor",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyMesh",
+          "commandExecuted": true,
+          "filterMs": 376,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "face_control_zero",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyFace",
+          "commandExecuted": true,
+          "filterMs": 633,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "face_control_minus01",
+      "passed": true,
+      "native_commands": [
+        {
+          "type": "liquifyFace",
+          "commandExecuted": true,
+          "filterMs": 656,
+          "pixelEffectUnverified": true
+        }
+      ]
+    },
+    {
+      "case": "source_state_unchanged_0",
+      "passed": true
+    },
+    {
+      "case": "source_state_unchanged_1",
+      "passed": true
+    },
+    {
+      "case": "user_documents_preserved",
+      "passed": true
+    }
+  ],
+  "native_pixel_checks": [
+    {
+      "name": "identity-8",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "shift-8",
+      "passed": true,
+      "expectedEffect": "nonzero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 4473,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": [
+        159,
+        132,
+        354,
+        384
+      ],
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "hidden-shift-8",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "source-preserved-8",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "rollback-8",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "identity-16",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 16,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": true,
+      "colorDefinition": "embedded RGB ICC",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "shift-16",
+      "passed": true,
+      "expectedEffect": "nonzero",
+      "actualDepth": 16,
+      "actualChannels": 3,
+      "changedPixelCount": 7500,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": [
+        150,
+        132,
+        354,
+        384
+      ],
+      "embeddedRgbIcc": true,
+      "colorDefinition": "embedded RGB ICC",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "hidden-shift-16",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 16,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": true,
+      "colorDefinition": "embedded RGB ICC",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "source-preserved-16",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 16,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": true,
+      "colorDefinition": "embedded RGB ICC",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "rollback-16",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 16,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": true,
+      "colorDefinition": "embedded RGB ICC",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "guarded-protection",
+      "passed": true,
+      "expectedEffect": "nonzero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 4073,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": [
+        159,
+        132,
+        354,
+        384
+      ],
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "roi-mask",
+      "passed": true,
+      "expectedEffect": "nonzero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 4473,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": [
+        159,
+        132,
+        354,
+        384
+      ],
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "black-mask",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "alpha-target-identity",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 8,
+      "actualChannels": 4,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 262144
+    },
+    {
+      "name": "alpha-donor-restored",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 8,
+      "actualChannels": 4,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": false,
+      "colorDefinition": "unspecified",
+      "nonopaquePixelCount": 262144
+    },
+    {
+      "name": "face-zero",
+      "passed": true,
+      "expectedEffect": "zero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 0,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": null,
+      "embeddedRgbIcc": true,
+      "colorDefinition": "embedded RGB ICC",
+      "nonopaquePixelCount": 0
+    },
+    {
+      "name": "face-minus01",
+      "passed": true,
+      "expectedEffect": "nonzero",
+      "actualDepth": 8,
+      "actualChannels": 3,
+      "changedPixelCount": 319988,
+      "outsideAllowedPixelCount": 0,
+      "changedBoundsExclusive": [
+        1321,
+        1188,
+        2123,
+        2148
+      ],
+      "embeddedRgbIcc": true,
+      "colorDefinition": "embedded RGB ICC",
+      "nonopaquePixelCount": 0
+    }
+  ],
+  "mesh_builder_checks": [
+    {
+      "case": "identity",
+      "bytes": 576,
+      "minimum_jacobian": 1.0,
+      "ok": true
+    },
+    {
+      "case": "dx4",
+      "bytes": 23488,
+      "minimum_jacobian": 0.9450766146183014,
+      "ok": true
+    },
+    {
+      "case": "guarded",
+      "bytes": 22144,
+      "minimum_jacobian": 0.5114136934280396,
+      "ok": true
+    },
+    {
+      "case": "waist8",
+      "bytes": 14800,
+      "minimum_jacobian": 0.8974197506904602,
+      "ok": true
+    },
+    {
+      "case": "invalid-0",
+      "ok": true,
+      "rejected": "Requested field contains a sampled fold; reduce or redesign the actual regions"
+    },
+    {
+      "case": "invalid-1",
+      "ok": true,
+      "rejected": "Verified v4 meshes require integer dimensions 4..16384 divisible by four; use another verified route for other dimensions"
+    },
+    {
+      "case": "invalid-2",
+      "ok": true,
+      "rejected": "Requested field contains a sampled fold; reduce or redesign the actual regions"
+    },
+    {
+      "case": "invalid-3",
+      "ok": true,
+      "rejected": "Protected ROI must be nonempty and within the canvas"
+    },
+    {
+      "case": "size_limit_branch",
+      "ok": true,
+      "rejected": "Mesh exceeds the native runtime 128 MiB input limit; reduce the supported canvas or field",
+      "method": "exercise identical guard with temporary 1024-byte limit, restore original 128 MiB constant"
+    }
+  ],
+  "native_png_profile_limit": {
+    "srgb8_synthetic_png": "Photoshop native save omitted ICC and other color definition chunks; pixel comparisons used an explicit exception, not a profile pass.",
+    "strict_missing_icc_control": {
+      "status": "passed",
+      "exitCode": 0,
+      "error": null
+    },
+    "adobe_rgb16_synthetic_png": "Embedded RGB ICC bytes were present and equal to the before PNG; all channels compared at true 16-bit depth.",
+    "portrait_rgb8_png": "Embedded RGB ICC present and equal before/after."
+  },
+  "protected_user_documents": {
+    "count": 5,
+    "open_names_and_active_document_preserved": true
+  },
+  "review_status": "technical_scope_only_not_photo_aesthetic_acceptance",
+  "limitations": [
+    "Only Photoshop 21.2.9 was actually tested.",
+    "Only faceWidth was exercised; no multi-face selector or other face control is established.",
+    "RGB16 mesh was tested; faceWidth was exercised on RGB8, not RGB16.",
+    "Pixel scope, zero controls and rollback do not establish aesthetic improvement.",
+    "Mesh source hash binding remains the caller responsibility; JSX validates current dimensions and format.",
+    "Target replacement tested on an ungrouped semi-transparent full-canvas donor; arbitrary parent changes were not tested.",
+    "Rollback failure logging was checked in isolated mocks; actual Photoshop rollback success was measured."
+  ]
+}

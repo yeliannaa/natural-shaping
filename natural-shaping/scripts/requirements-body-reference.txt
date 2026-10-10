@@ -1,0 +1,6 @@
+# Optional body-reference environment; direct versions measured together.
+# No model weights are included or downloaded by build_body_reference.py.
+# Transitive dependency freeze belongs in per-run evidence, not this skill.
+mediapipe==1.1.0
+numpy==2.5.3
+pillow==12.3.0

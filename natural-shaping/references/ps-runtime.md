@@ -76,6 +76,11 @@ that matches exactly one layer; duplicate names fail rather than choosing one.
 
 A continuation failure attempts to roll the working document's history back to
 the job's starting state. A failed initial job closes its own working duplicate.
+Version 1.0.7 records `rollback.attempted/succeeded/error` and `cleanupErrors`
+separately from the original operation error. A failed rollback means the work
+document may retain partial changes: stop continuation, inspect the actual
+document and recover the saved stable source. Do not report a successful undo
+from terminal `failed` alone.
 Temporary preview/export/mask documents are closed in cleanup, and original
 active document, ruler units and dialog mode are restored. User documents are
 not closed. A process kill or Photoshop crash can prevent `finally` cleanup;
@@ -90,6 +95,8 @@ inspect the manifest/session rather than assuming completion.
 | `color` | `name`, `rgb: [r,g,b]` | `parent`, ROI/feather/opacity, `clipTo` selector; creates editable solid-color layer in COLOR blend mode, clipped directly above specified donor when supplied |
 | `mask` | `target`, `kind: white/black/roi` | ROI/feather; target must not already have a user mask |
 | `importMask` | `target`, `path` | Grayscale image matching canvas dimensions exactly; imported through an alpha channel and selection, preserving main RGB channels; refuses an already open input mask or pre-existing target mask |
+| `liquifyFace` | `name`, `faceWidth` | Requires loaded native module; only the measured faceWidth control, not a complete face API |
+| `liquifyMesh` | `name`, `meshPath` | Requires loaded native module; measured inline `LqMe` v4 format, matching current full-canvas geometry |
 | `checks` | `name` | Creates hidden group with gray COLOR layer and contrast curve; caller must keep this group hidden for ordinary preview/final export |
 | `preview` | `file` ending `.png` | ROI and `maxDimension` (64–4096; default 1200), never upscales; merged temporary duplicate is cropped/resized/converted to sRGB8 |
 | `checkPreview` | `target` check group, `file` | Same preview options; group temporarily shown and restored |
@@ -105,6 +112,100 @@ flatten-master, whole-body transformation or mask replacement operation.
 An imported automatic mask supplies visible subject separation. Check hair,
 lace, contact edges and retained props before adopting it. It cannot recover
 body or clothing hidden behind a box.
+
+## Optional native Liquify in 1.0.7
+
+Read this section only when the approved task benefits from native geometry.
+Load `scripts/ps_liquify_runtime.jsx` **before** this runtime. Other operations
+remain available without that optional module. A `probe` is read-only and
+reports the loaded API; it never invokes Liquify and cannot prove that pixels
+will move on this host or photo.
+
+The measured routes are `executeAction("LqFy", ...)` with `faceMesh` controlling
+only `faceWidth`, and inline binary `LqMe` mesh v4. Other face controls, multi-face
+selection, `.msh` file playback through `LqMD`, arbitrary recorded actions and
+other Photoshop versions are not established by these tests. Photoshop may
+return success with no pixel effect. The value `faceWidth: -0.1` is an engine
+parameter, **not** a measured 10% face-width reduction or a beauty preset.
+
+```javascript
+function runReviewedGeometry(skillRootPath, jobRootPath, meshFolderPath, documentName, meshPath) {
+    $.evalFile(new File(skillRootPath + "/scripts/ps_liquify_runtime.jsx"));
+    $.evalFile(new File(skillRootPath + "/scripts/ps_retouch_runtime.jsx"));
+    return RetouchRuntime.run({
+        jobId: "reviewed_geometry_01", mode: "edit", documentName: documentName,
+        outputDir: jobRootPath, allowlistedOutputDirs: [jobRootPath],
+        allowlistedInputDirs: [meshFolderPath],
+        operations: [{type: "liquifyMesh", name: "Reviewed_Local_Shape", meshPath: meshPath}]
+    });
+}
+```
+
+Pass fresh coordinates and a mesh made for the actual current source. This
+example does not choose a shape or create a mesh. For `liquifyFace`, replace the
+operation with `{type: "liquifyFace", name: "Reviewed_Face", faceWidth: amount}`;
+choose `amount` from a justified local trial and verify the actual image.
+
+Both operations accept `source: "mergedVisible"` (default) or `"target"`:
+
+- **mergedVisible** snapshots the current visible composition onto a new top
+  level pixel layer above all existing content. It requires a visible document
+  root Photoshop **Background** layer at normal 100% opacity/fill without masks
+  or effects, which supplies a truly opaque base. Full-canvas bounds alone do
+  not prove opaque pixels. `parent` and `target` are refused on this route.
+  Subsequent snapshots bake visible earlier changes; record this dependency
+  rather than treating all geometry layers as independent edits of the source.
+- **target** requires a named or identified normal 100% full-canvas ordinary
+  pixel layer, without masks, effects or clipping. It duplicates at the donor's
+  original stack position, then hides the donor as a reversible replacement.
+  The original group stays in place unless an explicit `parent` is supplied.
+  Only no mask or `mask: "white"`, 100% opacity and visible output are supported;
+  local effects belong in the mesh. This also avoids double compositing alpha.
+  Compare by hiding the result **and restoring donor visibility**; hiding only
+  the replacement is not a valid before view. Moving to a different parent can
+  change group compositing and must pass separate visual/pixel QA.
+
+Merged output may use `opacity`, `visible`, and `mask: "white"/"black"/"roi"`;
+ROI requires `roi: [left,top,right,bottom]` and optional bounded `feather`.
+The filter receives the whole canvas with no active selection; the mask is
+created afterwards. Feather is a selection setting, **not** a guarantee that
+all changed pixels lie inside the rectangle. Inspect the actual support and
+protection regions after the final effective opacity and mask are applied.
+
+Mesh input must be a literal absolute local `.msh` file in the job directory or
+an explicit existing `allowlistedInputDirs` root. Parent traversal, aliases,
+UNC/URI paths, unknown headers, canvas mismatch, malformed row runs, non-finite
+floats, trailers and files above 128 MiB are refused. Geometry in this measured
+v4 path requires current width and height divisible by four. Other geometry
+uses another actually verified method; do not resize the mother file to satisfy
+this format. A sidecar source hash is a caller binding, not automatically
+verified by the JSX parser.
+
+`scripts/build_liquify_mesh.py` uses only Python standard library. Its `--spec`
+JSON contains `width`, `height`, manually reviewed `regions` with `center`,
+`radius`, `sample_offset_pixels`, optional `protected_rois` and `source_sha256`.
+`--output` names a new task `.msh`; a `.json` sidecar is written alongside it.
+Do not write artifacts to the skill or feed pose keypoints directly as control
+regions. The measured grid is four source pixels; displacements are inverse
+sampling offsets, so visible movement has the opposite direction. All four cell
+corner Jacobians are checked after float32 quantization. A positive result is
+a numerical fold check, not anatomy, protection or aesthetic acceptance.
+
+`manifest.nativeLiquify` records parameters/mesh metadata, source dependencies,
+style/mask settings, command timing and outcome. `commandExecuted` and runtime
+`complete` are execution statuses; `pixelEffectUnverified` stays explicit.
+Check actual output for **effect, scope and aesthetic benefit**. First deployment
+or code change also needs zero controls, nonzero effect, saved depth/profile,
+layer preservation and failure/rollback checks. Each photo still needs visual
+review of its affected areas and connected protection regions: as applicable,
+face/neck, chest/waist/hips, joints, fingers, costume and straight props. A local
+repair does not reopen unrelated full-body retouching.
+
+The measured evidence is packaged in [native validation](../assets/evidence/native-liquify-validation.json).
+Its environment and exact script hashes define the tested scope. Missing module,
+unsupported host or a failed applicable test falls back to an existing verified
+PS geometry method; use a generation candidate only when justified by the
+approved problem. Neither native Liquify nor body landmarks fill hidden anatomy.
 
 ## Final export example
 

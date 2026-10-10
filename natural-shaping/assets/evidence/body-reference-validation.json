@@ -1,0 +1,172 @@
+{
+  "_portability": {"path_base": "skill-root"},
+  "schema_version": 1,
+  "created_utc": "2026-10-10T03:36:08+00:00",
+  "status": "passed_with_visual_review_required",
+  "review_status": "needs_visual_review",
+  "helper": "scripts/build_body_reference.py",
+  "helper_sha256": "e68c7db9192394f28048c70c684fccd21f0b4e6e7e0e489d674e680dc842cb5c",
+  "tested_environment": {
+    "python": "3.13.2",
+    "mediapipe": "1.1.0",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  },
+  "tested_local_model": {
+    "file_name": "pose_landmarker_full.task",
+    "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1",
+    "loading": "explicit_local_file_bytes",
+    "delegate": "CPU"
+  },
+  "real_inference_runs": [
+    {
+      "test_kind": "full_source",
+      "source_sha256": "bd687d744933acf99b90ed7e3dce522e7ba382059f49cc91acb4bae79a88dc54",
+      "source_size": [
+        3072,
+        4080
+      ],
+      "encoded_size": [
+        3072,
+        4080
+      ],
+      "exif_orientation": 0,
+      "inference_size": [
+        964,
+        1280
+      ],
+      "preview_size": [
+        964,
+        1280
+      ],
+      "crop_size": [
+        3072,
+        4080
+      ],
+      "detected_poses": 1,
+      "landmark_count": 33,
+      "selection_method": "explicit_subject_anchor",
+      "selected_pose": 0,
+      "maximum_coordinate_mapping_error_px": 0.0,
+      "outside_source_landmark_count": 0,
+      "outside_inference_landmark_count": 0,
+      "upper_display_band_landmark_count": 26,
+      "all_pose_and_point_review_statuses": [
+        "needs_visual_review"
+      ],
+      "source_hash_before_after_current_equal": true,
+      "preview_rgba_overlay_size_verified": true,
+      "segmentation_requested": true,
+      "visual_inspection_performed": true,
+      "anatomical_landmarks_verified": false
+    },
+    {
+      "test_kind": "cropped_source",
+      "source_sha256": "d0ba08af1a6066fc3ed4454b2deed409cbbdf5e2508079497ec2e3fd05416ea5",
+      "source_size": [
+        3072,
+        4080
+      ],
+      "encoded_size": [
+        3072,
+        4080
+      ],
+      "exif_orientation": 0,
+      "inference_size": [
+        606,
+        1280
+      ],
+      "preview_size": [
+        964,
+        1280
+      ],
+      "crop_size": [
+        1800,
+        3800
+      ],
+      "detected_poses": 1,
+      "landmark_count": 33,
+      "selection_method": "explicit_subject_anchor",
+      "selected_pose": 0,
+      "maximum_coordinate_mapping_error_px": 0.0,
+      "outside_source_landmark_count": 7,
+      "outside_inference_landmark_count": 8,
+      "upper_display_band_landmark_count": 15,
+      "all_pose_and_point_review_statuses": [
+        "needs_visual_review"
+      ],
+      "source_hash_before_after_current_equal": true,
+      "preview_rgba_overlay_size_verified": true,
+      "segmentation_requested": false,
+      "visual_inspection_performed": true,
+      "anatomical_landmarks_verified": false
+    }
+  ],
+  "checks": [
+    {
+      "test": "help_without_optional_dependencies",
+      "passed": true,
+      "python": "3.8.8",
+      "site_disabled": true,
+      "optional_packages_visible": false,
+      "exit_code": 0
+    },
+    {
+      "test": "missing_explicit_local_model",
+      "passed": true,
+      "exit_code": 4,
+      "manifest_status": "failed",
+      "no_download": true
+    },
+    {
+      "test": "missing_optional_dependencies",
+      "passed": true,
+      "exit_code": 3,
+      "manifest_status": "failed",
+      "no_install": true
+    },
+    {
+      "test": "existing_output_directory_refused",
+      "passed": true,
+      "exit_code": 7,
+      "existing_artifact_hashes_unchanged": true
+    },
+    {
+      "test": "actual_crop_and_resize_mapping",
+      "passed": true,
+      "uses_actual_dimensions": true,
+      "coordinates_not_clamped": true
+    },
+    {
+      "test": "source_hash_before_after_validation",
+      "passed": true
+    }
+  ],
+  "pure_function_checks": {
+    "kind": "in_memory_boundary_checks_without_model_inference",
+    "passed": true,
+    "checks": [
+      "multiple_detected_poses_without_selection_remain_null",
+      "unique_detection_remains_unverified",
+      "equal_anchor_distance_remains_null",
+      "anchor_outside_crop_remains_null",
+      "negative_source_coordinates_preserved",
+      "high_model_score_remains_needs_visual_review"
+    ],
+    "limitation": "These pure-function checks are not additional real model detections."
+  },
+  "visual_findings": [
+    "Seated pose, crossed limbs, costume and occlusion leave some green body points anatomically uncertain.",
+    "Cropped inference can extrapolate lower-body points beyond the crop and beyond the full source; out-of-source points were preserved in JSON and omitted from drawings.",
+    "The optional segmentation probability reference includes costume and parts of a prop, so it is not a precise body/anatomy mask."
+  ],
+  "score_interpretation": "visibility/presence and solid-green/amber display bands are model scores only; high scores do not establish true joint positions or edit safety",
+  "coordinate_basis": "full_source_after_exif_transpose; crop LTRB right/bottom exclusive; actual input and preview dimensions recorded",
+  "limitations": [
+    "Exactly two real model runs were inspected, both with one detected pose and explicit source-pixel anchors.",
+    "Real multi-pose subject selection was not exercised; only the null-selection/tie rules were checked with synthetic in-memory model outputs.",
+    "Both real source EXIF orientation values were 0; rotated EXIF orientations were not exercised by these real runs.",
+    "Successful runtime validation does not establish true anatomical positions, complete subject detection, identity matching, or precision segmentation."
+  ],
+  "portability": "Summary only: no absolute machine paths, raw photos, per-photo anchors or individual point coordinates are bundled here."
+}

@@ -1,7 +1,7 @@
 /* Photoshop 2020 / ExtendScript ES3. Load once, then RetouchRuntime.run(plan).
    No arbitrary string execution; default edits occur on an owned working copy. */
 var RetouchRuntime = (function () {
-    var VERSION = "1.0.6", MARKER = "__RET_RUNTIME_WORK__";
+    var VERSION = "1.0.7", MARKER = "__RET_RUNTIME_WORK__";
     function c(s) { return charIDToTypeID(s); }
     function s(v) { return stringIDToTypeID(v); }
     function fail(m) { throw new Error(m); }
@@ -16,6 +16,7 @@ var RetouchRuntime = (function () {
     }
     function iso() { var d = new Date(); function p(n) { return n < 10 ? "0" + n : String(n); } return d.getUTCFullYear() + "-" + p(d.getUTCMonth() + 1) + "-" + p(d.getUTCDate()) + "T" + p(d.getUTCHours()) + ":" + p(d.getUTCMinutes()) + ":" + p(d.getUTCSeconds()) + "Z"; }
     function write(f, value) { f.encoding = "UTF8"; if (!f.open("w")) fail("Cannot write " + f.fsName); try { f.write(json(value)); } finally { f.close(); } }
+    function cleanupFailure(ctx, phase, e) { ctx.manifest.cleanupErrors.push({ phase: phase, message: String(e.message), line: e.line || null }); }
     function path(p) {
         if (typeof p !== "string") fail("Absolute path without '..' required");
         var normalized = p.split("\\").join("/"), drive = normalized.charAt(0).toUpperCase(), parts = normalized.split("/"), i;
@@ -92,6 +93,7 @@ var RetouchRuntime = (function () {
     function perform(d, op, ctx) {
         var l, p; rgb(d); d.selection.deselect();
         if (op.type === "group") { unique(d, op.name); l = d.layerSets.add(); l.name = op.name; putParent(d, l, op.parent); if (op.mask) { if (op.mask !== "black" && op.mask !== "white" && op.mask !== "roi") fail("Invalid mask kind"); mask(d, l, op.mask, op.roi, op.feather); } }
+        else if (op.type === "liquifyFace" || op.type === "liquifyMesh") { if (typeof NativeLiquify === "undefined" || typeof NativeLiquify.apply !== "function") fail("NativeLiquify module is not loaded; load ps_liquify_runtime.jsx before native liquify operations"); l = NativeLiquify.apply(d, op, ctx); }
         else if (op.type === "curve") l = curve(d, op);
         else if (op.type === "color") l = color(d, op);
         else if (op.type === "mask") { l = target(d, op.target); if (op.kind !== "black" && op.kind !== "white" && op.kind !== "roi") fail("Invalid mask kind"); mask(d, l, op.kind, op.roi, op.feather); }
@@ -108,26 +110,41 @@ var RetouchRuntime = (function () {
         path(plan.outputDir); var source = docByName(plan.documentName), before = info(source), original = app.activeDocument, oldDialogs = app.displayDialogs, oldUnits = app.preferences.rulerUnits, root = new Folder(plan.outputDir), allowed = false, i, started = new Date().getTime(), d = null, copied = false, history = null, error = null;
         if (!(plan.allowlistedOutputDirs instanceof Array)) fail("allowlistedOutputDirs required"); for (i = 0; i < plan.allowlistedOutputDirs.length; i++) if (path(root.fsName) === path(plan.allowlistedOutputDirs[i])) allowed = true; if (!allowed || root.alias) fail("outputDir is not an allowlisted directory");
         var dir = new Folder(root.fsName + "/" + plan.jobId); if (dir.exists) fail("Job directory exists: inspect manifest; do not resubmit same job"); if (!root.exists && !root.create()) fail("Cannot create outputDir"); if (!dir.create()) fail("Cannot create job directory");
-        var ctx = { id: plan.jobId, dir: dir, file: new File(dir.fsName + "/manifest.json"), temps: [], manifest: { version: VERSION, jobId: plan.jobId, status: "started", startedAt: iso(), source: before, workingDocument: null, stages: [], assets: [] } }; write(ctx.file, ctx.manifest);
+        var ctx = { id: plan.jobId, dir: dir, file: new File(dir.fsName + "/manifest.json"), allowlistedInputDirs: plan.allowlistedInputDirs, temps: [], manifest: { version: VERSION, jobId: plan.jobId, status: "started", startedAt: iso(), source: before, workingDocument: null, stages: [], assets: [], rollback: { attempted: false, succeeded: null, error: null }, cleanupErrors: [] } }; write(ctx.file, ctx.manifest);
         try {
             app.displayDialogs = DialogModes.NO; app.preferences.rulerUnits = Units.PIXELS;
-            if (plan.mode === "probe") ctx.manifest.probe = { photoshopVersion: app.version, documentCount: app.documents.length, runtime: VERSION };
+            if (plan.mode === "probe") { ctx.manifest.probe = { photoshopVersion: app.version, documentCount: app.documents.length, runtime: VERSION, nativeLiquify: typeof NativeLiquify !== "undefined" && typeof NativeLiquify.probe === "function" ? NativeLiquify.probe(source) : { loaded: false, commandExecuted: false } }; }
             else {
                 if (source.mode !== DocumentMode.RGB || (source.bitsPerChannel !== BitsPerChannelType.EIGHT && source.bitsPerChannel !== BitsPerChannelType.SIXTEEN)) fail("Editing supports RGB8/RGB16 only");
+                var ops = plan.operations || []; if (!(ops instanceof Array)) fail("operations must be array");
+                // Read-only native input checks run before creating a working copy.
+                // Target/parent names can refer to layers made by earlier stages, so
+                // their existence is checked again inside apply, before its snapshot.
+                for (i = 0; i < ops.length; i++) if (ops[i].type === "liquifyFace" || ops[i].type === "liquifyMesh") { if (typeof NativeLiquify === "undefined" || typeof NativeLiquify.validateInput !== "function" || typeof NativeLiquify.apply !== "function") fail("NativeLiquify module is not loaded; load ps_liquify_runtime.jsx before native liquify operations"); NativeLiquify.validateInput(source, ops[i], ctx); }
                 var setupStart = new Date().getTime(); app.activeDocument = source;
                 if (plan.reuseWorkingDocument === true) { if (layers(source, { name: MARKER }).length !== 1) fail("Continuation requires runtime-owned working document marker"); if (plan.protectedOriginalNames) for (i = 0; i < plan.protectedOriginalNames.length; i++) if (source.name === plan.protectedOriginalNames[i]) fail("Protected original document"); d = source; history = d.activeHistoryState; }
                 else { var workName = plan.workingDocumentName || "RT_" + plan.jobId; for (i = 0; i < app.documents.length; i++) if (app.documents[i].name === workName) fail("Working name is already open"); d = source.duplicate(workName, false); copied = true; app.activeDocument = d; var markers = layers(d, { name: MARKER }); if (markers.length > 1) fail("Ambiguous working document ownership markers"); var marker = markers.length === 1 ? markers[0] : d.layerSets.add(); marker.name = MARKER; marker.visible = false; }
                 ctx.manifest.setupElapsedMs = new Date().getTime() - setupStart;
                 app.activeDocument = d; rgb(d); d.selection.deselect(); ctx.manifest.workingDocument = d.name; ctx.manifest.status = "running"; write(ctx.file, ctx.manifest);
-                var ops = plan.operations || []; if (!(ops instanceof Array)) fail("operations must be array");
-                for (i = 0; i < ops.length; i++) { var st = { index: i, type: ops[i].type, name: ops[i].name || null, status: "running", startedAt: iso() }, tick = new Date().getTime(); ctx.manifest.stages.push(st); write(ctx.file, ctx.manifest); st.layer = perform(d, ops[i], ctx); invariant(d, before); st.elapsedMs = new Date().getTime() - tick; st.status = "complete"; write(ctx.file, ctx.manifest); }
+                for (i = 0; i < ops.length; i++) { var st = { index: i, type: ops[i].type, name: ops[i].name || null, status: "running", startedAt: iso() }, tick = new Date().getTime(); ctx.stageIndex = i; ctx.manifest.stages.push(st); write(ctx.file, ctx.manifest); st.layer = perform(d, ops[i], ctx); invariant(d, before); st.elapsedMs = new Date().getTime() - tick; st.status = "complete"; write(ctx.file, ctx.manifest); }
                 ctx.manifest.working = info(d); if (copied) invariant(source, before);
             }
         } catch (e) { error = e; ctx.manifest.error = { message: String(e.message), line: e.line || null }; if (ctx.manifest.stages.length) { var lastStage = ctx.manifest.stages[ctx.manifest.stages.length - 1]; if (lastStage.status === "running") lastStage.status = "failed"; } }
         finally {
-            while (ctx.temps.length) { try { ctx.temps.pop().close(SaveOptions.DONOTSAVECHANGES); } catch (closeError) { if (!error) error = closeError; } }
-            if (d) { try { app.activeDocument = d; d.selection.deselect(); rgb(d); if (error && !copied && history) d.activeHistoryState = history; if (copied && (error || plan.keepWorkingDocument === false)) d.close(SaveOptions.DONOTSAVECHANGES); } catch (cleanupError) { if (!error) error = cleanupError; } }
-            try { app.displayDialogs = oldDialogs; app.preferences.rulerUnits = oldUnits; app.activeDocument = original; } catch (restoreError) { if (!error) error = restoreError; }
+            while (ctx.temps.length) { try { ctx.temps.pop().close(SaveOptions.DONOTSAVECHANGES); } catch (closeError) { cleanupFailure(ctx, "temporaryDocumentClose", closeError); if (!error) error = closeError; } }
+            if (d) {
+                try { app.activeDocument = d; } catch (activateError) { cleanupFailure(ctx, "workingDocumentActivate", activateError); if (!error) error = activateError; }
+                try { d.selection.deselect(); rgb(d); } catch (selectionError) { cleanupFailure(ctx, "workingSelectionAndChannels", selectionError); if (!error) error = selectionError; }
+                if (error && !copied && history) {
+                    ctx.manifest.rollback.attempted = true;
+                    try { d.activeHistoryState = history; ctx.manifest.rollback.succeeded = true; }
+                    catch (rollbackError) { ctx.manifest.rollback.succeeded = false; ctx.manifest.rollback.error = { message: String(rollbackError.message), line: rollbackError.line || null }; cleanupFailure(ctx, "continuationRollback", rollbackError); }
+                }
+                if (copied && (error || plan.keepWorkingDocument === false)) { try { d.close(SaveOptions.DONOTSAVECHANGES); } catch (workingCloseError) { cleanupFailure(ctx, "workingDocumentClose", workingCloseError); if (!error) error = workingCloseError; } }
+            }
+            try { app.displayDialogs = oldDialogs; } catch (dialogsError) { cleanupFailure(ctx, "restoreDialogs", dialogsError); if (!error) error = dialogsError; }
+            try { app.preferences.rulerUnits = oldUnits; } catch (unitsError) { cleanupFailure(ctx, "restoreRulerUnits", unitsError); if (!error) error = unitsError; }
+            try { app.activeDocument = original; } catch (documentRestoreError) { cleanupFailure(ctx, "restoreActiveDocument", documentRestoreError); if (!error) error = documentRestoreError; }
             ctx.manifest.status = error ? "failed" : "complete"; ctx.manifest.finishedAt = iso(); ctx.manifest.elapsedMs = new Date().getTime() - started; if (error && !ctx.manifest.error) ctx.manifest.error = { message: String(error.message) }; write(ctx.file, ctx.manifest);
         }
         return ctx.manifest;

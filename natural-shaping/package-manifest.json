@@ -1,67 +1,9 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-09-portable-hybrid-r1",
+  "version": "2026-10-10-portable-workflow-r4-native-shaping",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
-  "runtime_validation": {
-    "status": "passed_with_disclosed_native_export_limit",
-    "scope": "Moved script copies under a path containing Chinese characters and spaces; synthetic document only",
-    "scripts": [
-      {
-        "file": "ps_retouch_runtime.jsx",
-        "identical_to_original": true,
-        "sha256": "175e8297002c694389967791bccb5ad4c4131d612fac94fba4723338f3cefe0e"
-      },
-      {
-        "file": "verify_native_png.ps1",
-        "identical_to_original": true,
-        "sha256": "64c25c12baa83e631b2847f4ba7897a9a58926d73fc541b0129540c03bb09ba8"
-      },
-      {
-        "file": "recompress_png.py",
-        "identical_to_original": true,
-        "sha256": "ef147fb303c8266fa7bc4445229ce56cda3f57e1f2514d00358f7ee175069746"
-      },
-      {
-        "file": "build_subject_mask.py",
-        "identical_to_original": true,
-        "sha256": "eed8c995670cc2db89965ca1e3c57393e785a0d05db770f38d0756c466cd2640"
-      }
-    ],
-    "photoshop": "21.2.9",
-    "runtime": "1.0.6",
-    "native_smoke_operations": [
-      "group",
-      "curve",
-      "color",
-      "group",
-      "importMask",
-      "checks",
-      "preview",
-      "preview",
-      "checkPreview",
-      "export"
-    ],
-    "source_preserved": true,
-    "created_documents_cleaned": true,
-    "allowlist_and_parent_traversal_rejected": true,
-    "native_png_dimensions": [
-      128,
-      128
-    ],
-    "native_png_depth": 16,
-    "crop_pixels_exact": true,
-    "compressed_pixels_identical": true,
-    "native_png_icc": "Missing in actual Photoshop sRGB export; strict check rejected as intended. Exception only used for pixel comparison, not a color-profile pass.",
-    "mask_helper": "CLI help and Python parse checked after relocation. Dependencies not reinstalled, weights not downloaded, inference not retested.",
-    "not_tested": [
-      "new platform or PS version",
-      "mask environment clean reinstall",
-      "all runtime operations",
-      "portrait aesthetics"
-    ]
-  },
   "files": [
     {
       "file": "agents/openai.yaml",
@@ -72,6 +14,11 @@
       "file": "assets/evidence/accepted-finals-20261006.json",
       "bytes": 839,
       "sha256": "23b5254b9c32aab38fc2ca637df599815a85ed9c286b503b1da6e52a792bc3b1"
+    },
+    {
+      "file": "assets/evidence/body-reference-validation.json",
+      "bytes": 5860,
+      "sha256": "96fc14ac44892e36652aa96caa0071f8b0a984e25c6d8b758bc277a3e3fa35eb"
     },
     {
       "file": "assets/evidence/composition/extended-video-validation-20261004/adequacy-review.md",
@@ -542,6 +489,11 @@
       "file": "assets/evidence/group-111-v2-edit-record.json",
       "bytes": 5195,
       "sha256": "9ce43cf7163c7808e9201202bca5e26232d0e988effc6bed6f63c9e30f82373c"
+    },
+    {
+      "file": "assets/evidence/native-liquify-validation.json",
+      "bytes": 17085,
+      "sha256": "1f0fd43b8378cbb19156c2b23fe7ffd7e6189df95db4df0b949e3e1ebd9af817"
     },
     {
       "file": "assets/evidence/pixcake/frames/v04-paused-61.png",
@@ -1634,11 +1586,6 @@
       "sha256": "a4db5cd766b50ed98f38fcd4016d7c15905fb8e7949090a8b6d65b03a01e880c"
     },
     {
-      "file": "assets/examples/xilian-saved-20261005.jpg",
-      "bytes": 3735637,
-      "sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef"
-    },
-    {
       "file": "assets/examples/group111-v5.jpg",
       "bytes": 5413381,
       "sha256": "0926e5cb774c88ad1a512e80703a3e4d1acface01e4bb388dc339de8b44f8c1c"
@@ -1682,6 +1629,11 @@
       "file": "assets/examples/shousisi-114-v1.jpg",
       "bytes": 4234084,
       "sha256": "03baccd1a8e794737b8dc1347173e2b1084b067a3f03eced1976eabcf20baf7e"
+    },
+    {
+      "file": "assets/examples/xilian-saved-20261005.jpg",
+      "bytes": 3735637,
+      "sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef"
     },
     {
       "file": "references/case-evidence.json",
@@ -1750,8 +1702,8 @@
     },
     {
       "file": "references/cos-retouch-engines.md",
-      "bytes": 15027,
-      "sha256": "1214e27cc9b7ad13c5fec1d47e955c45da10d509c63087d1b3b190d1dba20f42"
+      "bytes": 21998,
+      "sha256": "1c9545ace8c892376837f397a481a94e2a59caa23f1ed15f755977979c4d309f"
     },
     {
       "file": "references/engine-experiment-history.md",
@@ -1800,8 +1752,8 @@
     },
     {
       "file": "references/portability.md",
-      "bytes": 5818,
-      "sha256": "3f5606c5d37db221ec2d94ec9663dec378c65c9deb12b8096473bcf826984520"
+      "bytes": 8733,
+      "sha256": "1aba62f355d3581241fdb9eb543480a6108d1a6123aa13589a48c13510fae90a"
     },
     {
       "file": "references/portrait-beauty.md",
@@ -1815,23 +1767,23 @@
     },
     {
       "file": "references/production-retouch.md",
-      "bytes": 13920,
-      "sha256": "9f692ecb0ed23c8a2b9bf18fd6b3c93d561d22f79ea6157300b0fd67d4baf489"
+      "bytes": 19467,
+      "sha256": "c4e6fb2cfb710ba924b46bcd8535fed48c6fa43ed5f7b6b26dfb64cbc2e71eb1"
     },
     {
       "file": "references/ps-runtime.md",
-      "bytes": 10803,
-      "sha256": "88bf33edcab39fd05d4722e27cb8a5bed4f35707556883b18e20d7f286e7ec85"
+      "bytes": 17359,
+      "sha256": "ed9df4da43f59a3a0b5a021f80676662aded23886cb13152545308dbc7293337"
     },
     {
       "file": "references/quality-review.md",
-      "bytes": 7879,
-      "sha256": "6a228f1fc0d174348691f5a992a2c05eb9dedde3427fe05e67cc4abe6d583440"
+      "bytes": 15283,
+      "sha256": "61b937f735082cede107d9b73c630655853050576bb59bd07887b5f1cafa9644"
     },
     {
       "file": "references/shape-and-pose.md",
-      "bytes": 5884,
-      "sha256": "7a88503606b933854e210b780ba28130d238a88304536ec711a96974cf58ea2e"
+      "bytes": 9244,
+      "sha256": "427f42574bb1bd2bc7806a6098800e49b8374f2ec5c320d6c32a68b2c7ef0d15"
     },
     {
       "file": "references/structure-review-and-generation.md",
@@ -1844,6 +1796,16 @@
       "sha256": "17fb93bdd059ecc3d78b15e2f168bfdda36e6235c824f96828a91ae77a544e01"
     },
     {
+      "file": "scripts/build_body_reference.py",
+      "bytes": 31681,
+      "sha256": "e68c7db9192394f28048c70c684fccd21f0b4e6e7e0e489d674e680dc842cb5c"
+    },
+    {
+      "file": "scripts/build_liquify_mesh.py",
+      "bytes": 9847,
+      "sha256": "3aec4c000a647b71193b94aaa619080e709a407fd6118c9484f3dc6cb6d32d3d"
+    },
+    {
       "file": "scripts/build_subject_mask.py",
       "bytes": 12710,
       "sha256": "eed8c995670cc2db89965ca1e3c57393e785a0d05db770f38d0756c466cd2640"
@@ -1854,14 +1816,24 @@
       "sha256": "80ce2eef1a722d5ad971fd704102f04dfad9b37b3c9c4db109e34bea786bfe4b"
     },
     {
+      "file": "scripts/ps_liquify_runtime.jsx",
+      "bytes": 22732,
+      "sha256": "4615f833845119c6e795f9e5a3995f009eb7f4d4685c76a5f4792cef46fb6b9d"
+    },
+    {
       "file": "scripts/ps_retouch_runtime.jsx",
-      "bytes": 21167,
-      "sha256": "175e8297002c694389967791bccb5ad4c4131d612fac94fba4723338f3cefe0e"
+      "bytes": 23855,
+      "sha256": "7a21789c39aaffe5bc33ba4044b41d8ba0dcc6c68d221c64a1ce92c50a5d8623"
     },
     {
       "file": "scripts/recompress_png.py",
       "bytes": 5773,
       "sha256": "ef147fb303c8266fa7bc4445229ce56cda3f57e1f2514d00358f7ee175069746"
+    },
+    {
+      "file": "scripts/requirements-body-reference.txt",
+      "bytes": 269,
+      "sha256": "732949fb85903ebdfc8173c493ace7c533ef5cdf95635e0718e92d64ff1ae7da"
     },
     {
       "file": "scripts/validate_portable.py",
@@ -1875,8 +1847,103 @@
     },
     {
       "file": "SKILL.md",
-      "bytes": 17254,
-      "sha256": "a52b00a7d0b4b1860315e04ce27c5aa73d9d6c7d046235192f63720735b6c4d4"
+      "bytes": 18851,
+      "sha256": "32e846f86a06a63959f7789a0561b442244817ee86f895580f0654d1a4db9061"
     }
-  ]
+  ],
+  "historical_runtime_validation": {
+    "status": "passed_with_disclosed_native_export_limit",
+    "scope": "Moved script copies under a path containing Chinese characters and spaces; synthetic document only",
+    "scripts": [
+      {
+        "file": "ps_retouch_runtime.jsx",
+        "identical_to_original": true,
+        "sha256": "175e8297002c694389967791bccb5ad4c4131d612fac94fba4723338f3cefe0e"
+      },
+      {
+        "file": "verify_native_png.ps1",
+        "identical_to_original": true,
+        "sha256": "64c25c12baa83e631b2847f4ba7897a9a58926d73fc541b0129540c03bb09ba8"
+      },
+      {
+        "file": "recompress_png.py",
+        "identical_to_original": true,
+        "sha256": "ef147fb303c8266fa7bc4445229ce56cda3f57e1f2514d00358f7ee175069746"
+      },
+      {
+        "file": "build_subject_mask.py",
+        "identical_to_original": true,
+        "sha256": "eed8c995670cc2db89965ca1e3c57393e785a0d05db770f38d0756c466cd2640"
+      }
+    ],
+    "photoshop": "21.2.9",
+    "runtime": "1.0.6",
+    "native_smoke_operations": [
+      "group",
+      "curve",
+      "color",
+      "group",
+      "importMask",
+      "checks",
+      "preview",
+      "preview",
+      "checkPreview",
+      "export"
+    ],
+    "source_preserved": true,
+    "created_documents_cleaned": true,
+    "allowlist_and_parent_traversal_rejected": true,
+    "native_png_dimensions": [
+      128,
+      128
+    ],
+    "native_png_depth": 16,
+    "crop_pixels_exact": true,
+    "compressed_pixels_identical": true,
+    "native_png_icc": "Missing in actual Photoshop sRGB export; strict check rejected as intended. Exception only used for pixel comparison, not a color-profile pass.",
+    "mask_helper": "CLI help and Python parse checked after relocation. Dependencies not reinstalled, weights not downloaded, inference not retested.",
+    "not_tested": [
+      "new platform or PS version",
+      "mask environment clean reinstall",
+      "all runtime operations",
+      "portrait aesthetics"
+    ],
+    "scope_note": "Historical 1.0.6 copy/install test only. Its hashes are preserved evidence, not claims about current modified scripts."
+  },
+  "runtime_validation": {
+    "status": "passed_with_disclosed_native_png_profile_limit",
+    "photoshop": "21.2.9",
+    "runtime": "1.0.7",
+    "evidence": "assets/evidence/native-liquify-validation.json",
+    "scripts": [
+      {
+        "file": "scripts/ps_retouch_runtime.jsx",
+        "sha256": "7a21789c39aaffe5bc33ba4044b41d8ba0dcc6c68d221c64a1ce92c50a5d8623"
+      },
+      {
+        "file": "scripts/ps_liquify_runtime.jsx",
+        "sha256": "4615f833845119c6e795f9e5a3995f009eb7f4d4685c76a5f4792cef46fb6b9d"
+      },
+      {
+        "file": "scripts/build_liquify_mesh.py",
+        "sha256": "3aec4c000a647b71193b94aaa619080e709a407fd6118c9484f3dc6cb6d32d3d"
+      },
+      {
+        "file": "scripts/verify_native_png.ps1",
+        "sha256": "64c25c12baa83e631b2847f4ba7897a9a58926d73fc541b0129540c03bb09ba8"
+      }
+    ],
+    "actual_photoshop_checks": 28,
+    "native_pixel_checks": 17,
+    "mesh_builder_checks": 9,
+    "scope": "Actual Photoshop script execution plus decoded 8/16-bit PNG comparisons. Synthetic layered grids, RGBA alpha source and an isolated existing portrait copy; no accepted final was edited.",
+    "not_aesthetic_acceptance": true
+  },
+  "body_reference_validation": {
+    "status": "passed_with_visual_review_required",
+    "evidence": "assets/evidence/body-reference-validation.json",
+    "helper": "scripts/build_body_reference.py",
+    "sha256": "e68c7db9192394f28048c70c684fccd21f0b4e6e7e0e489d674e680dc842cb5c",
+    "review_status": "needs_visual_review"
+  }
 }
