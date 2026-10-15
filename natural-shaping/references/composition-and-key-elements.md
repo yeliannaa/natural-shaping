@@ -37,6 +37,8 @@
 
 图上标明本图档位、方案版本和“未精修”，实际看过渲染后检查文字、引线和细节可读；确认沿主 skill 执行。授权只涉及同一方案的局部返修时，沿用有效确认，不重新制作整套图。
 
+图的分区、编号与“观察依据 → 设计方向 → 保护关系”排布，可参考[竖幅案例复盘](../assets/evidence/highp/yao-highp-portrait-analysis-map.png)与[横幅案例复盘](../assets/evidence/highp/yao-highp-wide-analysis-map.png)。这些是成片后的教学标注，非当时的修前确认草图，不能代替新照片的源图确认。
+
 ### 狩司司 114 号：用 A/B 解释裁顶与少量补底
 
 ![狩司司114完整修前拆解：A/B构图对照、F面部、W腰腹与L腿部检查区，以及光线背景、衣装和验收说明](../assets/evidence/composition/shousisi-114-retouch-plan-v2.png)

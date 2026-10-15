@@ -1,6 +1,6 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-15-portable-highp-r10-showcase-controls",
+  "version": "2026-10-15-portable-highp-r11-annotated-cases",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
@@ -489,6 +489,16 @@
       "file": "assets/evidence/group-111-v2-edit-record.json",
       "bytes": 5195,
       "sha256": "9ce43cf7163c7808e9201202bca5e26232d0e988effc6bed6f63c9e30f82373c"
+    },
+    {
+      "file": "assets/evidence/highp/yao-highp-portrait-analysis-map.png",
+      "bytes": 1745646,
+      "sha256": "683e2b675053b5be94ced537ec8ad5878b548fc4cf500d27749f62579f46a816"
+    },
+    {
+      "file": "assets/evidence/highp/yao-highp-wide-analysis-map.png",
+      "bytes": 1650701,
+      "sha256": "7f92eef4cfa27e7277969026437a0833a843cb3fa2bf64e11dc99a2b14bef410"
     },
     {
       "file": "assets/evidence/native-liquify-validation.json",
@@ -1717,8 +1727,8 @@
     },
     {
       "file": "references/composition-and-key-elements.md",
-      "bytes": 22612,
-      "sha256": "8b2a84bf961424158f38abb3a34666168b52c104363f7624cbe83f52ecd51f8f"
+      "bytes": 22984,
+      "sha256": "d3b106c3c4dd51383ceee12a51a0c33417072741866d175628576533f439cad5"
     },
     {
       "file": "references/cos-retouch-engines.md",
@@ -1742,8 +1752,8 @@
     },
     {
       "file": "references/highp-retouch.md",
-      "bytes": 6541,
-      "sha256": "d560948ace8b167c1663dcd894589b89d95292a75381bac8234ee6eda04191df"
+      "bytes": 6895,
+      "sha256": "23add9cd2dcda8ced950290463f9bc35a683a5e105f12d3623f876421f2a85e3"
     },
     {
       "file": "references/mask-tools.md",

@@ -34,13 +34,13 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 
 瑶的竖幅与横幅展示了更强的人物设计，以及全局受光、妆肤、发衣与背景的共同调整。两张均采用 **内置 Image＋PS**，随后完成完整脸部局部设计与融合；具体 Image 型号未暴露。这组有关联的样张用于说明方法，跨人物效果仍需验证。
 
-[![瑶竖幅高P修前与成片对比，整体光线、人物与衣装一起调整](docs/assets/yao-highp-portrait-whole-compare.jpg)](https://yeliannaa.github.io/natural-shaping/highp.html#portrait)
+[![瑶竖幅高P编号分析图：构图、美型、妆面、全局光线与道具保护](docs/assets/yao-highp-portrait-analysis-map.png)](https://yeliannaa.github.io/natural-shaping/highp.html#portrait-map)
 
-[![瑶横幅高P修前与成片对比，保留前伸手的景深与握杖关系](docs/assets/yao-highp-wide-whole-compare.jpg)](https://yeliannaa.github.io/natural-shaping/highp.html#wide)
+[![瑶横幅高P编号分析图：前景手景深、美型妆面、发衣与握持关系](docs/assets/yao-highp-wide-analysis-map.png)](https://yeliannaa.github.io/natural-shaping/highp.html#wide-map)
 
 [打开高P完整拆解与局部放大](https://yeliannaa.github.io/natural-shaping/highp.html) · [GitHub 图文版](docs/highp.md) · [详细控制项、提示词与实测参数](natural-shaping/references/highp-controls.md)
 
-展示包含完整脸颈妆面、衣装受光、前景手与透明饰件。竖幅修前预览裁去底部账号区，修后同步裁去相同高度；整图与局部均为独立取景，不能当像素配准或参数因果实验。原尺寸成片展示副本见[示例目录](natural-shaping/assets/examples/README.md)，本机原图未改动。
+两张分析图用编号、辅助线和检查区，把构图、美型、妆面、全局受光与结构保护直接标在原片及成片上；它们是成片后的教学复盘，非当时修前确认草图。展示还包含完整脸颈妆面、衣装受光、前景手与透明饰件。竖幅修前预览裁去底部账号区，修后同步裁去相同高度；整图与局部均为独立取景，不能当像素配准或参数因果实验。原尺寸成片展示副本见[示例目录](natural-shaping/assets/examples/README.md)，本机原图未改动。
 
 ## 三步开始
 

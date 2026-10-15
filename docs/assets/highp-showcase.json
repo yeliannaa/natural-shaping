@@ -104,6 +104,15 @@
         ],
         "format": "JPEG",
         "note": "原尺寸成片展示副本；有损JPEG，非训练配对或原生细节证明。"
+      },
+      "analysis_map": {
+        "file": "yao-highp-portrait-analysis-map.png",
+        "size": [
+          1920,
+          1410
+        ],
+        "kind": "retrospective-teaching",
+        "note": "编号、辅助线和区域为成片后的教学检查示意；非当时修前确认草图、实际蒙版或形变测量。"
       }
     },
     {
@@ -202,6 +211,15 @@
         ],
         "format": "JPEG",
         "note": "原尺寸成片展示副本；有损JPEG，非训练配对或原生细节证明。"
+      },
+      "analysis_map": {
+        "file": "yao-highp-wide-analysis-map.png",
+        "size": [
+          1920,
+          1500
+        ],
+        "kind": "retrospective-teaching",
+        "note": "编号、辅助线和区域为成片后的教学检查示意；非当时修前确认草图、实际蒙版或形变测量。"
       }
     }
   ]
