@@ -6,7 +6,7 @@
 
 A reusable **photo retouching agent skill** for Codex, focused on **portrait retouching** and **cosplay photo editing**. The workflow is defined in [`natural-shaping/SKILL.md`](natural-shaping/SKILL.md): source-based composition sketches, identity-preserving refinement and visual quality checks, with **Photoshop ExtendScript (JSX)** helpers. Codex chooses among the tools available in your environment: built-in image generation/editing can run the editing route without Qwen; Qwen is an optional backend, and Photoshop enables precise local work and layered delivery when available.
 
-[实战教程与效果拆解](https://yeliannaa.github.io/natural-shaping/) · [安装与使用](#安装与使用) · [两种修图档位](#两种修图档位) · [公开审美参考库](#公开审美参考库) · [调用链与分工](#调用链与分工) · [缺少工具时如何继续](#缺少工具时如何继续) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [10 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
+[实战教程与效果拆解](https://yeliannaa.github.io/natural-shaping/) · [安装与使用](#安装与使用) · [两种修图档位](#两种修图档位) · [公开审美参考库](#公开审美参考库) · [调用链与分工](#调用链与分工) · [缺少工具时如何继续](#缺少工具时如何继续) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [12 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
 
 ## 代表效果与细节拆解
 
@@ -29,6 +29,18 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 也可以直接在 GitHub 阅读[蕾姆](docs/rem.md)、[群像](docs/group.md)、[宫本樱](docs/sakura.md)的图文分析；[教程站源码与维护说明](docs/README.md)随仓库提供。
 
 每页都把**位置 → 观看影响 → 处理判断 → 保护与验收**讲清楚，附整体对照与局部特写。蕾姆使用 v21，群像使用 111 v5；宫本樱 v8 结构获认可，v9 获保存指示。网页图片是轻量预览，原尺寸 JPG 仍在[成片示例目录](natural-shaping/assets/examples/README.md)。不同取景的整图对照用于观察构图与观感，不能当作像素叠图或处理幅度的测量。
+
+## 高P精修：整图设计与局部细节
+
+瑶的竖幅与横幅展示了更强的人物设计，以及全局受光、妆肤、发衣与背景的共同调整。两张均采用 **内置 Image＋PS**，随后完成完整脸部局部设计与融合；具体 Image 型号未暴露。这组有关联的样张用于说明方法，跨人物效果仍需验证。
+
+[![瑶竖幅高P修前与成片对比，整体光线、人物与衣装一起调整](docs/assets/yao-highp-portrait-whole-compare.jpg)](https://yeliannaa.github.io/natural-shaping/highp.html#portrait)
+
+[![瑶横幅高P修前与成片对比，保留前伸手的景深与握杖关系](docs/assets/yao-highp-wide-whole-compare.jpg)](https://yeliannaa.github.io/natural-shaping/highp.html#wide)
+
+[打开高P完整拆解与局部放大](https://yeliannaa.github.io/natural-shaping/highp.html) · [GitHub 图文版](docs/highp.md) · [详细控制项、提示词与实测参数](natural-shaping/references/highp-controls.md)
+
+展示包含完整脸颈妆面、衣装受光、前景手与透明饰件。竖幅修前预览裁去底部账号区，修后同步裁去相同高度；整图与局部均为独立取景，不能当像素配准或参数因果实验。原尺寸成片展示副本见[示例目录](natural-shaping/assets/examples/README.md)，本机原图未改动。
 
 ## 三步开始
 
@@ -63,7 +75,7 @@ Qwen 是可选后端；内置图像编辑可独立承担生成路线。精确 PS
 
 [阅读参考库](natural-shaping/references/aesthetic-reference/README.md) · [按标签查9条索引](natural-shaping/references/aesthetic-reference/index.json)
 
-将修图经验整理为**问题 → 可观察目标 → 适用参考 → 保护与限制**，包括自然轻修、妆造与神情、手腕袖口、衣带受力、坐姿透视、群像光线、高P整体设计和假发杂毛。图片引用复用既有公开示例；高P与发丝条目提供方法参考，不附新的私人照片。
+将修图经验整理为**问题 → 可观察目标 → 适用参考 → 保护与限制**，包括自然轻修、妆造与神情、手腕袖口、衣带受力、坐姿透视、群像光线、高P整体设计和假发杂毛。图片按公开授权范围收录；高P条目新增两张经隐私处理的成片与详细参数参考，发丝条目提供方法。
 
 按当前问题选1–3条，再实际看相应图片；公开参考不代表所有使用者的偏好，也不继承案例的编辑授权或训练资格。已保存、局部认可与整图认可分别记录。共享版省去个人原话、案例排名、身份线索、本机路径及训练资料；完整本机偏好库可按[私人档案说明](natural-shaping/references/personal-data.md)自行配置，二者独立。
 
@@ -223,7 +235,7 @@ flowchart TD
 
 ## 示例、资料与校验
 
-[成片示例目录](natural-shaping/assets/examples/README.md)包含蕾姆、dora、宫本樱、群像、神里、知更鸟、昔涟和三张狩司司，共 10 张指定版本 JPG。逐张区分用户认可、保存交付与待完善状态；历史失败局部见[cases 索引](natural-shaping/references/cases/README.md)。
+[成片示例目录](natural-shaping/assets/examples/README.md)包含蕾姆、dora、宫本樱、群像、神里、知更鸟、昔涟、三张狩司司及两张瑶高P，共 12 张指定版本 JPG。逐张区分用户认可、保存交付与待完善状态；历史失败局部见[cases 索引](natural-shaping/references/cases/README.md)。
 
 在仓库根目录运行：
 

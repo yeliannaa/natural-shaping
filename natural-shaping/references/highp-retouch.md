@@ -2,6 +2,8 @@
 
 仅在用户明确选择高P，或要求超出自然档的更强整体设计时读取。自然美型仍为默认档；高P放开的是已确认范围内的设计力度，不是自动换脸、改动作或任意重建。两档共用 [构图确认](../SKILL.md#强制前置构图拆解--可见草图--用户确认--精修)、[人像覆盖](portrait-beauty.md) 与 [三道验收](quality-review.md#三道采用与交付门槛)，不新增逐部位审批。
 
+按需继续阅读[详细控制项、提示词模板与实测设置](highp-controls.md)。其中分开记录设计力度、后端真实能力、PS单项数值和尺寸链；本组值不作为通用预设。公开成片可看[竖幅](../assets/examples/yao-highp-portrait-final.jpg)与[横幅](../assets/examples/yao-highp-wide-final.jpg)，修前及局部分析见[高P展示页](https://yeliannaa.github.io/natural-shaping/highp.html)。
+
 ## 整体设计要回答什么
 
 先从原片与当前要求确定这张照片想呈现的气质，再把具体设计纳入同一方案。高P不是“全部参数更大”，也不限于脸；按画面适用性联看以下关系：

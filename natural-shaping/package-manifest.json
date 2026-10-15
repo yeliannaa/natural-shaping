@@ -1,6 +1,6 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-15-portable-highp-r9-public-reference",
+  "version": "2026-10-15-portable-highp-r10-showcase-controls",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
@@ -1597,8 +1597,8 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2471,
-      "sha256": "26be2d2eeea0bce6ec367d8bf38b714817eb7fd832e0dc04ca0dab7aa4143e5b"
+      "bytes": 3147,
+      "sha256": "9fac5a62a1feb0b1b76df2f09f74eb487a35da6fc94efa0bd2c5ce89d6a157e3"
     },
     {
       "file": "assets/examples/rem-v21.jpg",
@@ -1636,14 +1636,24 @@
       "sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef"
     },
     {
+      "file": "assets/examples/yao-highp-portrait-final.jpg",
+      "bytes": 1013507,
+      "sha256": "320c26b31a500a3669fba006389d0428fac201243a0c1cc778c71174ceed01af"
+    },
+    {
+      "file": "assets/examples/yao-highp-wide-final.jpg",
+      "bytes": 799352,
+      "sha256": "d4ceb1e719cbadd9c9b9ace182c2fd3961ef1aa0ff0bcf388c2170334860d895"
+    },
+    {
       "file": "references/aesthetic-reference/index.json",
-      "bytes": 6649,
-      "sha256": "101464b6ea25c450020eb977f08adda4c1ca639f0ead1b907099a83cede98732"
+      "bytes": 7233,
+      "sha256": "759ac3ca4aa3bc9639c2ab0718ee205317aa09c7e86e4713d2c77d10063d6f68"
     },
     {
       "file": "references/aesthetic-reference/README.md",
-      "bytes": 4096,
-      "sha256": "d23e3030522a27ec24e4fbb278d1d66bd81bb0a5bd8def6b6c5e005414ce52a2"
+      "bytes": 4280,
+      "sha256": "bc4a481f19938fae9dfee7ee8c485ffe55abf7726a4f441a418fa024cf457d0b"
     },
     {
       "file": "references/case-evidence.json",
@@ -1726,9 +1736,14 @@
       "sha256": "602412f699f0d238f00c9f7e719044f0794ecf9640d8381bf6799d37b35153bf"
     },
     {
+      "file": "references/highp-controls.md",
+      "bytes": 18925,
+      "sha256": "71f01d9819fee73ae775660fd5d8a3c6e344dc7ef69b3cff3b935da7662b2595"
+    },
+    {
       "file": "references/highp-retouch.md",
-      "bytes": 6101,
-      "sha256": "8ba7a2e5bd8c8bc40171425344f064368b81b589b861efdb6498f796dc2daa32"
+      "bytes": 6541,
+      "sha256": "d560948ace8b167c1663dcd894589b89d95292a75381bac8234ee6eda04191df"
     },
     {
       "file": "references/mask-tools.md",
@@ -1872,8 +1887,8 @@
     },
     {
       "file": "SKILL.md",
-      "bytes": 22514,
-      "sha256": "9bb28f7241b07bc65549cddcca5f7ec23f24e62f98356d6b1122645c7c1e36f5"
+      "bytes": 22623,
+      "sha256": "38b6483d9581b0e23c49db79044bd0e72b0ab533edcb865ea76d81228065f9aa"
     }
   ],
   "historical_runtime_validation": {

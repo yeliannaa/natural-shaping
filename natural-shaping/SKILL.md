@@ -64,7 +64,7 @@ description: "Retouch or analyze portrait and cosplay photos in 自然美型, wi
 
 | 当前问题 | 参考 |
 |---|---|
-| 明确选择高P或超出自然档的更强整体设计 | [高P精修](references/highp-retouch.md)，确认图按其中链接制作；自然档不必加载 |
+| 明确选择高P或超出自然档的更强整体设计 | [高P精修](references/highp-retouch.md)，需要分项力度、提示词、PS数值与尺寸链时再读[详细控制](references/highp-controls.md)；确认图按方法链接制作，自然档不必加载 |
 | 嘴唇灰暗、气色与逐人成员覆盖 | [人像美颜](references/portrait-beauty.md)的“气色与嘴唇”段；局部只读相关段落 |
 | 轮廓、五官比例、颈肩或轻微姿态 | [轮廓与姿态](references/shape-and-pose.md) |
 | 身体定位辅助、坐姿或遮挡下的关键点复核 | [轮廓与姿态](references/shape-and-pose.md#可选身体参考只辅助定位)；需要时才运行 helper |

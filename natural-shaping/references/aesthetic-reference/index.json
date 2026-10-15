@@ -2,7 +2,7 @@
   "schema_version": 1,
   "kind": "public-aesthetic-reference",
   "purpose": "Conditional reference routing; no automatic user preference or editing authorization.",
-  "media_policy": "Links refer only to media already published in the repository; new private media is excluded.",
+  "media_policy": "Only explicitly selected public display derivatives; raw private sources and unselected media are excluded.",
   "default_style": "natural",
   "highp_confirmation_policy": "Use the current confirmed scope; same-plan local repairs inherit it.",
   "entries": [
@@ -199,7 +199,18 @@
       ],
       "reference": {
         "path": "../highp-retouch.md",
-        "kind": "method-only"
+        "kind": "method-and-published-examples",
+        "controls": "../highp-controls.md",
+        "examples": [
+          {
+            "path": "../../assets/examples/yao-highp-portrait-final.jpg",
+            "version": "highp-v4"
+          },
+          {
+            "path": "../../assets/examples/yao-highp-wide-final.jpg",
+            "version": "highp-v3"
+          }
+        ]
       },
       "use_for": [
         "明确授权后的整图设计",
@@ -208,13 +219,17 @@
         "人物与衣装场景光色协调"
       ],
       "limits": [
-        "无新增公开照片",
+        "两张为同组关联样张，不构成两个独立人物的验证",
         "跨人物效果待验证",
-        "不形成通用增白或固定脸型预设"
+        "不形成通用增白或固定脸型预设",
+        "不含后续局部发丝候选"
       ],
       "evidence": {
-        "status": "method_reference",
-        "scope": "conditional-use"
+        "status": "accepted_highp_reference",
+        "scope": "whole-image",
+        "cohort": "two-related-photos",
+        "backend": "Image+Photoshop",
+        "image_model": "not-exposed"
       }
     },
     {
@@ -258,7 +273,7 @@
     "private_asset_hashes",
     "training_pairs",
     "weights",
-    "new_private_media"
+    "unselected_private_media"
   ],
   "reference_status_policy": "Public example notes retain their existing evidence limits; publishing or use as an aesthetic reference does not establish full-image approval or training eligibility."
 }
