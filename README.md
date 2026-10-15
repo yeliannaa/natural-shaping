@@ -28,11 +28,11 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 
 也可以直接在 GitHub 阅读[蕾姆](docs/rem.md)、[群像](docs/group.md)、[宫本樱](docs/sakura.md)的图文分析；[教程站源码与维护说明](docs/README.md)随仓库提供。
 
-每页都把**位置 → 观看影响 → 处理判断 → 保护与验收**讲清楚，附整体对照与局部特写。蕾姆使用 v21，群像使用 111 v5；宫本樱 v8 结构获认可，v9 获保存指示。网页图片是轻量预览，原尺寸 JPG 仍在[成片示例目录](natural-shaping/assets/examples/README.md)。不同取景的整图对照用于观察构图与观感，不能当作像素叠图或处理幅度的测量。
+每页按**位置 → 观看影响 → 处理方法 → 检查重点**拆解，附整图对照与局部特写。原尺寸 JPG 见[成片示例目录](natural-shaping/assets/examples/README.md)。
 
 ## 高P精修：整图设计与局部细节
 
-瑶的竖幅与横幅展示了更强的人物设计，以及全局受光、妆肤、发衣与背景的共同调整。两张均采用 **内置 Image＋PS**，随后完成完整脸部局部设计与融合；具体 Image 型号未暴露。这组有关联的样张用于说明方法，跨人物效果仍需验证。
+瑶的两张场照采用 **内置 Image＋PS**：先用整图设计统筹人物、发衣与场景光线，再细化完整脸部的比例、表情和妆面，最后由 PS 完成融合、材质与尺寸交付。
 
 [![瑶竖幅高P编号分析图：构图、美型、妆面、全局光线与道具保护](docs/assets/yao-highp-portrait-analysis-map.png)](https://yeliannaa.github.io/natural-shaping/highp.html#portrait-map)
 
@@ -40,7 +40,7 @@ A reusable **photo retouching agent skill** for Codex, focused on **portrait ret
 
 [打开高P完整拆解与局部放大](https://yeliannaa.github.io/natural-shaping/highp.html) · [GitHub 图文版](docs/highp.md) · [详细控制项、提示词与实测参数](natural-shaping/references/highp-controls.md)
 
-两张分析图用编号、辅助线和检查区，把构图、美型、妆面、全局受光与结构保护直接标在原片及成片上；它们是成片后的教学复盘，非当时修前确认草图。展示还包含完整脸颈妆面、衣装受光、前景手与透明饰件。竖幅修前预览裁去底部账号区，修后同步裁去相同高度；整图与局部均为独立取景，不能当像素配准或参数因果实验。原尺寸成片展示副本见[示例目录](natural-shaping/assets/examples/README.md)，本机原图未改动。
+图中用编号、辅助线和区域说明构图动线、脸部轮廓、妆面联动、全局受光与握持保护。打开案例页可放大查看脸颈、珠光衣料、前景手和透明饰件。
 
 ## 三步开始
 
@@ -60,7 +60,7 @@ Qwen 是可选后端；内置图像编辑可独立承担生成路线。精确 PS
 | 假发与杂毛 | 按复杂度选择原生修复或局部生成，清理抢眼乱丝，保护主发、绒毛及饰件并保留自然碎发 |
 | 道具与验收 | 联看手、衣带、球拍等完整连接；查新增损伤、原尺寸细节与实际交付文件 |
 
-包内提供方法、参考图和辅助脚本。修图效果取决于执行工具与实际验收；不包含像素蛋糕算法、Photoshop 软件或生图模型。
+包内包含修图流程、参考图和辅助脚本；图像编辑工具按当前环境接入。
 
 ## 两种修图档位
 
@@ -69,15 +69,15 @@ Qwen 是可选后端；内置图像编辑可独立承担生成路线。精确 PS
 | 自然美型（默认） | 明显改善适用的肤质、五官、比例与光色，保持本人感、角色妆造和摄影质感 | 按本图收益选择原生精修、生成或混合处理，不套固定脸型或统一拉腿幅度 |
 | 高P精修（明确选择） | 可以更大胆地设计整图人物、脸型五官、联动表情、妆面、发衣、比例、光线和背景 | 先展示基于原片的[高P确认计划](natural-shaping/references/highp-retouch.md)，确认范围后执行；仍检查识别特征和结构 |
 
-需要生成时，内置 Image 与可选 Qwen 可按当前选择各出候选，共同参考；只有一路可用也能继续。候选既可整图采用，也可仅取局部或作为参考。需调整尺寸时记录真实输入、返回和交付尺寸，按已验证的 PS 方法等比处理，不把放大称为恢复原细节。
+内置 Image 与可选 Qwen 可分别出候选，供比较和选用。根据效果整图采用、局部融合或参考重做，再由 PS 处理尺寸和细节。
 
 ## 公开审美参考库
 
 [阅读参考库](natural-shaping/references/aesthetic-reference/README.md) · [按标签查9条索引](natural-shaping/references/aesthetic-reference/index.json)
 
-将修图经验整理为**问题 → 可观察目标 → 适用参考 → 保护与限制**，包括自然轻修、妆造与神情、手腕袖口、衣带受力、坐姿透视、群像光线、高P整体设计和假发杂毛。图片按公开授权范围收录；高P条目新增两张经隐私处理的成片与详细参数参考，发丝条目提供方法。
+按**问题 → 目标 → 参考 → 做法**整理自然轻修、妆造神情、腕袖连接、衣带受力、坐姿透视、群像光线、高P设计和假发清理。
 
-按当前问题选1–3条，再实际看相应图片；公开参考不代表所有使用者的偏好，也不继承案例的编辑授权或训练资格。已保存、局部认可与整图认可分别记录。共享版省去个人原话、案例排名、身份线索、本机路径及训练资料；完整本机偏好库可按[私人档案说明](natural-shaping/references/personal-data.md)自行配置，二者独立。
+每次按问题挑选1–3条参考，结合当前照片制定方案。个人偏好与训练资料保存在本地，可按[私人档案说明](natural-shaping/references/personal-data.md)配置。
 
 ## 安装与使用
 
@@ -95,9 +95,7 @@ npx skills@1.7.1 add yeliannaa/natural-shaping --list
 npx skills@1.7.1 add yeliannaa/natural-shaping --skill natural-shaping --agent codex --copy --yes
 ```
 
-**安装验证（2026-10-07）**：独立 Windows 测试项目使用 Node.js 22.20.0、Skills CLI 1.7.1，识别出一个 `natural-shaping`，项目安装至 `.agents/skills/natural-shaping`；364 个文件的清单、哈希和本地引用通过包内校验。此项验证覆盖技能发现与复制安装，实际 Photoshop 连接和其他客户端执行能力仍按迁移说明检查。
-
-**目录状态（2026-10-10）**：已有可访问的 [skills.sh 公开条目](https://www.skills.sh/yeliannaa/natural-shaping/natural-shaping)。仓库可安装、目录存在条目、普通用途搜索能否发现是三个分别核验的状态；条目存在不保证所有查询命中或固定排名。目录按真实安装遥测形成收录和排名，详见 [skills.sh 收录说明](https://skills.sh/docs/faq)。此前安装验证关闭了遥测，不把该次测试计作真实使用。
+也可通过 [skills.sh 技能条目](https://www.skills.sh/yeliannaa/natural-shaping/natural-shaping)查看安装入口。
 
 在支持 `$` 调用的 Codex 环境中，可提供照片或文件夹并这样请求：
 
@@ -130,42 +128,42 @@ flowchart TD
     I -. "需返修：按停止条件换方法" .-> D
 ```
 
-同一已确认方案内的局部返修沿用有效确认；新图、完整重修或新增构图／重建范围按 [SKILL.md](natural-shaping/SKILL.md) 执行对应草图确认。图中每条编辑路线都以工具真实可用为前提。
+新图先看草图并确认；同一方案内的局部返修直接继续。完整流程见 [SKILL.md](natural-shaping/SKILL.md)。
 
 | 环节 | 谁负责 | 分工与采用条件 |
 |---|---|---|
-| 构图与整体美型判断 | Codex 主导，用户确认方向 | 联看脸型五官、假发颈肩、胸腰髋和腿脚；先解释收益、保护点与推断范围，不只处理最后被指出的一处 |
+| 构图与整体美型判断 | Codex 主导，用户确认方向 | 联看脸型五官、假发颈肩、胸腰髋和腿脚，给出完整调整方向与保护点 |
 | 精确肤质、光色与比例调整 | Codex 调用 PS／当前可用的局部编辑工具 | 分开处理纹理、明暗、颜色和几何；保留角色妆造、关节、衣装与握点，按本图实际收益决定强度 |
-| 可选身体定位与原生液化 | Codex 复核关键点，再调用已验证的 PS 几何路线 | 身体识别仅作参考；当前液化封装限定 `faceWidth` 与内嵌 v4 网格，先查真实效应、保护范围，再判断审美收益 |
-| 补光、美型探索、复杂修复与补全候选 | Codex 调用内置图像编辑／可选 Qwen，按选择比较两路 | 使用真实原图与必要参考；生成结果仍需检查，提示词不保证选区外像素或身份不变 |
+| 可选身体定位与原生液化 | Codex 复核关键点，再调用 PS 几何工具 | 辅助定位身体关键点，再按本图制定几何调整和保护范围 |
+| 补光、美型探索、复杂修复与补全候选 | Codex 调用内置图像编辑／可选 Qwen，按选择比较两路 | 准备原图与参考，调用工具生成候选，再检查人物、衣装与结构 |
 | 采用与收尾 | Codex 判断，局部工具按能力执行 | 整图通过才整图采用；局部有益且能可靠对齐时融合；只有方向有价值时参考原图重做；不合格则退回稳定版 |
-| 成片验收与交付 | Codex 负责检查和保存，用户确认终稿 | 查目标、美型、妆造、原尺寸细节、完整连接和实际文件；技术检查不等于用户认可，仅局部认可不算全图接受 |
+| 成片验收与交付 | Codex 负责检查和保存，用户确认终稿 | 检查整体效果、妆造、细节与连接，展示对照并保存指定格式 |
 
 详细判断见 [美型分工](natural-shaping/references/portrait-beauty.md#美型的判断与执行分工)、[引擎与候选采用](natural-shaping/references/cos-retouch-engines.md#codex-主导与可选生成后端)及 [生成验收](natural-shaping/references/quality-review.md#生成候选的采用检查)。
 
-用户选择双路且环境支持时，记录真实启动状态，让本地 Qwen 与云端 Image 的计算重叠；本地启动故障不阻塞已就绪的云端路线，不把排队或提交当作已并行。局部生成按真实裁片映射合入，脸妆、主发和道具是否受损仍须实看。
+选择双路时，本地 Qwen 与云端 Image 可并行生成。局部候选按裁剪坐标融合，并检查妆面、主发束和道具连接。
 
 ## 缺少工具时如何继续
 
-所有路线仍由 Codex 主导，并使用同样的目标与验收标准。降级只选择当前能实际执行的方法；做不到的目标记为受限，不能用弱处理替代已要求的精修后宣称完成。
+Codex 根据当前环境选择执行路线：
 
 | 当前环境／缺少的能力 | 由谁接替执行 | 可以继续做什么与交付边界 |
 |---|---|---|
-| 没有 Qwen，或 Qwen 不可调用／资源不足 | Codex 调用可用且获授权的内置图像编辑；有 PS 时继续局部精修 | 仍可生成与评估候选，不要求安装 Qwen 或本地 GPU；实际型号不可见时记“未知” |
-| 没有内置图像编辑，但 Qwen 已接入可用 | Codex 调用已获授权的 Qwen；有局部工具时按需收尾 | 候选使用同样验收标准，Qwen 能出图不代表自动保住妆造、结构或原片细节 |
-| 没有 PS，但有内置编辑或 Qwen | Codex 调用现有生成／其他可用栅格编辑工具 | 交付实际可用的栅格成片；局部融合须有真实合成能力，不承诺分层 PSD 或原生细节完全保留 |
+| 没有 Qwen，或 Qwen 不可调用／资源不足 | Codex 调用内置图像编辑，有 PS 时继续精修 | 继续生成候选、检查效果，有 PS 时完成局部收尾 |
+| 没有内置图像编辑，但 Qwen 已接入可用 | Codex 调用已获授权的 Qwen；有局部工具时按需收尾 | 生成候选，并检查妆造、结构与细节 |
+| 没有 PS，但有内置编辑或 Qwen | Codex 调用现有生成／其他可用栅格编辑工具 | 生成并交付 JPG／PNG，按现有编辑工具完成局部处理 |
 | Qwen 与 PS 都没有，但内置编辑可用 | Codex 直接调用内置图像编辑 | 可以独立完成候选编辑、复核与栅格交付；不需要另装原作者的个人 skill |
 | 没有任何生成后端，但 PS／局部编辑工具可用 | Codex 使用已授权的原生编辑路线 | 继续肤质、光色、可控几何与真实纹理修补；缺失内容无法可靠完成时保留稳定版并说明限制 |
-| 没有身体识别模型，或关键点不可靠 | Codex 人工看图定位 | 不需要安装模型才能修图；关节、轮廓和保护区依实际照片制定，不从识别分数直接液化 |
-| 液化模块缺失、版本未验证或实际输出无效 | Codex 使用已有已验证的 PS 几何／局部方法 | 原生接口不是必经步骤；需要重建时再按已确认范围选择可用生成工具，仍检查实际像素与结构 |
-| 没有任何实际图像编辑能力 | Codex 只进行看图诊断与方案说明 | 可继续分析；不能把提示词、方案或草图称为修后成片，不能虚构文件和分层结果 |
-| 用户明确只用某个后端，而它不可用 | Codex 核实状态，说明缺口并确认可接受替代 | 不擅自换用内置或云端；未受影响的只读分析可继续，依赖该后端的编辑等待恢复或新选择 |
+| 没有身体识别模型，或关键点不可靠 | Codex 人工看图定位 | 依据照片人工定位关节、轮廓与保护区 |
+| 液化模块不可用 | Codex 使用其他已接入的 PS 几何／局部方法 | 使用已接入的 PS 几何工具；需要重建时调用生成工具 |
+| 没有任何实际图像编辑能力 | Codex 只进行看图诊断与方案说明 | 提供看图诊断与修图方案 |
+| 用户明确只用某个后端，而它不可用 | Codex 核实状态，说明缺口并确认可接受替代 | 继续照片分析，等待指定后端恢复或用户选择替代 |
 
-表中的工具必须在当前应用真实可调用并获得相应授权。安装 skill 不会安装模型、提供账号或替用户接入工具。缺少后端时不重复确认同一编辑范围；用户明确限定路线时遵循其选择。首次能力检查与路径约定见 [移植说明](natural-shaping/references/portability.md)。
+工具接入和首次环境检查见 [移植说明](natural-shaping/references/portability.md)。用户指定后端时按其选择执行。
 
 ## 构图草图｜Composition sketches
 
-以下是基于**精修前原片**的完整方案拆解示例：构图、肤质五官、肩颈腰腿、光线背景、衣装道具与验收一起说明。F/W/L 标出检查区域，照片未重新精修；历史已选方案与新增教学建议分别标明。
+以下在**精修前原片**上标注构图、脸身美型、光线背景与衣装道具。F/W/L 分别定位面部、腰部和腿部，配合箭头说明调整方向与保护关系。
 
 ### Cos 交叠腿坐姿：裁顶补底与腰线协调｜狩司司 114
 
@@ -179,7 +177,7 @@ flowchart TD
 
 [![狩司司110原幅构图草图，标注动作路径、背景干扰和保护范围](natural-shaping/assets/evidence/composition/shousisi-110-retouch-plan-v2.png)](natural-shaping/references/composition-and-key-elements.md#狩司司-110-号动线遮挡与道具补全边界)
 
-点击图片阅读[完整拆解与取舍](natural-shaping/references/composition-and-key-elements.md#示例草图的制作与展示)。图片为静态方案示意；具体裁幅、调整范围与历史确认仅适用于对应照片。
+点击图片阅读[完整拆解与取舍](natural-shaping/references/composition-and-key-elements.md#示例草图的制作与展示)。
 
 ## 常见修图问题｜FAQ
 
@@ -189,7 +187,7 @@ flowchart TD
 
 ### 可以瘦脸、收腰／瘦腰和拉腿吗？｜Body reshaping
 
-支持按本图确认范围评估脸型与身形优化：先区分透视、姿态、光影和真实轮廓，再决定局部几何调整。收腰、拉腿要联看胸腰髋、膝踝、脚形及背景直线，保护衣纹、饰件和关节，不套固定 V 脸或统一幅度。包内新增可选身体定位 helper 和限定的 PS 原生液化接口：关键点需人工复核，网格按当前照片制定，实际输出还要检查位移、保护区和自然度。不是自动塑形或一键拉腿。见[身形与姿态](natural-shaping/references/shape-and-pose.md)和[液化 API 与支持边界](natural-shaping/references/ps-runtime.md#optional-native-liquify-in-107)。
+支持按照片协调脸型、腰腹和腿部比例。先区分透视、姿态与光影，再做局部几何调整；联看胸腰髋、膝踝、脚形及背景直线，保护衣纹、饰件和关节。可选身体定位辅助确定关键点，PS 几何操作按本图制定。见[身形与姿态](natural-shaping/references/shape-and-pose.md)和[液化 API 与支持边界](natural-shaping/references/ps-runtime.md#optional-native-liquify-in-107)。
 
 ### Cos 场照怎样做路人虚化、肤色统一与调色？｜Background blur & color grading
 
@@ -205,37 +203,41 @@ flowchart TD
 
 ### 需要哪些工具？能直接一键修图吗？
 
-本包提供流程、参考和辅助脚本，由 Codex 主导构图、美型判断、工具选路和验收。**不需要安装 Qwen**：没有 Qwen 时调用当前应用可用的内置图像生成／编辑工具；Qwen 是可选后端。没有 PS 时仍可使用内置编辑，原生 PS 精修和 PSD 交付才需要 Photoshop 与可执行连接。安装 skill 不会同时安装软件、模型或配置工具连接；当前环境没有实际图像编辑工具时只能诊断。支持 Agent Skills 文件格式，不代表所有客户端的实际修图路线都已验证。见[迁移与能力检查](natural-shaping/references/portability.md)。
+由 Codex 主导分析、调用工具和检查。内置图像编辑可独立完成生成路线，Qwen 可选；精确 PS 操作和分层 PSD 需要 Photoshop 连接。见[迁移与能力检查](natural-shaping/references/portability.md)。
 
 ### 同组照片可以批量修图吗？
 
-先完成代表片，再复用适合该组的基础色调和处理结构。每张照片的构图、曝光、蒙版、几何范围与位移仍需重定并验收，新图草图确认规则继续适用；不承诺自动识别人脸后整组一键同步。见[同组处理方法与边界](natural-shaping/references/pixcake-cos-workflow.md)。
+先完成代表片，再复用该组的基础色调与处理结构。每张照片单独调整构图、曝光、蒙版和几何范围，并逐张检查。见[同组处理方法与边界](natural-shaping/references/pixcake-cos-workflow.md)。
 
 ## 按问题看案例
 
-案例包含获认可成片、已保存候选及失败返修；标题表示研究的问题，结果状态逐项标明。
+按当前问题直接找到相应案例与处理方法：
 
 | 想解决的问题 | 处理方式与案例入口 | 已知结果 |
 |---|---|---|
-| 磨皮之后，五官、身形和整体质感仍不够精致 | [dora 与蕾姆成片示例](natural-shaping/assets/examples/README.md) | 当前示例：dora v7、蕾姆 v21；不作为拉腿效果证明 |
+| 磨皮之后，五官、身形和整体质感仍不够精致 | [dora 与蕾姆成片示例](natural-shaping/assets/examples/README.md) | dora v7、蕾姆 v21 |
 | 彩光调色后出现粉边、颗粒和假发切面 | [蕾姆：按光源和材料校正彩光、接回发缘](natural-shaping/references/personal-cases.md#ns04蕾姆当前效果与历史粉光问题) | 当前示例：蕾姆 v21 |
-| 收腰、拉腿和球拍补全怎样保持坐姿可信 | [狩司司：整体比例、握持与球拍透视一起复核](natural-shaping/references/personal-cases.md#ns10狩司司三张已保存示例与球拍返修) | 110 v4 已返修保存；未记录用户最终认可 |
-| 手、衣带与衣缘补完仍不自然 | [宫本樱：多视角定位，再锁定结构做材质收尾](natural-shaping/references/personal-cases.md#ns09宫本樱-v8-结构认可--v9-材质收尾与指定目录交付2026-10-06) | v8 整体与位置获认可，v9 获保存指示 |
-| 鼻旁阴影显硬，是否需要直接瘦鼻 | [鼻旁局部：先柔化光影，再判断鼻形](natural-shaping/references/personal-cases.md#ns03鼻旁先柔光不默认改变鼻形) | 柔光效果获局部认可；该次未新增鼻形几何修改 |
+| 收腰、拉腿和球拍补全怎样保持坐姿可信 | [狩司司：整体比例、握持与球拍透视一起复核](natural-shaping/references/personal-cases.md#ns10狩司司三张已保存示例与球拍返修) | 110 v4 已保存版 |
+| 手、衣带与衣缘补完仍不自然 | [宫本樱：多视角定位，再锁定结构做材质收尾](natural-shaping/references/personal-cases.md#ns09宫本樱-v8-结构认可--v9-材质收尾与指定目录交付2026-10-06) | v9 材质收尾版 |
+| 鼻旁阴影显硬，是否需要直接瘦鼻 | [鼻旁局部：先柔化光影，再判断鼻形](natural-shaping/references/personal-cases.md#ns03鼻旁先柔光不默认改变鼻形) | 鼻旁柔光局部案例 |
 | 群像补鞋不可靠，人物气色又不一致 | [群像：补全边界与逐人气色检查](natural-shaping/references/personal-cases.md#ns12群像111补鞋撤回气色漏检与派生层2026-10-07) | 当前示例：群像 111 v5；下沿已补全 |
 
 ## 工具与能力边界
 
-- 看图诊断与验收需要文件读取、图像查看能力。
-- 内置图像生成／编辑可独立承担生成路线，由 Codex 调用、检查并决定整图采用、局部融合或仅作参考；没有 Qwen 不影响此路线。
-- Qwen 是可选后端，程序、模型和资源由当前环境提供；不附模型、账户、密钥或固定生图型号。
-- 原生 PS 精修需要 Photoshop 及可执行 ExtendScript 的连接。包内 runtime 提供曲线、颜色层、蒙版、预览和导出；1.0.7 的可选液化模块限定为 Photoshop 21.2.9 实测的 `faceWidth` 与内嵌 v4 `LqMe` 网格，并非完整五官／批量接口。无 PS 时如实交付现有工具支持的格式与细节，不承诺 PSD。
-- 交互对照依赖应用的可视化能力；没有时使用等尺度静态对照。
-- PNG 检查需要 PowerShell；无损压缩与网格辅助需要 Python 3.11+。身体参考通过可选 MediaPipe 本地模型输出关键点与分割参考，依赖缺失时继续人工判断；模型、环境和生成记录不打入 skill。自动主体蒙版另按[蒙版说明](natural-shaping/references/mask-tools.md)准备。
+| 工具 | 用途 |
+|---|---|
+| 文件读取与图像查看 | 查看原片、准备草图、检查成片 |
+| 内置 Image | 整图设计、局部生成与修复候选 |
+| Qwen（可选） | 本地候选生成，可与云端 Image 并行 |
+| Photoshop＋ExtendScript 连接 | 精确肤质、光色、几何与蒙版调整，预览、导出和分层 PSD |
+| PowerShell／Python 3.11+（按需） | PNG 检查、无损压缩及网格辅助脚本 |
+| MediaPipe（可选） | 身体关键点和分割参考，供执行者复核定位 |
+
+PS 液化模块支持已接入的 `faceWidth` 与内嵌 v4 网格，接口说明见 [PS runtime](natural-shaping/references/ps-runtime.md#optional-native-liquify-in-107)。自动主体蒙版见[蒙版工具](natural-shaping/references/mask-tools.md)。
 
 ## 示例、资料与校验
 
-[成片示例目录](natural-shaping/assets/examples/README.md)包含蕾姆、dora、宫本樱、群像、神里、知更鸟、昔涟、三张狩司司及两张瑶高P，共 12 张指定版本 JPG。逐张区分用户认可、保存交付与待完善状态；历史失败局部见[cases 索引](natural-shaping/references/cases/README.md)。
+[成片示例目录](natural-shaping/assets/examples/README.md)包含蕾姆、dora、宫本樱、群像、神里、知更鸟、昔涟、三张狩司司及两张瑶高P，共 12 张指定版本 JPG；局部返修过程见[cases 索引](natural-shaping/references/cases/README.md)。
 
 在仓库根目录运行：
 
@@ -243,6 +245,6 @@ flowchart TD
 python natural-shaping/scripts/validate_portable.py
 ```
 
-校验脚本检查文件清单、SHA256 和显式本地引用，不联网、不修图、不写包内文件。检查通过不代表图像效果或外部工具已验收；当前包内容以 `natural-shaping/package-manifest.json` 为准。
+校验脚本检查文件清单、SHA256 与本地引用；文件清单见 `natural-shaping/package-manifest.json`。
 
 资料按问题读取，外部链接保留出处，不会每次重新访问全部网页或视频。教程观察与向 PS 迁移的判断分别记录，详见[像素蛋糕方法参考](natural-shaping/references/pixcake-cos-workflow.md)。

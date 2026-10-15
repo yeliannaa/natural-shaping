@@ -1,6 +1,6 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-15-portable-highp-r11-annotated-cases",
+  "version": "2026-10-15-portable-r12-clear-public-copy",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
@@ -492,13 +492,13 @@
     },
     {
       "file": "assets/evidence/highp/yao-highp-portrait-analysis-map.png",
-      "bytes": 1745646,
-      "sha256": "683e2b675053b5be94ced537ec8ad5878b548fc4cf500d27749f62579f46a816"
+      "bytes": 1736879,
+      "sha256": "eb6da53a949778b7efce448a0e0c64cd94f66df98f71330f8e40dd4afb3026e1"
     },
     {
       "file": "assets/evidence/highp/yao-highp-wide-analysis-map.png",
-      "bytes": 1650701,
-      "sha256": "7f92eef4cfa27e7277969026437a0833a843cb3fa2bf64e11dc99a2b14bef410"
+      "bytes": 1632754,
+      "sha256": "3114c49133ea904962ef3b1cd385db4fd5c298ce5ebe7ab7a903f14e96cf4f6a"
     },
     {
       "file": "assets/evidence/native-liquify-validation.json",
@@ -1607,8 +1607,8 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 3147,
-      "sha256": "9fac5a62a1feb0b1b76df2f09f74eb487a35da6fc94efa0bd2c5ce89d6a157e3"
+      "bytes": 2410,
+      "sha256": "572f3c855a1a2f1bd81ce6880f46edb135c7c009f432e82ecf7a7a6cc70c978d"
     },
     {
       "file": "assets/examples/rem-v21.jpg",
@@ -1657,13 +1657,13 @@
     },
     {
       "file": "references/aesthetic-reference/index.json",
-      "bytes": 7233,
-      "sha256": "759ac3ca4aa3bc9639c2ab0718ee205317aa09c7e86e4713d2c77d10063d6f68"
+      "bytes": 5998,
+      "sha256": "392e078fdcb99eb2a1b08cd64968d134746397cb06ac71fdcee4ea59e34d0c25"
     },
     {
       "file": "references/aesthetic-reference/README.md",
-      "bytes": 4280,
-      "sha256": "bc4a481f19938fae9dfee7ee8c485ffe55abf7726a4f441a418fa024cf457d0b"
+      "bytes": 2819,
+      "sha256": "1775e1b45c27b998ecbd6972a9a169c3aaef57f3d566f817b14bc2e4cda6c25a"
     },
     {
       "file": "references/case-evidence.json",
@@ -1747,13 +1747,13 @@
     },
     {
       "file": "references/highp-controls.md",
-      "bytes": 18925,
-      "sha256": "71f01d9819fee73ae775660fd5d8a3c6e344dc7ef69b3cff3b935da7662b2595"
+      "bytes": 17538,
+      "sha256": "6c587db81edbbc551ed0efbc9f697fb82916221cc96e8dcce89419a9800da000"
     },
     {
       "file": "references/highp-retouch.md",
-      "bytes": 6895,
-      "sha256": "23add9cd2dcda8ced950290463f9bc35a683a5e105f12d3623f876421f2a85e3"
+      "bytes": 6282,
+      "sha256": "18e23960b6be299b480692c5715ddef96a16afb95653f47f7902508b0cc4ba65"
     },
     {
       "file": "references/mask-tools.md",
