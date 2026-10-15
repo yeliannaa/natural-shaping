@@ -3,3 +3,13 @@ __pycache__/
 .venv/
 .DS_Store
 Thumbs.db
+
+# Local preference stores, training exports and credentials are not public references.
+personal/
+natural-shaping.local.json
+.env
+.env.*
+*.safetensors
+*.ckpt
+*.pt
+*.pth

@@ -492,8 +492,10 @@
           }
         }
       },
-      "currentUse": "Historical process/failure evidence only; use rem-v21.jpg for the accepted final appearance.",
-      "latestAcceptedImage": "assets/examples/rem-v21.jpg"
+      "currentUse": "Historical process/failure evidence only. v12 acceptance remains historical; current display is v21 with scope documented in assets/examples/README.md.",
+      "currentDisplayImage": "assets/examples/rem-v21.jpg",
+      "historicalAcceptedVersion": "v12",
+      "historicalAcceptanceRecord": "assets/evidence/rem-v12-final-qa.json"
     },
     {
       "file": "references/cases/history/ns04-rem-head-intermediate.png",
@@ -564,8 +566,10 @@
           }
         }
       },
-      "currentUse": "Historical process/failure evidence only; use rem-v21.jpg for the accepted final appearance.",
-      "latestAcceptedImage": "assets/examples/rem-v21.jpg"
+      "currentUse": "Historical process/failure evidence only. v12 acceptance remains historical; current display is v21 with scope documented in assets/examples/README.md.",
+      "currentDisplayImage": "assets/examples/rem-v21.jpg",
+      "historicalAcceptedVersion": "v12",
+      "historicalAcceptanceRecord": "assets/evidence/rem-v12-final-qa.json"
     }
   ],
   "_portability": {

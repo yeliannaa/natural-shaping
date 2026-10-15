@@ -6,7 +6,7 @@
 
 A reusable **photo retouching agent skill** for Codex, focused on **portrait retouching** and **cosplay photo editing**. The workflow is defined in [`natural-shaping/SKILL.md`](natural-shaping/SKILL.md): source-based composition sketches, identity-preserving refinement and visual quality checks, with **Photoshop ExtendScript (JSX)** helpers. Codex chooses among the tools available in your environment: built-in image generation/editing can run the editing route without Qwen; Qwen is an optional backend, and Photoshop enables precise local work and layered delivery when available.
 
-[实战教程与效果拆解](https://yeliannaa.github.io/natural-shaping/) · [安装与使用](#安装与使用) · [调用链与分工](#调用链与分工) · [缺少工具时如何继续](#缺少工具时如何继续) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [10 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
+[实战教程与效果拆解](https://yeliannaa.github.io/natural-shaping/) · [安装与使用](#安装与使用) · [两种修图档位](#两种修图档位) · [公开审美参考库](#公开审美参考库) · [调用链与分工](#调用链与分工) · [缺少工具时如何继续](#缺少工具时如何继续) · [常见修图问题](#常见修图问题faq) · [按问题看案例](#按问题看案例) · [构图草图](#构图草图composition-sketches) · [10 张示例与版本状态](natural-shaping/assets/examples/README.md) · [完整流程](natural-shaping/SKILL.md)
 
 ## 代表效果与细节拆解
 
@@ -45,9 +45,27 @@ Qwen 是可选后端；内置图像编辑可独立承担生成路线。精确 PS
 | 构图与沟通 | 分析留白、动作路径、画边与遮挡；给出可比较的原片草图，确认后执行 |
 | 人像精修 | 分别判断肤质、五官、肩颈、腰腹及腿脚比例，保护身份和妆造 |
 | 光线与背景 | 肤色与彩光衔接、按景深弱化路人、处理具体干扰并保留现场感 |
+| 假发与杂毛 | 按复杂度选择原生修复或局部生成，清理抢眼乱丝，保护主发、绒毛及饰件并保留自然碎发 |
 | 道具与验收 | 联看手、衣带、球拍等完整连接；查新增损伤、原尺寸细节与实际交付文件 |
 
 包内提供方法、参考图和辅助脚本。修图效果取决于执行工具与实际验收；不包含像素蛋糕算法、Photoshop 软件或生图模型。
+
+## 两种修图档位
+
+| 档位 | 目标与范围 | 执行依据 |
+|---|---|---|
+| 自然美型（默认） | 明显改善适用的肤质、五官、比例与光色，保持本人感、角色妆造和摄影质感 | 按本图收益选择原生精修、生成或混合处理，不套固定脸型或统一拉腿幅度 |
+| 高P精修（明确选择） | 可以更大胆地设计整图人物、脸型五官、联动表情、妆面、发衣、比例、光线和背景 | 先展示基于原片的[高P确认计划](natural-shaping/references/highp-retouch.md)，确认范围后执行；仍检查识别特征和结构 |
+
+需要生成时，内置 Image 与可选 Qwen 可按当前选择各出候选，共同参考；只有一路可用也能继续。候选既可整图采用，也可仅取局部或作为参考。需调整尺寸时记录真实输入、返回和交付尺寸，按已验证的 PS 方法等比处理，不把放大称为恢复原细节。
+
+## 公开审美参考库
+
+[阅读参考库](natural-shaping/references/aesthetic-reference/README.md) · [按标签查9条索引](natural-shaping/references/aesthetic-reference/index.json)
+
+将修图经验整理为**问题 → 可观察目标 → 适用参考 → 保护与限制**，包括自然轻修、妆造与神情、手腕袖口、衣带受力、坐姿透视、群像光线、高P整体设计和假发杂毛。图片引用复用既有公开示例；高P与发丝条目提供方法参考，不附新的私人照片。
+
+按当前问题选1–3条，再实际看相应图片；公开参考不代表所有使用者的偏好，也不继承案例的编辑授权或训练资格。已保存、局部认可与整图认可分别记录。共享版省去个人原话、案例排名、身份线索、本机路径及训练资料；完整本机偏好库可按[私人档案说明](natural-shaping/references/personal-data.md)自行配置，二者独立。
 
 ## 安装与使用
 
@@ -90,7 +108,7 @@ flowchart TD
     B --> C["展示源图草图，用户确认本图范围"]
     C --> D{"Codex 按问题与实际能力选路"}
     D --> E["PS／可用局部工具精修"]
-    D --> F["Qwen 或内置图像编辑生成候选"]
+    D --> F["内置 Image／可选 Qwen：整图或局部候选，可按选择并行"]
     F --> G["Codex 查看候选，判断收益与损伤"]
     G --> H["整图采用／局部融合／参考原图重做／退回稳定版"]
     H --> I["Codex 检查实际成片与完整连接"]
@@ -107,11 +125,13 @@ flowchart TD
 | 构图与整体美型判断 | Codex 主导，用户确认方向 | 联看脸型五官、假发颈肩、胸腰髋和腿脚；先解释收益、保护点与推断范围，不只处理最后被指出的一处 |
 | 精确肤质、光色与比例调整 | Codex 调用 PS／当前可用的局部编辑工具 | 分开处理纹理、明暗、颜色和几何；保留角色妆造、关节、衣装与握点，按本图实际收益决定强度 |
 | 可选身体定位与原生液化 | Codex 复核关键点，再调用已验证的 PS 几何路线 | 身体识别仅作参考；当前液化封装限定 `faceWidth` 与内嵌 v4 网格，先查真实效应、保护范围，再判断审美收益 |
-| 补光、美型探索、复杂修复与补全候选 | Codex 调用 Qwen 或内置图像编辑 | 使用真实原图与必要参考；生成结果仍需检查，提示词不保证选区外像素或身份不变 |
+| 补光、美型探索、复杂修复与补全候选 | Codex 调用内置图像编辑／可选 Qwen，按选择比较两路 | 使用真实原图与必要参考；生成结果仍需检查，提示词不保证选区外像素或身份不变 |
 | 采用与收尾 | Codex 判断，局部工具按能力执行 | 整图通过才整图采用；局部有益且能可靠对齐时融合；只有方向有价值时参考原图重做；不合格则退回稳定版 |
 | 成片验收与交付 | Codex 负责检查和保存，用户确认终稿 | 查目标、美型、妆造、原尺寸细节、完整连接和实际文件；技术检查不等于用户认可，仅局部认可不算全图接受 |
 
 详细判断见 [美型分工](natural-shaping/references/portrait-beauty.md#美型的判断与执行分工)、[引擎与候选采用](natural-shaping/references/cos-retouch-engines.md#codex-主导与可选生成后端)及 [生成验收](natural-shaping/references/quality-review.md#生成候选的采用检查)。
+
+用户选择双路且环境支持时，记录真实启动状态，让本地 Qwen 与云端 Image 的计算重叠；本地启动故障不阻塞已就绪的云端路线，不把排队或提交当作已并行。局部生成按真实裁片映射合入，脸妆、主发和道具是否受损仍须实看。
 
 ## 缺少工具时如何继续
 
@@ -166,6 +186,10 @@ flowchart TD
 ### 手、衣带、道具或画边缺失，可以局部补全吗？
 
 优先使用真实原像素与相容参考，缺失内容明确标为推断。按确认范围试修后，检查整条连接、握持、透视、材质和接缝；结构仍不可靠时保留稳定版本并说明问题。见[结构复核与局部生成](natural-shaping/references/structure-review-and-generation.md)。
+
+### 假发杂毛、飞丝和交叉毛网怎样清理？
+
+少量孤立丝可原生修复，密集或跨皮肤／绒毛／道具的乱丝可尽早生成局部候选，再受控融合。输入留足头型与材质上下文，采用范围限于需要清理的发丝及修补足迹；检查完整发丝两端与原尺寸接缝，保留自然碎发和蓬松感。达到本图目标就收尾，不默认清成光滑硬壳。见[发丝清理流程](natural-shaping/references/tone-and-edges.md#杂毛与飞丝清理)。
 
 ### 需要哪些工具？能直接一键修图吗？
 

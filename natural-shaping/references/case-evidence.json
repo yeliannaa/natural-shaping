@@ -79,8 +79,13 @@
       "latestOutcome": {
         "version": "v21",
         "image": "assets/examples/rem-v21.jpg",
-        "status": "User selected v21 as the current example.",
-        "usage": "Current appearance reference; historical crops only explain previous failures."
+        "status": "Published current example; later explicit approval covers the hand-wrist-cuff region.",
+        "usage": "Current appearance reference; see assets/examples/README.md for scope. Earlier acceptance stays with its original version."
+      },
+      "historicalAcceptedOutcome": {
+        "version": "v12",
+        "record": "assets/evidence/rem-v12-final-qa.json",
+        "usage": "Historical acceptance only; does not certify later versions."
       }
     }
   ],

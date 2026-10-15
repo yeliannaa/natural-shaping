@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "kind": "public-aesthetic-reference",
+  "purpose": "Conditional reference routing; no automatic user preference or editing authorization.",
+  "media_policy": "Links refer only to media already published in the repository; new private media is excluded.",
+  "default_style": "natural",
+  "highp_confirmation_policy": "Use the current confirmed scope; same-plan local repairs inherit it.",
+  "entries": [
+    {
+      "id": "natural-structure-belts",
+      "style": "natural",
+      "tags": [
+        "腰腹",
+        "衣带",
+        "手部连接"
+      ],
+      "reference": {
+        "path": "../../assets/examples/sakura-v9.jpg",
+        "version": "v9"
+      },
+      "use_for": [
+        "衣带走向",
+        "真实参考与结构复核",
+        "锁定结构后的材质收尾"
+      ],
+      "limits": [
+        "不迁移本图衣带坐标",
+        "不代表新图隐藏结构的事实"
+      ],
+      "evidence": {
+        "status": "published_reference",
+        "scope": "see-published-example-notes"
+      }
+    },
+    {
+      "id": "natural-hand-wrist-cuff",
+      "style": "natural",
+      "tags": [
+        "手背",
+        "手腕",
+        "袖口",
+        "花边"
+      ],
+      "reference": {
+        "path": "../../assets/examples/rem-v21.jpg",
+        "version": "v21"
+      },
+      "use_for": [
+        "完整腕袖连接",
+        "花边遮挡",
+        "生成与局部融合的交界"
+      ],
+      "limits": [
+        "明确认可范围仅腕袖局部",
+        "不自动认可其余全图区域"
+      ],
+      "evidence": {
+        "status": "published_reference",
+        "scope": "local",
+        "region": "hand-wrist-cuff"
+      }
+    },
+    {
+      "id": "natural-makeup-light-polish-a",
+      "style": "natural",
+      "tags": [
+        "自然脸部",
+        "妆造保护",
+        "颈肩",
+        "轻修"
+      ],
+      "reference": {
+        "path": "../../assets/examples/kamisato-v2.jpg",
+        "version": "v2"
+      },
+      "use_for": [
+        "保留神情与妆造",
+        "浅色假发与面部衔接",
+        "有收益的轻修"
+      ],
+      "limits": [
+        "不复制参考脸型或肤色"
+      ],
+      "evidence": {
+        "status": "published_reference",
+        "scope": "see-published-example-notes"
+      }
+    },
+    {
+      "id": "natural-makeup-light-polish-b",
+      "style": "natural",
+      "tags": [
+        "自然脸部",
+        "妆造保护",
+        "头颈姿态",
+        "轻修"
+      ],
+      "reference": {
+        "path": "../../assets/examples/robin-v8.jpg",
+        "version": "v8"
+      },
+      "use_for": [
+        "神情保留",
+        "头颈与交叠手臂协调",
+        "饰件保护"
+      ],
+      "limits": [
+        "不复制人物外形或固定拉伸幅度"
+      ],
+      "evidence": {
+        "status": "published_reference",
+        "scope": "see-published-example-notes"
+      }
+    },
+    {
+      "id": "natural-seated-perspective",
+      "style": "natural",
+      "tags": [
+        "坐姿比例",
+        "前景遮挡",
+        "道具透视"
+      ],
+      "reference": {
+        "path": "../../assets/examples/shousisi-110-v4.jpg",
+        "version": "v4"
+      },
+      "use_for": [
+        "坐姿全身协调",
+        "球拍平面及连线复核",
+        "画边处理"
+      ],
+      "limits": [
+        "不能据旧图坐标推定新图透视"
+      ],
+      "evidence": {
+        "status": "published_reference",
+        "scope": "see-published-example-notes"
+      }
+    },
+    {
+      "id": "natural-group-light",
+      "style": "natural",
+      "tags": [
+        "群像",
+        "逐人气色",
+        "眼部明暗",
+        "唇色"
+      ],
+      "reference": {
+        "path": "../../assets/examples/group111-v5.jpg",
+        "version": "v5"
+      },
+      "use_for": [
+        "逐人检查",
+        "面部受光",
+        "唇色与整体明暗协调"
+      ],
+      "limits": [
+        "不使用统一增亮量替代逐人判断"
+      ],
+      "evidence": {
+        "status": "published_reference",
+        "scope": "see-published-example-notes"
+      }
+    },
+    {
+      "id": "natural-makeup-scene",
+      "style": "natural",
+      "tags": [
+        "全脸协调",
+        "妆面光影",
+        "现场感"
+      ],
+      "reference": {
+        "path": "../../assets/examples/dora-v7.jpg",
+        "version": "v7"
+      },
+      "use_for": [
+        "全脸与假发颈肩协调",
+        "保留现场人群",
+        "光影与妆面"
+      ],
+      "limits": [
+        "后续实验不自动替代此版本"
+      ],
+      "evidence": {
+        "status": "published_reference",
+        "scope": "see-published-example-notes"
+      }
+    },
+    {
+      "id": "highp-conditional-design",
+      "style": "highp",
+      "tags": [
+        "整体设计",
+        "表情联动",
+        "妆肤协调",
+        "同组一致"
+      ],
+      "reference": {
+        "path": "../highp-retouch.md",
+        "kind": "method-only"
+      },
+      "use_for": [
+        "明确授权后的整图设计",
+        "眼唇妆可见",
+        "全脸与神情联动",
+        "人物与衣装场景光色协调"
+      ],
+      "limits": [
+        "无新增公开照片",
+        "跨人物效果待验证",
+        "不形成通用增白或固定脸型预设"
+      ],
+      "evidence": {
+        "status": "method_reference",
+        "scope": "conditional-use"
+      }
+    },
+    {
+      "id": "wig-flyaway-cleanup",
+      "style": "any",
+      "tags": [
+        "杂毛",
+        "假发",
+        "圈状飞丝",
+        "局部融合"
+      ],
+      "reference": {
+        "path": "../tone-and-edges.md#杂毛与飞丝清理",
+        "kind": "method-only"
+      },
+      "use_for": [
+        "清理抢眼乱丝",
+        "保护主发束与邻接材质",
+        "保留少量自然碎发"
+      ],
+      "limits": [
+        "不要求完全无碎发",
+        "每张照片检查整根发丝两端与跨材质连接"
+      ],
+      "evidence": {
+        "status": "method_reference",
+        "scope": "conditional-use"
+      }
+    }
+  ],
+  "retrieval": {
+    "max_examples": 3,
+    "requires_visual_review": true,
+    "inherits_authorization": false
+  },
+  "excluded": [
+    "private_feedback",
+    "personal_ranking",
+    "subject_identity",
+    "local_paths",
+    "private_asset_hashes",
+    "training_pairs",
+    "weights",
+    "new_private_media"
+  ],
+  "reference_status_policy": "Public example notes retain their existing evidence limits; publishing or use as an aesthetic reference does not establish full-image approval or training eligibility."
+}

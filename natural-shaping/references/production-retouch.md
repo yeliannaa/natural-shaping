@@ -87,6 +87,14 @@ Visual review and pixel/file checks answer different questions. A valid file or 
 - If a technical report checks only selected rectangles, state that scope. Claim zero change outside the whole approved region only when that full complement was actually compared.
 - Prefer the last stable native master when a repair fails. Avoid repeatedly regenerating a degraded intermediate. Follow parent-skill retry limits and report unresolved reconstruction uncertainty honestly.
 
+## 生成候选的PS等比放大
+
+需要更大交付尺寸时，在独立工作副本上优先考虑当前已验证的 PS「保留细节2.0」（Preserve Details 2.0／`deepUpscale`），约束比例，按本图目标选择尺寸；输出已足够时不额外放大。原机 Photoshop 21.2.9 的既有工作记录已使用该方法，不据此保证所有 PS 版本兼容。该入口不是 RetouchRuntime 已有的 `upscale` operation；迁移环境先核实际方法可用性，不伪造运行接口。
+
+原生 Action Manager 路线是在 `ImgS` 描述符中只设一个目标边（`Hght` 或 `Wdth`，`#Pxl`），`CnsP=true`、`Intr/Intp=deepUpscale`；降噪随当前材质实看决定，不继承固定参数。执行前保留源候选；记录方法、输入和实际输出尺寸，避免重复升降采样。不可用时改用当前已验证的等比缩放工具并如实说明。
+
+放大后联看眼唇妆、脸颈、发丝、蕾丝、珠链及材质边缘的柔和度、纹理和锐化痕。保留生成候选已经成立的设计，补原片细节只用可靠映射的局部；不能为了原尺寸大面积回贴原脸或原衣。另核实际尺寸、ICC和位深；放大不等于恢复原拍细节，展示高度和文件分辨率分别记录。
+
 ## Reusable helpers and execution speed
 
 - Use [ps_retouch_runtime.jsx](../scripts/ps_retouch_runtime.jsx) for its implemented common PS operations rather than rewriting wrappers each time. Read [its API](ps-runtime.md) when preparing a call; batch dependent layer steps into a coherent script where safe.

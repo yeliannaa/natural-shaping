@@ -1,14 +1,14 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-10-portable-workflow-r4-native-shaping",
+  "version": "2026-10-15-portable-highp-r9-public-reference",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
   "files": [
     {
       "file": "agents/openai.yaml",
-      "bytes": 329,
-      "sha256": "9af8b095e357914fcdf45df5a3577d57cb7084aa544df8ff0de266115ec63f4c"
+      "bytes": 352,
+      "sha256": "d2c49b43cbf22c0fb156ff61ab8a1057ae09fb2ceb29704b43d5fbf4e64f48d3"
     },
     {
       "file": "assets/evidence/accepted-finals-20261006.json",
@@ -1636,14 +1636,24 @@
       "sha256": "45c8e99d61b49fc56c872be276286c7bc30620dddde53c1eaec3c6619ba964ef"
     },
     {
+      "file": "references/aesthetic-reference/index.json",
+      "bytes": 6649,
+      "sha256": "101464b6ea25c450020eb977f08adda4c1ca639f0ead1b907099a83cede98732"
+    },
+    {
+      "file": "references/aesthetic-reference/README.md",
+      "bytes": 4096,
+      "sha256": "d23e3030522a27ec24e4fbb278d1d66bd81bb0a5bd8def6b6c5e005414ce52a2"
+    },
+    {
       "file": "references/case-evidence.json",
-      "bytes": 4594,
-      "sha256": "8171368be94658fe0968a1803385134051ebfe1ad14d61580bc4bb8f043fe8ba"
+      "bytes": 4898,
+      "sha256": "1edd130adcdc1d496faf2a079157ecf3635e12c653626aa2a2cfca55851f0100"
     },
     {
       "file": "references/case-files.json",
-      "bytes": 24001,
-      "sha256": "92f066fc5dd57a004a9be3ea17dea8e1ab515965a9517134ed5393bb2f95558f"
+      "bytes": 24361,
+      "sha256": "5ece7affb6c7ef010c6d2dca150fef8cae6084b5837fe5b41e958fd813828dd6"
     },
     {
       "file": "references/cases/history/ns04-rem-head-before.png",
@@ -1687,8 +1697,8 @@
     },
     {
       "file": "references/cases/README.md",
-      "bytes": 1440,
-      "sha256": "3962bd4030eb073138fb698a3990ec4c2e8dc9b85c640ed46a5470cd496f7571"
+      "bytes": 1593,
+      "sha256": "0fd296ef9c60c4bbbad2644dad03059f1fce45a716c358c14b04fd42afd7f4bc"
     },
     {
       "file": "references/composition-and-capture.md",
@@ -1697,23 +1707,28 @@
     },
     {
       "file": "references/composition-and-key-elements.md",
-      "bytes": 20514,
-      "sha256": "71d3f01f5b8c0673bd41c6460fd814a3d7d7a5fd52fe2bef3914fd6dd19c93fc"
+      "bytes": 22612,
+      "sha256": "8b2a84bf961424158f38abb3a34666168b52c104363f7624cbe83f52ecd51f8f"
     },
     {
       "file": "references/cos-retouch-engines.md",
-      "bytes": 21998,
-      "sha256": "1c9545ace8c892376837f397a481a94e2a59caa23f1ed15f755977979c4d309f"
+      "bytes": 26598,
+      "sha256": "fd75473fc0962b29fc31d82e301397507411906b2d3d70c95fb8274acf61b38a"
     },
     {
       "file": "references/engine-experiment-history.md",
-      "bytes": 5644,
-      "sha256": "389cba20c614e59fd46f6312d696cfb2cff696395fb1071c9c0e7ce52ee35c3f"
+      "bytes": 10278,
+      "sha256": "f1b89ba662debd25403c026dc916435973149c2cfc5583bd6ed00ac051b2d8fc"
     },
     {
       "file": "references/external-examples.md",
       "bytes": 3172,
       "sha256": "602412f699f0d238f00c9f7e719044f0794ecf9640d8381bf6799d37b35153bf"
+    },
+    {
+      "file": "references/highp-retouch.md",
+      "bytes": 6101,
+      "sha256": "8ba7a2e5bd8c8bc40171425344f064368b81b589b861efdb6498f796dc2daa32"
     },
     {
       "file": "references/mask-tools.md",
@@ -1727,8 +1742,13 @@
     },
     {
       "file": "references/personal-cases.md",
-      "bytes": 16655,
-      "sha256": "6a2f1d014771c703e259e8e3eb7cf661471f4caee4613d31e816a41a7b7c5800"
+      "bytes": 16787,
+      "sha256": "4f927e862bd1d6c1d23cb96078cf0d8daba895cf86848ae06107ec1deb4aaff5"
+    },
+    {
+      "file": "references/personal-data.md",
+      "bytes": 15112,
+      "sha256": "aa45e6c01001ea4687c3eb7430a6762b950d048440b4ac46e1a1a18ef731a823"
     },
     {
       "file": "references/pixcake-cos-cases.md",
@@ -1752,13 +1772,13 @@
     },
     {
       "file": "references/portability.md",
-      "bytes": 8733,
-      "sha256": "1aba62f355d3581241fdb9eb543480a6108d1a6123aa13589a48c13510fae90a"
+      "bytes": 9195,
+      "sha256": "27734709720e3653d058edf58090f727950ba7486ffbf99ad696b847560c3fe6"
     },
     {
       "file": "references/portrait-beauty.md",
-      "bytes": 19737,
-      "sha256": "207c6258f6cdfe14edba75ec70a9f4dfaeda91fb28a98d571909d46c5a25ac6b"
+      "bytes": 21390,
+      "sha256": "d404fdb7a9e458fc4c8457fb53f3508e197a4cb9f226e87abdecdf7fff1a05b9"
     },
     {
       "file": "references/pose-and-occlusion-cases.md",
@@ -1767,8 +1787,8 @@
     },
     {
       "file": "references/production-retouch.md",
-      "bytes": 19467,
-      "sha256": "c4e6fb2cfb710ba924b46bcd8535fed48c6fa43ed5f7b6b26dfb64cbc2e71eb1"
+      "bytes": 20751,
+      "sha256": "932c71fe9643a2a9ccb429dfcf1b4dd13ca92d3058f9333833973bf3d879e8e6"
     },
     {
       "file": "references/ps-runtime.md",
@@ -1777,8 +1797,8 @@
     },
     {
       "file": "references/quality-review.md",
-      "bytes": 15283,
-      "sha256": "61b937f735082cede107d9b73c630655853050576bb59bd07887b5f1cafa9644"
+      "bytes": 16080,
+      "sha256": "8f9111e21149a7ced95a27eb7866353f4a170cc6702904b525104b5eb1f587b9"
     },
     {
       "file": "references/shape-and-pose.md",
@@ -1787,13 +1807,13 @@
     },
     {
       "file": "references/structure-review-and-generation.md",
-      "bytes": 7258,
-      "sha256": "9340b0cc73501dae0ba12dd4d746381c7a97b5bb3a12395c91d71dca30fff173"
+      "bytes": 7579,
+      "sha256": "70281d81e89030269b42c616abc41d1deb3972fd838e312df1a2c93956871c64"
     },
     {
       "file": "references/tone-and-edges.md",
-      "bytes": 6536,
-      "sha256": "17fb93bdd059ecc3d78b15e2f168bfdda36e6235c824f96828a91ae77a544e01"
+      "bytes": 10815,
+      "sha256": "4f6497f0f4eeaf841ad35ac2eb60d5ad63477f07593d1fe5338b9e1dda357368"
     },
     {
       "file": "scripts/build_body_reference.py",
@@ -1814,6 +1834,11 @@
       "file": "scripts/mask-requirements-lock.txt",
       "bytes": 556,
       "sha256": "80ce2eef1a722d5ad971fd704102f04dfad9b37b3c9c4db109e34bea786bfe4b"
+    },
+    {
+      "file": "scripts/personal_data.py",
+      "bytes": 36467,
+      "sha256": "775a927e51a39ef3cf504abf0ebbf9a65a2988e06c32f3303b3826a6fa13837c"
     },
     {
       "file": "scripts/ps_liquify_runtime.jsx",
@@ -1847,8 +1872,8 @@
     },
     {
       "file": "SKILL.md",
-      "bytes": 18851,
-      "sha256": "32e846f86a06a63959f7789a0561b442244817ee86f895580f0654d1a4db9061"
+      "bytes": 22514,
+      "sha256": "9bb28f7241b07bc65549cddcca5f7ec23f24e62f98356d6b1122645c7c1e36f5"
     }
   ],
   "historical_runtime_validation": {

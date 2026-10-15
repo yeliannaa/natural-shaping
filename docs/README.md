@@ -4,6 +4,8 @@
 
 本目录是供使用者阅读的静态教程站，由 GitHub Pages 从 `main` 分支的 `/docs` 发布。安装技能时仍复制完整的 `natural-shaping/` 目录；展示站不是技能执行依赖。
 
+进阶方法与可选参考另见[高P精修](../natural-shaping/references/highp-retouch.md)、[公开审美参考库](../natural-shaping/references/aesthetic-reference/README.md)和[发丝清理](../natural-shaping/references/tone-and-edges.md#杂毛与飞丝清理)。这些资料随技能包提供，不要求新使用者配置原作者的私人库或本地模型。
+
 | 页面 | 内容 |
 |---|---|
 | `index.html` | 蕾姆、群像、宫本樱三组代表效果，以及狩司司双草图入口 |
