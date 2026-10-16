@@ -14,7 +14,7 @@
 | [狩司司110 v4](shousisi-110-v4.jpg) | v4；球拍返修后已保存版 | 坐姿比例、遮挡清理、球拍整体透视与附件识别 |
 | [狩司司113 v2](shousisi-113-v2.jpg) | v2；已保存版 | 环抱手臂坐姿、头颈与躯干关系、浅色衣料和背景 |
 | [狩司司114 v1](shousisi-114-v1.jpg) | v1；已保存版 | 双手持发、交叠腿及脚部与画边关系 |
-| [瑶竖幅高P](yao-highp-portrait-final.jpg) | 高P v4；已认可终稿 | 全脸、妆肤与神情设计，全局受光和衣料层次，Image＋PS尺寸与融合 |
+| [瑶竖幅高P](yao-highp-portrait-final.jpg) | 高P v8；已认可终稿 | 全脸、妆肤与神情设计，全局受光、发丝整理，以及按真实参考补全法杖后保持母稿取景的局部融合 |
 | [瑶横幅高P](yao-highp-wide-final.jpg) | 高P v3；已认可终稿 | 妆造与完成度，前景手景深、握杖与透明饰件保护 |
 
 瑶的两份JPG为去拍摄元数据的原尺寸成片展示副本（1569×2160、2160×1440）。修前后效果见[整图与局部对照](https://yeliannaa.github.io/natural-shaping/highp.html)，处理设置见[详细调参](../../references/highp-controls.md)。

@@ -1,6 +1,6 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-15-portable-r12-clear-public-copy",
+  "version": "2026-10-16-portable-r13-prop-repair-frame",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
@@ -492,8 +492,8 @@
     },
     {
       "file": "assets/evidence/highp/yao-highp-portrait-analysis-map.png",
-      "bytes": 1736879,
-      "sha256": "eb6da53a949778b7efce448a0e0c64cd94f66df98f71330f8e40dd4afb3026e1"
+      "bytes": 1734491,
+      "sha256": "52f52ddd4dd29ab120ab9277e45275202981fc748b6c7aae548f4e2cfc8a601d"
     },
     {
       "file": "assets/evidence/highp/yao-highp-wide-analysis-map.png",
@@ -1607,8 +1607,8 @@
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2410,
-      "sha256": "572f3c855a1a2f1bd81ce6880f46edb135c7c009f432e82ecf7a7a6cc70c978d"
+      "bytes": 2454,
+      "sha256": "1339efbd952d3f073ed055835d4b0561a0d1a049641675514adb3a2a7ec724b9"
     },
     {
       "file": "assets/examples/rem-v21.jpg",
@@ -1647,8 +1647,8 @@
     },
     {
       "file": "assets/examples/yao-highp-portrait-final.jpg",
-      "bytes": 1013507,
-      "sha256": "320c26b31a500a3669fba006389d0428fac201243a0c1cc778c71174ceed01af"
+      "bytes": 1762203,
+      "sha256": "126233a6f965dd28de099f3ced7512bc43d3ea07c508f9f47182841cc391b415"
     },
     {
       "file": "assets/examples/yao-highp-wide-final.jpg",
@@ -1658,7 +1658,7 @@
     {
       "file": "references/aesthetic-reference/index.json",
       "bytes": 5998,
-      "sha256": "392e078fdcb99eb2a1b08cd64968d134746397cb06ac71fdcee4ea59e34d0c25"
+      "sha256": "1035b5dd29105e6bcfc342fbc7781253b07d6ef7d2b70ae9bf5cbc4e3a76bd32"
     },
     {
       "file": "references/aesthetic-reference/README.md",
@@ -1732,8 +1732,8 @@
     },
     {
       "file": "references/cos-retouch-engines.md",
-      "bytes": 26598,
-      "sha256": "fd75473fc0962b29fc31d82e301397507411906b2d3d70c95fb8274acf61b38a"
+      "bytes": 27130,
+      "sha256": "117b102174d84a6ecaf7b8025d7b467b2289d8fa1dba73d89aa8148165467ddd"
     },
     {
       "file": "references/engine-experiment-history.md",
@@ -1747,8 +1747,8 @@
     },
     {
       "file": "references/highp-controls.md",
-      "bytes": 17538,
-      "sha256": "6c587db81edbbc551ed0efbc9f697fb82916221cc96e8dcce89419a9800da000"
+      "bytes": 19273,
+      "sha256": "c1745af2d665cda10385b1d06c2733bf60bd22c944678088d73efed6bda62312"
     },
     {
       "file": "references/highp-retouch.md",
@@ -1822,8 +1822,8 @@
     },
     {
       "file": "references/quality-review.md",
-      "bytes": 16080,
-      "sha256": "8f9111e21149a7ced95a27eb7866353f4a170cc6702904b525104b5eb1f587b9"
+      "bytes": 16850,
+      "sha256": "8e060062a9f5601f57a9c658522766966be0eebdd1c386b21529e7d8cde0e791"
     },
     {
       "file": "references/shape-and-pose.md",
@@ -1832,8 +1832,8 @@
     },
     {
       "file": "references/structure-review-and-generation.md",
-      "bytes": 7579,
-      "sha256": "70281d81e89030269b42c616abc41d1deb3972fd838e312df1a2c93956871c64"
+      "bytes": 8542,
+      "sha256": "8016d717ba4669cad1baf64a6da18a86fdec0184cedbe35c1a8f309cf682ee4d"
     },
     {
       "file": "references/tone-and-edges.md",
@@ -1897,8 +1897,8 @@
     },
     {
       "file": "SKILL.md",
-      "bytes": 22623,
-      "sha256": "38b6483d9581b0e23c49db79044bd0e72b0ab533edcb865ea76d81228065f9aa"
+      "bytes": 23054,
+      "sha256": "6309b626c45004e2c147d00c646b40f618cd54dd2c6c4d53d2d61899b487779c"
     }
   ],
   "historical_runtime_validation": {
