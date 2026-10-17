@@ -5,6 +5,7 @@ Python 3.8+, standard library only. No image editing, model invocation, training
 network, or image copying. Paths and personal data live outside the skill package.
 """
 import argparse
+from fractions import Fraction
 import hashlib
 import json
 import os
@@ -58,15 +59,44 @@ def scope_overlaps(left, right):
     return False
 
 
+def validate_size(size, label="Image size"):
+    if (not isinstance(size, list) or len(size) != 2
+            or not all(type(value) is int and value > 0 for value in size)):
+        raise ValueError(label + " needs two positive integers")
+    return size
+
+
+def validate_crop(crop, size, label="Crop"):
+    validate_size(size)
+    if not isinstance(crop, list) or len(crop) != 4 or not all(type(value) is int for value in crop):
+        raise ValueError(label + " needs four integer coordinates")
+    left, top, right, bottom = crop
+    if not (0 <= left < right <= size[0] and 0 <= top < bottom <= size[1]):
+        raise ValueError(label + " must be nonempty and inside its parent image")
+    return crop
+
+
+def is_proportional_resize(crop_size, output_size):
+    """One positive scale must round both dimensions half-up to the output.
+
+    Each output n admits n - 1/2 <= source * scale < n + 1/2.
+    Intersect these half-open scale intervals exactly; no percentage tolerance.
+    """
+    lower = max(Fraction(2 * output - 1, 2 * source)
+                for source, output in zip(crop_size, output_size))
+    upper = min(Fraction(2 * output + 1, 2 * source)
+                for source, output in zip(crop_size, output_size))
+    return lower < upper
+
+
 def validate_scope(scope, size):
+    validate_size(size)
     if not isinstance(scope, dict) or scope.get("kind") not in ("full", "local"):
         raise ValueError("Result scope must be full or local")
     if scope["kind"] == "local":
-        box = scope.get("bbox_xyxy", [])
-        if not scope.get("region_id") or len(box) != 4 or not all(type(value) is int for value in box):
-            raise ValueError("Local result scope needs a region ID and four integer coordinates")
-        if not (0 <= box[0] < box[2] <= size[0] and 0 <= box[1] < box[3] <= size[1]):
-            raise ValueError("Result scope lies outside its reviewed image")
+        if not isinstance(scope.get("region_id"), str) or not scope["region_id"]:
+            raise ValueError("Local result scope needs a region ID")
+        validate_crop(scope.get("bbox_xyxy"), size, "Local result scope")
 
 
 def image_size(path):
@@ -157,6 +187,9 @@ class Store:
         return path
 
     def verify_asset(self, asset):
+        if not isinstance(asset, dict):
+            raise ValueError("Asset must be an object")
+        validate_size(asset.get("size"), "Asset size")
         path = self.resolve(asset)
         key = (str(path), canonical_hash(asset["sha256"]), tuple(asset["size"]))
         if key not in self.verified:
@@ -179,34 +212,62 @@ class Store:
             child = case["assets"][child_id]
             self.verify_asset(child)
             lineage = child.get("derived_from", {})
-            if lineage.get("verified") is not True or not lineage.get("evidence") or not lineage.get("mapping"):
+            if (not isinstance(lineage, dict) or lineage.get("verified") is not True
+                    or not lineage.get("evidence") or not isinstance(lineage.get("mapping"), dict)
+                    or not lineage["mapping"]):
                 raise ValueError("Prepared target lacks verified mapping to accepted image")
             operations = lineage.get("operations", [])
-            if not operations or not set(operations).issubset({"crop", "resize", "color_convert"}):
+            if (not isinstance(operations, list) or not operations
+                    or any(not isinstance(item, str) or item not in {"crop", "resize", "color_convert"}
+                           for item in operations)):
                 raise ValueError("Derived target includes unaccepted image modifications")
             child_id = lineage["asset_id"]
         self.verify_asset(case["assets"][parent_id])
 
     def local_crop(self, case, child_id, parent_id):
+        if not all(isinstance(value, str) and value for value in (child_id, parent_id)):
+            raise ValueError("Prepared crop and parent IDs must be nonempty strings")
         if child_id == parent_id:
-            raise ValueError("A local training pair must use actual prepared crops, not the full image")
-        self.verify_derived(case, child_id, parent_id)
+            raise ValueError("A prepared pair must use actual prepared crops, not the parent image")
         child, parent = case["assets"][child_id], case["assets"][parent_id]
-        lineage = child["derived_from"]
-        if lineage["asset_id"] != parent_id or "crop" not in lineage["operations"]:
-            raise ValueError("Local crops need direct mapping to their recorded parent canvas")
+        lineage = child.get("derived_from", {})
+        if not isinstance(lineage, dict) or lineage.get("asset_id") != parent_id:
+            raise ValueError("Prepared crops need direct mapping to their recorded parent canvas")
+        self.verify_derived(case, child_id, parent_id)
+        if "crop" not in lineage["operations"]:
+            raise ValueError("Prepared crop operations must include crop")
         mapping = lineage["mapping"]
-        crop = mapping.get("crop_xyxy", [])
-        if len(crop) != 4 or not all(isinstance(item, int) for item in crop):
-            raise ValueError("Local crop needs four integer coordinates")
-        left, top, right, bottom = crop
-        if not (0 <= left < right <= parent["size"][0] and 0 <= top < bottom <= parent["size"][1]):
-            raise ValueError("Local crop lies outside its parent image")
-        if mapping.get("output_size") != child["size"]:
-            raise ValueError("Local crop output size is not bound to the actual prepared image")
-        if "resize" not in lineage["operations"] and child["size"] != [right - left, bottom - top]:
-            raise ValueError("Local crop dimensions do not match its mapping")
+        if set(mapping) != {"crop_xyxy", "output_size"}:
+            raise ValueError("Crop mapping needs only crop_xyxy and output_size; padding/rotation is unsupported")
+        crop = validate_crop(mapping["crop_xyxy"], parent["size"], "Prepared crop")
+        output_size = validate_size(mapping["output_size"], "Crop output size")
+        if output_size != child["size"]:
+            raise ValueError("Crop output size is not bound to the actual prepared image")
+        crop_size = [crop[2] - crop[0], crop[3] - crop[1]]
+        if "resize" not in lineage["operations"]:
+            if output_size != crop_size:
+                raise ValueError("Crop dimensions do not match its mapping without resize")
+        elif not is_proportional_resize(crop_size, output_size):
+            raise ValueError("Crop resize must use one scale with round-half-up integer dimensions")
         return crop
+
+    def prepared_pair_mapping(self, case, pair, target_parent_id):
+        mapping = pair["alignment"].get("mapping")
+        if (not isinstance(mapping, dict)
+                or set(mapping) != {"input_crop_xyxy", "target_crop_xyxy", "output_size"}):
+            raise ValueError("Prepared pair mapping needs input_crop_xyxy, target_crop_xyxy and output_size")
+        input_parent_id = pair["input_parent_asset"]
+        input_crop = self.local_crop(case, pair["input_asset"], input_parent_id)
+        target_crop = self.local_crop(case, pair["target_asset"], target_parent_id)
+        validate_crop(mapping["input_crop_xyxy"], case["assets"][input_parent_id]["size"], "Pair input crop")
+        validate_crop(mapping["target_crop_xyxy"], case["assets"][target_parent_id]["size"], "Pair target crop")
+        output_size = validate_size(mapping["output_size"], "Pair output size")
+        if mapping["input_crop_xyxy"] != input_crop or mapping["target_crop_xyxy"] != target_crop:
+            raise ValueError("Pair crop mapping conflicts with its respective prepared asset")
+        if (output_size != case["assets"][pair["input_asset"]]["size"]
+                or output_size != case["assets"][pair["target_asset"]]["size"]):
+            raise ValueError("Pair output size conflicts with the actual prepared images")
+        return target_crop
 
     def pair_row(self, case, pair):
         if pair.get("status") != "ready":
@@ -216,7 +277,7 @@ class Store:
         if not case.get("source_group_id"):
             raise ValueError("Missing source group")
         scope = pair["scope"]
-        if scope.get("kind") not in ("full", "local"):
+        if not isinstance(scope, dict) or scope.get("kind") not in ("full", "local"):
             raise ValueError("Unsupported pair scope")
         if scope["kind"] == "local" and not scope.get("region_id"):
             raise ValueError("Local pair needs a region ID")
@@ -254,19 +315,18 @@ class Store:
         input_path = self.verify_asset(input_asset)
         target_path = self.verify_asset(target_asset)
         alignment = pair.get("alignment", {})
-        if alignment.get("status") != "verified" or not alignment.get("evidence"):
+        if not isinstance(alignment, dict) or alignment.get("status") != "verified" or not alignment.get("evidence"):
             raise ValueError("Pair alignment has not been reviewed")
         if alignment.get("method") not in ("same_canvas", "prepared_pair"):
             raise ValueError("Unsupported alignment method")
         if input_asset["size"] != target_asset["size"]:
             raise ValueError("Prepare mapped, equal-canvas input and target before export")
-        if alignment["method"] == "prepared_pair" and not alignment.get("mapping"):
-            raise ValueError("Prepared pair lacks its actual source/target mapping")
+        target_crop = None
+        if alignment["method"] == "prepared_pair":
+            target_crop = self.prepared_pair_mapping(case, pair, variant["asset_id"])
         if scope["kind"] == "local":
             if alignment["method"] != "prepared_pair":
                 raise ValueError("Local pairs must be prepared mapped crops")
-            self.local_crop(case, pair["input_asset"], pair["input_parent_asset"])
-            target_crop = self.local_crop(case, pair["target_asset"], variant["asset_id"])
             if scope.get("bbox_xyxy") != target_crop:
                 raise ValueError("Local target crop must match the recorded acceptance region")
         colors = pair.get("color_review", {})
@@ -405,12 +465,19 @@ def retrieval_comparisons(store, case, variant_id):
             continue
         preferred = record.get("preferred_variant")
         other = record.get("other_variant", record.get("compared_variant"))
-        if variant_id not in (preferred, other):
+        compared = record.get("compared_variants", [])
+        if not isinstance(compared, list):
+            compared = []
+        if variant_id not in (preferred, other) and variant_id not in compared:
             continue
         fields = ("id", "actor", "statement_type", "status", "tentative", "note", "tags",
-                  "scope", "summary", "interpretation", "applicability")
+                  "scope", "summary", "interpretation", "applicability", "outcome", "conditions",
+                  "compared_variants")
         item = {key: record[key] for key in fields if key in record}
-        item.update(preferred_variant=preferred, other_variant=other)
+        if preferred is not None:
+            item["preferred_variant"] = preferred
+        if other is not None:
+            item["other_variant"] = other
         item["feedback"] = [feedback_summary(store.by_feedback[feedback_id])
                             for feedback_id in record.get("feedback_ids", [])
                             if feedback_id in store.by_feedback

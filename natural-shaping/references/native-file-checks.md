@@ -6,7 +6,7 @@ Resolve paths using [the portability convention](portability.md). The examples b
 
 ## Independent PNG checker
 
-[verify_native_png.ps1](../scripts/verify_native_png.ps1) reads inputs without editing them. Pass a new report path. Default expected depth is 16; use `-ExpectedDepth 8` explicitly for sharing previews.
+[verify_native_png.ps1](../scripts/verify_native_png.ps1) reads inputs without editing them. The report must be a new file: atomic creation rejects any existing report, including input aliases, on success and error paths. Report-write failure is a failed check; success is published only after safe writing and a final input-hash check. Default expected depth is 16; use `-ExpectedDepth 8` explicitly for sharing previews.
 
 ```powershell
 param(
@@ -24,7 +24,7 @@ $retouchJobRoot = (Resolve-Path -LiteralPath $JobRoot).Path
 
 Replace example ROI coordinates with the actual native canvas region. `-AllowedRoi` accepts one or more flattened rectangles and checks their entire outside complement. Omit it for exact whole-image comparison. For exact crops, use `-Png $CropPng -CropOf $FullPng -CropRect @(left,top,right,bottom)` with actual integer bounds excluding right/bottom.
 
-`-AllowMissingIcc` is an explicit exception: the report still discloses absent ICC. It does not prove a profile that was never embedded. The checker validates CRC, zlib Adler32, decoded RGB/RGBA samples, bit depth, standard PNG color-definition chunks and stable input hashes. XMP naming sRGB is not an ICC payload. Native Photoshop PNG behavior can differ by profile/version, so verify the saved bytes rather than relying only on document metadata.
+`-AllowMissingIcc` is an explicit exception: the report still discloses absent ICC. It does not prove a profile that was never embedded. The checker validates CRC, zlib Adler32, decoded RGB/RGBA samples, bit depth, standard PNG color-definition chunks and stable input hashes. RGB PNGs using a tRNS transparency key are explicitly rejected by this checker; convert a separate working copy to RGBA with a suitable tool before checking, rather than treating RGB samples alone as appearance equality. XMP naming sRGB is not an ICC payload. Native Photoshop PNG behavior can differ by profile/version, so verify the saved bytes rather than relying only on document metadata.
 
 ## Recompression
 

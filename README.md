@@ -245,6 +245,8 @@ PS 液化模块支持已接入的 `faceWidth` 与内嵌 v4 网格，接口说明
 python natural-shaping/scripts/validate_portable.py
 ```
 
-校验脚本检查文件清单、SHA256 与本地引用；文件清单见 `natural-shaping/package-manifest.json`。
+校验脚本检查文件清单、SHA256 与本地引用；文件清单见 `natural-shaping/package-manifest.json`。复杂局部合成的实际文件、裁框与复核绑定见[交付检查](natural-shaping/references/delivery-contract.md)。
+
+维护时运行 `python -B -m unittest discover -s tests -v` 检查PNG报告安全、透明度拒绝、训练映射和交付绑定；交付检查测试需要Pillow，PNG行为测试还需PowerShell。GitHub的PR与main提交会自动执行包、展示资料和合成回归检查；这些检查与真实照片目视验收分开。
 
 资料按问题读取，外部链接保留出处，不会每次重新访问全部网页或视频。教程观察与向 PS 迁移的判断分别记录，详见[像素蛋糕方法参考](natural-shaping/references/pixcake-cos-workflow.md)。

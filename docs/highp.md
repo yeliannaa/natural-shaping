@@ -74,6 +74,6 @@
 2. 整张头脸和同组照片联看，确认眼睛、表情、脸颈、手腕、握点、饰件与透视。
 3. 重开实际导出图，先核对认可母稿的实际画幅，再在适屏与100%局部复核融合边界、透明材质和衣料纹理；核对责任区外的人物、衣装与背景，分别检查清晰区域与前景柔焦。
 
-展示版本为瑶135 v8与140 v3。包内可查看[竖幅原尺寸JPG展示副本](../natural-shaping/assets/examples/yao-highp-portrait-final.jpg)与[横幅原尺寸JPG展示副本](../natural-shaping/assets/examples/yao-highp-wide-final.jpg)。
+<!-- example-status:yao135 -->瑶135竖幅高P v8；已认可终稿<!-- /example-status -->；<!-- example-status:yao140 -->瑶140横幅高P v3；已认可终稿<!-- /example-status -->。包内可查看[竖幅原尺寸JPG展示副本](../natural-shaping/assets/examples/yao-highp-portrait-final.jpg)与[横幅原尺寸JPG展示副本](../natural-shaping/assets/examples/yao-highp-wide-final.jpg)。
 
 [案例首页](https://yeliannaa.github.io/natural-shaping/) · [宫本樱结构精修](sakura.md) · [蕾姆腕袖与光线](rem.md) · [公开素材说明](assets/highp-showcase.json)

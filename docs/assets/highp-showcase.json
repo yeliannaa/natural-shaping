@@ -220,7 +220,8 @@
         ],
         "kind": "retrospective-teaching",
         "note": "编号与辅助线展示构图、美型、光色及结构保护。"
-      }
+      },
+      "result_version": "v3"
     }
   ]
 }

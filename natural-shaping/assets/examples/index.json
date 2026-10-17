@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "_portability": {
+    "path_base": "skill-root"
+  },
+  "purpose": "Current public display versions and recorded status; not private feedback or training eligibility.",
+  "examples": [
+    {
+      "id": "rem",
+      "label": "蕾姆 v21",
+      "version": "v21",
+      "reference_version": "v21",
+      "file": "assets/examples/rem-v21.jpg",
+      "status": "腕袖局部认可",
+      "use": "完整手背、手腕与袖口衔接，花边遮挡和局部融合"
+    },
+    {
+      "id": "dora",
+      "label": "dora v7",
+      "version": "v7",
+      "reference_version": "v7",
+      "file": "assets/examples/dora-v7.jpg",
+      "status": "已收录版",
+      "use": "人物精修、保留现场人群、依据真实武器参考控制补全范围"
+    },
+    {
+      "id": "sakura",
+      "label": "宫本樱 v9",
+      "version": "v9",
+      "reference_version": "v9",
+      "file": "assets/examples/sakura-v9.jpg",
+      "status": "已保存版；v8整体与结构获认可",
+      "use": "多视角衣带结构、锁定位置后的材质收尾"
+    },
+    {
+      "id": "group111",
+      "label": "群像111 v5",
+      "version": "v5",
+      "reference_version": "v5",
+      "file": "assets/examples/group111-v5.jpg",
+      "status": "已收录版",
+      "use": "逐人气色、唇色与下沿补全"
+    },
+    {
+      "id": "kamisato",
+      "label": "神里 v2",
+      "version": "v2",
+      "reference_version": "v2",
+      "file": "assets/examples/kamisato-v2.jpg",
+      "status": "已保存版",
+      "use": "浅色假发、颈肩与面部衔接、刀身和握持关系"
+    },
+    {
+      "id": "robin",
+      "label": "知更鸟 v8",
+      "version": "v8",
+      "reference_version": "v8",
+      "file": "assets/examples/robin-v8.jpg",
+      "status": "已保存版",
+      "use": "头颈姿态、交叠手臂、羽翼与饰件的保护关系"
+    },
+    {
+      "id": "xilian",
+      "label": "昔涟已保存版",
+      "version": "saved-20261005",
+      "reference_version": "saved-20261005",
+      "file": "assets/examples/xilian-saved-20261005.jpg",
+      "status": "已保存版；人物精修待完善",
+      "use": "持花与提裙动作、粉发与硬质衣装、背景弱化"
+    },
+    {
+      "id": "shousisi110",
+      "label": "狩司司110 v4",
+      "version": "v4",
+      "reference_version": "v4",
+      "file": "assets/examples/shousisi-110-v4.jpg",
+      "status": "球拍返修后已保存版",
+      "use": "坐姿比例、遮挡清理、球拍整体透视与附件识别"
+    },
+    {
+      "id": "shousisi113",
+      "label": "狩司司113 v2",
+      "version": "v2",
+      "reference_version": "v2",
+      "file": "assets/examples/shousisi-113-v2.jpg",
+      "status": "已保存版",
+      "use": "环抱手臂坐姿、头颈与躯干关系、浅色衣料和背景"
+    },
+    {
+      "id": "shousisi114",
+      "label": "狩司司114 v1",
+      "version": "v1",
+      "reference_version": "v1",
+      "file": "assets/examples/shousisi-114-v1.jpg",
+      "status": "已保存版",
+      "use": "双手持发、交叠腿及脚部与画边关系"
+    },
+    {
+      "id": "yao135",
+      "label": "瑶135竖幅高P v8",
+      "version": "v8",
+      "reference_version": "highp-v8",
+      "file": "assets/examples/yao-highp-portrait-final.jpg",
+      "status": "已认可终稿",
+      "use": "全脸、妆肤与神情设计，全局受光、发丝整理，以及按真实参考补全法杖后保持母稿取景的局部融合"
+    },
+    {
+      "id": "yao140",
+      "label": "瑶140横幅高P v3",
+      "version": "v3",
+      "reference_version": "highp-v3",
+      "file": "assets/examples/yao-highp-wide-final.jpg",
+      "status": "已认可终稿",
+      "use": "妆造与完成度，前景手景深、握杖与透明饰件保护"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+name: Package and regression checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Install image inspection dependency
+        run: python -m pip install Pillow==10.4.0
+      - name: Validate portable skill package
+        run: python -B natural-shaping/scripts/validate_portable.py
+      - name: Check public example status
+        run: python -B tools/sync_example_status.py
+      - name: Check site links and image dimensions
+        run: python -B tools/check_site.py
+      - name: Run synthetic behavior regressions
+        run: python -B -m unittest discover -s tests -v

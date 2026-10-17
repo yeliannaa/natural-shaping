@@ -10,6 +10,8 @@ Bounds exclude the right/bottom edge. AllowedRoi accepts one or more flattened x
 ExpectedDepth defaults to 16. Use 8 explicitly for previews; that never certifies a native 16-bit master.
 Embedded RGB ICC is required by default. AllowMissingIcc explicitly permits absent ICC; sRGB/gAMA/cHRM tags are still inspected and compared. Absent ICC does not mean untagged colour.
 RGB and RGBA are supported; comparisons include every actual channel, including alpha when present.
+PNG tRNS transparency keys are unsupported and rejected; use explicit RGBA for transparency.
+Report must name a new file. Existing files, including input aliases, are never replaced.
 Exit codes: 0 passed, 1 failed checks, 2 invalid input/unsupported format/error. Never overwrites an input.
 #>
 [CmdletBinding()]
@@ -31,7 +33,7 @@ using System.IO.Compression;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-public static class RetouchNativePngQA {
+public static class RetouchNativePngQANoTrnsV2 {
     public sealed class Raster { public int Width,Height,Depth,Channels; public byte[] Pixels; public string IccHash,ColorDefinitionHash; public Dictionary<string,object> Metadata; }
     static uint U32(byte[] b,int o) { return ((uint)b[o]<<24)|((uint)b[o+1]<<16)|((uint)b[o+2]<<8)|b[o+3]; }
     static byte[] Bytes(BinaryReader b,int n) { byte[] d=b.ReadBytes(n);if(d.Length!=n)throw new InvalidDataException("Truncated PNG");return d; }
@@ -82,6 +84,8 @@ public static class RetouchNativePngQA {
                     if(gammaHash!=null||idat||d.Length!=4||U32(d,0)==0)throw new InvalidDataException("Invalid gAMA chunk");gammaHash=Hash(d);gamma=U32(d,0);
                 } else if(type=="cHRM") {
                     if(chromaHash!=null||idat||d.Length!=32)throw new InvalidDataException("Invalid cHRM chunk");chromaHash=Hash(d);chromaticities=new uint[8];for(int i=0;i<8;i++)chromaticities[i]=U32(d,i*4);
+                } else if(type=="tRNS") {
+                    throw new InvalidDataException("PNG tRNS transparency keys are unsupported; use explicit RGBA for transparency");
                 } else if(type=="IDAT") {
                     if(idatEnded)throw new InvalidDataException("Nonconsecutive IDAT chunks");idat=true;compressed.Write(d,0,d.Length);
                 } else if(type=="IEND") {
@@ -121,7 +125,7 @@ public static class RetouchNativePngQA {
 }
 '@
 $result=[ordered]@{status='error';createdAtUtc=[DateTime]::UtcNow.ToString('o');expectedDepth=$ExpectedDepth;kind=if($ExpectedDepth -eq 16){'native 16-bit PNG verification'}else{'8-bit preview verification; does not certify a 16-bit master'};allowMissingIcc=[bool]$AllowMissingIcc;visualQualityVerified=$false;colorDefinitionScope='PNG iCCP/sRGB/gAMA/cHRM chunks; an XMP profile name is descriptive metadata and is not treated as embedded ICC bytes';boundsConvention='left/top inclusive, right/bottom exclusive';metadata=[ordered]@{};checks=[ordered]@{}}
-$exitCode=2;$reportSafe=$true;$reportPath=$null
+$exitCode=2;$reportSafe=$true;$reportPath=$null;$hashesBefore=[ordered]@{}
 try {
     $paths=[ordered]@{png=[IO.Path]::GetFullPath($Png)}
     if($Before){$paths.before=[IO.Path]::GetFullPath($Before)}
@@ -129,19 +133,51 @@ try {
     if($Report){$reportPath=[IO.Path]::GetFullPath($Report);foreach($path in $paths.Values){if([StringComparer]::OrdinalIgnoreCase.Equals($reportPath,$path)){$reportSafe=$false;throw 'Report path equals an input path; input will not be overwritten'}}}
     if($AllowedRoi.Length -gt 0 -and -not $Before){throw 'AllowedRoi requires Before'}
     if(($CropOf -and $CropRect.Length -ne 4) -or (-not $CropOf -and $CropRect.Length -ne 0)){throw 'CropOf requires exactly four CropRect coordinates, and CropRect requires CropOf'}
-    if(-not ('RetouchNativePngQA' -as [type])){Add-Type -TypeDefinition $source}
+    if(-not ('RetouchNativePngQANoTrnsV2' -as [type])){Add-Type -TypeDefinition $source}
     $hashesBefore=[ordered]@{};$rasters=[ordered]@{}
-    foreach($key in $paths.Keys){if(-not [IO.File]::Exists($paths[$key])){throw "Input PNG missing: $($paths[$key])"};$hashesBefore[$key]=(Get-FileHash -LiteralPath $paths[$key] -Algorithm SHA256).Hash.ToLowerInvariant();$rasters[$key]=[RetouchNativePngQA]::Read($paths[$key],$ExpectedDepth,[bool]$AllowMissingIcc);$result.metadata[$key]=$rasters[$key].Metadata}
+    foreach($key in $paths.Keys){if(-not [IO.File]::Exists($paths[$key])){throw "Input PNG missing: $($paths[$key])"};$hashesBefore[$key]=(Get-FileHash -LiteralPath $paths[$key] -Algorithm SHA256).Hash.ToLowerInvariant();$rasters[$key]=[RetouchNativePngQANoTrnsV2]::Read($paths[$key],$ExpectedDepth,[bool]$AllowMissingIcc);$result.metadata[$key]=$rasters[$key].Metadata}
     $passed=$true
-    if($Before){if($rasters.before.Width -ne $rasters.png.Width -or $rasters.before.Height -ne $rasters.png.Height){throw 'Before and Png dimensions differ'};$check=[RetouchNativePngQA]::Compare($rasters.before,$rasters.png,0,0,$AllowedRoi);$result.checks.before=$check;$passed=$passed -and $check.outsideAllowedRoisIdentical -and $check.iccPresenceAndBytesMatch -and $check.colorDefinitionPreserved}
-    if($CropOf){[RetouchNativePngQA]::ValidateBoxes($CropRect,$rasters.cropOf.Width,$rasters.cropOf.Height);if($rasters.png.Width -ne $CropRect[2]-$CropRect[0] -or $rasters.png.Height -ne $CropRect[3]-$CropRect[1]){throw 'Png dimensions do not equal CropRect dimensions'};$check=[RetouchNativePngQA]::Compare($rasters.cropOf,$rasters.png,$CropRect[0],$CropRect[1],[int[]]@());$check['cropRectExclusive']=$CropRect;$result.checks.crop=$check;$passed=$passed -and $check.allPixelsIdentical -and $check.iccPresenceAndBytesMatch -and $check.colorDefinitionPreserved}
+    if($Before){if($rasters.before.Width -ne $rasters.png.Width -or $rasters.before.Height -ne $rasters.png.Height){throw 'Before and Png dimensions differ'};$check=[RetouchNativePngQANoTrnsV2]::Compare($rasters.before,$rasters.png,0,0,$AllowedRoi);$result.checks.before=$check;$passed=$passed -and $check.outsideAllowedRoisIdentical -and $check.iccPresenceAndBytesMatch -and $check.colorDefinitionPreserved}
+    if($CropOf){[RetouchNativePngQANoTrnsV2]::ValidateBoxes($CropRect,$rasters.cropOf.Width,$rasters.cropOf.Height);if($rasters.png.Width -ne $CropRect[2]-$CropRect[0] -or $rasters.png.Height -ne $CropRect[3]-$CropRect[1]){throw 'Png dimensions do not equal CropRect dimensions'};$check=[RetouchNativePngQANoTrnsV2]::Compare($rasters.cropOf,$rasters.png,$CropRect[0],$CropRect[1],[int[]]@());$check['cropRectExclusive']=$CropRect;$result.checks.crop=$check;$passed=$passed -and $check.allPixelsIdentical -and $check.iccPresenceAndBytesMatch -and $check.colorDefinitionPreserved}
     $hashesAfter=[ordered]@{};$stable=$true
     foreach($key in $paths.Keys){$hashesAfter[$key]=(Get-FileHash -LiteralPath $paths[$key] -Algorithm SHA256).Hash.ToLowerInvariant();if($hashesAfter[$key] -ne $hashesBefore[$key]){$stable=$false}}
     $result['paths']=$paths;$result['sha256Before']=$hashesBefore;$result['sha256After']=$hashesAfter;$result['allInputsStable']=$stable;$result['integrityChecksPassed']=$true
     $passed=$passed -and $stable;$result.status=if($passed){'passed'}else{'failed'};$exitCode=if($passed){0}else{1}
-} catch {$result['error']=$_.Exception.Message;$result['errorType']=$_.Exception.GetType().FullName}
+} catch {$result.status='error';$exitCode=2;$result['error']=$_.Exception.Message;$result['errorType']=$_.Exception.GetType().FullName}
 $result['completedAtUtc']=[DateTime]::UtcNow.ToString('o')
-$json=$result | ConvertTo-Json -Depth 12
-if($reportPath -and $reportSafe){try{$parent=[IO.Path]::GetDirectoryName($reportPath);if(-not [IO.Directory]::Exists($parent)){[IO.Directory]::CreateDirectory($parent) | Out-Null};[IO.File]::WriteAllText($reportPath,$json,(New-Object Text.UTF8Encoding($false)))}catch{Write-Error -ErrorAction Continue "Could not save report: $($_.Exception.Message)";$exitCode=2}}
-Write-Output $json
+function Write-ReservedReport([IO.FileStream]$stream,$value) {
+    $text=$value | ConvertTo-Json -Depth 12
+    $bytes=(New-Object Text.UTF8Encoding($false)).GetBytes($text)
+    $stream.Position=0;$stream.SetLength(0);$stream.Write($bytes,0,$bytes.Length);$stream.Flush()
+}
+if($reportPath -and $reportSafe){
+    $reportStream=$null
+    try {
+        $parent=[IO.Path]::GetDirectoryName($reportPath)
+        if(-not [IO.Directory]::Exists($parent)){[IO.Directory]::CreateDirectory($parent) | Out-Null}
+        # CreateNew checks the actual target atomically, including existing aliases.
+        # The same rule applies when serializing a failed input check.
+        $reportStream=[IO.File]::Open($reportPath,[IO.FileMode]::CreateNew,[IO.FileAccess]::Write,[IO.FileShare]::None)
+        $checkedStatus=$result.status
+        if($checkedStatus -eq 'passed'){$result.status='pending-report-verification'}
+        Write-ReservedReport $reportStream $result
+        $postWriteHashes=[ordered]@{};$postWriteStable=$true
+        foreach($key in $hashesBefore.Keys){
+            $postWriteHashes[$key]=(Get-FileHash -LiteralPath $paths[$key] -Algorithm SHA256).Hash.ToLowerInvariant()
+            if($postWriteHashes[$key] -ne $hashesBefore[$key]){$postWriteStable=$false}
+        }
+        $result['sha256AfterReportWrite']=$postWriteHashes
+        $result['inputStabilityCheckedAfterReportWrite']=$true
+        if(-not $postWriteStable){$result['allInputsStable']=$false;$result.status=if($checkedStatus -eq 'error'){'error'}else{'failed'};if($exitCode -eq 0){$exitCode=1}}
+        else {$result.status=$checkedStatus}
+        $result['completedAtUtc']=[DateTime]::UtcNow.ToString('o')
+        Write-ReservedReport $reportStream $result
+    } catch {
+        $result.status='error';$exitCode=2
+        $result['reportError']=$_.Exception.Message
+        $result['completedAtUtc']=[DateTime]::UtcNow.ToString('o')
+        Write-Error -ErrorAction Continue "Could not save new report: $($_.Exception.Message)"
+    } finally {if($null -ne $reportStream){$reportStream.Dispose()}}
+}
+Write-Output ($result | ConvertTo-Json -Depth 12)
 exit $exitCode

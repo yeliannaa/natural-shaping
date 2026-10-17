@@ -1,6 +1,6 @@
 {
   "package": "natural-shaping",
-  "version": "2026-10-16-portable-r13-prop-repair-frame",
+  "version": "2026-10-17-portable-r14-verified-delivery",
   "path_base": "skill-root",
   "scope": "Self-contained guidance, scripts, selected examples and historical evidence; external software, connectors, model weights and credentials are not bundled.",
   "history": "Existing evidence measurements and historical hashes are preserved as source facts. This manifest supplies current packaged byte counts and SHA256 values. Packaging does not re-certify photo aesthetics.",
@@ -1601,14 +1601,19 @@
       "sha256": "0926e5cb774c88ad1a512e80703a3e4d1acface01e4bb388dc339de8b44f8c1c"
     },
     {
+      "file": "assets/examples/index.json",
+      "bytes": 3814,
+      "sha256": "d6b0dcc06a1d48343628781704bbf893b2301143364a209dce2e34c8a1d770c1"
+    },
+    {
       "file": "assets/examples/kamisato-v2.jpg",
       "bytes": 7256609,
       "sha256": "183907f4e0c4aa00aea49bf41691101047251cfe35282f7d99a63bd232a08100"
     },
     {
       "file": "assets/examples/README.md",
-      "bytes": 2454,
-      "sha256": "1339efbd952d3f073ed055835d4b0561a0d1a049641675514adb3a2a7ec724b9"
+      "bytes": 2543,
+      "sha256": "9a09e067716f0f762da4eafe1b93dad4b4bdff72c58273c5c9eed410de9b36c6"
     },
     {
       "file": "assets/examples/rem-v21.jpg",
@@ -1736,6 +1741,11 @@
       "sha256": "117b102174d84a6ecaf7b8025d7b467b2289d8fa1dba73d89aa8148165467ddd"
     },
     {
+      "file": "references/delivery-contract.md",
+      "bytes": 6420,
+      "sha256": "7747263dbc8f52b99a3545fb23769e78e60984accb5d773e9a12d15372ad2166"
+    },
+    {
       "file": "references/engine-experiment-history.md",
       "bytes": 10278,
       "sha256": "f1b89ba662debd25403c026dc916435973149c2cfc5583bd6ed00ac051b2d8fc"
@@ -1762,8 +1772,8 @@
     },
     {
       "file": "references/native-file-checks.md",
-      "bytes": 3438,
-      "sha256": "41072693d3ac0bfaa0a494a69ba18af4bc754a635796940f8e13e91928d706c8"
+      "bytes": 3878,
+      "sha256": "f344f8099d8eb1e3897862445026787e4ab0413942c058eae9e06902e1390f39"
     },
     {
       "file": "references/personal-cases.md",
@@ -1772,8 +1782,8 @@
     },
     {
       "file": "references/personal-data.md",
-      "bytes": 15112,
-      "sha256": "aa45e6c01001ea4687c3eb7430a6762b950d048440b4ac46e1a1a18ef731a823"
+      "bytes": 17523,
+      "sha256": "75b987deab54340aae4f06787911569cbcc0fc09bf25170e46cf076d23b3ce24"
     },
     {
       "file": "references/pixcake-cos-cases.md",
@@ -1822,8 +1832,8 @@
     },
     {
       "file": "references/quality-review.md",
-      "bytes": 16850,
-      "sha256": "8e060062a9f5601f57a9c658522766966be0eebdd1c386b21529e7d8cde0e791"
+      "bytes": 18879,
+      "sha256": "a40a2d3b04d5565d4015664d4e43e3379a90715bf5afa6da5ed6925520adc578"
     },
     {
       "file": "references/shape-and-pose.md",
@@ -1862,8 +1872,8 @@
     },
     {
       "file": "scripts/personal_data.py",
-      "bytes": 36467,
-      "sha256": "775a927e51a39ef3cf504abf0ebbf9a65a2988e06c32f3303b3826a6fa13837c"
+      "bytes": 39968,
+      "sha256": "89c6c04e400406a16e937cd7f3798ce24e7ab3813ac9d860e910fbcd703bd3bd"
     },
     {
       "file": "scripts/ps_liquify_runtime.jsx",
@@ -1892,13 +1902,18 @@
     },
     {
       "file": "scripts/verify_native_png.ps1",
-      "bytes": 18377,
-      "sha256": "64c25c12baa83e631b2847f4ba7897a9a58926d73fc541b0129540c03bb09ba8"
+      "bytes": 20542,
+      "sha256": "7618311eaff277cce5926b205bd3c62c425fc1eb4e82529ef729bb0c8ab97ec6"
+    },
+    {
+      "file": "scripts/verify_retouch_delivery.py",
+      "bytes": 17223,
+      "sha256": "9c8fb05c7d32b5dd02388bb351f868ea2cb1d675ff22626dca710a296c9c57e5"
     },
     {
       "file": "SKILL.md",
-      "bytes": 23054,
-      "sha256": "6309b626c45004e2c147d00c646b40f618cd54dd2c6c4d53d2d61899b487779c"
+      "bytes": 23767,
+      "sha256": "54a3cbae5c5d4cfc9ce62e4df296321c4140c34689da81085c442cbdf8039c5c"
     }
   ],
   "historical_runtime_validation": {

@@ -67,6 +67,14 @@ python scripts/personal_data.py --store "$privateStore" export --output '<NEW_PR
 
 这是字段示意，不是可登记的认可证据。`context.preference_comparisons` 可为上述列表，也可用 `{"records": [...]}` 包装；另一版本键兼容 `compared_variant`。返回与当前版本相关的最近最多3条比较及对应反馈，保留status／tentative／note／tags等限定。另从 `context.revision_examples` 按当前版本或查询标签关联最多2条返修例子，附原反馈的actor、decision和quote；不能把例子统一改称拒绝。比较记录不改变版本认可状态，“更喜欢A”不自动把B标为拒绝，pending也不是负例。未明确选胜者时不要编造 `preferred_variant`。
 
+### 比较结果与适用条件
+
+已有比较可补 `compared_variants`（实际比较过的版本列表）、`outcome` 与 `conditions`。`outcome` 可记 `preferred`／`tie`／`neither`／`undecided`，分别表示有明确偏好、平手、都不满意、无法判断；只按真实反馈登记。有胜者才填 `preferred_variant`；无胜者用 `compared_variants` 关联两侧，摘要仍能检索该比较，不制造负样本，也不改变版本认可或训练资格。
+
+`conditions` 记录比较适用的光线、机位、姿态、材质、景别和修改范围，指出参考能借鉴什么；另用 `scope` 说明具体区域。必要联动按组合记录，不假称只有一个变量。用户原话与助手解释继续分开，已有历史反馈不为填齐字段而重写。
+
+选中1–3条摘要后，先核当前问题与这些条件是否相容，再实际看对应图。对照测试检索价值时，保持输入、目标和候选预算，比较“既有流程”与“加入相近认可／明确返修经验”；记录命中的版本、偏好结果、遗漏、返修及总耗时，错配先修标签或条件，再决定是否改排序。当前摘要仍是标签排序，新增字段不代表已实现视觉检索或已证明更懂用户。已试训LoRA保留作同条件对照，是否继续训练由数据和实际收益决定。
+
 用户原话保留在反馈的 `quote`，连同 `actor`、`source`、版本/hash/范围和时间；助手分析另放比较的 `interpretation`，并用 `statement_type: assistant_interpretation` 标明。偏好摘要应引用证据ID、说明本图／风格／角色等适用条件；不能因用户整图验收通过，就把助手对全部审美动机的推测变成用户原话或全局规则。
 
 摘要的有效认可需要 `variant.acceptance.status=accepted`，以及 `feedback_ids` 指向用户对该版本、hash和同一范围的真实accept事件。按反馈追加顺序，最新有效accept之后若有用户同版本/hash且范围重叠的revision、reject或withdraw，该范围不再作为accepted命中；重新明确认可并绑定新事件后才恢复。局部认可照实返回local范围，不升级为整图；不重叠局部反馈、普通请求、保存指令和比较都不自动撤销认可。
@@ -128,13 +136,14 @@ python scripts/personal_data.py --store "$privateStore" export --output '<NEW_PR
 认可与可训练是两个状态：版本必须有真实 `accepted` 证据；配对经过以下核验后才可标为 `ready`，并记录 `review_evidence`。
 
 - `same_canvas`：输入、目标本来就在同一画布；仍需实际核对对齐，不能只看尺寸。
-- `prepared_pair`：先准备好对应输入与目标，再登记 `alignment.mapping` 和 `alignment.evidence`。用真实裁剪、画布位置和必要的等比例缩放建立映射，禁止仅为凑相同尺寸强拉图片。脚本不裁图、不缩放、不编辑图片。
-- 局部配对必须有实际独立裁片和 `input_parent_asset`；不得整图标成 `local`。`scope.bbox_xyxy` 是目标认可父画布中的整数边界，与目标裁片映射一致；局部认可也使用这套范围坐标。
-- 两张局部裁片的 `derived_from` 分别直接指向实际阶段输入父图和 `accepted_variant.asset_id`，不强制输入父图为最初原图。必填 `operations`、`mapping.crop_xyxy`、`mapping.output_size`、`verified: true`、`evidence`；操作可组合 `crop`、`resize`、`color_convert`，但必须含 `crop`。任何新增修图都应成为另一个待认可版本。
+- `prepared_pair`：先准备好对应输入与目标，再登记 `alignment.mapping` 和 `alignment.evidence`。mapping 只含 `input_crop_xyxy`、`target_crop_xyxy`、`output_size`：输入裁框属于 `input_parent_asset` 的画布，目标裁框属于 `accepted_variant.asset_id` 的画布，输出尺寸对应两张实际准备文件。两侧裁框可不同，脚本分别与各自的 `derived_from.mapping`、父资产和实际文件尺寸对账，不强制输入父图为最初原图。脚本不裁图、不缩放、不编辑图片。
+- `prepared_pair` 必须有两张实际独立裁片和 `input_parent_asset`。局部任务不得整图标成 `local`；`scope.bbox_xyxy` 是目标认可父画布中的整数边界，与目标裁片映射一致，局部认可也使用这套范围坐标。裁框以各自父画布左上角为像素原点，右、下边界不包含在裁片内。
+- 两张裁片的 `derived_from` 分别直接指向实际阶段输入父图和认可目标父图。必填 `operations`、`mapping.crop_xyxy`、`mapping.output_size`、`verified: true`、`evidence`；mapping 只含这两个字段，尺寸为两个正整数，裁框为四个整数且非空、不越界；布尔值不作整数接受。操作可组合 `crop`、`resize`、`color_convert`，但必须含 `crop`。当前格式不支持补边、旋转或额外映射字段，不将它们登记成普通 resize。任何新增修图都应成为另一个待认可版本。
+- 未声明 `resize` 时，输出尺寸须等于裁框尺寸。声明后须存在同一个正缩放比例 `s`，使两边分别满足 `output = floor(crop_length * s + 0.5)`（四舍五入，恰好半像素向上）；脚本以精确分数核对共同缩放区间，不设百分比容差。因此 21×20→10×10 的合理整数舍入可通过，20×20→10×20 的非等比拉伸会被拒绝。该检查核对尺寸关系，重采样质量仍看实际裁片。
 - `color_review` 填 `status: verified` 和 `evidence`，人工核对方向、EXIF 旋转、ICC／颜色转换及画质，避免把色彩管理差异误当美型偏好。哈希与尺寸检查不能替代这一步。
 - `source_group_id` 将同一原图的全图、局部、重采样和多版结果归入同组；整组只分配到 `train` 或 `validation` 一侧，防止同源泄露。独立验收照片不参与训练。
 
-`validate` 核验文件身份和已登记的配对资格，报告待处理／排除项；它不自动判断审美、几何关系或用户是否认可。可检索案例不必马上具备训练配对。
+`validate` 核验文件身份、实际尺寸、上述映射一致性和已登记的配对资格，报告待处理／排除项；它不自动判断审美、画面结构或用户是否认可。可检索案例不必马上具备训练配对。
 
 ## 导出与后续训练
 
